@@ -3,6 +3,7 @@ FTR Değerlendirme Araçları ve Bilgi Portalı'na **hoş geldiniz!**
 Bu platform, Fizik Tedavi ve Rehabilitasyon (FTR) alanındaki **öğrenciler, klinisyenler ve akademisyenler** için güvenilir ve kapsamlı bir Türkçe kaynak olmayı hedeflemektedir.
 
 Amacımız, klinik pratikte ve eğitimde ihtiyaç duyulan **değerlendirme yöntemlerini, hastalık bilgilerini ve pratik araçları** modern ve erişilebilir bir formatta sunmaktır.
+github.io tarafından sağlanan siteye linkten ulaşabilirsiniz: [https://fr3sby2.github.io/](https://fr3sby2.github.io/ftr-site/)
 
 ---
 
