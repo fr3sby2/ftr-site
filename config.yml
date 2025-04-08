@@ -3,12 +3,12 @@
 # Site Ayarları
 title: FTR Değerlendirme Araçları ve Bilgi Portalı
 email: iletisim@ornek.com # KENDİ E-POSTANIZI GİRİN veya bu satırı silin/yorumlayın
-repository: fr3sby2/ftr-web-olcekler # GitHub kullanıcıadı/repoAdı formatında - BU DOĞRU GÖRÜNÜYOR
+repository: fr3sby2/ftr-site # GitHub kullanıcıadı/repoAdı formatında - BU DOĞRU GÖRÜNÜYOR
 description: >-
   Fizik Tedavi ve Rehabilitasyon (FTR) öğrencileri ve profesyonelleri için
   kapsamlı bir Türkçe kaynak. Güncel değerlendirme ölçekleri,
   sık karşılaşılan hastalıklar hakkında bilgiler ve klinik pratik araçları.
-baseurl: "/ftr-web-olcekler" # Repository adıyla aynı olmalı (başında / ile) - BU DOĞRU GÖRÜNÜYOR
+baseurl: "/ftr-site" # Repository adıyla aynı olmalı (başında / ile) - BU DOĞRU GÖRÜNÜYOR
 url: "https://fr3sby2.github.io" # Ana GitHub Pages adresiniz - BU DOĞRU GÖRÜNÜYOR
 github_username: fr3sby2 # GitHub kullanıcı adınız - BU DOĞRU GÖRÜNÜYOR
 
