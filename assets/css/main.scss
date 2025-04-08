@@ -310,6 +310,9 @@ hr { margin: $spacer * 1.5 0; border: 0; border-top: $border-width solid $border
 
 .page-content { // Sayfanın genel içeriği için biraz üst boşluk ekleyelim
   padding-top: $spacer * 1.5;
+  padding-bottom: $spacer * 1.5;
+  padding-left: 20px;   /* Sol tarafa boşluk ekler */
+  padding-right: 20px;  /* Sağ tarafa boşluk ekler */
 }
 
 // Liste sayfalarındaki ana başlık (H1)
