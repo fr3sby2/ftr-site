@@ -1,0 +1,90 @@
+# _config.yml
+
+# Site Ayarları
+title: FTR Değerlendirme Araçları ve Bilgi Portalı
+email: iletisim@ornek.com # KENDİ E-POSTANIZI GİRİN VEYA YORUM SATIRI YAPIN
+repository: fr3sby2/ftr-web-olcekler
+description: >-
+  Fizik Tedavi ve Rehabilitasyon (FTR) öğrencileri ve profesyonelleri için
+  kapsamlı bir Türkçe kaynak, güncel değerlendirme ölçekleri,
+  sık karşılaşılan hastalıklar hakkında bilgiler ve klinik pratik araçları sunan bir platform.
+baseurl: "/ftr-web-olcekler"
+url: "https://fr3sby2.github.io"
+github_username: fr3sby2
+# github: false # Bu satır sonda zaten var, burada tekrarına gerek yok
+
+# Build Ayarları
+markdown: kramdown
+highlighter: rouge
+# permalink: pretty  ← bunu yoruma al ya da tamamen kaldır
+
+
+# Koleksiyonlar
+collections:
+  assessments:
+    output: true
+    permalink: /degerlendirme-araclari/:name/
+  diseases:
+    output: true
+    permalink: /hastaliklar/:name/
+
+# Varsayılanlar
+defaults:
+  - scope:
+      path: ""
+      type: "assessments"
+    values:
+      layout: "assessment"
+  - scope:
+      path: ""
+      type: "diseases"
+    values:
+      layout: "disease"
+  - scope:
+      path: "" # Kök dizindeki .md dosyaları için (pages klasörü yerine)
+      type: "pages" # pages yerine 'pages' (tırnak içinde)
+    values:
+      layout: "page" # Genel sayfalar page.html layout'unu kullansın
+  # Eğer pages adında bir klasör kullanacaksanız bu kalsın:
+  # - scope:
+  #     path: "pages"
+  #     type: pages
+  #   values:
+  #     layout: "page"
+
+# Eklentiler (Plugins)
+plugins:
+  - jekyll-feed
+#  - jekyll-seo-tag
+
+#  - github-metadata # Yorumlu kalması iyi
+
+# Sass/SCSS Ayarları
+sass:
+  # sass_dir: _sass # assets/css/main.scss kullandığımız için bu satırı siliyoruz
+  load_paths:         # CSS dosyamızın yerini belirtiyoruz
+    - assets/css
+  style: compressed
+
+# Hariç Tutulacak Dosyalar ve Eklentiler (Yerel için)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - create_*.py
+  - kaynak_metin.txt
+  - "*.env"
+  - fix_*.py
+  - _assessments_backup/
+  - _assessments/*.bak
+
+
+
+# GitHub Metadata eklentisini yerel derlemede tamamen devre dışı bırak
+github: false

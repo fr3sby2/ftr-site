@@ -1,0 +1,76 @@
+# _config.yml
+
+# Site Ayarları
+title: FTR Değerlendirme Araçları ve Bilgi Portalı
+email: iletisim@ornek.com # KENDİ E-POSTANIZI GİRİN veya bu satırı silin/yorumlayın
+repository: fr3sby2/ftr-web-olcekler # GitHub kullanıcıadı/repoAdı formatında - BU DOĞRU GÖRÜNÜYOR
+description: >-
+  Fizik Tedavi ve Rehabilitasyon (FTR) öğrencileri ve profesyonelleri için
+  kapsamlı bir Türkçe kaynak. Güncel değerlendirme ölçekleri,
+  sık karşılaşılan hastalıklar hakkında bilgiler ve klinik pratik araçları.
+baseurl: "/ftr-web-olcekler" # Repository adıyla aynı olmalı (başında / ile) - BU DOĞRU GÖRÜNÜYOR
+url: "https://fr3sby2.github.io" # Ana GitHub Pages adresiniz - BU DOĞRU GÖRÜNÜYOR
+github_username: fr3sby2 # GitHub kullanıcı adınız - BU DOĞRU GÖRÜNÜYOR
+
+# Build Ayarları
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Koleksiyonlar
+collections:
+  assessments:
+    output: true
+    permalink: /degerlendirme-araclari/:basename/
+  diseases:
+    output: true
+    permalink: /hastaliklar/:basename/
+
+# Varsayılanlar
+defaults:
+  - scope:
+      path: ""
+      type: "assessments"
+    values:
+      layout: "assessment"
+  - scope:
+      path: ""
+      type: "diseases"
+    values:
+      layout: "disease"
+  - scope:
+      path: "pages"
+      type: pages
+    values:
+      layout: "page"
+
+# Eklentiler (Plugins)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  # - github-metadata # YERELDE SORUN ÇIKARDIĞI İÇİN YORUMLU VEYA SİLİNMİŞ OLMALI
+
+# Sass/SCSS Ayarları
+# Eğer CSS dosyanız assets/css/main.scss ise bu satırı silin veya yorumlayın:
+# sass_dir: _sass
+sass:
+  style: compressed
+
+# Hariç Tutulacak Dosyalar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - create_*.py
+  - kaynak_metin.txt
+  - "*.env"
+
+# GitHub Metadata eklentisini yerel derlemede tamamen devre dışı bırak
+# Bu ayar, 'plugins' listesinde olmasa bile güvence sağlar.
+github: false
