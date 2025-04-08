@@ -1,9 +1,0 @@
-<!-- _includes/search-bar.html -->
-<div class="search-bar-wrapper mb-3"> <!-- mb-3: Bootstrap margin bottom -->
-    <form id="site-search-form" action="/arama-sonuclari/" method="get" class="d-flex"> <!-- Arama sonuç sayfası için (opsiyonel) veya JS ile yönetilecek -->
-      <input type="text" id="search-input" class="form-control me-2" placeholder="{{ include.placeholder | default: "Sitede ara..." }}" aria-label="Arama terimi">
-      <button type="submit" class="btn btn-outline-primary">Ara</button>
-    </form>
-    <!-- Arama önerileri/sonuçları için bir alan (JS tarafından doldurulacak) -->
-    <div id="search-results-container" class="search-results mt-2"></div>
-  </div>
