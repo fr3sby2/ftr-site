@@ -1,0 +1,86 @@
+// assets/css/main.scss
+
+// --- Jekyll'in işlemesi için gerekli ---
+---
+---
+
+// --- Değişkenler (Opsiyonel, ileride kullanılabilir) ---
+// $primary-color: #007bff;
+// $font-stack: Helvetica, sans-serif;
+
+// --- Temel Stiller ---
+body {
+  display: flex; // Footer'ı aşağı itmek için flex container
+  flex-direction: column; // İçeriği dikey sırala
+  min-height: 100vh; // Sayfa yüksekliği en az ekran kadar olsun
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; // Modern bir font stack
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 960px; // İçerik genişliğini sınırla
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px; // Yan boşluklar
+  padding-left: 15px;
+
+  @media (min-width: 768px) { // Orta ekranlarda biraz daha fazla boşluk
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+// --- Bootstrap CDN Kullanımı (Şimdilik) ---
+// Daha önce _layouts/default.html içine Bootstrap CDN linklerini eklediğimizi varsayıyoruz.
+// Bu dosya, Bootstrap üzerine YAZMAK veya ona EKLEME yapmak için kullanılacaktır.
+// İleride Bootstrap'ı özelleştirmek isterseniz, CDN linklerini kaldırıp
+// Bootstrap SCSS dosyalarını buraya @import ile dahil edebilirsiniz.
+// Örneğin: @import "bootstrap/bootstrap"; (Bootstrap gem'i veya dosyaları eklenince)
+
+// --- Özel Stillerinizi Buraya Ekleyin ---
+
+// Header Stilleri (Örnek)
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2rem; // Header ile içerik arasına boşluk
+}
+
+// Footer Stilleri (Örnek)
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 1rem 0;
+  // mt-auto (Bootstrap class'ı) sayesinde aşağı itilir
+}
+
+// Kart Görünümü (Ana sayfa öne çıkanlar için örnek)
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Duyarlı grid
+  gap: 1.5rem; // Kartlar arası boşluk
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: 1px solid #e8e8e8;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  h3 { margin-top: 0; }
+}
+
+// Etiket Stilleri (Örnek)
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 0.2em 0.6em;
+    margin: 0.2em;
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+// İsterseniz farklı etiket grupları için farklı renkler tanımlayabilirsiniz
+// .tag-alan { background-color: #e0f7fa; }
+// .tag-populasyon { background-color: #ffe0b2; }
+// .tag-arac-tipi { background-color: #c8e6c9; }
+
+// --- Diğer özel stilleriniz ---

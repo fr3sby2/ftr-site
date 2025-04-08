@@ -1,0 +1,21 @@
+<!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      © {% now 'local: %Y' %} {{ site.title }}. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler <a href="https://www.sralab.org/rehabilitation-measures" target="_blank" rel="noopener noreferrer">SRALab</a>'dan izinle alınmıştır ve orijinal hakları SRALab'a aittir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    {% if site.github_username %}
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">{{ site.github_username }}</a> tarafından yönetilmektedir.</p>
+    {% endif %}
+  </div>
+</footer>

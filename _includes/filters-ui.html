@@ -1,0 +1,19 @@
+<!-- _includes/filters-ui.html -->
+<div class="filters-wrapper mb-4">
+    {% for group in site.data.filters.filter_groups %}
+      <div class="filter-group mb-3">
+        <h5>{{ group.group_name }}</h5>
+        <div class="filter-options">
+          {% for option in group.options %}
+            <div class="form-check form-check-inline">
+              <input class="form-check-input filter-checkbox" type="checkbox" id="filter-{{ group.group_id }}-{{ option.id }}" value="{{ option.id }}" data-filter-group="{{ group.group_id }}">
+              <label class="form-check-label" for="filter-{{ group.group_id }}-{{ option.id }}">
+                {{ option.name }}
+              </label>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+    <button id="clear-filters-btn" class="btn btn-sm btn-outline-secondary d-none">Filtreleri Temizle</button> <!-- Başlangıçta gizli -->
+  </div>

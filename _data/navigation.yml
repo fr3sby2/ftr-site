@@ -1,0 +1,23 @@
+# _data/navigation.yml
+# Sitenin ana navigasyon menüsünde kullanılacak linkler
+
+- title: Ana Sayfa
+  url: / # Kök dizin, yani ana sayfa
+
+- title: Değerlendirme Araçları
+  url: /tum-araclar/ # Tüm araçların listeleneceği bir sayfa (bu sayfayı daha sonra oluşturacağız)
+
+- title: Hastalıklar
+  url: /hastaliklar-genel/ # Hastalıkların listeleneceği bir sayfa (bunu da oluşturacağız)
+
+- title: Hakkında
+  url: /hakkinda/ # Hakkında sayfası (pages/hakkinda.md olacak)
+
+- title: İletişim
+  url: /iletisim/ # İletişim sayfası (pages/iletisim.md olacak)
+
+# İleride eklenebilecekler:
+# - title: Blog / Makaleler
+#   url: /blog/
+# - title: Kaynaklar
+#   url: /kaynaklar/
