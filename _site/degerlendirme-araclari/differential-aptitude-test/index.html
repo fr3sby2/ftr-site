@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Diferansiyel Yetenek Testleri - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Diferansiyel Yetenek Testleri</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Differential Aptitude Tests</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> DAT</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Diferansiyel Yetenek Testleri (DAT), 7-12. sınıf öğrencileri ve bazı yetişkinlerin seçilmiş alanlarda öğrenme veya başarılı olma yeteneğini ölçmek için tasarlanmış çoklu bir yetenek test bataryasıdır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Spesifik Olmayan Hasta Popülasyonu</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> DAT, sekiz ölçek içerir: 1) Sözel Muhakeme (VR), 2) Sayısal Yetenek (NA), 3) Soyut Muhakeme (AR), 4) Algısal (Büro) Hız ve Doğruluk (PSA), 5) Mekanik Muhakeme (MR), 6) Uzaysal İlişkiler (SR), 7) Yazım (SP), 8) Dil Kullanımı (LU). Her bir ölçek için bir puan ve VR ve NR'den elde edilen Scholastic Aptitude (SA) puanı olmak üzere dokuz puan sağlanır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Dikkat & Çalışma Belleği</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Genel / Sağlıklı Yetişkin</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Diferansiyel Yetenek Testleri (DAT), 7-12. sınıf öğrencileri ve bazı yetişkinlerin belirli alanlardaki öğrenme veya başarılı olma potansiyelini değerlendirmek için kullanılan bir dizi yetenek testidir. DAT, bireylerin güçlü ve zayıf yönlerini belirlemeye yardımcı olarak, eğitim ve kariyer planlamasına rehberlik etmeyi amaçlar. Test, sözel muhakeme, sayısal yetenek, soyut muhakeme, algısal hız ve doğruluk, mekanik muhakeme, uzaysal ilişkiler, yazım ve dil kullanımı gibi çeşitli yetenek alanlarını kapsayan sekiz farklı ölçekten oluşur.</p>
+
+<p>DAT’ın standart uygulaması için kağıt ve kalem gereklidir. Bilgisayarlı uygulama için ise bilgisayar, klavye ve fare gereklidir. Testin tamamının uygulanması yaklaşık 3 saate kadar sürebilir. Alt testlerin süreleri 12 ile 25 dakika arasında değişmektedir. Testlerin el ile, tarayıcı ile veya The Psychological Corporation tarafından puanlanması mümkündür.</p>
+
+<p>DAT, her bir ölçek için ayrı ayrı puanlar ve sözel muhakeme (VR) ve sayısal yetenek (NR) puanlarının birleşiminden oluşan genel bir Scholastic Aptitude (SA) puanı sağlar. Araştırmalarda maksimum ve minimum standart puanlar belirlenmemiştir, ancak DAT kılavuzunda rapor edilmiştir. Elde edilen puanlar, yaş ve cinsiyete göre yüzdelik sıralamaları ve ortalaması 5 ve standart sapması 2 olan Stanine puanları şeklinde raporlanır.</p>
+
+<p>DAT, bireylerin mesleki değerlendirmelerinde etkili bir araç olabilir ve hangi uzmanlık alanlarına odaklanabileceklerini belirlemeye yardımcı olabilir (Layton &amp; Swanson, 1958). Ancak, DAT’ın yüksek öğrenimdeki bireyler ve ileri düzeydeki öğrenciler arasındaki farklılıkları ayırt etme yeteneği azalır. DAT, çeşitli uluslararası çalışmalarda kullanılmış ve Amerikan versiyonuna benzer sonuçlar vermiştir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li>Dil Kullanımı Testi: Mükemmel (ICC = 0.89) (French &amp; Beaumont, 1991)</li>
+      <li>Yazım Testi: Mükemmel (ICC = 0.91) (French &amp; Beaumont, 1991)</li>
+      <li>Ortaöğretim azınlık grubu öğrencileri için AR, SR, MR, NA, PSA alt testleri için Cronbach alfa değerleri 0.83 - 0.90 arasında bulunmuştur (Evers et al., 2000). SP, LU, VR alt testleri için ise Cronbach alfa değerleri 0.73 - 0.78 arasında bulunmuştur (Evers et al., 2000).</li>
+      <li>Wang (1993), tüm DAT alt testleri için K-R 20 formülü ile hesaplanan iç tutarlılık katsayılarının mükemmel olduğunu belirtmiştir (r = 0.82-0.95).</li>
+      <li>Alkhadher ve ark. (1998), Kuwait Petroleum Corporation (KPC) rafineri operatörü stajyerleri üzerinde yaptıkları çalışmada, hem bilgisayarlı hem de kağıt kalem formatları için KR20 ile hesaplanan iç tutarlılık katsayılarının mükemmel olduğunu bulmuşlardır (erkekler için r = 0.85-0.94, kadınlar için r = 0.79-0.94).</li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li>Minnesota lise öğrencileri üzerinde yapılan bir çalışmada, 9. sınıf düzeyindeki VR ve NA testlerinin, 11. sınıftaki American Council on Education Psychological Examination, Cooperative English Test ve lise sıralaması üzerindeki gelecekteki performansla korelasyonu mükemmel düzeyde bulunmuştur (erkekler için r= 0.63-0.69; kadınlar için r= 0.61-0.71) (Layton &amp; Swanson, 1958).</li>
+      <li>N.C.O. Akademisi askerleri üzerinde yapılan bir çalışmada, VR’nin Askeri Akademik Sınıf Sıralaması ile korelasyonu mükemmel düzeyde bulunmuştur (r= 0.69-0.78) (Gray, 1965). AR’nin Askeri Akademik Sınıf Sıralaması ile korelasyonu mükemmelden yeterliye değişmektedir (r= 0.51 - 0.68) (Gray, 1965). LU’nun (Cümleler) Askeri Akademik Sınıf Sıralaması ile korelasyonu yeterli düzeyde bulunmuştur (r= 0.41 - 0.52) (Gray, 1965).</li>
+      <li>Iowa (ABD) lise öğrencileri üzerinde yapılan bir çalışmada, VR’nin Tests of Educational Development (TED) Genel Kelime Bilgisi puanları ile yakınsak geçerliliği mükemmel düzeyde bulunmuştur (r= 0.69-0.88) (Doppelt &amp; Wesman, 1952). NA’nın TED Niceliksel düşünme puanları ile yakınsak geçerliliği mükemmel düzeyde bulunmuştur (r = 0.80) (Doppelt &amp; Wesman, 1952). LU’nun (Cümleler) TED Doğruluk ve İfade Uygunluğu puanları ile yakınsak geçerliliği yeterliden mükemmele değişmektedir (r= 0.57-0.89) (Doppelt &amp; Wesman, 1952).</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>İçerik Geçerliliği:</strong> Test içeriğinin, DAT’ın amaçları dikkate alındığında uygun olduğu değerlendirilmiştir (Wang, 1993).</p>
+  </li>
+  <li><strong>Görünüş Geçerliliği:</strong> Her bir alt testteki öğelerin, ölçülen yeteneği temsil ettiği görülmektedir (Gray, 1965).</li>
+</ul>
+
+<p>Alkhadher, O., Clarke, D. D., &amp; Anderson, N. (1998). Equivalence and predictive validity of paper-and-pencil and computerized adaptive formats of the Differential Aptitude Tests. Journal Of Occupational And Organizational Psychology, 71(3), 205-217.
+https://doi.org/10.1111/j.2044-8325.1998.tb00673.x
+Berdie, R. F. (1951). The Differential Aptitude Tests as predictors in engineering training. Journal of Educational Psychology, 42(2), 114-123.
+https://doi.org/10.1037/h0060648
+Doppelt, J. E., &amp; Wesman, A. G. (1952). The Differential Aptitude Tests as predictors of achievement test scores. Journal Of Educational Psychology, 43(4), 210-217.
+https://doi.org/10.1037/h0060030
+Nijenhuis, J. T., Evers, A., &amp; Mur, J. P. (2000). Validity of the differential aptitude test for the assessment of immigrant children. Educational Psychology, 20(1), 99-115.
+https://doi.org/10.1080/014434100110416
+French, C. C., &amp; Beaumont, J. G. (1991). The Differential Aptitude Test (Language Usage and Spelling): A clinical study of a computerized form. Current Psychology: A Journal for Diverse Perspectives on Diverse Psychological Issues, 10(1-2), 31-48.
+https://doi.org/10.1007/BF02686779
+Gray, B. (1965). The differential aptitude tests in a military academic setting. The Journal of Educational Research, 58(8), 352-354.
+https://doi.org/10.1080/00220671.1965.10883242
+Layton, W. L., &amp; Swanson, E. O. (1958). Relationship of ninth grade Differential Aptitude Test scores to eleventh grade test scores and high school rank. Journal Of Educational Psychology, 49(3), 153-155.
+https://doi.org/10.1037/h0046365
+Lynn, R. (1992). Sex differences on the Differential Aptitude Test in British and American adolescents. Educational Psychology, 12(2), 101-106. Wang, L. (1993). The Differential Aptitude Test: A Review and Critique.
+Wolking, W. D. (1955). Predicting academic achievement with the Differential Aptitude and the Primary Mental Ability Tests. Journal Of Applied Psychology, 39(2), 115-118.
+https://doi.org/10.1037/h0039856</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

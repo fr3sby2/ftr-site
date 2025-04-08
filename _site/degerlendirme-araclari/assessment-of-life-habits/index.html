@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Yaşam Alışkanlıkları Değerlendirmesi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Yaşam Alışkanlıkları Değerlendirmesi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Life Habits Questionnaire</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> Life-H</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Life-H, katılımcıları günlük aktivitelerden sosyal katılımına kadar 12 alanda 77 yaşam alışkanlığı konusunda değerlendirir. Zorluk derecesi ve gerekli yardım algısına dayalı bir öz-bildirimdir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Karma Popülasyonlar, Nöromüsküler Durumlar, Yaşlı Yetişkinler ve Geriatri Bakımı, Pediatrik Bozukluklar, Spinal Yaralanmalar, İnme</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> İlk ölçek, 1) Yaşanan zorluk derecesi ve 2) Gerekli yardım türü (yardım, teknik yardım, fiziksel düzenlemeler) olmak üzere iki boyutta derecelendirilen başarıları değerlendirir. İkinci ölçek, hastanın günlük aktiviteler veya sosyal rollerden duyduğu memnuniyeti değerlendirir. Memnuniyet 1 ile 5 arasında değişebilir (5 yüksek memnuniyet seviyesini gösterir).</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Katılım (Sosyal & Yaşam)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">İletişim & Dil</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Genel / Sağlıklı Yetişkin</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Pediatri (Genel)</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Yaşam Alışkanlıkları Değerlendirmesi (Life-H), bireylerin günlük yaşam aktivitelerinden sosyal katılıma kadar çeşitli alanlardaki yaşam alışkanlıklarını değerlendiren bir ölçektir. Katılımcıların bir aktiviteyi gerçekleştirirken yaşadıkları zorluk derecesini ve ihtiyaç duydukları yardım türünü (insan yardımı, teknik yardım, fiziksel düzenlemeler) değerlendirir. Ayrıca, hastanın günlük aktivitelerinden ve sosyal rollerinden duyduğu memnuniyeti de ölçer. Bu değerlendirme, bireyin algıladığı zorlukları ve memnuniyet düzeyini temel alan bir öz-bildirimdir.</p>
+
+<p>Life-H iki ölçekten oluşur:</p>
+
+<ol>
+  <li><strong>Başarılar Ölçeği:</strong> Bu ölçek, bireyin belirli yaşam alışkanlıklarını ne kadar başarılı bir şekilde yerine getirdiğini değerlendirir. Değerlendirme iki boyutta yapılır:
+    <ul>
+      <li><strong>Zorluk Derecesi:</strong> Aktiviteyi gerçekleştirirken yaşanan zorluk seviyesi değerlendirilir.</li>
+      <li><strong>Yardım Türü:</strong> Aktiviteyi gerçekleştirmek için ihtiyaç duyulan yardımın türü (insan yardımı, teknik yardım, fiziksel düzenlemeler) belirlenir.</li>
+      <li>Puanlama:
+        <ul>
+          <li>9 - Hiç zorluk çekmeden ve yardıma ihtiyaç duymadan tamamlandı.</li>
+          <li>8 - Hiç zorluk çekmeden, yardımcı bir cihaz veya adaptasyonla tamamlandı.</li>
+          <li>7 - Zorlukla, yardıma ihtiyaç duymadan tamamlandı.</li>
+          <li>6 - Zorlukla, yardımcı bir cihaz veya adaptasyonla tamamlandı.</li>
+          <li>5 - Hiç zorluk çekmeden, insan yardımıyla tamamlandı.</li>
+          <li>4 - Hiç zorluk çekmeden, yardımcı bir cihaz veya adaptasyon ve insan yardımıyla tamamlandı.</li>
+          <li>3 - Zorlukla, insan yardımıyla tamamlandı.</li>
+          <li>2 - Zorlukla, yardımcı bir cihaz veya adaptasyon ve insan yardımıyla tamamlandı.</li>
+          <li>1 - Bir vekil tarafından tamamlandı.</li>
+          <li>0 - Tamamlanmadı.</li>
+          <li>N/A - Uygulanamaz.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Memnuniyet Ölçeği:</strong> Bu ölçek, bireyin günlük aktivitelerinden ve sosyal rollerinden duyduğu memnuniyeti değerlendirir. Memnuniyet düzeyi 1 ile 5 arasında değişir (5, yüksek memnuniyet düzeyini gösterir).</p>
+
+    <ul>
+      <li>Günlük Aktiviteler Alanı:
+        <ol>
+          <li>Beslenme - yemek hazırlama; restoranlarda yemek yeme</li>
+          <li>Fitness - uyku; sağlığınızı korumak veya iyileştirmek için fiziksel aktivitelere katılma</li>
+          <li>Kişisel bakım - kişisel hijyeninize özen gösterme; evinizdeki banyo veya tuvaletler dışındaki banyo veya tuvaletleri kullanma</li>
+          <li>İletişim - evde veya toplumda başka bir kişiyle iletişim kurma; yazılı iletişim</li>
+          <li>Konut - evinizin bakımını yapma; büyük ev işlerini yapma</li>
+          <li>Hareketlilik - kaygan veya engebeli yüzeylerde hareket etme; araç kullanma</li>
+        </ol>
+      </li>
+      <li>Sosyal Roller Alanı:
+        <ol>
+          <li>Sorumluluk - alışveriş yapma; çocuklarınıza bakma</li>
+          <li>Kişilerarası ilişkiler - arkadaşlıkları sürdürme; cinsel ilişki yaşama</li>
+          <li>Toplum hayatı - yaşadığınız yerdeki kamu binalarına gitme; manevi veya dini uygulamalara katılma</li>
+          <li>Eğitim - eğitim faaliyetlerine veya mesleki eğitime katılma; mesleki eğitime başlama</li>
+          <li>İş - ücretli bir işte çalışma; ana mesleğiniz olarak ailevi veya ev işlerini yürütme</li>
+          <li>Rekreasyon - spor veya rekreasyonel faaliyetlere katılma; açık hava etkinliklerinde yer alma</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>LIFE-H’nin iki ölçeği vardır: Başarılar Ölçeği ve Memnuniyet Ölçeği. Başarılar Ölçeği, bireyin belirli yaşam alışkanlıklarını yerine getirme düzeyini değerlendirirken, Memnuniyet Ölçeği bu alışkanlıklardan duyulan memnuniyeti ölçer. Puanlama, yukarıda “Uygulama Talimatları” bölümünde detaylı olarak açıklanmıştır.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li>Yaşlılarda yapılan çalışmalarda, toplam skor için test-tekrar test güvenilirliği mükemmel (ICC = 0.88) olarak bulunmuştur. Alt ölçekler için ICC değerleri değişkendir.</li>
+      <li>Spinal kord yaralanması olan bireylerde yapılan çalışmalarda, kısa form için içsel tutarlılık mükemmel (alfa &gt; 0.82), uzun form için ise yeterli (ICC = 0.83) bulunmuştur.</li>
+      <li>Çocuklarda yapılan çalışmalarda, kısa form toplam skoru için test-tekrar test güvenilirliği yeterli (ICC = 0.67), uzun form toplam skoru için ise mükemmel (ICC = 0.80) bulunmuştur.</li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li>Fonksiyonel sınırlamaları olan yaşlı yetişkinlerde, LIFE-H ve Fonksiyonel Otonomi Ölçüm Sistemi (SMAF) toplam skorları arasında yeterli korelasyonlar bulunmuştur (0.70, p &lt; 0.0001).</li>
+      <li>Spinal kord yaralanması olan yetişkinlerde, LIFE-H ve CHART boyutları arasında değişen korelasyonlar bulunmuştur (fiziksel bağımsızlık için 0.76, sosyal entegrasyon için 0.14).</li>
+    </ul>
+  </li>
+  <li><strong>Duyarlılık:</strong>
+    <ul>
+      <li>İnme geçirmiş bireylerin eşlerinde yapılan bir çalışmada, LIFE-H toplam skoru için 2 haftada orta düzeyde (0.53), 6 ayda ise küçük (0.38) etki büyüklüğü bulunmuştur.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Desrosiers, J., Bourbonnais, D., et al. (2005). “Participation after stroke compared to normal aging.” J Rehabil Med 37(6): 353-357.
+Find it on PubMed
+Desrosiers, J., Robichaud, L., et al. (2009). “Comparison and correlates of participation in older adults without disabilities.” Arch Gerontol Geriatr 49(3): 397-403.
+Find it on PubMed
+Desrosiers, J., Rochette, A., et al. (2003). “Comparison of two functional independence scales with a participation measure in post-stroke rehabilitation.” Arch Gerontol Geriatr 37(2): 157-172.
+Find it on PubMed
+Dumont, C., Bertrand, R., et al. (2003). “Rasch modeling and the measurement of social participation.” J Appl Meas 4(4): 309-325.
+Find it on PubMed
+Fougeyrollas, P., Noreau, L., et al. (1998). “Social consequences of long term impairments and disabilities: conceptual approach and assessment of handicap.” Int J Rehabil Res 21(2): 127-141.
+Find it on PubMed
+Gagnon, C., Mathieu, J., et al. (2006). “Measurement of participation in myotonic dystrophy: reliability of the LIFE-H.” Neuromuscul Disord 16(4): 262-268.
+Find it on PubMed
+Lemmens, J., E, I. S. M. v. E., et al. (2007). “Reproducibility and validity of the Dutch Life Habits Questionnaire (LIFE-H 3.0) in older adults.” Clin Rehabil 21(9): 853-862.
+Find it on PubMed
+Magasi, S. R., Heinemann, A. W., et al. (2008). “Participation following traumatic spinal cord injury: an evidence-based review for research.” J Spinal Cord Med 31(2): 145-156.
+Find it on PubMed
+Morris, C., Kurinczuk, J. J., et al. (2005). “Child or family assessed measures of activity performance and participation for children with cerebral palsy: a structured review.” Child Care Health Dev 31(4): 397-407.
+Find it on PubMed
+Noonan, V. K., Miller, W. C., et al. (2009). “A review of instruments assessing participation in persons with spinal cord injury.” Spinal Cord 47(6): 435-446.
+Find it on PubMed
+Noreau, L., Desrosiers, J., et al. (2004). “Measuring social participation: reliability of the LIFE-H in older adults with disabilities.” Disabil Rehabil 26(6): 346-352.
+Find it on PubMed
+Noreau, L. and Fougeyrollas, P. (2000). “Long-term consequences of spinal cord injury on social participation: the occurrence of handicap situations.” Disabil Rehabil 22(4): 170-180.
+Find it on PubMed
+Noreau, L., Fougeyrollas, P., et al. (2002). “The LIFE-H: Assessment of the quality of social participation.” Technology and Disability 14(3): 113-118.
+Noreau, L., Lepage, C., et al. (2007). “Measuring participation in children with disabilities using the Assessment of Life Habits.” Developmental Medicine &amp; Child Neurology 49(9): 666-671.
+F
+ind it on PubMed
+Poulin, V. and Desrosiers, J. (2008). “Participation after stroke: comparing proxies’ and patients’ perceptions.” J Rehabil Med 40(1): 28-35.
+Find it on PubMed
+Poulin, V. and Desrosiers, J. (2009). “Reliability of the LIFE-H satisfaction scale and relationship between participation and satisfaction of older adults with disabilities.” Disability &amp; Rehabilitation 31(16): 1311-1317.
+Find it on PubMed
+Rochette, A., Desrosiers, J., et al. (2007). “Changes in participation after a mild stroke: quantitative and qualitative perspectives.” Top Stroke Rehabil 14(3): 59-68.
+Find it on PubMed
+Sakzewski, L., Boyd, R., et al. (2007). “Clinimetric properties of participation measures for 5- to 13-year-old children with cerebral palsy: a systematic review.” Dev Med Child Neurol 49(3): 232-240.
+Find it on PubMed
+Sakzewski, L., Ziviani, J., et al. (2011). “Participation outcomes in a randomized trial of 2 models of upper-limb rehabilitation for children with congenital hemiplegia.” Arch Phys Med Rehabil 92(4): 531-539.
+Find it on PubMed
+Tse, T., Douglas, J., et al. (2013). “Measuring participation after stroke: a review of frequently used tools.” Arch Phys Med Rehabil 94(1): 177-192.
+Find it on PubMed
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

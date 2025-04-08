@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Glasgow Outcome Ölçeği-Genişletilmiş - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Glasgow Outcome Ölçeği-Genişletilmiş</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Glasgow Outcome Scale-Extended</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> GOS-E</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">GOS-E, travmatik beyin hasarı (TBH) yaşayanların genel sonuçlarını sınıflandırır. Öncelikle araştırma amaçları için vaka gruplarındaki sonuçları tanımlamak için tasarlanmıştır. Bireysel değerlendirme için kullanışlılığı sınırlıdır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Pediatrik Bozukluklar, Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Ölçekte 8 seviye bulunur: Minimum Puan = 1, Maksimum Puan = 8. Seviye 1 = Ölü; Seviye 2 = Bitkisel Durum; Seviye 3 = Düşük Şiddetli Engellilik; Seviye 4 = Üst Şiddetli Engellilik; Seviye 5 = Düşük Orta Derecede Engellilik; Seviye 6 = Üst Orta Derecede Engellilik; Seviye 7 = Düşük İyi İyileşme; Seviye 8 = Üst İyi İyileşme.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Pediatri (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>translator: &lt;Oluşturan: Yapay Zeka&gt;</p>
+
+<p>Glasgow Outcome Ölçeği-Genişletilmiş (GOS-E), travmatik beyin hasarı (TBH) geçirmiş kişilerin genel sonuçlarını sınıflandırmaya yönelik bir ölçektir. Ölçek, öncelikli olarak araştırma amacıyla farklı vaka gruplarındaki sonuçları değerlendirmek için kullanılır ve bireysel değerlendirme amacıyla kullanımı sınırlıdır. Ölçek 8 farklı seviyeden oluşur ve bu seviyeler, hastanın durumuna göre belirlenir. Seviyeler şunlardır: Ölüm, bitkisel durum, düşük şiddetli engellilik, üst şiddetli engellilik, düşük orta derecede engellilik, üst orta derecede engellilik, düşük iyi iyileşme ve üst iyi iyileşme. Her seviye, hastanın günlük yaşam aktivitelerindeki bağımsızlık düzeyi, bilişsel fonksiyonları, sosyal ilişkileri ve iş performansına göre belirlenir.</p>
+
+<p>GOS-E ölçeğinde 8 seviye bulunmaktadır. Bu seviyeler:</p>
+
+<ul>
+  <li>Seviye 1 = Ölü</li>
+  <li>Seviye 2 = Bitkisel Durum: Sadece refleks tepkileri olan, ancak spontane göz açma periyotları olan bilinçsizlik durumu.</li>
+  <li>Seviye 3 = Düşük Şiddetli Engellilik; Seviye 4 = Üst Şiddetli Engellilik: Zihinsel veya fiziksel engellilik nedeniyle günlük destek için bağımlı olan hasta (genellikle her ikisinin birleşimi). Eğer hasta evde 8 saatten fazla yalnız bırakılabiliyorsa, bu üst seviye ŞD’dir. Eğer hasta evde 8 saatten fazla yalnız bırakılamıyorsa, bu düşük seviye ŞD’dir.</li>
+  <li>Seviye 5 = Düşük Orta Derecede Engellilik; Seviye 6 = Üst Orta Derecede Engellilik: Afazi, hemiparezi veya epilepsi gibi bazı engellilikleri ve/veya hafıza veya kişilik eksiklikleri olan, ancak kendilerine bakabilen hastalar. Evde bağımsızdırlar, ancak dışarıda bağımlıdırlar. Özel bir düzenleme ile bile olsa işe dönebiliyorlarsa, bu üst seviye OD’dir. İşe dönemiyorlarsa, bu düşük seviye OD’dir.</li>
+  <li>Seviye 7 = Düşük İyi İyileşme; Seviye 8 = Üst İyi İyileşme: Yaralanma öncesi duruma ulaşılmamış olsa bile, çalışma kapasitesi içinde normal hayata dönme. Bazı hastaların küçük nörolojik veya psikolojik eksiklikleri vardır. Bu eksiklikler engelleyici değilse, bu üst seviye İİ’dir. Bu eksiklikler engelleyici ise, bu düşük seviye İİ’dir.</li>
+</ul>
+
+<p>Üst veya alt engellilik düzeylerini belirlemek için özel sorular, yapılandırılmış görüşme tarafından dikte edilir.</p>
+
+<p>GOS-E ölçeğinde minimum puan 1, maksimum puan ise 8’dir. Her bir seviye, hastanın fonksiyonel durumunu ve bağımsızlık düzeyini yansıtır.</p>
+
+<p>Teasdale ve diğerleri (1998) tarafından yapılan önerilere göre, GOS-E kişinin iyileşme sürecinin başlarında uygulanmamalıdır, çünkü normal hayata dönüş derecesi bu aşamada değerlendirilemez. Çalışmalar, yapılandırılmış görüşme soruları kullanıldığında GOS-E’nin geçerliliğinin arttığını desteklemektedir.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li><strong>Test-Tekrar Test Güvenilirliği:</strong>
+    <ul>
+      <li>Beyin Hasarı: (Wilson ve ark., 2002): Posta anketleri için mükemmel test-tekrar test güvenilirliği (ağırlıklı kappa katsayısı = .98). Telefonla ve postayla yapılan anketler için mükemmel test-tekrar test güvenilirliği (K=.92).</li>
+      <li>Beyin Hasarı: (Pettigrew ve ark., 2003): Yüz yüze ve telefon görüşmeleri karşılaştırıldığında mükemmel test-tekrar test güvenilirliği (ağırlıklı kappa katsayısı = .92).</li>
+      <li>Hafif ila Orta TBH: (Hong, 2016): Mükemmel test-tekrar test güvenilirliği (ICC = 0.92).</li>
+    </ul>
+  </li>
+  <li><strong>Gözlemciler Arası/Gözlemci İçi Güvenilirlik:</strong>
+    <ul>
+      <li>Beyin Hasarı: (Lu ve ark., 2010): İyi ila mükemmel gözlemciler arası güvenilirlik (ağırlıklı kappa katsayısı = .70-.95).</li>
+      <li>Beyin Hasarı: (Pettigrew ve ark., 2003): Mükemmel gözlemciler arası güvenilirlik (ağırlıklı kappa katsayısı = .84-.92).</li>
+      <li>Beyin Hasarı: (Wilson ve ark., 1998): Mükemmel gözlemciler arası güvenilirlik (ağırlıklı kappa katsayısı = .85).</li>
+      <li>Hafif ila Orta TBH: (Hong, 2016): Mükemmel gözlemciler arası güvenilirlik (Kappa =0.84).</li>
+    </ul>
+  </li>
+  <li><strong>İç Tutarlılık:</strong>
+    <ul>
+      <li>Hafif ila Orta TBH: (Hong, 2016): Yeterli Cronbach Alfa (a= 0.80).</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li><strong>Kriter Geçerliliği (Yordayıcı/Eş Zamanlı):</strong>
+    <ul>
+      <li>Hafif ila orta Travmatik Beyin Hasarı: (Levin ve ark., 2001): GOSE, fonksiyonel sonuç, duygu durumu ve nöropsikolojik fonksiyon ölçümleri ile daha güçlü ilişkiler göstermiştir.</li>
+    </ul>
+  </li>
+  <li><strong>Yapı Geçerliliği:</strong>
+    <ul>
+      <li>Beyin Hasarı: (Wilson ve ark., 2000): DRS ile mükemmel korelasyon (r=-.89), Beck Depresyon Ölçeği ile mükemmel korelasyon (r=-.64). PTA uzunluğu ile yeterli korelasyon (r=-.52), Barthel İndeksi ile yeterli korelasyon (r=.46), NFI’nin kendi kendini değerlendirme alt ölçekleri ile yeterli korelasyon (r = .37-.63 aralığında), SF-36’nın alt ölçekleri ile yeterli ila mükemmel korelasyon (r= .47-.71 aralığında), akraba/arkadaş tarafından derecelendirilen NFI’nın alt ölçekleri ile yeterli ila mükemmel korelasyon (r= .47-.69 aralığında).</li>
+      <li>Orta ila Şiddetli TBH: (Dikmen ve ark., 2019): Spearman korelasyonu yaralanmadan üç ay sonra -0.88’dir.</li>
+    </ul>
+  </li>
+  <li><strong>Ayırt Edici Geçerlilik:</strong>
+    <ul>
+      <li>Hafif ila şiddetli penetre olmayan TBH: (Beer, 2012) Zayıf-Orta: premorbid VABS Uyarlanabilir Davranış Bileşik r= .47; CPRS skorları r= .001</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Duyarlılık:</strong></p>
+
+<ul>
+  <li>Orta ila Şiddetli TBH: (Dikmen ve ark., 2019): Yaralanmadan 3 ila 6 ay sonra FSE’deki değişimi karşılaştıran eşleştirilmiş Wilcoxon işaretli sıra testi p^a &lt; 0.001. Yaralanmadan 3 ila 6 ay sonra GOSE’deki değişimi karşılaştıran eşleştirilmiş Wilcoxon işaretli sıra testi p^b &lt; 0.001. Bir ölçüde diğerine kıyasla daha fazla değişiklik olup olmadığını karşılaştıran eşleştirilmiş Wilcoxon işaretli sıra testi p^c &lt; 0.001.</li>
+</ul>
+
+<p><strong>Taban/Tavan Etkileri:</strong></p>
+
+<ul>
+  <li>Travmatik Beyin Hasarı: (Hall ve ark., 2001): Tavan Etkisi: GOS için %69, daha detaylı GOS-E ölçüsüne duyulan ihtiyacı desteklemektedir.</li>
+  <li>
+    <p>Hafif ila Orta TBH: (Hong, 2016): Yeterli hafif tavan etkisi (%4.5). Mükemmel taban etkisi yok.</p>
+  </li>
+  <li>Beers, S. R., Wisniewski, S. R., Garcia-Filion, P., Tian, Y., Hahner, T., Berger, R. P., … Adelson, P. D. (2012). Validity of a pediatric version of the Glasgow Outcome Scale-Extended. Journal of neurotrauma, 29(6), 1126–1139. doi:10.1089/neu.2011.2272</li>
+  <li>Dikmen, S., Machamer, J., Manley, G. T., Yuh, E. L., Nelson, L. D., Temkin, N. R., . . . Zafonte, R. (2019). Functional Status Examination versus Glasgow Outcome Scale Extended as Outcome Measures in Traumatic Brain Injuries: How Do They Compare? Journal of Neurotrauma. doi:10.1089/neu.2018.6198</li>
+  <li>Hall, K. M., Bushnik, T., et al. (2001). “Assessing traumatic brain injury outcome measures for long-term follow-up of community-based individuals.” Arch Phys Med Rehabil 82(3): 367-374.</li>
+  <li>Hong, I., Li, C., &amp; Velozo, C. A. (2016). Item-Level Psychometrics of the Glasgow Outcome Scale. OTJR: Occupation, Participation and Health, 36(2), 65-73. doi:10.1177/1539449216632449</li>
+  <li>Jennett, B., &amp; Bond, M. (1975). Assessment of outcome after severe brain damage. The Lancet, 1, 480-484. doi:10.1016/ S0140-6736(75)92830-5</li>
+  <li>Levin, H. S., Boake, C., et al. (2001). “Validity and sensitivity to change of the extended Glasgow Outcome Scale in mild to moderate traumatic brain injury.” J Neurotrauma 18(6): 575-584.</li>
+  <li>Lu, J., Marmarou, A., et al. (2010). “A method for reducing misclassification in the extended Glasgow Outcome Score.” J Neurotrauma 27(5): 843-852.</li>
+  <li>Nichol, A. D., Higgins, A. M., et al. (2011). “Measuring functional and quality of life outcomes following major head injury: common scales and checklists.” Injury 42(3): 281-287.</li>
+  <li>Pettigrew, L. E., Wilson, J. T., et al. (2003). “Reliability of ratings on the Glasgow Outcome Scales from in-person and telephone structured interviews.” J Head Trauma Rehabil 18(3): 252-258.</li>
+  <li>Teasdale, G. M., Pettigrew, L. E., et al. (1998). “Analyzing outcome of treatment of severe head injury: a review and update on advancing the use of the Glasgow Outcome Scale.” J Neurotrauma 15(8): 587-597.</li>
+  <li>Wilson, J. T., Edwards, P., et al. (2002). “Reliability of postal questionnaires for the Glasgow Outcome Scale.” J Neurotrauma 19(9): 999-1005.</li>
+  <li>Wilson, J. T., Pettigrew, L. E., et al. (1998). “Structured interviews for the Glasgow Outcome Scale and the extended Glasgow Outcome Scale: guidelines for their use.” J Neurotrauma 15(8): 573-585.</li>
+  <li>Wilson, J. T., Pettigrew, L. E., et al. (2000). “Emotional and cognitive consequences of head injury in relation to the glasgow outcome scale.” J Neurol Neurosurg Psychiatry 69(2): 204-209.</li>
+</ul>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Jennett, B., & Bond, M. (1975). Assessment of outcome after severe brain damage. The Lancet, 1, 480-484. doi:10.1016/ S0140-6736(75)92830-5</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

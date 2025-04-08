@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Spinal Kord Yaralanması Olan Bireyler İçin Fiziksel Aktivite Değerlendirmesi (PARA-SCI) - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Spinal Kord Yaralanması Olan Bireyler İçin Fiziksel Aktivite Değerlendirmesi (PARA-SCI)</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Physical Activity Recall Assessment for People with Spinal Cord Injury (PARA-SCI)</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> PARA-SCI</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">PARA-SCI, temel hareketlilik aracı olarak tekerlekli sandalye kullanan parapleji veya tetraplejili bireylerde fiziksel aktiviteyi (tür, sıklık, yoğunluk, süre) ölçmek için geliştirilmiştir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Spinal Kord Yaralanmaları</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Görüşme yoluyla yapılan, bireyin son 3 günde boş zaman aktiviteleri, yaşam tarzı aktiviteleri ve bu ikisinin kombinasyonu hakkında bilgi toplar. Aktivitenin süresi dakika olarak kaydedilir ve yoğunluğu hafif, orta, ağır veya hiç olarak sınıflandırılır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>PARA-SCI, tekerlekli sandalye kullanan paraplejili veya tetraplejili bireylerde fiziksel aktiviteyi (tür, sıklık, yoğunluk, süre) ölçmek için tasarlanmış, araştırmacı tarafından uygulanan bir ölçektir. Katılımcılar, son 3 gün içinde yaptıkları boş zaman aktiviteleri ve günlük rutinlerinin bir parçası olan yaşam tarzı aktiviteleri hakkında sorgulanır. Bireyler, 8 farklı kategori altında aktiviteleri hakkında soruları yanıtlar. Her bir aktivitenin süresi dakika olarak kaydedilir ve aktivitenin yoğunluğu hafif, orta, ağır veya hiç olarak derecelendirilir.</p>
+
+<p>PARA-SCI, görüşme yoluyla uygulanır. Katılımcılara son 3 gün içindeki aktiviteleri hakkında sorular sorulur. Aktivite 8 farklı döneme ayrılır:
+1) Sabah rutini (transfer, bağırsak ve mesane yönetimi, banyo, kişisel hijyen, giyinme alt bölümleri)
+2) Kahvaltı
+3) Sabah
+4) Öğle yemeği
+5) Öğleden sonra
+6) Akşam yemeği
+7) Akşam
+8) Akşam Rutini (transfer, bağırsak ve mesane yönetimi, banyo, kişisel hijyen, giyinme alt bölümleri)
+Görüşmeci, soruları sormak ve evet/hayır yanıtlarına göre takip soruları sormak için bir akış şeması kullanır. Görüşmeci aktivite süresini dakika olarak kaydeder ve aktiviteyi boş zaman veya yaşam tarzı olarak kodlar. Katılımcılar, aktivitenin yoğunluğunu ölçeğin sınıflandırma sistemine göre hafif, orta, ağır veya hiç olarak sıralar.</p>
+
+<p>Her kategori için aktivitelere harcanan süre (dakika) kaydedilir:
+1) hafif
+2) orta
+3) ağır
+4) hiç</p>
+
+<p>PARA-SCI’nin diğer fiziksel aktivite ölçümleriyle değerlendirildiğinde iyi yapı geçerliliğine sahip olduğu gösterilmiştir. Toplam aktivite ve boş zaman fiziksel aktivite alt ölçekleri için geçerlilik ve güvenilirlik kanıtı bulunurken yaşam tarzı aktivite alt ölçeği doğrulanamamıştır ve yazarlar tarafından tek başına bir ölçü olarak kullanılması önerilmemektedir.</p>
+
+<p><strong>Test/Tekrar Test Güvenilirliği:</strong> Kronik SKY hastalarında PARA-SCI ölçümü için ICC değerleri şu şekildedir: Kümülatif-Toplam 0.79, Kümülatif-Hafif 0.65, Kümülatif-Orta 0.75, Kümülatif-Ağır 0.80, Boş Zaman Aktivitesi-Toplam 0.72, Boş Zaman Aktivitesi-Hafif 0.63, Boş Zaman Aktivitesi-Orta 0.45, Boş Zaman Aktivitesi-Ağır 0.91, Yaşam Tarzı Aktivitesi-Toplam 0.78, Yaşam Tarzı Aktivitesi-Hafif 0.66, Yaşam Tarzı Aktivitesi-Orta 0.80, Yaşam Tarzı Aktivitesi-Ağır 0.56.</p>
+
+<p><strong>Kriter Geçerliliği (Yordayıcı/Eş Zamanlı):</strong> Kronik SKY hastalarında, taşınabilir VO2 cihazı kullanılarak elde edilen sonuçlarla PARA-SCI ölçümleri karşılaştırılmıştır. Orta şiddetteki aktivite için mükemmel (0.63), ağır şiddetteki aktivite için mükemmel (0.88) ve toplam aktivite için mükemmel (0.79) korelasyon bulunmuştur.</p>
+
+<p><strong>Yapı Geçerliliği:</strong></p>
+<ul>
+  <li>Yakınsak Geçerlilik: Kas gücü ile PARA-SCI korelasyonları incelenmiştir. Ağır şiddetteki aktiviteler için kas gücü ile anlamlı korelasyonlar bulunmuştur.</li>
+  <li>Ayırt Edici Geçerlilik: Farklı fiziksel aktivite seviyelerine sahip SKY’li bireyler arasında PARA-SCI’nin farklılık gösterip göstermediği incelenmiştir. Boş zaman aktiviteleri, yaşlı bireylere göre genç bireylerde daha fazla orta şiddette aktivite içerdiği bulunmuştur.</li>
+</ul>
+
+<p><strong>İçerik Geçerliliği:</strong> SKY’li bireyler, SKY rehabilitasyon uzmanları ve SKY’li bir bireyin ebeveyni tarafından protokol ve akış şemaları geliştirilmiş ve iyileştirilmiştir. İçeriğin SKY’li kişilerde fiziksel aktiviteyi değerlendirmek için geçerli olduğu konusunda fikir birliğine varılmıştır.</p>
+
+<p><strong>Yüz Geçerliliği:</strong> SKK’li bireyler PARA-SCI’nin pilot testini tamamlamış ve cihazın SKK’li bireyler tarafından gerçekleştirilen fiziksel aktiviteyi değerlendirmek için uygun olduğunu bildirmiştir.</p>
+
+<p>Ginis, K. A., Latimer, A. E., et al. (2005). “Development and evaluation of an activity measure for people with spinal cord injury.” Medicine and Science in Sports and Exercise 37(7): 1099-1111.
+Latimer, A. E., Ginis, K. A., et al. (2006). “The physical activity recall assessment for people with spinal cord injury: validity.” Medicine and Science in Sports and Exercise 38(2): 208-216.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Ginis, K. A., Latimer, A. E., et al. (2005). "Development and evaluation of an activity measure for people with spinal cord injury." Medicine and Science in Sports and Exercise 37(7): 1099-1111.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

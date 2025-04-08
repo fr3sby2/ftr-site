@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Ulusal Sağlık Enstitüleri İnme Skalası - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Ulusal Sağlık Enstitüleri İnme Skalası</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">National Institutes of Health Stroke Scale</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> NIHSS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Serebral enfarktlarla ilişkili semptomların ciddiyetini ölçer; inme sonrası nörolojik defisitin kantitatif bir ölçüsü olarak kullanılır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme (Özellikle akut dönem).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 15 madde; bilinç düzeyi, göz hareketleri, görme alanı, yüz felci, motor güç (kol/bacak), ataksi, duyu, dil (afazi), dizartri ve ihmal gibi alanları değerlendirir. Maddeler 0 (bozukluk yok) ile 2, 3 veya 4 arasında ordinal skalada puanlanır. Toplam skor 0 ile 42 arasında değişir. Yüksek skorlar daha şiddetli inmeyi gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Motor Kontrol / Beceri</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">İletişim & Dil</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Ulusal Sağlık Enstitüleri İnme Skalası (NIHSS), akut inme sonrası nörolojik defisitin ciddiyetini ölçmek için yaygın olarak kullanılan, standartlaştırılmış bir klinik değerlendirme aracıdır. Toronto İnme Skalası, Cincinnati İnme Skalası gibi önceki ölçeklerden türetilmiştir.</p>
+
+<p>NIHSS, 15 maddeden oluşur ve bilinç düzeyi (sorulara yanıt, komutları yerine getirme), göz hareketleri, görme alanı kaybı, yüz felci, kol ve bacak motor gücü, ekstremite ataksisi, duyu kaybı, görsel ihmal, dil bozuklukları (afazi) ve konuşma bozukluğu (dizartri) gibi çeşitli nörolojik fonksiyonları değerlendirir.</p>
+
+<p>Her madde, bozukluğun ciddiyetine göre genellikle 0 (normal) ile 2, 3 veya 4 arasında değişen ordinal bir skalada puanlanır. Toplam skor 0 ile 42 arasında değişir. Daha yüksek NIHSS skorları, daha şiddetli inme ve genellikle daha kötü prognoz anlamına gelir.</p>
+
+<p>NIHSS skorları, inme ciddiyetini sınıflandırmak (örn. çok şiddetli &gt;25, şiddetli 15-24, hafif-orta 5-14, hafif 1-5), tedavi kararlarına (örn. trombolitik tedavi uygunluğu) rehberlik etmek, hastanın prognozunu tahmin etmek ve klinik çalışmalarda sonuçları değerlendirmek için kullanılır.</p>
+
+<ul>
+  <li>NIHSS skorlama formu.</li>
+  <li>Resimler (adlandırma ve tanımlama için).</li>
+  <li>Cümle listesi (okuma için).</li>
+  <li>Kalem/kurşun kalem.</li>
+  <li>(Gerekirse) Pamuk, iğne (duyu testi için - iğne kullanımı tartışmalı olabilir).</li>
+</ul>
+
+<p>NIHSS uygulaması standart bir protokol izler ve eğitim gerektirir. Her madde için belirli komutlar verilir ve hastanın yanıtı veya performansı gözlemlenir. Detaylı talimatlar için resmi NIHSS protokolüne başvurulmalıdır. Değerlendirme genellikle 5-10 dakika sürer.</p>
+
+<ul>
+  <li>Toplam 15 madde değerlendirilir.</li>
+  <li>Her madde 0’dan başlayan ordinal bir skalada puanlanır (maksimum puan maddeye göre değişir).</li>
+  <li>Toplam skor, 15 maddenin puanlarının toplanmasıyla elde edilir (0-42 aralığında).</li>
+  <li><strong>Skorların Genel Yorumu (Brott et al, 1989):</strong>
+    <ul>
+      <li><strong>0:</strong> Normal, inme belirtisi yok.</li>
+      <li><strong>1-5:</strong> Hafif İnme.</li>
+      <li><strong>5-14:</strong> Hafif-Orta Şiddette İnme.</li>
+      <li><strong>15-24:</strong> Şiddetli İnme.</li>
+      <li><strong>&gt;25:</strong> Çok Şiddetli İnme.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>NIHSS skorları, inmenin akut dönemdeki ciddiyetini yansıtır ve hastanın kısa ve uzun dönemdeki prognozu hakkında önemli bilgiler verir.</p>
+<ul>
+  <li><strong>Prognoz:</strong> Başlangıç NIHSS skoru, 7. ve 90. günlerdeki sonucu güçlü bir şekilde öngörür (Adams et al, 1999). Düşük başlangıç skorları (örn. ≤ 5) genellikle iyi bir sonuçla (örn. eve taburculuk) ilişkilidir. Yüksek skorlar (örn. &gt; 14-15) ise genellikle uzun süreli bakıma ihtiyaç duyulması veya kötü sonuçlarla ilişkilidir (Schlegel et al, 2003; Rundek et al, 2000).</li>
+  <li><strong>Taburculuk Planlaması:</strong> Başlangıç skorları, hastanın akut sonrası bakım ihtiyacını (örn. eve taburculuk, rehabilitasyon, uzun süreli bakım) tahmin etmede yardımcı olabilir.</li>
+  <li><strong>Tedavi Kararları:</strong> Özellikle trombolitik tedavi gibi akut müdahaleler için uygunluk kriterlerinde kullanılır.</li>
+</ul>
+
+<p><strong>Sınırlılıklar:</strong></p>
+<ul>
+  <li>Bazı maddelerin (bilinç düzeyi, yüz zayıflığı, ataksi, dizartri) güvenilirliğinin daha düşük olduğu veya gereksiz olduğu öne sürülmüştür (Kasner, 2006).</li>
+  <li>Posterior sirkülasyon inmelerini veya bazı laküner inmeleri yeterince yansıtmayabilir.</li>
+  <li>Barthel İndeksi gibi fonksiyonel ölçümler rehabilitasyon planlaması için daha kullanışlı olabilirken, NIHSS daha çok erken prognostik değerlendirme için faydalıdır.</li>
+</ul>
+
+<p>NIHSS, akut inme değerlendirmesi için iyi psikometrik özelliklere sahip, yaygın olarak kullanılan bir ölçektir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> <strong>Mükemmel</strong> (ICC = 0.93).</li>
+      <li><strong>Değerlendiriciler Arası:</strong> Genellikle <strong>Mükemmel</strong> (ICC = 0.95 - 0.99). Ancak bazı maddelerde (yüz felci, ataksi, dizartri) uyum daha düşük olabilir (Kappa değerleri daha düşük). Standardize eğitim önemlidir.</li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Öngörücü/Eş Zamanlı):</strong>
+        <ul>
+          <li>Başlangıç NIHSS skoru, kısa (7 gün) ve uzun (90 gün) dönem sonuçlarını (mortalite, fonksiyonel durum - örn. mRS, Barthel İndeksi) güçlü bir şekilde öngörür. Korelasyonlar genellikle <strong>İyi</strong> ile <strong>Mükemmel</strong> arasındadır.</li>
+          <li>MR Görüntülemedeki lezyon hacmi ile <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında korelasyon gösterir (r = 0.48 - 0.62).</li>
+          <li>Kanada Nöroloji Skalası (CNS) ile <strong>Mükemmel</strong> korelasyon (r = -0.948).</li>
+          <li>Hastane kalış süresi, hastane masrafları ve taburculuk yeri ile <strong>Zayıf</strong> ile <strong>Yeterli</strong> arasında korelasyon gösterir.</li>
+          <li>Kronik inmede Stroke Impact Scale (SIS) ile <strong>ilişkisiz</strong> bulunmuştur (Peters et al., 2015).</li>
+        </ul>
+      </li>
+      <li><strong>Yapı Geçerliliği:</strong> Farklı skor aralıkları farklı taburculuk olasılıkları (eve, rehabilitasyona, uzun süreli bakıma) ile ilişkilidir. Glasgow Koma Skalası ile korelasyon gösterir.</li>
+      <li><strong>İçerik Geçerliliği:</strong> Maddeler standart nörolojik muayene bileşenlerine dayanmaktadır. Uzman değerlendirmelerinde içerik geçerliliği yüksek bulunmuştur.</li>
+    </ul>
+  </li>
+  <li><strong>Tavan/Tavan Etkisi:</strong> 6 ay gibi daha uzun takip sürelerinde <strong>tavan etkisi</strong> (%20) gözlemlenmiştir (yani hastalar en iyi skoru alabilir ve daha fazla iyileşme ölçülemeyebilir).</li>
+  <li><strong>Yanıt Verebilirlik (Değişime Duyarlılık):</strong> Akut dönemdeki (ilk 7 gün) değişime duyarlı olduğu gösterilmiştir.</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Adams, H. P., Davis, P. H., et al. (1999). “Baseline NIH Stroke Scale score strongly predicts outcome after stroke: A report of the Trial of Org 10172 in Acute Stroke Treatment (TOAST).” Neurology 53: 126-131.
+… (diğer tüm referanslar) …
+Williams, L. S., Yilmaz, E. Y., et al. (2000). “Retrospective assessment of initial stroke severity with the NIH Stroke Scale.” Stroke 31: 858-862.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Brott, T., Adams, H. P., Jr., et al. (1989). "Measurements of acute cerebral infarction: a clinical examination scale." Stroke 20(7): 864-870.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

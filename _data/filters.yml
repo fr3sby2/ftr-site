@@ -1,0 +1,116 @@
+# _data/filters.yml
+# Değerlendirme araçlarını ve içerikleri filtrelemek için kullanılacak kategoriler
+
+filter_groups:
+
+  - group_id: alan # Mevcut ve yeni alanları birleştir
+    group_name: "Değerlendirme Alanı"
+    options:
+      - id: agri
+        name: Ağrı
+      - id: denge
+        name: Denge
+      - id: dikkat # Yeni
+        name: Dikkat & Çalışma Belleği
+      - id: egzekutif-fonksiyon # Yeni (Yürütücü İşlevler)
+        name: Yürütücü İşlevler
+      - id: fonksiyonel-mobilite # Yeni (Yürüme ile birleşebilir ama ayrı da kalabilir)
+        name: Fonksiyonel Mobilite
+      - id: gya
+        name: Günlük Yaşam Aktiviteleri (GYA)
+      - id: iletisim # Yeni
+        name: İletişim & Dil
+      - id: katilim # Yeni
+        name: Katılım (Sosyal & Yaşam)
+      - id: kognisyon
+        name: Kognisyon & Algı (Genel)
+      - id: kuvvet
+        name: Kas Kuvveti
+      - id: motor # Yeni (Genel motor kontrol/beceri)
+        name: Motor Kontrol / Beceri
+      - id: problem-cozme # Yeni (Kognisyon altında düşünülebilir)
+        name: Problem Çözme
+      - id: spastisite
+        name: Spastisite / Tonus
+      - id: ust-ekstremite
+        name: Üst Ekstremite Fonksiyonu
+      - id: alt-ekstremite
+        name: Alt Ekstremite Fonksiyonu
+      - id: vestibuler # Yeni
+        name: Vestibüler Fonksiyon
+      - id: yasam-kalitesi
+        name: Yaşam Kalitesi
+      - id: yurume
+        name: Yürüme & Mesafe
+
+  - group_id: psikososyal # Yeni grup (Ruhsal durum, motivasyon vb. için)
+    group_name: "Psikososyal Durum"
+    options:
+      - id: depresyon # Yeni
+        name: Depresyon
+      - id: anksiyete # Yeni (Listede yoktu ama eklemek mantıklı)
+        name: Anksiyete
+      - id: ruhsal-durum # Yeni (mental-saglik yerine)
+        name: Ruhsal Durum (Genel)
+      - id: motivasyon # Yeni
+        name: Motivasyon / Apati
+      - id: sosyal-iliski # Yeni
+        name: Sosyal İlişki / Destek
+
+  - group_id: populasyon # Mevcut ve yeni popülasyonları birleştir
+    group_name: "Hedef Popülasyon"
+    options:
+      - id: akciger-hastaliklari # Yeni (pulmoner yerine)
+        name: Akciğer Hastalıkları (KOAH vb.)
+      - id: amputasyon # Yeni
+        name: Amputasyon
+      - id: artrit # Yeni (Genel Artrit)
+        name: Artrit (Genel)
+      - id: bel-agrisi # Yeni
+        name: Bel Ağrısı
+      - id: beyin-hasari # Yeni (TBI yerine daha genel)
+        name: Beyin Hasarı (TBI, ABI)
+      - id: demans # Yeni (Alzheimer için de kapsayıcı)
+        name: Demans / Alzheimer
+      - id: diyabet # Yeni
+        name: Diyabet (Komplikasyonları)
+      - id: genel # Genel popülasyon / Sağlıklı
+        name: Genel / Sağlıklı Yetişkin
+      - id: geriatri
+        name: Geriatri / Yaşlı Bakımı
+      - id: inme
+        name: İnme
+      - id: kanser # Yeni
+        name: Kanser Rehabilitasyonu
+      - id: kardiyovaskuler # Yeni (kardiyak yerine)
+        name: Kardiyovasküler Hastalıklar
+      - id: kas-iskelet # Yeni (ortopedi yerine daha genel)
+        name: Kas-İskelet Sistemi (Genel)
+      - id: ms
+        name: Multiple Skleroz (MS)
+      - id: norolojik # Yeni (Genel nörolojik)
+        name: Nörolojik (Genel)
+      - id: omurilik-yaralanmasi # 'sky' ile birleşti
+        name: Omurilik Yaralanması (SCI)
+      - id: parkinson
+        name: Parkinson Hastalığı
+      - id: pediatri
+        name: Pediatri (Genel)
+      - id: ruh-sagligi # Yeni (psikiyatri yerine)
+        name: Ruh Sağlığı
+      - id: serebral-palsi
+        name: Serebral Palsi (SP)
+      - id: vestibuler # Yeni
+        name: Vestibüler Bozukluklar
+
+  - group_id: arac-tipi # Mevcut ve yeni tipleri birleştir
+    group_name: "Araç Tipi"
+    options:
+      - id: anket # 'hasta-bildirimi'ni de kapsar
+        name: Anket / Öz Bildirim / Bilgi Verici
+      - id: cihazli
+        name: Cihazlı Ölçüm
+      - id: gozlemsel # 'siniflama'yı da kapsar
+        name: Gözlemsel Değerlendirme / Sınıflama
+      - id: performans
+        name: Performans Bazlı Test / Görev

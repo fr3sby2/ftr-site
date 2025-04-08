@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Schwab ve England Günlük Yaşam Aktiviteleri Ölçeği - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Schwab ve England Günlük Yaşam Aktiviteleri Ölçeği</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Schwab and England Activities of Daily Living Scale</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> SE-ADL veya S&E</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Bir bireyin günlük yaşam aktivitelerindeki (GYA) işlevsel bağımsızlık düzeyini değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Parkinson Hastalığı (özellikle), Demans gibi GYA'yı etkileyen diğer durumlar.</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Tek maddelik bir değerlendirmedir. Hastanın GYA'daki bağımsızlığı %10'luk dilimlerle derecelendirilir (100% = tamamen bağımsız, 0% = vejetatif durum).</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Demans / Alzheimer</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Schwab ve England Günlük Yaşam Aktiviteleri (SE-ADL) Ölçeği, bir bireyin günlük yaşam aktivitelerini (GYA) yerine getirme konusundaki genel yeteneğini ve bağımsızlık düzeyini hızlı bir şekilde değerlendirmek için kullanılan basit, tek maddelik bir ölçektir. Özellikle Parkinson hastalığının (PH) değerlendirilmesinde yaygın olarak kullanılır ve Birleşik Parkinson Hastalığı Derecelendirme Ölçeği’nin (UPDRS) bir parçasıdır.</p>
+
+<p>Ölçek, hastanın işlevselliğini %100 (tamamen bağımsız, normal farkındalık, normal çaba) ile %0 (vejetatif durum) arasında, %10’luk dilimler halinde derecelendirir. Değerlendirme genellikle klinisyen tarafından hastayla yapılan görüşme ve gözleme dayanarak yapılır, ancak hastanın kendi değerlendirmesi veya bakıcısının değerlendirmesi de sıklıkla dikkate alınır. Bakıcının varlığının, hastanın kendi yeteneğini abartma eğilimini azaltabileceği belirtilmiştir.</p>
+
+<p>SE-ADL, hastalığın ilerlemesini takip etmek ve tedavinin fonksiyonel etkisini değerlendirmek için kullanışlı bir araçtır. Hoehn ve Yahr evrelemesi ile benzer şekilde hastalığın genel fonksiyonel durumunu yansıtır ve bu iki ölçek arasında anlamlı bir fark gözlenmemiştir.</p>
+
+<ul>
+  <li>SE-ADL derecelendirme tanımlarını içeren form/kart.</li>
+  <li>Kalem/kurşun kalem veya elektronik kayıt sistemi.</li>
+</ul>
+
+<ol>
+  <li>Klinisyen, hasta ve/veya bakıcısıyla görüşerek hastanın GYA’daki genel performansını (örn. giyinme, yemek yeme, kişisel bakım, ev işleri, iş/hobi aktiviteleri) ve ne kadar bağımsız olduğunu anlamaya çalışır.</li>
+  <li>Hastanın mevcut durumuna en uygun olan yüzdelik dilim (%100’den %0’a kadar) belirlenir. Her yüzdelik dilimin kendine özgü bir tanımı vardır (aşağıya bakınız).</li>
+  <li>Belirlenen yüzdelik skor kaydedilir.</li>
+</ol>
+
+<p>Derecelendirme şu şekildedir:</p>
+
+<ul>
+  <li><strong>100%:</strong> Tamamen bağımsız. Normal farkındalıkta. Normal çabayla görevleri yerine getirir.</li>
+  <li><strong>90%:</strong> Tamamen bağımsız. Görevleri yerine getirirken hafif zorluk veya yavaşlamanın farkındadır, ancak telafi etmek için ekstra çaba harcamaz.</li>
+  <li><strong>80%:</strong> Tamamen bağımsız. Görevleri yerine getirirken belirgin zorluk ve yavaşlamanın farkındadır. Telafi etmek için bilinçli çaba harcar.</li>
+  <li><strong>70%:</strong> Tamamen bağımsız değil. Bazı görevlerde hafif zorlanır, ancak tamamlamak için iki katından fazla zaman harcamaz.</li>
+  <li><strong>60%:</strong> Bazı görevlerde bağımlıdır. Çoğu görevi tamamlamak için iki katından fazla zaman harcar.</li>
+  <li><strong>50%:</strong> Daha bağımlıdır. Yardım gerektirir (örn. giyinme, hijyen). Çok yavaştır.</li>
+  <li><strong>40%:</strong> Çok bağımlıdır. Çoğu aktivitede yardıma ihtiyaç duyar.</li>
+  <li><strong>30%:</strong> Çok yardıma ihtiyaç duyar. Aktivitelere başlar ancak bitiremez.</li>
+  <li><strong>20%:</strong> Şiddetli derecede engelli. Hiçbir aktiviteyi tek başına yapamaz.</li>
+  <li><strong>10%:</strong> Tamamen engelli. Yatağa veya sandalyeye bağımlıdır. Kendi başına hareket edemez.</li>
+  <li><strong>0%:</strong> Vejetatif durumdadır. Yutma, mesane/bağırsak fonksiyonları gibi temel fonksiyonlar bozulmuştur. Yatağa bağımlıdır.</li>
+</ul>
+
+<p>SE-ADL skoru, hastanın GYA’daki genel fonksiyonel kapasitesini yansıtan global bir ölçümdür. Daha yüksek yüzdeler daha iyi fonksiyonel bağımsızlığı gösterir. Parkinson hastalığında, skor genellikle UPDRS motor skoru ve toplam skoru ile ters orantılıdır (yani SE-ADL skoru düştükçe UPDRS skorları artar). Shulman ve ark. (2010) çalışmasında, SE-ADL skorundaki %10’luk bir değişimin klinik olarak anlamlı olduğu öne sürülmüştür.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> Parkinson hastalarında <strong>Yeterli</strong> bulunmuştur (ICC = 0.7) (Dal Bello-Haas et al, 2011).</li>
+      <li><strong>Değerlendiriciler Arası:</strong> Hekimler, hastalar ve bakıcılar arasında <strong>Yeterli</strong> bulunmuştur (ICC = 0.60). Hekimler ve hastalar arasındaki uyum biraz daha yüksektir (ICC = 0.65) (McRae et al., 2002). <em>Not: Hekimlerin, bakıcısı olmayan hastalara göre bakıcısı olan hastaları daha düşük fonksiyonel düzeyde değerlendirme eğiliminde olabileceği belirtilmiştir.</em></li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Yapı Geçerliliği:</strong>
+        <ul>
+          <li>Parkinson hastalarında düşme öyküsü olanlar ile olmayanları ayırt etmede anlamlı bir fark göstermemiştir (Dennison et al, 2007).</li>
+          <li>Parkinson hastalarında hastalıkla ilişkili yaşam kalitesi (PDQ-39 ile ölçülen) ile <strong>Orta</strong> düzeyde korelasyon göstermiştir (Kadastik-Eerme et al., 2015).</li>
+          <li>UPDRS motor ve toplam skorları ile beklenen negatif korelasyonu gösterir (SE-ADL düştükçe UPDRS artar) (Shulman et al, 2010).</li>
+        </ul>
+      </li>
+      <li><strong>Kriter Geçerliliği:</strong> Parkinson hastalarında demans varlığını (PDD vs PDND) ayırt etmede anlamlı bulunmamıştır (Christ et al, 2013). Yürüme hızı ile ilişkili bulunmuştur (Hass et al., 2014).</li>
+    </ul>
+  </li>
+  <li><strong>Yanıt Verebilirlik (Değişime Duyarlılık):</strong>
+    <ul>
+      <li>Minimal Klinik Olarak Anlamlı Fark (MCID): Parkinson hastaları için %10’luk bir değişim önerilmiştir (Shulman et al, 2010).</li>
+      <li>Minimal Saptanabilir Değişim (MDC95): Parkinson hastaları için %12.33 olarak hesaplanmıştır (Dal Bello-Haas et al, 2011).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Bertucci Filho, D., Teive, H. A., et al. (2007). “Early-onset Parkinson’s disease and depression.” Arq Neuropsiquiatr 65(1): 5-10.
+Christ, J.B., Berger, M.F., Riedl, E., Prakash, D., Csoti, I., Molt, W.,… Liepelt-Scarfone, I. (2013). How precise are activities of daily living scales for the diagnosis of Parkinson’s disease dementia? A pilot study. Parkinsonism &amp; Related Disorders, 19(3), 371-374.
+… (diğer tüm referanslar) …
+Shulman, L. M., Gruber-Baldini, A. L., et al. (2010). “The clinically important difference on the unified Parkinson’s disease rating scale.” Arch Neurol 67(1): 64-70. (SE-ADL için MCID bilgisi içerir)</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Schwab RS, England AC Jr. Projection technique for evaluating surgery in Parkinson's disease. In: Gillingham FJ, Donaldson IML, editors. Third Symposium on Parkinson's Disease. Edinburgh: E&S Livingstone; 1969. p. 152–7.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

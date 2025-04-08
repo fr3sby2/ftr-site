@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Davranışsal Değerlendirme Tarama Aracı - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Davranışsal Değerlendirme Tarama Aracı</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Behavioral Assessment Screening Tool</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> BAST</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Kronik beyin hasarında nörodavranışsal semptomları değerlendirmek için kullanılan 47 maddelik (41 temel, 6 alt madde) bir öz bildirim ölçüsüdür.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 48 madde (42 temel, 6 alt madde) 5 seviyeli ordinal ölçekte (hiçbir zaman, nadiren, bazen, sık sık, çok sık) derecelendirilir ve alt ölçek puanları 1-5 arasında değişir. Yüksek puanlar daha sık semptomları gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Davranışsal Değerlendirme Tarama Aracı (BAST), kronik beyin hasarı olan bireylerde nörodavranışsal semptomları değerlendirmek için kullanılan 47 maddelik (41 temel, 6 alt madde) bir öz bildirim ölçüsüdür. BAST’ın beş alt ölçeği vardır: Negatif Duygu, Yürütücü İşlev, Yorgunluk, Dürtüsellik ve Madde Bağımlılığı. Ayrıca, son büyük yaşam olaylarının bir kontrol listesi ve mevcut stres faktörleri ve destekler hakkında dört açık uçlu sorudan oluşan bir Çevresel Bağlam Anketi içerir. BAST ve BAST-A, ABI’li bireyler tarafından bağımsız olarak, kağıt üzerinde veya elektronik olarak tamamlanacak şekilde tasarlanmıştır. Mobil sağlık teknolojisi kullanan kısa form versiyonu da mevcuttur: BAST mHealth.</p>
+
+<p>BAST’ta 48 madde (42 temel, 6 alt madde) bulunur ve maddeler 5 seviyeli bir ordinal ölçekte (hiçbir zaman, nadiren, bazen, sık sık, çok sık) derecelendirilir. Alt ölçeklerin ortalama puanları 1 ile 5 arasında değişir. Daha yüksek puanlar, semptomların daha sık görüldüğünü gösterir.</p>
+
+<p>BAST’ın beş temel alt ölçeği şunlardır:</p>
+<ul>
+  <li>Negatif Duygu (13 madde)</li>
+  <li>Yürütücü İşlev (11 madde)</li>
+  <li>Yorgunluk (6 madde)</li>
+  <li>Dürtüsellik (4 madde)</li>
+  <li>Madde Bağımlılığı (4 madde)</li>
+  <li>Uyumsuz Başa Çıkma (4 madde): Sadece bireylerin stres yaşadıklarını belirtmeleri durumunda yanıtlanan, alt maddelerden oluşan 6. bir alt ölçek.</li>
+  <li>Bir alt ölçeğe dahil edilmeyen Kabuslar’ı değerlendiren bir madde.</li>
+</ul>
+
+<p>Çevresel Bağlam Anketi:</p>
+<ul>
+  <li>Son büyük yaşam olaylarının kontrol listesi (son zamanlarda meydana gelen büyük yaşam olaylarının toplam sayısı)</li>
+  <li>Mevcut stres faktörleri ve destekler hakkında dört evet/hayır sorusu ve “evet” yanıtları için açık uçlu takip soruları (nitel).</li>
+</ul>
+
+<p>BAST-A (ergen versiyonu):</p>
+<ul>
+  <li>52 madde (46 temel, 6 alt madde) 5 seviyeli ordinal ölçekte (hiçbir zaman, nadiren, bazen, sık sık, çok sık) derecelendirilir ve ortalama alt ölçek puanları 1-5 arasında değişir. Yüksek puanlar daha fazla semptom gösterir.</li>
+  <li>Üç alt ölçek
+    <ul>
+      <li>Negatif Duygu ve Yorgunluk (24 madde)</li>
+      <li>Yürütücü ve Sosyal İşlev (16 madde)</li>
+      <li>Riskli Davranışlar (6 madde)</li>
+    </ul>
+  </li>
+  <li>Alt ölçeğe dahil edilmeyen bir Kabuslar maddesi</li>
+  <li>Ergenler için uyarlanmış Çevresel Bağlam Anketi
+    <ul>
+      <li>Son büyük yaşam olaylarının kontrol listesi (son zamanlarda meydana gelen büyük yaşam olaylarının toplam sayısı)</li>
+      <li>Mevcut stres faktörleri ve destekler hakkında dört evet/hayır sorusu ve “evet” yanıtları için açık uçlu takip soruları (nitel).</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>İç Tutarlılık:</strong></p>
+
+<ul>
+  <li>Sağlıklı Kontroller (İngilizce konuşan örneklem): Cronbach alfa, Negatif Duygu alt ölçeği için 0.86 (Mükemmel) ve Yürütücü İşlev alt ölçeği için 0.80 (Mükemmel).</li>
+  <li>Ruh Sağlığı Sorunları Olanlar (İngilizce konuşan örneklem): Cronbach alfa, Negatif Duygu alt ölçeği için 0.88 (Mükemmel), Yorgunluk alt ölçeği için 0.83 (Mükemmel) ve Yürütücü İşlev alt ölçeği için 0.81 (Mükemmel).</li>
+  <li>Diğer Nörolojik Durumları Olanlar (İngilizce konuşan örneklem): Cronbach alfa, Negatif Duygu alt ölçeği için 0.87 (Mükemmel), Yürütücü İşlev alt ölçeği için 0.80 (Mükemmel) ve Madde Bağımlılığı alt ölçeği için 0.80 (Mükemmel).</li>
+  <li>Hafif-Orta TBI (İspanyolca konuşan örneklem): Cronbach alfa, Madde Bağımlılığı alt ölçeği için 0.91 (Mükemmel), Yürütücü İşlev alt ölçeği için 0.90 (Mükemmel), Yorgunluk alt ölçeği için 0.87 (Mükemmel) ve Negatif Duygu alt ölçeği için 0.81 (Mükemmel).</li>
+  <li>Ergen mTBI: 46 temel BAST-A maddesi için Cronbach alfa aralığı 0.80-0.95’tir: Faktör 1: Duygu ve Yorgunluk (Cronbach alfa = .95*), Faktör 2: Yürütücü ve Sosyal İşlev (Cronbach alfa = .89), Faktör 3: Riskli Davranışlar (Cronbach alfa = .80).</li>
+</ul>
+
+<p><strong>Yapı Geçerliliği:</strong></p>
+
+<ul>
+  <li>TBI’lı Yetişkinler:
+    <ul>
+      <li>Generalized Anxiety Disorders-7 total score (Negatif Duygu, Yürütücü İşlev, Dürtüsellik ile uyumlu; Madde Bağımlılığı, Yorgunluk ile ayrışan)</li>
+      <li>Patient Health Questionnaire-8 total (Negatif Duygu, Yorgunluk, Yürütücü İşlev ile uyumlu; Madde Bağımlılığı, Dürtüsellik ile ayrışan)</li>
+      <li>Frontal Systems Scale: Apathy subscale (Negatif Duygu, Yürütücü İşlev, Yorgunluk ile uyumlu; Madde Bağımlılığı, Dürtüsellik ile ayrışan)</li>
+      <li>Frontal Systems Scale: Disinhibition subscale (Negatif Duygu, Yürütücü İşlev, Dürtüsellik ile uyumlu; Madde Bağımlılığı, Yorgunluk ile ayrışan)</li>
+      <li>Frontal Systems Scale: Executive Function subscale (Negatif Duygu, Yürütücü İşlev, Yorgunluk, Dürtüsellik ile uyumlu; Madde Bağımlılığı ile ayrışan)</li>
+      <li>Fatigue Impact Scale: Cognitive Fatigue (Yorgunluk, Yürütücü İşlev, Negatif Duygu ile uyumlu; Madde Bağımlılığı, Dürtüsellik ile ayrışan)</li>
+      <li>Fatigue Impact Scale: Physical Fatigue (Yorgunluk ile uyumlu; Madde Bağımlılığı, Yürütücü İşlev, Dürtüsellik ile ayrışan)</li>
+      <li>Positive and Negative Affect Schedule (PANAS): Positive Affect Subscale (Negatif Duygu, Yürütücü İşlev, Yorgunluk ile uyumlu; Madde Bağımlılığı, Dürtüsellik ile ayrışan)</li>
+      <li>Positive and Negative Affect Schedule (PANAS): Negative Affect Subscale (Negatif Duygu, Yorgunluk, Dürtüsellik ile uyumlu; Yürütücü İşlev, Madde Bağımlılığı ile ayrışan)</li>
+      <li>Aggression Questionnaire: Physical Aggression Subscale: (Madde Bağımlılığı, Dürtüsellik ile uyumlu; Yorgunluk, Negatif Duygu, Yürütücü İşlev ile ayrışan)</li>
+    </ul>
+  </li>
+  <li>Ergen mTBI:
+    <ul>
+      <li>BAST-A Duygu ve Yorgunluk alt ölçeğinin aşağıdaki ölçütlerle yeterli yakınsak geçerliliği vardır:
+        <ul>
+          <li>Travma sonrası semptomlar toplam puanı (r = 0.341)</li>
+          <li>Genelleşmiş Anksiyete Bozuklukları-7 toplam puanı (r = 0.522)</li>
+          <li>Hasta Sağlığı Anketi-8 toplam puanı (r = 0.553)</li>
+          <li>Kısa Dayanıklılık Ölçeği toplam puanı (r = -0.531)</li>
+          <li>Pittsburgh Uyku Kalitesi İndeksi küresel puanı (r = 0.551)</li>
+        </ul>
+      </li>
+      <li>BAST-A Yürütücü ve Sosyal İşlev alt ölçeğinin Kısa Dayanıklılık Ölçeği ile yeterli yakınsak geçerliliği vardır (r = -0.501).</li>
+      <li>BAST-A Yürütücü İşlev ve Sosyal İşlev alt ölçeğinin Travma Sonrası Semptom toplam puanı ile mükemmel ayrışan geçerliliği vardır (r = 0.260).</li>
+      <li>BAST-A Riskli Davranışlar alt ölçeğinin aşağıdaki ölçütlerle mükemmel ayrışan geçerliliği vardır:
+        <ul>
+          <li>Travma sonrası semptomlar toplam puanı (r = 0.107)</li>
+          <li>Genelleşmiş Anksiyete Bozuklukları-7 toplam puanı (r = 0.241)</li>
+          <li>Hasta Sağlığı Anketi-8 toplam puanı (r = 0.283)</li>
+          <li>Kısa Dayanıklılık Ölçeği toplam puanı (r = -0.044)</li>
+          <li>Pittsburgh Uyku Kalitesi İndeksi küresel puanı (r = 0.222)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>İçerik Geçerliliği:</strong></p>
+
+<p>BAST’ın içerik geçerliliği, bir rehabilitasyon danışmanının başkanlık ettiği, bir TBI mağdurunun annesi, bir fizik tedavi uzmanı, iki nöropsikolog, bir fizyoterapist, bir ergoterapist ve bir konuşma terapisti içeren bir uzman paneli tarafından belirlenmiştir. Her uzman, tek tek maddelerin açıklığını ve alaka düzeyini değerlendirmiş, kelime seçimi ve içerik hakkında nitel geri bildirim sağlamış ve her bir maddenin dahil edilip edilmemesi için oy kullanmıştır. Her maddenin dahil edilmesi için %83 anlaşma eşiği belirlenmiştir. Bu panelin sonuçlarından, Juengst, Terhorst, Dicianno, Niemeier ve Wagner (2018), BAST’ın %89,3’lük bir İçerik Geçerliliği İndeksi (CVI) ile güçlü içerik geçerliliğine sahip olduğu sonucuna varmıştır (s.1203).</p>
+
+<p><strong>Görünüş Geçerliliği:</strong></p>
+
+<p>TBI’lı bireylerden ve onların bakım ortaklarından oluşan bir uzman paneli ve odak grupları, maddelerin TBI’nın davranışsal ve duygusal sonuçlarıyla ilgisi hakkında nitel geri bildirim sağlamıştır. Odak gruplarındaki genel fikir birliği ve uzmanlar tarafından tek tek maddeler için verilen yüksek alaka düzeyleri, BAST’ın görünüş geçerliliğini göstermektedir (Juengst ve diğerleri, 2018).</p>
+
+<p>Juengst SB, Terhorst L, Dicianno BE, Niemeier JP, Wagner AK. (2018, January). Development and content validity of the behavioral assessment screening tool (BASTβ). Disability &amp; Rehabilitation, 41(10), 1200-1206. doi:10.1080/09638288.2017.1423403</p>
+
+<p>Juengst SB, Nabasny A, Terhorst L. (2019). Neurobehavioral Symptoms in Community-Dwelling Adults With and Without Chronic Traumatic Brain Injury: Differences by Age, Gender, Education, and Health Condition. Front Neurol., 10:1210. doi:10.3389/fneur.2019.01210</p>
+
+<p>Juengst SB, Nabasny A, Terhorst L. (2020). Cohort Differences in Neurobehavioral Symptoms in Chronic Mild to Severe Traumatic Brain Injury. Front Neurol., 10:1342. doi:10.3389/fneur.2019.01342</p>
+
+<p>Juengst SB, Nabasny A, Kajankova, M, Wright, B, &amp; Terhorst L. (2021). Factor analysis of the adolescent version of the Behavioural assessment screening tool (BAST-A) in adolescents with concussion. Brain Injury, 35(1), 130-137. doi:10.1080/02699052.2020.1857838</p>
+
+<p>Osborne, C., Wong, A., Vo, W., and Juengst SB. (2022, July). Psychometric Analysis of the behavioral assessment screening tool (BAST) in adults with stroke. Topics in Stroke Rehabilitation, 29(5), 321-330. doi:10.1080/10749357.2021.1895495</p>
+
+<p>Juengst, SB, Wright, B, Vos, L, Rodriguez, G, Conley, M, Terhorst, L. (2024). Convergent, discriminant, and known groups validity of the Behavioral Assessment Screening Tool. Research Square (Preprint made available via a pilot program of the National Library of Medicine to provide preprints of research funded by the NIH), February 15. https://doi.org/10.21203/rs.3.rs-3909294/v1</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Link to instrument" target="_blank" rel="noopener noreferrer">Link to instrument</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Juengst SB, Terhorst L, Dicianno BE, Niemeier JP, Wagner AK. (2018, January). Development and content validity of the behavioral assessment screening tool (BASTβ). Disability & Rehabilitation, 41(10), 1200-1206. doi:10.1080/09638288.2017.1423403</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

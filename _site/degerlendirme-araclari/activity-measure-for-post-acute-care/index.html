@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Akut Bakım Sonrası Aktivite Ölçümü - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Akut Bakım Sonrası Aktivite Ölçümü</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Activity Measure for Post Acute Care</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> AM-PAC</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">DSÖ'nün ICF modeline dayanarak aktivite sınırlılıklarını değerlendirir. Farklı alanlardaki (örn. Temel Mobilite, Günlük Aktivite, Uygulamalı Biliş) fonksiyonel durumu ölçer.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Çeşitli tanılara sahip akut bakım sonrası hastalar (İnme, Ortopedik durumlar - kalça kırığı vb., TBI, Medikal kompleks hastalar, Kanser, Parkinson, SCI, Artrit).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Hasta veya klinisyen bildirimine dayalıdır. Genellikle Bilgisayarlı Adaptif Test (CAT) veya kısa formlar (Inpatient Short Forms - '6 Clicks', Outpatient Short Forms) kullanılır. Farklı aktivite domainleri (Temel Mobilite, Günlük Aktivite, Uygulamalı Biliş vb.) için ayrı skorlar üretir. Skorlar genellikle ortalaması 50, standart sapması 10 olan T-skorlarına dönüştürülür.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">İletişim & Dil</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Artrit (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Kanser Rehabilitasyonu</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Omurilik Yaralanması (SCI)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Beyin Hasarı (TBI, ABI)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Akut Bakım Sonrası Aktivite Ölçümü (AM-PAC), hastaların akut bakım sonrası dönemdeki (rehabilitasyon, evde bakım, ayaktan tedavi vb.) fonksiyonel durumunu ve aktivite sınırlılıklarını değerlendirmek için geliştirilmiş bir ölçektir. Dünya Sağlık Örgütü’nün İşlevsellik, Yetiyitimi ve Sağlığın Uluslararası Sınıflandırması (ICF) modelini temel alır.</p>
+
+<p>AM-PAC, hastanın farklı aktivite alanlarındaki (domain) yeteneğini ölçer. En sık kullanılan domainler şunlardır:</p>
+<ul>
+  <li><strong>Temel Mobilite (Basic Mobility):</strong> Yatak hareketleri, transferler, yürüme gibi temel hareket becerileri.</li>
+  <li><strong>Günlük Aktivite (Daily Activity):</strong> Kişisel bakım (giyinme, hijyen), enstrümantal aktiviteler (yemek hazırlama, ev işleri).</li>
+  <li><strong>Uygulamalı Biliş (Applied Cognitive):</strong> Problem çözme, yeni şeyler öğrenme, talimatları takip etme gibi günlük yaşamda bilişsel becerilerin kullanımı.</li>
+</ul>
+
+<p>Değerlendirme, hastanın kendi bildirimine veya klinisyenin gözlemine/değerlendirmesine dayanabilir. AM-PAC’in en önemli özelliği, <strong>Bilgisayarlı Adaptif Test (CAT)</strong> formatında uygulanabilmesidir. CAT formatında, hastanın yanıtlarına göre bilgisayar algoritması bir sonraki soruyu seçer, böylece hastanın yetenek düzeyine en uygun sorular sorularak daha az sayıda soruyla (genellikle 5-8 soru/domain) hassas bir ölçüm yapılır.</p>
+
+<p>Ayrıca, yatan hasta ve ayaktan hasta ortamları için daha kısa, sabit maddeli <strong>Kısa Formlar</strong> (Short Forms) da mevcuttur. Özellikle yatan hasta ortamında kullanılan “6-Clicks” versiyonları (Temel Mobilite ve Günlük Aktivite için 6’şar madde) yaygınlaşmıştır.</p>
+
+<p>Skorlar genellikle Madde Yanıt Teorisi (IRT) kullanılarak hesaplanır ve ortalaması 50, standart sapması 10 olan T-skorlarına dönüştürülür. Yüksek skorlar daha iyi fonksiyonel yeteneği gösterir. AM-PAC skorları, hastanın fonksiyonel durumunu izlemek, tedaviye yanıtı değerlendirmek, taburculuk yerini öngörmek ve bakım düzeyini belirlemek için kullanılır.</p>
+
+<ul>
+  <li><strong>CAT versiyonu için:</strong> Bilgisayar ve internet bağlantısı.</li>
+  <li>
+    <p><strong>Kısa Formlar için:</strong> Basılı form ve kalem/kurşun kalem.</p>
+  </li>
+  <li><strong>CAT:</strong> Hasta veya klinisyen bilgisayar arayüzü üzerinden soruları yanıtlar. Sistem, yanıtlara göre sonraki soruları seçer ve domain skorunu hesaplar.</li>
+  <li>
+    <p><strong>Kısa Formlar:</strong> Hasta veya klinisyen formdaki maddeleri yanıtlar. Puanlama kılavuzuna göre ham puanlar hesaplanır ve genellikle T-skorlarına dönüştürülür.</p>
+  </li>
+  <li>Maddeler genellikle “Yapamıyorum” ile “Zorluk Yok” arasında 4 veya 5 puanlık bir Likert skalası kullanır.</li>
+  <li>Ham puanlar, IRT modelleri kullanılarak bir yetenek tahminine (logit skoru) dönüştürülür.</li>
+  <li>Bu logit skorları daha sonra genellikle ortalaması 50, standart sapması 10 olan T-skorlarına çevrilir.</li>
+  <li>Her domain (Temel Mobilite, Günlük Aktivite, Uygulamalı Biliş vb.) için ayrı bir T-skoru elde edilir.</li>
+  <li>Yüksek T-skorları daha iyi fonksiyonel yeteneği gösterir.</li>
+</ul>
+
+<p>AM-PAC skorları, hastanın belirli aktivite domainlerindeki fonksiyonel düzeyini gösterir.</p>
+<ul>
+  <li><strong>Normatif Veriler:</strong> Farklı hasta gruarı (örn. ortopedik, medikal kompleks, nörolojik) ve bakım ortamları (yatan, ayaktan) için ortalama skorlar raporlanmıştır.</li>
+  <li><strong>Taburculuk Öngörüsü:</strong> Özellikle yatan hasta “6-Clicks” skorlarının, hastanın eve mi yoksa kuruma mı taburcu olacağını öngörmede kullanılabileceği gösterilmiştir (Jette et al., 2014). Belirli kesme noktaları (örn. Temel Mobilite için 42.9, Günlük Aktivite için 39.4) eve taburculuk olasılığını belirlemede yardımcı olabilir.</li>
+  <li><strong>Değişim:</strong> Zaman içindeki skor değişiklikleri fonksiyonel iyileşmeyi veya kötüleşmeyi gösterir. MDC değerleri (örn. Temel Mobilite için ~4-8 puan, Günlük Aktivite için ~5-8 puan) klinik olarak anlamlı değişimi yorumlamada kullanılır.</li>
+</ul>
+
+<p><strong>Dikkat Edilmesi Gerekenler:</strong> CAT versiyonu daha az madde ile daha hassas ölçüm sağlarken, kısa formlar daha pratiktir. Hasta bildirimi ile klinisyen bildirimi arasında farklılıklar olabilir.</p>
+
+<p>AM-PAC (hem CAT hem de kısa formlar), çeşitli akut bakım sonrası popülasyonlarda güçlü psikometrik özellikler göstermiştir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> Postakut bakım hastalarında (çeşitli tanılar) tüm domainler için <strong>Mükemmel</strong> (ICC = 0.91 - 0.97). Nörolojik vakalarda da <strong>Mükemmel</strong> (ICC=0.96-0.97).</li>
+      <li><strong>Değerlendiriciler Arası:</strong> Postakut bakım hastalarında Temel Mobilite ve Günlük Aktivite için <strong>Mükemmel</strong> (ICC = 0.86 - 0.90), Uygulamalı Biliş için <strong>Yeterli</strong> (ICC = 0.68). Nörolojik vakalarda da <strong>Mükemmel</strong> (ICC=0.91-0.92). “6-Clicks” formları için de <strong>Mükemmel</strong> interrater güvenilirlik rapor edilmiştir.</li>
+    </ul>
+  </li>
+  <li><strong>İç Tutarlılık:</strong> “6-Clicks” formları ve diğer kısa formlar için <strong>İyi</strong> ile <strong>Mükemmel</strong> arasında (Cronbach’s alpha = 0.86 - 0.97).</li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı/Öngörücü):</strong>
+        <ul>
+          <li>Kalça kırığı hastalarında SF-36 PF, PFP-10, SPPB, Yürüme Hızı, 6MWT gibi diğer fiziksel fonksiyon ölçümleriyle <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında korelasyonlar (r = 0.55 - 0.84).</li>
+          <li>“6-Clicks” skorlarının akut hastaneden taburculuk yerini (ev vs kurum) öngörmede <strong>iyi</strong> olduğu gösterilmiştir (AUC değerleri ve kesme noktaları belirlenmiştir).</li>
+        </ul>
+      </li>
+      <li><strong>Yapı Geçerliliği:</strong> Farklı tanı gruarı, cerrahi durum ve bakım ortamları arasında beklenen skor farklılıklarını gösterebilmiştir.</li>
+      <li><strong>İçerik Geçerliliği:</strong> ICF aktivite domainine dayalı olarak geliştirilmiş ve uzman görüşleri alınmıştır.</li>
+    </ul>
+  </li>
+  <li><strong>Tavan/Tavan Etkisi:</strong> Rehabilitasyon hastalarında zamanla (özellikle 12 ayda) Kişisel Bakım, Enstrümantal ve Uygulamalı Biliş domainlerinde artan <strong>tavan etkileri</strong> gözlemlenmiştir (%16-44). Temel Mobilite domaininde tavan etkisi düşüktür (&lt;%5). Nörolojik vakalarda da Uygulamalı Biliş’te tavan etkisi (%11-24) diğer domainlerden daha yüksek bulunmuştur.</li>
+  <li><strong>Yanıt Verebilirlik (Değişime Duyarlılık):</strong> Rehabilitasyon sürecindeki fonksiyonel değişiklikleri saptamada duyarlı olduğu gösterilmiştir. Ortopedik hastalarda (özellikle alt ekstremite) yanıt verebilirliği nörolojik veya medikal kompleks hastalara göre daha yüksek olabilir (ES ve SRM değerleri daha yüksek).</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Andres, P. L., Haley, S. M., et al. (2003). “Is patient-reported function reliable for monitoring postacute outcomes?” Am J
+… (diğer tüm referanslar) …
+Sandel, M. E., Jette, A. M., Appelman, J., Terdiman, J., TeSelle, M., Delmonico, R. L., … &amp; Chan, L. (2013). Designing and implementing a system for tracking functional status after stroke: A feasibility study. PM&amp;R, 5(6), 481-490.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Haley, S. M., Coster, W. J., et al. (2004). "Activity outcome measurement for postacute care." Med Care 42(1 Suppl): I49-61.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

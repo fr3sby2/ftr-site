@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Yaşam Memnuniyeti Anketi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Yaşam Memnuniyeti Anketi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Life Satisfaction Questionnaire</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> LISAT-9, LSQ</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Yaşamın çeşitli yönlerindeki memnuniyeti değerlendirir: yaşamın geneli, öz bakım yönetimi, arkadaşlarla temas, mesleki durum, aile hayatı, partner ilişkileri, finansal durum, boş zaman etkinlikleri ve cinsel yaşam.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Spinal Yaralanmalar, Spesifik Olmayan Hasta Popülasyonu, Kronik Ağrı, Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Öğeler, 1 (çok memnuniyetsiz) ile 6 (çok memnun) arasında değişen 6 noktalı bir Likert ölçeğinde yanıtlanır. Toplam Yaşam Memnuniyeti puanı, madde puanlarının ortalaması olarak hesaplanır (1-6 aralığı).</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Yaşam Kalitesi</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Yaşam Memnuniyeti Anketi (LISAT-9), genel yaşam memnuniyetini ve yaşamın belirli alanlarındaki memnuniyeti değerlendiren bir araçtır. Bu alanlar şunlardır: yaşamın geneli, öz bakım yönetimi, arkadaşlarla temas, mesleki durum, aile hayatı, partner ilişkileri, finansal durum, boş zaman etkinlikleri ve cinsel yaşam. Ankette, genel yaşam memnuniyetini değerlendiren tek bir madde ve alana özgü sekiz ek madde bulunur. Katılımcılar, her maddeyi 1 (çok memnuniyetsiz) ile 6 (çok memnun) arasında değişen 6 noktalı bir Likert ölçeğinde yanıtlar. Toplam yaşam memnuniyeti puanı, madde puanlarının ortalaması alınarak hesaplanır. Genellikle grup çalışmalarında sonuçlar, memnuniyetsiz (1-4) ve memnun (5-6) olarak ikiye ayrılır.</p>
+
+<p>LISAT-9, kağıt kalem yöntemiyle uygulanır. Hastalara veya katılımcılara anket verilir ve her bir maddeyi belirtilen Likert ölçeğine göre yanıtlamaları istenir. Uygulama süresi genellikle 10-30 dakika sürer. Herhangi bir özel eğitim gerektirmez.</p>
+
+<p>Her bir madde 1 ile 6 arasında puanlanır. Toplam Yaşam Memnuniyeti puanı, tüm madde puanlarının ortalaması alınarak hesaplanır. Puan aralığı 1 ile 6 arasındadır. Daha yüksek puanlar daha yüksek yaşam memnuniyetini gösterir.</p>
+
+<p>Kronik spinal kord yaralanması olan bireylerde LISAT-9’un tek boyutluluğu sorgulanabilir bulunmuştur. Bir çalışmada, “partner ilişkileri” ve “aile hayatı” maddeleri çıkarıldığında tek boyutluluk sağlanmıştır. Ayrıca, farklı dil versiyonlarında da sapma olduğu tespit edilmiştir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong> Kronik spinal kord yaralanması olan bireylerde yapılan çalışmalarda yeterli içsel tutarlılık (Cronbach alfa = 0.74-0.75) bulunmuştur.</li>
+  <li><strong>Geçerlilik:</strong> Spinal kord yaralanması olan bireylerde Yaşam Memnuniyeti soruları (r=0.59) ve Yaşamla Memnuniyet Ölçeği (SWLS) (r=0.60) ile yeterli ila mükemmel düzeyde korelasyonlar bulunmuştur.</li>
+  <li><strong>Duyarlılık:</strong> Spinal kord yaralanması sonrası yaşam memnuniyetinde meydana gelen değişiklikleri değerlendirmede etkilidir.</li>
+</ul>
+
+<p>Anke, A. G. W. and Fugl-Meyer, A. R. (2003). “Life satisfaction several years after severe multiple trauma–a retrospective investigation.” Clinical rehabilitation 17(4): 431.
+Find it on PubMed
+Boonstra, A. M., Reneman, M. F., et al. (2008). “Reliability of the Life Satisfaction Questionnaire to assess patients with chronic musculoskeletal pain.” International Journal of Rehabilitation Research 31(2): 181-183.
+Find it on PubMed
+Borg, T., Berg, P., et al. (2010). “Health-related quality of life and life satisfaction in patients following surgically treated pelvic ring fractures. A prospective observational study with two years follow-up.” Injury 41(4): 400-404.
+Find it on PubMed
+Eriksson, G., Kottorp, A., et al. (2009). “Relationship between occupational gaps in everyday life, depressive mood and life satisfaction after acquired brain injury.” Journal of Rehabilitation Medicine 41(3): 187-194.
+Geyh, S., Fellinghauer, B. A. G., et al. (2010). “Cross-cultural validity of four quality of life scales in persons with spinal cord injury.” Health and Quality of Life Outcomes 8: 94.
+Post, M. W., de Witte, L. P., et al. (1998). “Predictors of health status and life satisfaction in spinal cord injury.” Arch Phys Med Rehabil 79(4): 395-401.
+Find it on PubMed
+Post, M. W., van Leeuwen, C. M., et al. (2012). “Validity of the Life Satisfaction questions, the Life Satisfaction Questionnaire, and the Satisfaction With Life Scale in persons with spinal cord injury.” Arch Phys Med Rehabil 93(10): 1832-1837.
+Find it on PubMed
+Stalnacke, B. M. (2007). “Community integration, social support and life satisfaction in relation to symptoms 3 years after mild traumatic brain injury.” Brain Inj 21(9): 933-942.
+Find it on PubMed
+van Koppenhagen, C. F., Post, M. W., et al. (2008). “Changes and determinants of life satisfaction after spinal cord injury: A cohort study in The Netherlands.” Archives of physical medicine and rehabilitation 89(9): 1733-1740.
+van Koppenhagen, C. F., Post, M. W., et al. (2008). “Changes and determinants of life satisfaction after spinal cord injury: a cohort study in the Netherlands.” Arch Phys Med Rehabil 89(9): 1733-1740.
+Find it on PubMed
+Visser-Meily, A., Post, M., et al. (2008). “Psychosocial functioning of spouses in the chronic phase after stroke: Improvement or deterioration between 1 and 3 years after stroke?” Patient Education and Counseling 73(1): 153-158.
+Find it on PubMed
+Visser, M. R., Oort, F. J., et al. (2005). “Methods to detect response shift in quality of life data: a convergent validity study.” Qual Life Res 14(3): 629-639.
+Find it on PubMed
+Wolters Gregorio, G., Stapert, S., et al. (2011). “Coping styles within the family system in the chronic phase following acquired brain injury: its relation to families’ and patients’ functioning.” J Rehabil Med 43(3): 190-196.
+Find it on PubMed
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Anke, A. G. W. and Fugl-Meyer, A. R. (2003). "Life satisfaction several years after severe multiple trauma–a retrospective investigation." Clinical rehabilitation 17(4): 431.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Denge Değerlendirme Sistemleri Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Denge Değerlendirme Sistemleri Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Balance Evaluation Systems Test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> BESTest</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">BESTest, postural kontrolün altı bağlamındaki denge bozukluklarını değerlendirmek için geliştirilmiş 36 maddelik bir klinik denge değerlendirme aracıdır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Parkinson Hastalığı, Multipl Skleroz, Spesifik Olmayan Hasta Popülasyonu, Karma Popülasyonlar</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Öğe düzeyindeki puanlar 0 (şiddetli bozukluk) ile 3 (bozukluk yok) arasında değişir. Toplam puan 108'dir ve yüzde olarak hesaplanır (0-100%). Her bir sistem için alt puanlar da mevcuttur. Yardımcı cihaz kullanan kişilerin puanları, ilgili madde için bir kategori düşürülmelidir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kas Kuvveti</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Denge Değerlendirme Sistemleri Testi (BESTest), postural kontrolün 6 bağlamındaki denge bozukluklarını değerlendirmek için geliştirilmiş 36 maddelik bir klinik denge değerlendirme aracıdır: mekanik kısıtlamalar, stabilite sınırları, APAs (Antisipatuar Postural Adaptasyonlar), indüklenen denge kaybına postural yanıt, duyusal yönelim ve yürüyüş. BESTest, denge bozukluklarının altında yatan belirli denge sistemleri hakkında bilgi sağlama yeteneği sayesinde klinisyenin müdahalesini belirli postural kontrol sistemlerine uyarlamasına olanak tanır.</p>
+
+<p>Altı bağlam şunlardır:</p>
+
+<p>1) Biyomekanik kısıtlamalar
+2) Stabilite sınırları/vertikalite
+3) Antisipatuar postural adaptasyonlar
+4) Postural yanıtlar
+5) Duyusal yönelim
+6) Yürüyüşte stabilite</p>
+
+<p>Toplam puan 108 puandır ve bir yüzde puanına (0-100%) dönüştürülür. Ayrıca, yukarıda listelenen her bir sistem için toplam alt puanlar da mevcuttur. Öğe düzeyindeki puanlar 0 (şiddetli bozukluk) ile 3 (bozukluk yok) arasında değişir. Bireylerin düz topuklu ayakkabılarla veya ayakkabı ve çorapları çıkarılmış halde test edilmesi gerekir. Yardımcı cihaz kullanan kişilerin puanları, ilgili madde için bir kategori düşürülmelidir. Mini-BESTest ve Brief BESTest olarak kısaltılmıştır.</p>
+
+<ul>
+  <li>Kronometre</li>
+  <li>Duvara monte edilmiş ölçüm bandı</li>
+  <li>Yaklaşık 60 cm x 60 cm boyutlarında 10 cm kalınlığında, orta yoğunluklu Tempur® köpük blok</li>
+  <li>10 derece eğimli rampa (en az 60 cm x 60 cm)</li>
+  <li>Merdiven basamağı, 15 cm yüksekliğinde</li>
+  <li>Üst üste yerleştirilmiş 2 ayakkabı kutusu (23 cm engel yüksekliği için)</li>
+  <li>2.5 kg serbest ağırlık</li>
+  <li>Kolları olan sağlam sandalye ve önünde işaretlenmiş 3 metre mesafe</li>
+  <li>Yere 3 m ve 6 m uzunlukları işaretlemek için maskeleme bandı</li>
+</ul>
+
+<p>BESTest’in uygulanması 20-30 dakika sürer. Eğitim için makale/kılavuz okunması gereklidir.</p>
+
+<p>Toplam puan 108’dir ve yüzde olarak hesaplanır (0-100%). Her bir sistem için alt puanlar da mevcuttur. Öğe düzeyindeki puanlar 0 (şiddetli bozukluk) ile 3 (bozukluk yok) arasında değişir. Yardımcı cihaz kullanan kişilerin puanları, ilgili madde için bir kategori düşürülmelidir.</p>
+
+<p>BESTest, BESTest puanlarının dağılımıyla gösterildiği gibi, subakut inme geçirmiş bireylerde birçok fonksiyonel yetenek düzeyinde dengeyi değerlendirmek için uygundur. BESTest, denge bozukluklarının altında yatan belirli denge sistemleri hakkında bilgi sağlama yeteneği sayesinde klinisyenin müdahalesini belirli postural kontrol sistemlerine uyarlamasına olanak tanır. BESTest, hafifçe daha büyük LR+’sı nedeniyle fonksiyonel sınıflandırma için BBS ve Mini-BESTest’e tercih edilebilir. BESTest, zemin ve tavan etkilerinin olmaması nedeniyle diğer denge ölçeklerinden daha tercih edilebilir olabilir. BESTest’in kronik inme, bilişsel bozukluk (Mini-Mental Durum Muayenesi &lt; 24), beyin sapı veya serebellumun lezyonları, afazi veya dengeyi bozmaya yetecek kadar büyük durumların varlığı olan hastalara genellenebilir olup olmadığı bilinmemektedir. Parkinson hastalığı popülasyonunda, geriye dönük düşmeleri tespit etme ve %68 kesme puanıyla 6 aylık dönemde düşmeleri tahmin etme yeteneği ile ilgili güçlü psikometrik çalışmalar bulunmaktadır. BESTest’in tedavi yönlendirmedeki faydasına ilişkin sınırlı kanıt vardır. BESTest’i tamamlama süresi tüm klinik ortamlarda uygun olmayabilir, ancak Parkinson hastalığında denge bozukluğunun daha derinlemesine teşhis değerlendirmesi için güçlü bir araçtır.</p>
+
+<p><strong>Multipl Skleroz:</strong></p>
+
+<ul>
+  <li><strong>Minimum Saptanabilir Değişim (MDC):</strong> Toplam BESTest MDC95 değeri 9.47 puandır. Alt bölüm MDC95 değerleri 2.25 ile 4.58 arasında değişmektedir.</li>
+  <li><strong>Test/Retest Güvenilirliği:</strong> Toplam BESTest puanı için test-tekrar test güvenilirliği mükemmeldir (ICC = 0.94; %95 CI = 0.86 - 0.98). Duyusal yönelim alt bölümleri için test-tekrar test güvenilirliği yeterlidir (ICC = 0.66; %95 CI = 0.32 - 0.85). Yürüyüşte stabilite alt bölümleri için test-tekrar test güvenilirliği mükemmeldir (ICC = 0.93; %95 CI = 0.84 - 0.97).</li>
+  <li><strong>İç Tutarlılık:</strong> Toplam BESTest için iç tutarlılık mükemmeldir (Cronbach Alfa = 0.97). Duyusal yönelim alt bölümü puanı için iç tutarlılık yeterlidir (Cronbach Alfa = 0.79). Yürüyüşte stabilite alt bölümü puanı için iç tutarlılık mükemmeldir (Cronbach Alfa = 0.96).</li>
+  <li><strong>Kriter Geçerliliği (Yordama/Eş Zamanlı):</strong> EDSS puanlarının eş zamanlı geçerliliği mükemmeldir (r2 = 0.85, P&lt; 0.0005). Yaslanma sırasında basınç merkezi yer değiştirmeleri için eş zamanlı geçerlilik yeterlidir (r2 = 0.55, P&lt;0.005). Adım başlatma sırasında adım hızı için eş zamanlı geçerlilik yeterlidir (r2 = 0.48, P&lt;0.01). Postural yanıt görevleri sırasında basınç merkezi yer değiştirmeleri için eş zamanlı geçerlilik mükemmeldir (r2 = 0.76, P&lt;0.0001). Zirve antisipatuar postural adaptasyon (APA) genlikleri, BESTest toplam puanlarıyla anlamlı olarak ilişkili değildir (r2 = 0.17, P= 0.16). Zirve antisipatuar postural adaptasyon (APA) genlikleri, BESTest bölüm puanlarıyla anlamlı olarak ilişkili değildir (r2 = 0.26, P= 0.074).</li>
+  <li><strong>Yordayıcı Geçerlilik:</strong> Düşenleri belirlemede yüksek duyarlılık (%86). Düşmeyenleri belirlemede yüksek özgüllük (%95).</li>
+  <li><strong>Yapı Geçerliliği:</strong> Toplam BESTest puanları ve antisipatuar/geçişler (r=0.85), reaktif (r=0.74) ve yürüyüşte stabilite (r=0.90) alt bölümleri arasında mükemmel yakınsak geçerlilik vardır. Bireysel BESTest alt bölümleri arasında zayıf ila mükemmel korelasyonlar vardır (r=0.12 ila r=0.68 arasında değişen). Düşme sıklığı ile BESTest puanları (alt bölümler ve toplam) arasında zayıf ila yeterli korelasyonlar vardır.</li>
+  <li><strong>Zemin/Tavan Etkileri:</strong> Beş alt bölüm için tavan etkisi bulunmuştur: Biyomekanik (%38), Stabilite sınırları ve Vertikalite (%29), Reaktif (%24), Duyusal Yönelim (%62), Yürüyüşte Stabilite (%24). Toplam BESTest puanı için zemin veya tavan etkisi bulunmamıştır.</li>
+</ul>
+
+<p><strong>Spesifik Olmayan Hasta Popülasyonu:</strong></p>
+
+<ul>
+  <li><strong>Minimum Saptanabilir Değişim (MDC):</strong> Denge bozukluğu olan ve olmayan toplumda yaşayan yetişkinler için MDC değeri 8.9 olarak hesaplanmıştır.</li>
+  <li><strong>Kesme Puanları:</strong> %69 kesme puanı, düşenleri düşmeyenlerden ve sağlıklıları nörolojik tanısı olanlardan ayırmıştır. Düşenleri tespit etme yeteneği yeterlidir (duyarlılık = 0.86, özgüllük = 0.95, LR+ = 17.2, LR- = 0.46, doğruluk = %92).</li>
+  <li><strong>Araştırmacılar Arası/İçi Güvenilirlik:</strong> Toplumda yaşayan denge bozukluğu olan ve olmayan yetişkinler için toplam puan için araştırmacılar arası güvenilirlik mükemmeldir (ICC = 0.91). Test alt bölümleri için araştırmacılar arası güvenilirlik mükemmeldir (ICC aralığı 0.79-0.92): Biyomekanik kısıtlamalar (ICC = 0.80), Stabilite sınırları / dikey (ICC = 0.79), Antisipatuar postural ayarlamalar (ICC = 0.92), Postural yanıtlar (ICC = 0.92), Duyusal yönelim (ICC = 0.88), Yürüyüşte stabilite (ICC = 0.91).</li>
+  <li><strong>İç Tutarlılık:</strong> BESTest alt bölümlerinin 5’i için ortalama Cronbach Alfa mükemmeldir; stabilite sınırları/dikey için zayıftır: Biyomekanik kısıtlamalar = 0.830, Stabilite sınırları/dikey = 0.621, Antisipatuar Postural ayarlamalar = 0.874, Postural yanıtlar = 0.863, Duyusal yönelim = 0.813, Yürüyüşte stabilite = 0.920.</li>
+  <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong> Toplumda yaşayan denge bozukluğu olan ve olmayan yetişkinler için toplam BESTest ve Aktiviteye Özgü Denge Güven Ölçeği (ABC) arasında mükemmel korelasyon vardır (r = 0.636, p &lt; 0.01). BESTest alt bölüm puanları ve ABC arasında yeterli ila mükemmel korelasyon vardır (r = 0.41-0.78).</li>
+  <li><strong>Yapı Geçerliliği:</strong> Denge bozukluğu olan bireyler, sağlıklı kontrollere göre anlamlı olarak daha düşük puan almıştır (p = 0.36). Farklı denge bozukluğu olan kişiler arasında ayrım yapılmıştır: Vestibüler bozukluğu olan kişilerde Bölüm V: Duyusal yönelimde, Parkinson hastalığı olanlarda Bölüm IV: Postural Yanıtlarda ve nöropati olan kişilerde Bölüm III: Antisipatuar Postural Ayarlamalarda daha kötü performans görülmüştür. BESTest puanları, sağlıklı ve denge bozukluğu olan kişiler arasında anlamlı olarak ayrım yapmıştır; 2. kohort: (n = 13 MS’li, ortalama yaş 50, EDSS &lt; 6 (aralık 0-4.5)_, 7 düşen) BESTest puanları, kendi bildirimine göre düşme öyküsü olanlar (ortalama puan = 77) ve düşme öyküsü olmayanlar (ortalama puan = 96) arasında ayrım yapmıştır.</li>
+</ul>
+
+<p><strong>Parkinson Hastalığı:</strong></p>
+
+<ul>
+  <li><strong>Standart Hata Ölçümü (SEM):</strong> Denge bozukluğu olan ve olmayan toplumda yaşayan yetişkinler için SEM değeri 3.21 olarak hesaplanmıştır. Parkinson hastalığı için SEM değeri 2.35 olarak hesaplanmıştır.</li>
+  <li><strong>Minimum Saptanabilir Değişim (MDC):</strong> Parkinson hastalığı için MDC değeri 6.5 olarak hesaplanmıştır.</li>
+  <li><strong>Kesme Puanları:</strong> Parkinson hastalığında, bir bireyi düşen veya düşmeyen olarak tanımlamak için %69 kesme puanı (duyarlılık = 0.84, özgüllük = 0.76, LR+ = 3.49, LR- = 0.21, AUC = 0.85) kullanılmıştır. BESTest’in duyarlılığı, Fonksiyonel Yürüyüş Değerlendirmesi ve Berg Denge Ölçeği’ne kıyasla daha yüksektir. %69 kesme puanı, geriye dönük düşenleri tespit etmek için yeterlidir (duyarlılık = 0.84, özgüllük = 0.76, LR+ = 3.49, LR- = 0.21, AUC = 0.84). 6 aylık olası düşenleri tahmin etmek için yeterlidir (duyarlılık = 0.93, özgüllük = 0.84, LR+ = 5.81, LR- = 0.08, AUC = 0.89). 12 aylık olası düşmeleri tahmin etmek için zayıftır (duyarlılık = 0.46, özgüllük = 0.74, LR+ = 1.77, LR- = 0.73, AUC = 0.68).</li>
+  <li><strong>Test/Retest Güvenilirliği:</strong> Parkinson hastalığında, toplam BEST puanı için test-tekrar test güvenilirliği mükemmeldir (ICC = 0.88). Testin bölümleri için test-tekrar test güvenilirliği yeterli ila mükemmeldir (ICC = 0.63-0.87).</li>
+  <li><strong>Araştırmacılar Arası/İçi Güvenilirlik:</strong> Parkinson hastalığında, toplam puan için araştırmacılar arası güvenilirlik mükemmeldir (ICC = 0.96, %95 CI = 0.89-0.99). Alt bölümlerin araştırmacılar arası güvenilirliği ICC= 0.79-0.96 arasında değişmektedir.</li>
+  <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong> Parkinson hastalığında, toplam BESTest ve ABC arasında mükemmel korelasyon vardır (r = 0.757). Toplam BESTest ve Berg Denge Ölçeği arasında mükemmel korelasyon vardır (r = 0.873). Toplam BESTest ve Fonksiyonel Yürüyüş Değerlendirmesi arasında mükemmel korelasyon vardır (r = 0.882).</li>
+  <li><strong>Yapı Geçerliliği:</strong> Parkinson hastalığında, Modifiye Hoehn ve Yahr Ölçeği (r = -0.736), MDS-UPDRS-3 (r = -0.758), MDS-UPDRS (r = -0.780) ile mükemmel korelasyon vardır. Düşenleri düşmeyenlerden ayırır (puanlar &lt; 69%) duyarlılık %84, Özgüllük %76, eğri altındaki alan 0.84.</li>
+  <li><strong>Zemin/Tavan Etkileri:</strong> Parkinson hastalığında, tavan etkisi yoktur (mükemmel puan yok, sadece deneklerin %6.4’ü en üst %10’da puan aldı; Özgüllük = 0.76; Örnek BesTest puanları, H&amp;Y hastalık şiddeti aralığını temsil eden normal olarak dağılmıştır). BESTest ile zemin etkisi gözlenmemiştir.</li>
+</ul>
+
+<p><strong>İnme:</strong></p>
+
+<ul>
+  <li><strong>Standart Hata Ölçümü (SEM):</strong> Subakut inme için SEM değeri 2.819 olarak hesaplanmıştır.</li>
+  <li><strong>Minimum Saptanabilir Değişim (MDC):</strong> Subakut inme için MDC değeri 7.81 olarak hesaplanmıştır.</li>
+  <li><strong>Kesme Puanları:</strong> Subakut inmede, aşağıdaki kesme puanları yüksek fonksiyonel yeteneği düşük fonksiyonel yetenekten ayırmaya yardımcı olur: &gt;%49 yüksek fonksiyonel yeteneği gösterir. Mini-Best &gt; 9 yüksek fonksiyonel yeteneği gösterir. BBS &gt; 19 yüksek fonksiyonel yeteneği gösterir.</li>
+  <li><strong>Araştırmacılar Arası/İçi Güvenilirlik:</strong> Subakut inmede araştırmacılar arası güvenilirlik mükemmeldir: ICC= .99. Alt bölüm ICC’leri = .95 - .99. Araştırmacılar içi güvenilirlik mükemmeldir: ICC= .99. Alt bölüm ICC’leri = .87 - .98.</li>
+  <li><strong>Kriter Geçerliliği (Yordama):</strong> Subakut inmede yüksek veya düşük fonksiyonel yeteneği sınıflandırmada yeterli duyarlılık (%71.4). Yüksek veya düşük fonksiyonel yeteneği sınıflandırmada yüksek özgüllük (%91.4). Yüksek veya düşük fonksiyonel yeteneği sınıflandırmada orta pozitif olabilirlik oranı (LR+) (8.33). Yüksek veya düşük fonksiyonel yeteneği sınıflandırmada orta negatif olabilirlik oranı (LR-) (0.31).</li>
+  <li><strong>Yapı Geçerliliği:</strong> Subakut inmede BBS ile mükemmel korelasyon vardır (r = 0.96). PASS ile mükemmel korelasyon vardır (r = 0.96). CB&amp;B ile mükemmel korelasyon vardır (r = 0.91). Mini-BEST ile mükemmel korelasyon vardır (r = 0.96).</li>
+  <li><strong>Zemin/Tavan Etkileri:</strong> Subakut inmede BESTest ile zemin etkisi gözlenmemiştir. Subakut inmede tavan etkisi gözlenmemiştir.</li>
+</ul>
+
+<p>Chinsongkram, B., Chaikeeree, N., et. al. (2014). Reliability and validity of the Balance Evaluation Systems Test (BESTest) in people with subacute stroke. Physical Therapy 94(11), 1632-1643.
+Duncan, R. P., Leddy, A. L., et al. (2012). “Accuracy of fall prediction in Parkinson disease: six-month and 12-month prospective analyses.” Parkinsons Dis 2012: 237673.
+Duncan, R. P., Leddy, A. L., et al. (2013). “Comparative utility of the BESTest, Mini-BESTest, and Brief-BESTest for predicting falls in individuals with Parkinson disease: a cohort study.” Physical therapy 93(4): 542-550.
+Franchignoni, F., Horak, F., et al. (2010). “Using psychometric techniques to improve the Balance Evaluation System’s Test: the mini-BESTest.” Journal of rehabilitation medicine: official journal of the UEMS European Board of Physical and Rehabilitation Medicine 42(4): 323.
+Franchignoni, F., Horak, F., et al. (2010). “Using psychometric techniques to improve the Balance Evaluation Systems Test: the mini-BESTest.” J Rehabil Med 42(4): 323-331.
+Horak, F. B., Wrisley, D. M., et al. (2009). “The Balance Evaluation Systems Test (BESTest) to differentiate balance deficits.” Physical Therapy 89(5): 484-498.
+Horak, F. B., Wrisley, D. M., et al. (2009). “The Balance Evaluation Systems Test (BESTest) to differentiate balance deficits.” Phys Ther 89(5): 484-498.
+Jacobs, JV. &amp; Kasser, SL, (2012). Balance impairment in people with multiple sclerosis: Preliminary evidence for the Balance Evaluation Systems Test.Gait &amp; Posture 36: 414-418.
+Leddy, A. L., Crowner, B. E., et al. (2011). “Functional gait assessment and balance evaluation system test: reliability, validity, sensitivity, and specificity for identifying individuals with Parkinson disease who fall.” Physical Therapy 91(1): 102-113.
+Leddy, A. L., Crowner, B. E., et al. (2011). “Functional gait assessment and balance evaluation system test: reliability, validity, sensitivity, and specificity for identifying individuals with Parkinson disease who fall.” Phys Ther 91(1): 102-113.
+Leddy, A. L., Crowner, B. E., et al. (2011). “Utility of the Mini-BESTest, BESTest, and BESTest sections for balance assessments in individuals with Parkinson disease.” J Neurol Phys Ther 35(2): 90-97.
+Padgett, P. K., Jacobs, J. V., et al. (2012). “Is the BESTest at its best? A suggested brief version based on interrater reliability, validity, internal consistency, and theoretical construct.” Physical therapy 92(9): 1197-1207.
+Potter, K., Aderberg, L., Anderson, D., Bauer, B., Beste, M., Navrat, S., Kohia, M. (2018). “Reliability, validity, and responsiveness of the Balance Evaluation Systems Test (BESTest) in individuals with multiple sclerosis. Physiotherapy 104: 142-148.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="http://bestest.us/" target="_blank" rel="noopener noreferrer">http://bestest.us/</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Horak, F. B., Wrisley, D. M., et al. (2009). "The Balance Evaluation Systems Test (BESTest) to differentiate balance deficits." Physical Therapy 89(5): 484-498.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

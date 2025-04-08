@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>2 Dakika Yürüme Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">2 Dakika Yürüme Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">2 Minute Walk Test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> 2MWT</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Yürüme enduransını değerlendirir; iki dakikalık süre içinde yürünen mesafeyi ölçer.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Omurilik Yaralanması, Pulmoner Hastalıklar, Yaşlı Yetişkinler, Multiple Skleroz (MS), Alt Ekstremite Amputasyonu, Beyin Hasarı, Parkinson Hastalığı (pratik etkisi?), Kardiyak Cerrahi sonrası.</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 2 dakika içinde yürünen toplam mesafe metre veya feet cinsinden kaydedilir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Omurilik Yaralanması (SCI)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Amputasyon</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Beyin Hasarı (TBI, ABI)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>2 Dakika Yürüme Testi (2MWT), bireyin belirli bir süre içinde kat edebildiği maksimum mesafeyi ölçerek yürüme enduransını ve fonksiyonel kapasitesini değerlendiren basit bir testtir. Genellikle 6 Dakika Yürüme Testi’nin (6MWT) daha kısa bir versiyonu olarak kullanılır ve özellikle daha düşük fonksiyonel seviyedeki veya daha çabuk yorulan hastalar için daha uygun olabilir.</p>
+
+<p>Test sırasında bireyden, 2 dakikalık süre boyunca normal hızında, güvenli bir şekilde mümkün olduğunca uzağa yürümesi istenir. Yardımcı cihazlar (baston, yürüteç vb.) kullanılabilir, ancak testler arasında tutarlı olmalıdır. Bireyin başka bir kişiden fiziksel yardım almadan yürüyebilmesi gerekir. NIH Toolbox gibi bazı standart protokoller, Amerikan Toraks Derneği’nin 6MWT talimatlarından uyarlanmıştır.</p>
+
+<ul>
+  <li>Kronometre</li>
+  <li>İşaretlenmiş yürüme parkuru (genellikle düz bir koridor, uzunluğu bilinen - örn. NIH Toolbox 50 ft/15.24m kullanmış)</li>
+  <li>(Gerekirse) Sandalye (dinlenme için)</li>
+  <li>Kayıt formu ve kalem/kurşun kalem.</li>
+</ul>
+
+<p>Standart protokoller (örn. ATS yönergelerinden uyarlananlar) takip edilmelidir:</p>
+
+<ol>
+  <li>Hastaya testin amacı açıklanır: “Bu testte, 2 dakika boyunca normal hızınızda ne kadar mesafe yürüyebileceğinizi ölçeceğiz.”</li>
+  <li>Hasta başlangıç çizgisine getirilir.</li>
+  <li>“Başla” komutuyla birlikte kronometre başlatılır ve hasta yürümeye başlar.</li>
+  <li>Hasta yorulursa durup dinlenebilir, ancak kronometre devam eder.</li>
+  <li>Standart teşvik cümleleri kullanılabilir (örn. “İyi gidiyorsunuz”, “Zamanın yarısı bitti”).</li>
+  <li>2 dakika sonunda “Dur” komutu verilir ve hastanın durduğu noktadaki mesafe kaydedilir. Dönüşler yapıldıysa, bunlar da mesafeye dahil edilir.</li>
+</ol>
+
+<p><strong>Önemli Not:</strong> Parkinson hastalığı olan bireylerde, test sonucunu etkileyebilecek bir pratik etkisi (testi tekrarladıkça performansın artması) gözlemlenmiştir. Bu nedenle 2-3 deneme yapılması önerilebilir (Light et al., 1997).</p>
+
+<ul>
+  <li>Tek bir skor elde edilir: 2 dakika içinde yürünen <strong>toplam mesafe</strong> (genellikle metre cinsinden).</li>
+</ul>
+
+<p>Yürünen mesafe, bireyin submaksimal aerobik kapasitesi ve yürüme enduransı hakkında bilgi verir. Skorlar, yaş, cinsiyet, boy ve tanıya göre oluşturulmuş normatif verilerle karşılaştırılabilir veya hastanın zaman içindeki değişimini izlemek için kullanılabilir.</p>
+
+<ul>
+  <li><strong>Amputasyon:</strong> 113 metreden fazla yürüme mesafesi, toplum içinde bağımsız yürüme potansiyeli ile ilişkilendirilmiştir (Reid et al, 2015).</li>
+  <li><strong>MS:</strong> Yürüme mesafesi hastalık şiddeti (EDSS skoru) ile ters orantılıdır.</li>
+  <li><strong>Yaşlı Yetişkinler:</strong> Uzun süreli bakımda kalanlarda (ortalama 77.5 m), bağımsız yaşayanlara (ortalama 150.4 m) göre daha düşük mesafeler bulunmuştur (Connelly &amp; Thomas, 2009).</li>
+</ul>
+
+<p>Skorlar, rehabilitasyon hedeflerini belirlemek ve müdahalenin etkinliğini değerlendirmek için kullanılabilir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> Alt ekstremite amputasyonu, yaşlı yetişkinler ve nörolojik bozukluğu olan hastalarda <strong>Mükemmel</strong> bulunmuştur (ICC = 0.83 - 0.97). KOAH hastalarında da çok yüksek korelasyon (r = 0.9994) rapor edilmiştir. MS popülasyonunda ise <strong>Zayıf</strong> bulunmuştur (Gijbels et al, 2010).</li>
+      <li><strong>Değerlendiriciler Arası:</strong> Transtibial amputasyonlularda <strong>Mükemmel</strong> (ICC = 0.98-0.99). MS popülasyonunda <strong>Zayıf</strong> bulunmuştur.</li>
+      <li><strong>Değerlendirici İçi:</strong> Transtibial amputasyonlularda <strong>Mükemmel</strong> (ICC = 0.90-0.96). MS popülasyonunda <strong>Zayıf</strong> bulunmuştur.</li>
+      <li><em>Not: MS popülasyonundaki düşük güvenilirlik bulguları dikkat çekicidir ve daha fazla araştırma gerektirebilir.</em></li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong>
+        <ul>
+          <li>6 Dakika Yürüme Testi (6MWT) ile çeşitli popülasyonlarda (Amputasyon, MS, Yaşlılar, KOAH) <strong>Mükemmel</strong> korelasyon göstermiştir (r veya R² = 0.91 - 0.97). Bu, 2MWT’nin 6MWT’nin yerine kullanılabileceğini destekler.</li>
+          <li>Berg Denge Ölçeği (BBS) ve Zamanlı Kalk Yürü Testi (TUG) ile yaşlı yetişkinlerde ve SCI hastalarında <strong>Mükemmel</strong> korelasyon göstermiştir (r = 0.78 - 0.88 veya -0.87).</li>
+          <li>SF-36 fiziksel fonksiyon alt ölçeği ile <strong>Yeterli</strong> korelasyon göstermiştir.</li>
+        </ul>
+      </li>
+      <li><strong>Yapı Geçerliliği:</strong>
+        <ul>
+          <li>Amputasyonlularda Locomotor Capabilities Index (LCI-5) ile <strong>Mükemmel</strong> korelasyon (r = 0.71).</li>
+          <li>MS hastalarında EDSS ve MSWS-12 ile <strong>Yeterli</strong> ile <strong>İyi</strong> arasında korelasyon.</li>
+          <li>Geriatrik rehabilitasyon hastalarında FIM ve Modified Barthel Index ile <strong>Yeterli</strong> korelasyon.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Yanıt Verebilirlik (Değişime Duyarlılık):</strong>
+    <ul>
+      <li>Alt ekstremite amputasyonu sonrası rehabilitasyon ile değişime duyarlı olduğu bulunmuştur.</li>
+      <li>Geriatrik rehabilitasyon hastalarında standardize yanıt ortalaması (SRM) 0.7 olarak bulunmuştur (orta düzeyde duyarlılık).</li>
+    </ul>
+  </li>
+  <li><strong>Tolerabilite:</strong> Özellikle yatan geriatrik rehabilitasyon popülasyonunda 6MWT’ye göre daha tolere edilebilir olduğu rapor edilmiştir (Brooks et al, 2007).</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Brooks, D., Davis, A. M., et al. (2006). “Validity of 3 physical performance measures in inpatient geriatric rehabilitation.” Arch Phys Med Rehabil 87(1): 105-110.
+… (diğer tüm referanslar) …
+White, D. K., Wagenaar, R. C., et al. (2009). “Changes in walking activity and endurance following rehabilitation for people with Parkinson disease.” Arch Phys Med Rehabil 90(1): 43-50.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> </p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

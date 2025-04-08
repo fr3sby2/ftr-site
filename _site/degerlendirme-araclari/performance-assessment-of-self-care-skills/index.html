@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Öz Bakım Becerileri Performans Değerlendirmesi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Öz Bakım Becerileri Performans Değerlendirmesi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Performance Assessment of Self-Care Skills</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> PASS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">PASS, performansa dayalı, ölçüt referanslı ve danışan merkezli bir gözlem aracıdır. Amaç, çeşitli GYA ve BGYA'lardaki performansı değerlendirerek, danışanın toplumda bağımsız ve güvenli bir şekilde yaşama yeteneğinin bütüncül bir anlık görüntüsünü (kişi-görev-ortam) elde etmektir. Bağımsızlık, yeterlilik ve güvenlik dört puanlık ölçeklerde derecelendirilir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Akciğer Hastalıkları, Parkinson Hastalığı, Osteoartrit, Yaşlı Yetişkinler ve Geriatrik Bakım, Spesifik Olmayan Hasta Popülasyonu, Alzheimer Hastalığı ve İlerleyici Demans, Zihinsel Engellilik</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Her alt görev, 0-3 arası bir ölçekte bağımsızlık, güvenlik ve yeterlilik açısından derecelendirilir. Daha yüksek bir puan, daha fazla bağımsızlık, güvenlik veya yeterliliği gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Motor Kontrol / Beceri</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Demans / Alzheimer</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>translator: &lt;Oluşturan: Yapay Zeka&gt;</p>
+
+<p>PASS (Öz Bakım Becerileri Performans Değerlendirmesi), bireyin Günlük Yaşam Aktiviteleri (GYA) ve Aletli Günlük Yaşam Aktivitelerindeki (AGYA) performansını değerlendirerek, toplum içinde bağımsız ve güvenli bir şekilde yaşama yeteneğini belirlemeyi amaçlayan, performansa dayalı bir değerlendirme aracıdır. Bağımsızlık, yeterlilik ve güvenlik gibi faktörler dört puanlık ölçeklerde değerlendirilir. Değerlendirme, klinik ve ev ortamlarında uygulanabilen iki farklı versiyona sahiptir ve değerlendirici, bireyin ihtiyaçlarına göre görevleri seçebilir veya yeni görevler oluşturabilir.</p>
+
+<p>Çeşitli ev eşyaları gereklidir.</p>
+
+<p>PASS, dört farklı alanda toplam 26 görevden oluşur: Fonksiyonel mobilite (5), Temel Günlük Yaşam Aktiviteleri (3), Fiziksel ağırlıklı Enstrümental Günlük Yaşam Aktiviteleri (4) ve Bilişsel ağırlıklı Enstrümental Günlük Yaşam Aktiviteleri (14). Değerlendirme, 163 ölçüt referanslı alt görev içerir.</p>
+
+<p>Her bir alt görev, bağımsızlık, güvenlik ve yeterlilik açısından 0-3 arasında bir ölçekte puanlanır. Daha yüksek puanlar, daha fazla bağımsızlık, güvenlik veya yeterlilik anlamına gelir.</p>
+
+<p>Değerlendirme sırasında, terapist nesnelerin yerleştirilmesi ve sözlü talimatlar dahil olmak üzere standardize edilmiş bir yaklaşım kullanır. Danışan görevi gerçekleştirmeye çalışır ve terapist yalnızca gerektiğinde yardım sağlar. En az yardımcı olacak ipuçları, daha yardımcı olan ipuçlarından önce kullanılır. İpuçlarının sıklığı ve yardım türleri, müdahale planlamasına yardımcı olmak için kaydedilir.</p>
+
+<p>PASS’ın iki versiyonu mevcuttur: klinik versiyonu ve ev versiyonu. Ev versiyonu, görevler için danışanın kendi malzemelerini kullanması dışında neredeyse aynıdır.</p>
+
+<p>Her alt görev için bağımsızlık, güvenlik ve yeterlilik puanları belirlenir.</p>
+
+<ul>
+  <li><strong>Bağımsızlık puanları:</strong> Hem ihtiyaç duyulan yardım düzeyine hem de istemlerin sıklığına bağlıdır. Görev için bağımsızlık, her bir alt görev için bağımsızlık puanlarının ortalamasıdır.</li>
+  <li><strong>Güvenlik puanı:</strong> Danışan veya çevre için riskleri hesaba katar. Görev için güvenlik puanı, o görevdeki herhangi bir alt görev için gözlemlenen en düşük güvenlik puanıdır.</li>
+  <li><strong>Yeterlilik puanı:</strong> Görevin gerçekleştirilme verimliliğini ve ürünün kalitesini hesaba katar. Görev için yeterlilik puanı, o görevdeki herhangi bir alt görev için gözlemlenen en düşük yeterlilik puanıdır.</li>
+</ul>
+
+<p>PASS değerlendirmesinin uygulanması uzun zaman alabilir. Yönetici için herhangi bir sertifika bulunmamaktadır.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li><strong>Test-Tekrar Test Güvenilirliği:</strong> Demans, Depresyon ve Kalp Yetmezliği olan bireylerde Klinik ve Ev versiyonları için Bağımsızlık, Güvenlik ve Yeterlilik için mükemmel test-tekrar test güvenilirliği bulunmuştur (ICC = 0.82 ile 0.97 arasında değişen değerler).</li>
+  <li><strong>Gözlemciler Arası Güvenilirlik:</strong> Demans, Depresyon ve Kalp Yetmezliği olan bireylerde gözlemciler arası güvenilirlik, bağımsızlık, güvenlik ve yeterlilik için klinik ve ev versiyonları için yüksek düzeyde bulunmuştur (ortalama kappa değerleri 0.29 ile 0.43 arasında değişen değerlerle %88 ile %97 arasında anlaşma yüzdesi). Parkinson hastalığı olan demansı olmayan bireylerde Bağımsızlık için %95, Yeterlilik için %92 ve Güvenlik için %91 olarak bulunmuştur. Amnestik Hafif Bilişsel Bozukluğu (a-MCI) olan bireylerde tüm görevler için mükemmel gözlemciler arası güvenilirlik bulunmuştur (&gt;=%93 anlaşma).</li>
+  <li>
+    <p><strong>İç Tutarlılık:</strong> Bilişsel ve/veya Fiziksel Engelliliği olan bireylerde Fonksiyonel Mobilite, Fiziksel Enstrümental Günlük Yaşam Aktiviteleri (PIADL) ve Bilişsel Enstrümental Günlük Yaşam Aktiviteleri (CIADL) için mükemmel iç tutarlılık bulunmuştur (Cronbach alfa = 0.904 ile 0.951 arasında değişen değerler). Temel Günlük Yaşam Aktiviteleri (BADL) için yeterli iç tutarlılık bulunmuştur (Cronbach alfa = 0.755 ile 0.787 arasında değişen değerler).
+<strong>Geçerlilik:</strong></p>
+  </li>
+  <li><strong>Yapı Geçerliliği:</strong> PASS Bağımsızlık verilerinin, Rasch Modeli için tek boyutluluk kriterlerini karşılayan baskın bir yapıya sahip olduğu belirlenmiştir. Bilişsel ve/veya Fiziksel Engelliliği olan bireylerde, 80 yaş ve üzeri bireylerin tüm alanlarda ve yapılarda daha düşük puanlara sahip olduğu bulunmuştur.</li>
+  <li><strong>İçerik Geçerliliği:</strong> Yazarlar, PASS’ın içerik geçerliliğinin OARS Çok Boyutlu Fonksiyonel Değerlendirme Anketi: Günlük Yaşam Aktiviteleri (Pfeiffer 1975), Kapsamlı Değerlendirme ve Yönlendirme Değerlendirmesi (Gurland ve diğerleri, 1977), Fiziksel Öz Bakım ve Enstrümental Öz Bakım Ölçeği (Lawton ve diğerleri, 1982) ve Fonksiyonel Değerlendirme Anketi (Pfeffer 1987)’ne dayandığını belirtmektedir.</li>
+</ul>
+
+<p>American Occupational Therapy Association. (2014). Selected Assessment Tools for Occupational Therapy Reporting of Outpatient Functional Data (G-Codes and Modifiers) to the Medicare Program. Retrieved from. https://www.aota.org/-/media/Corporate/Files/Advocacy/Reimb/News/AOTAG-CodeChart2013.pdf.
+Chisholm D (2005)
+Disability in older adults with depression.
+(Doctoral dissertation). University of Pittsburgh, Pittsburgh, PA. Available at:
+http://d-scholarship.pitt.edu/9697/1/Chisholmd_etd2005.pdf
+Accessed 03.02.15.
+Chisholm, D., Toto, P., Raina, K., Holm, M., &amp; Rogers, J. (2014). Evaluating capacity to live independently and safely in the community: Performance Assessment of Self-care Skills.
+British Journal Of Occupational Therapy
+,
+77
+(2), 59-63. doi:10.4276/030802214X13916969447038
+Ciro, C. A., Anderson, M. P., Hershey, L. A., Prodan, C. I., &amp; Holm, M.B. (2015). Instrumental activities of daily living performance and role satisfaction in people with and without mild cognitive impairment: A pilot project. American Journal of Occupational Therapy, 69 (3), 1-10.
+http://dx.doi.org/10.5014/ajot.2014.015198
+Ferreira PL, Simões AL, Dourado M, Holm MB, Rogers JC. The Portuguese Performance Assessment of Self-Care Skills Measure: Validity and Reliability. OTJR: Occupational Therapy Journal of Research. 2021;41(4):299-308. doi:10.1177/15394492211021309
+Foster, E. R. (2014). Instrumental Activities of Daily Living Performance Among People With Parkinson’s Disease Without Dementia.
+American Journal Of Occupational Therapy
+,
+68
+(3), 353-362. doi:10.5014/ajot.2014.010330
+Grenier, A., Viscogliosi, C., Delli-Colli, N., Mortenson, W. B., Macleod, H., Lemieux-Courchesne, A.-C., &amp; Provencher, V. (2022). The performance assessment of self-care skills to predict adverse events Post-Discharge.
+Canadian Journal of Occupational Therapy, 89(2),
+190-200, https://doi.org/10.1177/00084174221084459
+Holm, M.B., Rogers, J.C. (2008) The Performance Assessment of Self-Care Skills (PASS). In Hemphill-Pearson BJ ed.
+Assessments in Occupational Therapy Mental Health.
+2nd ed. Thorofare, NJ: SLACK.
+Marks, T. S., Giles, G. M., Al-Heizan, M. O., &amp; Edwards, D. F. (2021). How Well Does the Brief Interview for Mental Status Identify Risk for Cognition Mediated Functional Impairment in a Community Sample?.
+Archives of rehabilitation research and clinical translation
+,
+3
+(1), 100102. https://doi.org/10.1016/j.arrct.2021.100102
+Raina, K., Rogers, J., Holm, M. (2007). Influence of the environment on activity performance in older women with heart failure.
+Disability and Rehabilitation,
+29(7), 545-557 doi: 10.1080/0963828060084 5514
+Rogers, J., Holm, M., Beach S., Schulz R., &amp; Starz, T. (2001). Task Independence, safety, and adequacy among nondisabled and osteoarthritis-disabled older women.
+Arthritis care &amp; research,
+45(5), 410-418.
+Skidmore, E.R., Rogers, J.C., Chandler, L.S., &amp; Holm, L.B. (2006). Dynamic interactions between impairment and activity after stroke: examining the utility of decision analysis methods.
+Clinical rehabilitation,
+20(6), 523-535.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Chisholm, D., Toto, P., Raina, K., Holm, M., & Rogers, J. (2014). Evaluating capacity to live independently and safely in the community: Performance Assessment of Self-care Skills. British Journal Of Occupational Therapy, 77(2), 59-63. doi:10.4276/030802214X13916969447038</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

@@ -1,0 +1,635 @@
+// assets/css/main.scss
+
+// --- Jekyll'in işlemesi için gerekli ---
+---
+---
+
+// ================================================
+// 1. Değişkenler
+// ================================================
+// (Önceki adımdaki değişkenler burada)
+$primary-color:       #0056b3;
+$secondary-color:     #6c757d;
+$light-color:         #f8f9fa;
+$dark-color:          #343a40;
+$white-color:         #ffffff;
+$border-color:        #dee2e6;
+$body-bg:             $white-color;
+$text-color:          $dark-color;
+$link-color:          $primary-color;
+$link-hover-color:    darken($primary-color, 15%);
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:       $font-family-sans-serif;
+$font-size-base:         1rem;
+$font-weight-base:       400;
+$line-height-base:       1.6;
+$h1-font-size:           $font-size-base * 2.25;
+$h2-font-size:           $font-size-base * 1.8;
+$h3-font-size:           $font-size-base * 1.5;
+$h4-font-size:           $font-size-base * 1.25;
+$headings-font-weight:   500;
+$headings-line-height:   1.2;
+$headings-margin-bottom: $spacer * 0.75;
+
+$container-max-width:    1140px;
+$spacer:                 1rem;
+$border-width:           1px;
+$border-radius:          0.375rem;
+
+// ================================================
+// 2. Global Stiller
+// ================================================
+// (Önceki adımdaki global stiller burada)
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: inherit;
+}
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+p { margin-top: 0; margin-bottom: $spacer; }
+ul, ol { margin-top: 0; margin-bottom: $spacer; padding-left: $spacer * 2; }
+img { max-width: 100%; height: auto; vertical-align: middle; }
+hr { margin: $spacer * 1.5 0; border: 0; border-top: $border-width solid $border-color; }
+
+// Ana içerik alanı için varsayılan padding (Default layout'ta .wrapper yerine doğrudan main'e)
+// .page-content {
+//  padding-top: $spacer * 1.5;
+//  padding-bottom: $spacer * 1.5;
+// }
+
+// ================================================
+// 3. Header Stilleri
+// ================================================
+.site-header {
+  border-bottom: $border-width solid $border-color;
+  background-color: $white-color; // Arka planı beyaz yapalım
+  padding-top: $spacer * 0.5; // Biraz padding
+  padding-bottom: $spacer * 0.5;
+  position: sticky; // Sayfa kaydırılınca yukarıda sabit kalsın (isteğe bağlı)
+  top: 0;
+  z-index: 1020; // Diğer öğelerin üzerinde kalması için (Bootstrap navbar z-index'i gibi)
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); // Hafif bir gölge
+
+  .navbar {
+    padding: 0; // Navbar'ın kendi padding'ini sıfırla, header'dan alsın
+    background-color: transparent !important; // Navbar'ın bg-light'ını iptal et
+  }
+
+  .navbar-brand { // Site başlığı/logosu
+    font-size: $font-size-base * 1.5; // Biraz büyütelim
+    font-weight: bold;
+    color: $dark-color; // Koyu renk
+    &:hover {
+      color: $primary-color; // Hover rengi
+    }
+  }
+
+  .nav-link { // Menü linkleri
+    color: $secondary-color; // İkincil gri renk
+    padding-left: $spacer; // Linkler arasına boşluk
+    padding-right: $spacer;
+    font-weight: 500; // Biraz kalın
+    &:hover {
+      color: $primary-color; // Üzerine gelince ana renk
+      text-decoration: none; // Alt çizgiyi kaldır
+    }
+    &.active { // Aktif sayfa linki
+      font-weight: bold;
+      color: $primary-color; // Ana renkte ve kalın
+    }
+  }
+
+  // GitHub ikonu rengi
+  .nav-link svg {
+    fill: $secondary-color; // İkincil renk
+    &:hover {
+      fill: $primary-color; // Hover rengi
+    }
+  }
+}
+
+// ================================================
+// 4. Footer Stilleri
+// ================================================
+.site-footer {
+  border-top: $border-width solid $border-color;
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
+  margin-top: $spacer * 3; // İçerikle footer arasına boşluk
+  background-color: $light-color; // Açık gri arka plan
+  color: $secondary-color; // İkincil metin rengi
+  font-size: 0.9em;
+
+  p {
+    margin-bottom: $spacer * 0.5;
+  }
+  a {
+    color: $secondary-color; // Footer linkleri de gri
+    font-weight: 500;
+    &:hover {
+      color: $primary-color; // Hover'da ana renk
+    }
+  }
+}
+
+// ================================================
+// 5. Ana Sayfa (_layouts/home.html) Özel Stilleri
+// ================================================
+
+.home-hero {
+  background-color: darken($light-color, 3%); // Çok hafif farklı bir arkaplan
+  padding: $spacer * 4 0; // Yukarıdan ve aşağıdan bol boşluk
+  margin-bottom: $spacer * 2.5;
+  text-align: center;
+
+  h1 {
+    font-size: $h1-font-size * 1.2; // Daha büyük ana başlık
+    margin-bottom: $spacer;
+  }
+  .lead { // Alt başlık/açıklama
+    font-size: $font-size-base * 1.2;
+    color: $secondary-color;
+    margin-bottom: $spacer * 2;
+    max-width: 700px; // Çok genişlemesin
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Arama Çubuğu (Bootstrap form elemanları kullanılacak, belki wrapper'a stil)
+.search-container {
+  max-width: 600px; // Arama çubuğu genişliği
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Filtreleme Alanı
+.home-filters {
+  margin-bottom: $spacer * 3;
+  h2 {
+     text-align: center;
+     margin-bottom: $spacer * 1.5;
+     font-size: $h2-font-size * 0.9; // Biraz daha küçük
+     color: $secondary-color;
+  }
+  .filters-wrapper { // _includes/filters-ui.html için genel sarmalayıcı
+     background-color: $white-color; // Beyaz arka plan
+     padding: $spacer * 1.5;
+     border-radius: $border-radius;
+     border: $border-width solid $border-color;
+     // Daha detaylı filtre stilleri buraya veya filters.scss'e eklenebilir
+  }
+}
+
+// Öne Çıkanlar Bölümleri
+.home-featured {
+  margin-bottom: $spacer * 3;
+  h2 {
+     text-align: center;
+     margin-bottom: $spacer * 2;
+     font-size: $h2-font-size;
+  }
+  .grid-container {
+     // Stil zaten aşağıda tanımlı
+  }
+  // "Tümünü Gör" linki
+  p > a {
+      display: block; // Tam satırı kaplasın
+      text-align: center; // Ortala
+      margin-top: $spacer * 1.5;
+      font-weight: 500;
+  }
+}
+
+// Kart Tasarımı (Genel - Önceki adımı geliştiriyoruz)
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacer * 1.5;
+}
+
+.card {
+  border: $border-width solid $border-color;
+  border-radius: $border-radius * 1.5; // Biraz daha yuvarlak köşeler
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04); // Daha hafif başlangıç gölgesi
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  background-color: $white-color;
+  display: flex; // İçeriği dikey hizalamak için
+  flex-direction: column;
+
+  img { // Hastalık kartlarındaki resimler için
+    border-top-left-radius: $border-radius * 1.5;
+    border-top-right-radius: $border-radius * 1.5;
+    object-fit: cover; // Resim orantısızsa kırp
+    // aspect-ratio: 16 / 9; // Sabit oran (isteğe bağlı)
+    max-height: 150px; // Maksimum yükseklik (isteğe bağlı)
+  }
+
+  .card-body { // Bootstrap class'ı veya kendi sarmalayıcımız
+    padding: $spacer * 1.25;
+    flex-grow: 1; // Kartın alt kısmını itsin
+  }
+
+  h3 { // Kart başlığı
+    font-size: $h4-font-size; // Daha uygun bir boyut
+    margin-bottom: $spacer * 0.5;
+    margin-top: 0;
+  }
+
+  h3 a {
+     color: $text-color;
+     text-decoration: none;
+     &:hover {
+        color: $link-color;
+     }
+  }
+
+  p { // Kart açıklaması
+     font-size: 0.9em;
+     color: $secondary-color;
+     margin-bottom: 0; // Son elemansa alt boşluğu kaldır
+  }
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+  }
+}
+
+// Etiket Stilleri (Tekrar, değişiklik yok)
+.tag {
+    display: inline-block;
+    background-color: lighten($secondary-color, 35%);
+    color: darken($secondary-color, 20%);
+    padding: 0.25em 0.7em;
+    margin: 0.2em;
+    border-radius: $border-radius;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.tag-alan { background-color: #e0f7fa; color: #006064; }
+.tag-populasyon { background-color: #fff3e0; color: #e65100; }
+.tag-arac-tipi { background-color: #e8f5e9; color: #1b5e20; }
+
+
+// ================================================
+// 6. Liste Sayfaları Stilleri (tum-araclar, hastaliklar-genel)
+// ================================================
+
+.page-content { // Sayfanın genel içeriği için biraz üst boşluk ekleyelim
+  padding-top: $spacer * 1.5;
+}
+
+// Liste sayfalarındaki ana başlık (H1)
+.assessment-list-page h1, // Bu class'ları ilgili .md dosyasına ekleyebiliriz (opsiyonel)
+.disease-list-page h1 {
+  text-align: center; // Başlığı ortala
+  margin-bottom: $spacer * 2; // Altına daha fazla boşluk
+}
+
+// Liste sayfalarındaki açıklama paragrafı
+.assessment-list-page p:first-of-type,
+.disease-list-page p:first-of-type {
+  text-align: center; // Açıklamayı ortala
+  color: $secondary-color; // İkincil renk
+  font-size: $font-size-base * 1.1; // Biraz büyük
+  margin-bottom: $spacer * 2.5; // Altına daha fazla boşluk
+  max-width: 800px; // Genişliği sınırla
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Filtreleme Arayüzü (Eğer liste sayfasına eklersek)
+.assessment-list-page .filters-wrapper {
+  margin-top: $spacer * 2;
+  margin-bottom: $spacer * 2.5;
+}
+
+// Liste kartları (Mevcut .card stilleri zaten uygulanıyor)
+.assessment-list .card,
+.disease-list .card {
+  // Buraya sadece liste sayfalarına özgü ek kart stilleri eklenebilir
+  // Örneğin, belki biraz daha küçük kartlar veya farklı bir hover efekti?
+  // Şimdilik ana sayfadaki stiller yeterli olabilir.
+}
+
+// Hastalık kartlarındaki resimler için ek ayar (opsiyonel)
+.disease-list .card img {
+  // aspect-ratio: 4 / 3; // Sabit bir oran belirleyebiliriz
+}
+
+// Liste sayfalarında sayfalama (pagination) eklersek onun stilleri buraya gelir
+// .pagination { ... }
+
+
+// ================================================
+// 7. Detay Sayfaları Stilleri (assessment.html, disease.html)
+// ================================================
+
+// Genel Makale Yapısı
+.assessment,
+.disease {
+  .assessment-header,
+  .disease-header {
+    margin-bottom: $spacer * 1.5;
+    padding-bottom: $spacer;
+    border-bottom: $border-width solid $border-color; // Başlık altına çizgi
+  }
+
+  .assessment-title,
+  .disease-title {
+    font-size: $h1-font-size * 0.9; // Ana başlık biraz daha küçük olabilir
+    margin-bottom: $spacer * 0.25;
+  }
+
+  .assessment-original-title,
+  .disease-common-name { // Alt başlıklar
+    font-style: italic;
+    color: $secondary-color;
+    margin-bottom: $spacer * 0.75;
+  }
+
+  // Meta Bilgiler (Amaç, Popülasyon vb.)
+  .assessment-meta,
+  .disease-summary {
+    background-color: lighten($light-color, 2%); // Çok hafif farklı arkaplan
+    padding: $spacer * 1.25;
+    border-radius: $border-radius;
+    margin-bottom: $spacer * 2;
+    border: $border-width solid $border-color;
+    font-size: 0.95em; // Biraz daha küçük font
+
+    p {
+      margin-bottom: $spacer * 0.75; // Paragraflar arası boşluk
+      &:last-child {
+        margin-bottom: 0; // Son paragrafın alt boşluğunu kaldır
+      }
+    }
+    strong { // "Amaç:", "Hedef Popülasyon:" gibi başlıklar
+      color: $text-color;
+      margin-right: 0.5em;
+    }
+
+    // Meta içindeki etiketler (assessment sayfasında)
+    .filter-tags-display {
+      margin-top: $spacer;
+      padding-top: $spacer * 0.75;
+      border-top: $border-width dashed $border-color; // Etiketleri ayır
+    }
+  }
+
+  // Hastalık özetindeki resim
+  .disease-summary img {
+      border-radius: $border-radius;
+      margin-top: $spacer * 0.5;
+   }
+
+
+  // Ana İçerik Alanı
+  .assessment-content,
+  .disease-content {
+    h2 { // İçerikteki Ana Başlıklar (örn. ## Açıklama)
+      font-size: $h2-font-size * 0.95;
+      margin-top: $spacer * 2;
+      margin-bottom: $spacer;
+      padding-bottom: $spacer * 0.4;
+      border-bottom: $border-width solid lighten($border-color, 5%); // Daha hafif alt çizgi
+      color: $primary-color; // Ana renkte yapalım
+    }
+
+    h3 { // İçerikteki Alt Başlıklar (örn. ### Madde 1)
+      font-size: $h3-font-size * 0.95;
+      margin-top: $spacer * 1.5;
+      margin-bottom: $spacer * 0.75;
+      font-weight: 500; // Normalden biraz daha kalın
+    }
+
+    // Paragraflar arası boşluk zaten global ayarlardan geliyor
+    // Listeler arası boşluk zaten global ayarlardan geliyor
+
+    // Varsa tablolar için temel stil (Bootstrap class'ları da kullanılabilir)
+    table {
+      width: 100%;
+      margin-bottom: $spacer;
+      border-collapse: collapse;
+      th, td {
+        padding: $spacer * 0.75;
+        border: $border-width solid $border-color;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background-color: $light-color;
+        font-weight: $headings-font-weight;
+      }
+    }
+
+     // Varsa kod blokları için stil
+    pre, code {
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.9em;
+      background-color: $light-color;
+      padding: $spacer * 0.25 $spacer * 0.5;
+      border-radius: $border-radius * 0.5;
+    }
+    pre {
+      padding: $spacer;
+      overflow-x: auto; // Uzun kodlar için yatay kaydırma
+    }
+
+  } // .assessment-content, .disease-content sonu
+
+  // Kaynakça/Footer Bölümü
+  .assessment-footer,
+  .related-assessments, // Hastalık sayfasındaki ilgili araçlar bölümü
+  .disease .post-nav { // Sayfa altındaki navigasyon linkleri
+    margin-top: $spacer * 2.5;
+    padding-top: $spacer * 1.5;
+    border-top: $border-width solid $border-color;
+    font-size: 0.9em;
+
+    h2, h3 { // Bu bölümlerdeki başlıklar
+      font-size: $h4-font-size; // Daha küçük
+      color: $secondary-color;
+      margin-bottom: $spacer;
+    }
+  }
+
+} // .assessment, .disease sonu
+
+
+// ================================================
+// 8. Duyarlılık (Responsive) Ayarları
+// ================================================
+
+// Bootstrap'ın breakpoint'lerini (kırılma noktalarını) kullanabiliriz veya kendi breakpoint'lerimizi tanımlayabiliriz.
+// Bootstrap 5 Breakpoint'leri (yaklaşık): sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px
+
+// --- Orta ve Daha Küçük Ekranlar (Tablet ve altı - md breakpoint'i ~768px) ---
+@media (max-width: 767.98px) {
+  body {
+    font-size: 0.95rem; // Mobil cihazlarda fontu hafif küçültelim
+  }
+
+  h1 { font-size: $h1-font-size * 0.85; }
+  h2 { font-size: $h2-font-size * 0.9; }
+  h3 { font-size: $h3-font-size * 0.9; }
+
+  // İçerik yan boşluklarını azalt
+  .wrapper, // Eğer kullanıyorsak
+  .container, // Bootstrap container
+  .page-content .wrapper { // Daha spesifik seçici
+    padding-left: $spacer * 0.75;
+    padding-right: $spacer * 0.75;
+  }
+
+  // Header'daki boşlukları azalt (isteğe bağlı)
+  .site-header {
+     padding-top: $spacer * 0.3;
+     padding-bottom: $spacer * 0.3;
+     margin-bottom: $spacer * 1.5; // İçerikle arasını azalt
+  }
+   // Mobil menü açıldığında (Bootstrap class'ları)
+   .navbar-collapse {
+     margin-top: $spacer * 0.5; // Açılan menünün üstüne boşluk
+     border-top: $border-width solid $border-color; // Üstüne çizgi
+     background-color: $light-color; // Arka plan rengi
+     padding: $spacer; // İç boşluk
+   }
+   .navbar-nav .nav-item { // Mobil menüdeki her bir link
+      margin-bottom: $spacer * 0.5; // Alt alta boşluk
+   }
+
+
+  // Ana Sayfa Hero alanı boşluklarını azalt
+  .home-hero {
+    padding: $spacer * 2.5 0;
+    h1 { font-size: $h1-font-size * 1.1; } // Mobilde de biraz büyük kalsın
+    .lead { font-size: $font-size-base * 1.1; }
+  }
+
+  // Kart grid boşluğunu azalt
+  .grid-container {
+    gap: $spacer;
+    grid-template-columns: 1fr; // Küçük ekranlarda tek sütun yapalım
+  }
+
+  // Footer boşluklarını azalt
+  .site-footer {
+    padding-top: $spacer * 1.5;
+    padding-bottom: $spacer * 1.5;
+    margin-top: $spacer * 2;
+  }
+
+   // Detay sayfalarındaki meta kutusu padding'ini azalt
+  .assessment-meta,
+  .disease-summary {
+    padding: $spacer;
+  }
+
+  // Detay sayfalarındaki içerik başlıklarının üst boşluklarını azalt
+  .assessment-content h2,
+  .disease-content h2 {
+    margin-top: $spacer * 1.5;
+  }
+  .assessment-content h3,
+  .disease-content h3 {
+    margin-top: $spacer * 1;
+  }
+
+} // @media (max-width: 767.98px) sonu
+
+// --- Sadece Çok Küçük Ekranlar (sm breakpoint'i ~576px) ---
+@media (max-width: 575.98px) {
+   body {
+      font-size: 0.9rem; // Daha da küçült
+   }
+   h1 { font-size: $h1-font-size * 0.75; }
+   h2 { font-size: $h2-font-size * 0.8; }
+
+   .home-hero {
+    padding: $spacer * 2 0;
+   }
+
+   // Mobil navbarda marka (başlık) ortalansın mı? (İsteğe bağlı)
+   // .navbar-brand { margin-right: auto; margin-left: auto; }
+   // .navbar-toggler { position: absolute; right: 15px; } // Butonu kenara al
+}
+
+// ================================================
+// 9. İnce Ayarlar ve Yardımcı Class'lar
+// ================================================
+
+// Metin Hizalama Yardımcıları (Bootstrap zaten sağlar ama örnek)
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+
+// Boşluk Yardımcıları (Bootstrap zaten m-*, p-* ile sağlar ama örnek)
+.mb-1 { margin-bottom: $spacer * 0.5 !important; }
+.mb-2 { margin-bottom: $spacer !important; }
+.mt-1 { margin-top: $spacer * 0.5 !important; }
+.mt-2 { margin-top: $spacer !important; }
+// ...vb.
+
+// Vurgulu metin
+.highlight {
+  background-color: lighten(yellow, 30%);
+  padding: 0.1em 0.3em;
+}
+
+// Buton Stilleri (Eğer Bootstrap butonlarını özelleştirmek isterseniz)
+// .btn-primary {
+//   background-color: $primary-color;
+//   border-color: $primary-color;
+//   &:hover {
+//     background-color: darken($primary-color, 10%);
+//     border-color: darken($primary-color, 10%);
+//   }
+// }
+
+// Temizlik: Gereksiz tarayıcı varsayılanlarını sıfırlama (normalize.css benzeri)
+// (Bootstrap zaten bunun çoğunu yapar)
+// Örneğin: button, input vb. için temel stiller
+button,
+input,
+select,
+textarea {
+  font-family: inherit; // body'den fontu al
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// --- Stil dosyasının sonu ---

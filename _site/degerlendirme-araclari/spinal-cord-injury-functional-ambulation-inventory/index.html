@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Omurilik Yaralanması Fonksiyonel Ambulasyon Envanteri - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Omurilik Yaralanması Fonksiyonel Ambulasyon Envanteri</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Spinal Cord Injury Functional Ambulation Inventory</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> SCI-FAI</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Omurilik yaralanması (OY) sonrası yürüyebilen bireylerde fonksiyonel yürüme yeteneğini değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Omurilik Yaralanması (Yürüyebilenler - Ambulatory).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 3 alt ölçekten oluşur: 1) Yürüme Parametreleri (Gait Parameters - maks 20 puan, her bacak için 6 parametre değerlendirilir), 2) Yardımcı Cihaz (Assistive Device - maks 14 puan, kullanılan cihaz ve ortezlere göre), 3) Zamansal Mesafe (Temporal Distance - maks 5 puan, yürüme sıklığı ve 2 Dakika Yürüme Testi mesafesi). Alt ölçekler ayrı ayrı değerlendirilir, toplam skor genellikle kullanılmaz.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Omurilik Yaralanması (SCI)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Omurilik Yaralanması Fonksiyonel Ambulasyon Envanteri (SCI-FAI), omurilik yaralanması (OY) sonrası tekrar yürüme yeteneği kazanan bireylerin yürüme kalitesini ve fonksiyonel düzeyini detaylı bir şekilde değerlendirmek amacıyla geliştirilmiş gözlemsel bir ölçektir. Yürüme fonksiyonunun üç farklı boyutunu ele alır:</p>
+
+<ol>
+  <li><strong>Yürüme Parametreleri Alt Ölçeği:</strong> Yürüme sırasında her bir bacak için altı temel parametreyi (ağırlık aktarma, adım genişliği, adım ritmi, adım yüksekliği, ayak teması, adım uzunluğu) değerlendirir. Her parametre, gözlemlenen performansa göre puanlanır. Maksimum skor 20’dir (her bacak için 10 puan üzerinden).</li>
+  <li><strong>Yardımcı Cihaz Alt Ölçeği:</strong> Hastanın yürüme sırasında kullandığı yardımcı cihazların (yürüteç, koltuk değneği, baston) ve alt ekstremite ortezlerinin (AFO, KAFO vb.) seviyesini, sağladıkları destek miktarına göre derecelendirir. Yüksek puanlar daha az cihaza/orteze ihtiyaç duyulduğunu gösterir. Maksimum skor 14’tür.</li>
+  <li><strong>Zamansal Mesafe Alt Ölçeği:</strong> Hastanın günlük yaşamdaki yürüme mobilitesini (yürüme sıklığı ve kapasitesi) değerlendirir. Bu, genellikle hastanın bildirimine ve 2 Dakika Yürüme Testi (2MWT) sonucuna dayanır. Maksimum skor 5’tir.</li>
+</ol>
+
+<p>Bu üç alt ölçek, yürüme fonksiyonunun farklı yönlerini ölçtüğü için genellikle ayrı ayrı yorumlanır ve genel bir toplam skor hesaplanması anlamlı kabul edilmez.</p>
+
+<ul>
+  <li>Yürüme için uygun, işaretlenmiş bir alan (özellikle 2MWT için).</li>
+  <li>SCI-FAI skorlama formu ve kılavuzu.</li>
+  <li>Kronometre (2MWT için).</li>
+  <li>(Opsiyonel, ancak güvenilirliği artırır) Video kamera: Yürüme parametrelerini daha detaylı analiz etmek ve puanlama tutarlılığını artırmak için kullanılabilir.</li>
+</ul>
+
+<ol>
+  <li><strong>Yürüme Parametreleri:</strong> Hastanın normal hızında yürümesi istenir ve gözlemlenir (veya videoya kaydedilir). Kılavuzdaki kriterlere göre her bir bacak için 6 parametre (ağırlık aktarma, adım genişliği, ritim, yükseklik, temas, uzunluk) puanlanır.</li>
+  <li><strong>Yardımcı Cihaz:</strong> Hastanın yürüme sırasında kullandığı cihazlar ve ortezler not edilir ve kılavuzdaki hiyerarşiye göre uygun puan verilir.</li>
+  <li><strong>Zamansal Mesafe:</strong> Hastaya günlük yürüme sıklığı ve mesafesi sorulur ve/veya 2 Dakika Yürüme Testi uygulanır. Elde edilen bilgilere göre uygun puan verilir.</li>
+</ol>
+
+<ul>
+  <li><strong>Yürüme Parametreleri:</strong> Her bacak için 0-10 arası, toplam 0-20 puan.</li>
+  <li><strong>Yardımcı Cihaz:</strong> 0-14 puan (yüksek puan = daha az cihaz/ortez).</li>
+  <li><strong>Zamansal Mesafe:</strong> 0-5 puan (yüksek puan = daha fazla mobilite/mesafe).</li>
+  <li>Alt ölçek skorları ayrı ayrı rapor edilir.</li>
+</ul>
+
+<p>SCI-FAI alt ölçekleri, OY sonrası ambulasyonun farklı yönleri hakkında detaylı bilgi sağlar:</p>
+<ul>
+  <li><strong>Yürüme Parametreleri:</strong> Yürümenin kalitesi ve normal yürüme paterninden sapmaları gösterir. Düşük puanlar spesifik yürüme bozukluklarına işaret eder.</li>
+  <li><strong>Yardımcı Cihaz:</strong> Hastanın bağımsızlık düzeyini ve gereken dış desteği yansıtır.</li>
+  <li><strong>Zamansal Mesafe:</strong> Hastanın toplum içinde veya günlük yaşamdaki gerçek yürüme performansını ve enduransını gösterir.</li>
+</ul>
+
+<p>Bu alt ölçekler, rehabilitasyon hedeflerini belirlemede, müdahalenin etkinliğini (örn. yürüme kalitesini mi, cihaz ihtiyacını mı, yoksa yürüme mesafesini mi iyileştirdiğini) değerlendirmede ve hastanın fonksiyonel durumunu kapsamlı bir şekilde anlamada kullanılır.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Değerlendiriciler Arası:</strong> Yardımcı Cihaz ve Zamansal Mesafe alt ölçekleri için %100 uyum. Yürüme Parametreleri alt ölçeği için canlı puanlamada <strong>Yeterli</strong> (ICC=0.70), video üzerinden puanlamada <strong>Mükemmel</strong> (ICC=0.80-0.84) bulunmuştur. Video kullanımı güvenilirliği artırır.</li>
+      <li><strong>Değerlendirici İçi:</strong> Yürüme Parametreleri alt ölçeği için (canlı vs video karşılaştırması) <strong>Mükemmel</strong> (ICC = 0.85 - 0.96).</li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong>
+        <ul>
+          <li>Yürüme Parametreleri skoru ile yürüme hızı arasında <strong>Mükemmel</strong> ters korelasyon (r = -0.70 ila -0.74).</li>
+          <li>Yürüme Parametreleri skoru ile hastanın kendi bildirdiği yürüme mobilitesi arasında <strong>Mükemmel</strong> korelasyon (r = 0.70).</li>
+        </ul>
+      </li>
+      <li><strong>Yapı Geçerliliği (Yakınsak):</strong>
+        <ul>
+          <li>Tüm SCI-FAI alt ölçekleri (Parametre, Cihaz, Mobilite) ile Berg Denge Skalası (BBS), 2MWT, WISCI II, 10MWT ve TUG gibi diğer yürüme ve denge ölçümleri arasında <strong>Mükemmel</strong> korelasyonlar göstermiştir (r veya rho = 0.61 - 0.98 arasında).</li>
+          <li>Yürüme Parametreleri skoru ile Alt Ekstremite Motor Skoru (LEMS) arasında <strong>Mükemmel</strong> korelasyon (r = 0.64 - 0.74).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Minimal Saptanabilir Değişim (MDC):</strong> Yürüme Parametreleri alt ölçeği için SRD (Smallest Real Difference) 1.9 puan (%13 değişim) olarak hesaplanmıştır. Bu, 1 puandan fazla değişimin gerçek bir klinik değişim olarak kabul edilebileceğini düşündürür.</li>
+  <li><strong>Tavan/Tavan Etkisi:</strong> Özellikle yüksek fonksiyonlu AIS D hastalarında <strong>tavan etkisi</strong> gözlemlenmiştir (Parametreler için %69, Cihaz ve Mobilite için %34).</li>
+</ul>
+
+<p>Dawson, J., Shamley, D., et al. (2008). “A structured review of outcome measures used for the assessment of rehabilitation interventions for spinal cord injury.” Spinal Cord 46(12): 768-780.
+Field-Fote, E. C., Fluet, G. G., et al. (2001). “The spinal cord injury functional ambulation inventory (SCI-FAI).” Journal of Rehabilitation Medicine 33(4): 177-181.
+Lam, T., Noonan, V., et al. (2007). “A systematic review of functional ambulation outcome measures in spinal cord injury.” Spinal Cord 46(4): 246-254.
+Lemay, J. and Nadeau, S. (2009). “Standing balance assessment in ASIA D paraplegic and tetraplegic participants: concurrent validity of the Berg Balance Scale.” Spinal Cord 48(3): 245-250.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Field-Fote, E. C., Fluet, G. G., et al. (2001). "The spinal cord injury functional ambulation inventory (SCI-FAI)." Journal of Rehabilitation Medicine 33(4): 177-181.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

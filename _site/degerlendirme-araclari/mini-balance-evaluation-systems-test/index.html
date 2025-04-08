@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Mini Denge Değerlendirme Sistemleri Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Mini Denge Değerlendirme Sistemleri Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Mini Balance Evaluation Systems Test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> Mini BESTest</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Bu klinik denge değerlendirme aracı, Denge Değerlendirme Sistemleri Testi'nin (BESTest) kısaltılmış bir versiyonudur. Amaç, 6 farklı denge kontrol sistemini hedeflemek ve tanımlamak, böylece farklı denge eksiklikleri için özel rehabilitasyon yaklaşımları tasarlanabilir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Vestibüler Bozukluklar, İnme, Parkinson Hastalığı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Mini BESTest, 3 seviyeli ordinal ölçekte puanlanan 14 maddelik bir testtir. Toplam skor 28 puandır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Vestibüler Fonksiyon</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Vestibüler Bozukluklar</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Mini BESTest, BESTest’in kısaltılmış bir versiyonu olup, dinamik dengeyi değerlendirmek üzere tasarlanmıştır. Test, orijinal BESTest’in 6 bölümünden 4’ünü içeren 14 maddeden oluşur:
+1) Beklenen postüral ayarlamalar
+2) Reaktif postüral kontrol
+3) Duyusal yönelim
+4) Dinamik yürüyüş</p>
+
+<ul>
+  <li>60 cm x 60 cm boyutlarında 4” orta yoğunluklu Tempur köpük blok (T41)</li>
+  <li>10 derece eğimli rampa (2 x 2 foot önerilir)</li>
+  <li>Kolçak veya tekerlekleri olmayan standart sandalye</li>
+  <li>Kolları olan sert sandalye</li>
+  <li>9 inç (23 cm) yüksekliğinde kutu (~2 istiflenmiş ayakkabı kutusu)</li>
+  <li>Kronometre</li>
+  <li>Sandalyenin önünden 3 metre mesafede yere işaretlenmiş maskeleme bandı</li>
+</ul>
+
+<p>Mini BESTest 14 maddeden oluşur ve dinamik dengeyi değerlendirir. Testte yer alan maddeler, hastanın farklı denge kontrol sistemlerini (beklenen postüral ayarlamalar, reaktif postüral kontrol, duyusal yönelim, dinamik yürüyüş) ne kadar iyi kullandığını değerlendirir. Her bir madde 0-2 arasında puanlanır.</p>
+
+<p>Mini BESTest’teki her madde 0 ile 2 arasında puanlanır. Orijinal BESTest’teki 4 seviyeli (0-3) puanlama, fazlalık nedeniyle 3 seviyeye (0-2) revize edilmiştir. Toplam skor 28 puandır. İki maddenin sağ ve sol değerlendirmesi vardır ve toplam skor içinde daha düşük olan puan kullanılır (talimatlar hangisinin kullanılacağını belirtir). Araştırma için, birçok çalışma hem sol hem de sağ verilerin kullanılmasını ve böylece verilerin 32 (28 yerine) puana göre hesaplanmasını belirtir.</p>
+
+<p>Mini-BESTest, BESTest’in revize edilmiş bir versiyonu olarak nörolojik popülasyonlarda güçlü psikometrik özelliklere ve iyi klinik kullanışlılığa sahiptir. Araştırmalar arasında not edilen bir tutarsızlık, toplam skorun (28’e karşı 32 puan) araştırmacıların iki test maddesinde hem sağ/sol tarafları sayıp saymamasına bağlı olmasıdır. Orijinal testin yayınlanmış standartları ve talimatları, iki taraftan en düşük puanı saymayı belirtir. Test puanlaması hakkında bir açıklama için King &amp; Horak, Phys Ther 2013’e bakınız.</p>
+
+<p><strong>Güvenilirlik:</strong> Denge bozuklukları olan hastalarda test-tekrar test güvenirliği (1 ila 3 gün sonra) mükemmel bulunmuştur (ICC = 0.96). Kronik inme hastalarında toplam skor için test-tekrar test güvenirliği mükemmel bulunmuştur (ICC = 0.96). Parkinson hastalarında test-tekrar test güvenirliği mükemmel bulunmuştur (ICC = 0.92).</p>
+
+<p><strong>Geçerlilik:</strong> Mini-BESTest’in Berg Denge Ölçeği ile eş zamanlı geçerliliği mükemmeldir (r = 0.85). Parkinson hastalarında Mini-BESTest ve Berg arasında mükemmel korelasyon bulunmuştur (r=0.79).</p>
+
+<p><strong>Duyarlılık:</strong> Denge bozuklukları olan hastalarda klinik olarak anlamlı iyileşmeyi belirleme yeteneği mükemmeldir (AUC = 0.92).</p>
+
+<p><strong>Zemin/Tavan Etkisi:</strong> Denge bozuklukları olan karma nörolojik kohortta zemin veya tavan etkisi görülmemiştir. Kronik inme hastalarında zemin etkisi görülmezken, tavan etkisi %0.9 oranında gözlemlenmiştir. Parkinson hastalarında tavan etkisine dair bir kanıt bulunmamaktadır.</p>
+
+<p>Bergstrom, M., Lenholm, E., et al. (2012). “Translation and validation of the Swedish version of the mini-BESTest in subjects with Parkinson’s disease or stroke: a pilot study.” Physiother Theory Pract 28(7): 509-514.
+Find it on PubMed
+Duncan, R. P. and Earhart, G. M. (2012). “Should One Measure Balance or Gait to Best Predict Falls among People with Parkinson Disease?” Parkinsons Dis 2012: 923493.
+Find it on PubMed
+Duncan, R. P. and Earhart, G. M. (2013). “Four square step test performance in people with Parkinson disease.” J Neurol Phys Ther 37(1): 2-8.
+Find it on PubMed
+Duncan, R. P., Leddy, A. L., et al. (2012). “Accuracy of fall prediction in Parkinson disease: six-month and 12-month prospective analyses.” Parkinsons Dis 2012: 237673.
+Find it on PubMed
+Duncan, R. P., Leddy, A. L., et al. (2013). “Comparative utility of the BESTest, mini-BESTest, and brief-BESTest for predicting falls in individuals with Parkinson disease: a cohort study.” Phys Ther 93(4): 542-550.
+Find it on PubMed
+Duncan, R. P., Leddy, A. L., et al. (2011). “Five times sit-to-stand test performance in Parkinson’s disease.” Arch Phys Med Rehabil 92(9): 1431-1436.
+Find it on PubMed
+Franchignoni, F., Horak, F., et al. (2010). “Using psychometric techniques to improve the Balance Evaluation System’s Test: the mini-BESTest.” Journal of rehabilitation medicine: official journal of the UEMS European Board of Physical and Rehabilitation Medicine 42(4): 323.
+Godi, M., Franchignoni, F., et al. (2013). “Comparison of reliability, validity, and responsiveness of the mini-BESTest and Berg Balance Scale in patients with balance disorders.” Phys Ther 93(2): 158-167.
+Find it on PubMed
+King, L. and Horak, F. (2013). “Letters and Responses: On the Mini-BESTest: Scoring and the Reporting of Total Scores.” Phys Ther 93: 571-575.
+King, L. A., Priest, K. C., et al. (2012). “Comparing the Mini-BESTest with the Berg Balance Scale to Evaluate Balance Disorders in Parkinson’s Disease.” Parkinsons Dis 2012: 375419.
+Find it on PubMed
+Leddy, A. L., Crowner, B. E., et al. (2011). “Utility of the Mini-BESTest, BESTest, and BESTest sections for balance assessments in individuals with Parkinson disease.” J Neurol Phys Ther 35(2): 90-97.
+Find it on PubMed
+Mak, M. and Auyeung, M. M. (2013). “The mini-BESTest can predict Parkinsonian recurrent fallers: A 6-month prospective study.” Journal of rehabilitation medicine: official journal of the UEMS European Board of Physical and Rehabilitation Medicine.
+McNeely, M. E., Duncan, R. P., et al. (2012). “Medication improves balance and complex gait performance in Parkinson disease.” Gait Posture 36(1): 144-148.
+Find it on PubMed
+McNeely, M. E., Hershey, T., et al. (2011). “Effects of deep brain stimulation of dorsal versus ventral subthalamic nucleus regions on gait and balance in Parkinson’s disease.” J Neurol Neurosurg Psychiatry 82(11): 1250-1255.
+Find it on PubMed</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="http://www.bestest.us/test_copies/" target="_blank" rel="noopener noreferrer">http://www.bestest.us/test_copies/</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Franchignoni, F., Horak, F., et al. (2010). "Using psychometric techniques to improve the Balance Evaluation System’s Test: the mini-BESTest." Journal of rehabilitation medicine: official journal of the UEMS European Board of Physical and Rehabilitation Medicine 42(4): 323.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

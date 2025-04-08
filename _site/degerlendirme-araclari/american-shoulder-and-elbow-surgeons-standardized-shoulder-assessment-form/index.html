@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Amerikan Omuz ve Dirsek Cerrahları Standart Omuz Değerlendirme Formu - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Amerikan Omuz ve Dirsek Cerrahları Standart Omuz Değerlendirme Formu</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">American Shoulder and Elbow Surgeons Standardized Shoulder Assessment Form</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> ASES</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Omuzdaki fonksiyonel kısıtlılıkları ve ağrıyı ölçmeyi amaçlayan, duruma özgü bir ölçektir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Çeşitli Omuz Patolojileri (Omuz İnstabilitesi, Rotator Manşet Hastalığı, Glenohumeral Artrit, Kırıklar, Omuz Artroplastisi, Travma).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> İki bölümden oluşur: 1) Ağrı (Tek bir VAS - Görsel Analog Skala, 0-10) ve 2) Fonksiyon/GYA (10 madde, her biri 0-3 arası puanlanır). Toplam skor 100 puan üzerinden hesaplanır (Ağrı %50, Fonksiyon %50 ağırlıklı). Yüksek skor daha iyi durumu gösterir. Sadece hasta tarafından doldurulan kısmı (pASES) da sıklıkla kullanılır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Üst Ekstremite Fonksiyonu</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Ağrı</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Artrit (Genel)</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Amerikan Omuz ve Dirsek Cerrahları (ASES) Standart Omuz Değerlendirme Formu, çeşitli omuz rahatsızlıkları olan hastalarda omuz fonksiyonunu ve ağrısını değerlendirmek için geliştirilmiş, hem hasta bildirimini hem de klinisyen değerlendirmesini içeren (ancak sıklıkla sadece hasta bildirim kısmı kullanılan) bir ölçektir.</p>
+
+<p>Ölçek temel olarak iki bölümden oluşur:</p>
+<ol>
+  <li><strong>Hasta Öz Değerlendirmesi (Patient Self-Assessment - pASES):</strong>
+    <ul>
+      <li><strong>Ağrı:</strong> Genellikle 10 cm’lik bir Görsel Analog Skala (VAS) üzerinde hastanın ağrı düzeyini işaretlemesi istenir (0=Ağrı yok, 10=Dayanılmaz ağrı). Bazen ek ağrı soruları da olabilir.</li>
+      <li><strong>İnstabilite (Opsiyonel):</strong> Bazı formlarda omuzda instabilite hissi olup olmadığı ve şiddeti (0-10 VAS) sorulur.</li>
+      <li><strong>Fonksiyon / Günlük Yaşam Aktiviteleri (GYA):</strong> Hastanın 10 spesifik aktiviteyi (örn. saç tarama, sırtına uzanma, 8 kiloluk market poşeti taşıma, spor yapma) yaparken yaşadığı zorluk düzeyini 4 puanlık bir skala (0=Yapamıyor, 1=Çok zorlanıyor, 2=Biraz zorlanıyor, 3=Zorlanmıyor) üzerinden derecelendirmesi istenir.</li>
+    </ul>
+  </li>
+  <li><strong>Hekim Değerlendirmesi (Physician Assessment - Orijinal formda bulunur, ancak daha az kullanılır):</strong> Hekimin yaptığı muayene bulgularını (EHA, kuvvet, stabilite vb.) içerir.</li>
+</ol>
+
+<p><strong>Puanlama:</strong> Genellikle sadece hasta öz değerlendirme kısmı puanlanır.</p>
+<ul>
+  <li>Ağrı VAS skoru (0-10) 5 ile çarpılarak 50 puanlık ağrı skoruna dönüştürülür (yüksek puan = az ağrı). Yani <code class="language-plaintext highlighter-rouge">Ağrı Skoru = (10 - VAS Skoru) * 5</code>.</li>
+  <li>10 GYA maddesinin her biri 0-3 arası puanlanır, toplam GYA skoru (0-30) 5/3 ile çarpılarak 50 puanlık fonksiyon skoruna dönüştürülür. Yani <code class="language-plaintext highlighter-rouge">Fonksiyon Skoru = (Toplam GYA Puanı / 30) * 50</code>.</li>
+  <li>Toplam ASES Skoru = Ağrı Skoru + Fonksiyon Skoru (Maksimum 100). Yüksek skor, daha iyi omuz fonksiyonu ve daha az ağrı anlamına gelir.</li>
+</ul>
+
+<p>ASES, omuz problemlerinin ciddiyetini değerlendirmek, tedavi sonuçlarını izlemek ve farklı tedavi yöntemlerini karşılaştırmak için yaygın olarak kullanılır. Modifiye edilmiş versiyonları da bulunmaktadır.</p>
+
+<ul>
+  <li>ASES hasta öz değerlendirme formu.</li>
+  <li>Kalem/kurşun kalem.</li>
+  <li>10 cm’lik cetvel (VAS skorlaması için).</li>
+</ul>
+
+<ol>
+  <li>Hastaya ASES formu verilir.</li>
+  <li>Hastadan ağrı düzeyini VAS üzerinde işaretlemesi istenir.</li>
+  <li>Hastadan 10 GYA maddesini okuyarak her bir aktiviteyi yaparken yaşadığı zorluk düzeyini 0-3 skalasına göre işaretlemesi istenir.</li>
+  <li>(Varsa) İnstabilite soruları yanıtlanır.</li>
+  <li>Form klinisyen tarafından toplanır ve puanlama yapılır.</li>
+</ol>
+
+<ul>
+  <li><strong>Ağrı Skoru:</strong> <code class="language-plaintext highlighter-rouge">(10 - VAS Skoru) * 5</code> (Maksimum 50)</li>
+  <li><strong>Fonksiyon Skoru:</strong> <code class="language-plaintext highlighter-rouge">(Toplam GYA Puanı / 30) * 50</code> (Maksimum 50)</li>
+  <li><strong>Toplam ASES Skoru:</strong> Ağrı Skoru + Fonksiyon Skoru (Maksimum 100).</li>
+</ul>
+
+<p>Toplam ASES skoru, hastanın omuz ağrısı ve fonksiyonel durumu hakkında genel bir bilgi verir. 100’e yakın skorlar daha iyi durumu gösterir. Skorlar, hastanın zaman içindeki değişimini (iyileşme veya kötüleşme) takip etmek için kullanılır.</p>
+
+<ul>
+  <li><strong>Minimal Klinik Olarak Anlamlı Fark (MCID):</strong> Farklı çalışmalarda ve popülasyonlarda 6.4 puan ile 12-17 puan arasında değişen değerler bildirilmiştir. Genel omuz disfonksiyonu için 6.4 puan sık kullanılan bir değerdir.</li>
+  <li><strong>Minimal Saptanabilir Değişim (MDC):</strong> Toplam skor için MDC90 değeri yaklaşık 9.4 puan olarak rapor edilmiştir. Bu, 9.4 puandan daha büyük bir değişimin gerçek bir değişim olarak kabul edilebileceğini gösterir. Omuz travması için MDC90 16 puan bulunmuştur.</li>
+</ul>
+
+<p><strong>Sınırlılıklar:</strong></p>
+<ul>
+  <li>Karşılaştırma için altın standart bir ölçüm yoktur.</li>
+  <li>Güvenilirliği bireysel düzeyde kullanım için yeterince hassas olmayabilir.</li>
+  <li>Yaş, aktivite düzeyi gibi demografik faktörler skoru etkileyebilir.</li>
+  <li>İnstabilite bölümünün güvenilirliği ve kullanışlılığı sorgulanmıştır.</li>
+</ul>
+
+<p>ASES, omuz patolojilerinde yaygın olarak kullanılan ve genellikle iyi psikometrik özelliklere sahip bir ölçektir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> Çeşitli omuz patolojileri ve artroplasti sonrası hastalarda toplam skor, ağrı ve fonksiyon alt skorları için genellikle <strong>Mükemmel</strong> bulunmuştur (ICC = 0.79 - 0.96). İnstabilite bölümünün güvenilirliği daha düşüktür.</li>
+    </ul>
+  </li>
+  <li><strong>İç Tutarlılık:</strong> Toplam skor ve alt ölçekler için (instabilite hariç) genellikle <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında bulunmuştur (Cronbach’s alpha = 0.70 - 0.97). Farklı tanı gruarında (instabilite, rotator manşet, artrit) iç tutarlılık daha düşük bulunmuştur (alpha = 0.61 - 0.64).</li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong> SF-36’nın fiziksel fonksiyon, rol fiziksel ve ağrı alt ölçekleri ile <strong>Yeterli</strong> ile <strong>İyi</strong> arasında korelasyon (r = 0.32 - 0.58). SPADI (Shoulder Pain and Disability Index) ile <strong>Mükemmel</strong> korelasyon (r=0.92). DASH (Disabilities of the Arm, Shoulder and Hand) ile <strong>Mükemmel</strong> korelasyon (r=0.63). SF-36 Mental Component Score (MCS) ile korelasyon <strong>zayıf</strong>, bu da beklenen bir durumdur.</li>
+      <li><strong>Yapı Geçerliliği (Yakınsak/Iraksak):</strong> Penn Shoulder Score, Simple Shoulder Test (SST), Constant Score, UCLA Shoulder Score gibi diğer omuz değerlendirme ölçekleriyle <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında korelasyonlar göstermiştir. SF-36’nın mental sağlıkla ilgili alt ölçekleriyle daha düşük korelasyon göstererek ıraksak geçerliliği desteklemiştir.</li>
+    </ul>
+  </li>
+  <li><strong>Tavan/Tavan Etkisi:</strong> Omuz artroplastisi sonrası ve genel omuz patolojilerinde <strong>yeterli</strong> tavan/taban etkileri (&lt;%15) rapor edilmiştir. Ancak bazı spesifik maddelerde (örn. tuvalet yönetimi, saç tarama) tavan etkisi daha yüksek olabilir.</li>
+  <li><strong>Yanıt Verebilirlik (Değişime Duyarlılık):</strong> Çeşitli cerrahi (artroplasti, rotator manşet tamiri vb.) ve konservatif tedaviler sonrası değişimi saptamada <strong>büyük</strong> etki büyüklükleri (ES veya SRM = 0.86 - 3.53) göstermiştir.</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Angst, F. et. al. (2008). Responsiveness of six outcome assessment instruments in total shoulder arthroplasty. Arthritis &amp; Rheumatism: Arthritis Care &amp; Research, 59(3), 391-398.
+… (diğer tüm referanslar) …
+Shoulder Trauma (Slobogean, 2011): Slobogean G.P., Slobogean B.L. Measuring Shoulder Injury Function: Common Scales and Checklists. Injury, Int. J. Care Injured 42 (2011) 248-252</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Richards RR, An KN, Bigliani LU, et al. A standardized method for the assessment of shoulder function. J Shoulder Elbow Surg. 1994 Nov-Dec;3(6):347-52.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

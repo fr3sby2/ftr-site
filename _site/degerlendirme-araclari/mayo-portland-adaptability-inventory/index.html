@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Mayo-Portland Uyarlanabilirlik Envanteri-4 - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Mayo-Portland Uyarlanabilirlik Envanteri-4</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Mayo-Portland Adaptability Inventory</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> MPAI-4</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">MPAI-4, sonuçları anlamayı artırmak ve beyin hasarı olan kişilere hizmet veren rehabilitasyon programlarını değerlendirmek için akut sonrası değerlendirmelerde kullanılır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Öğeler 5 noktalı Likert ölçeğinde puanlanır. Daha düşük puanlar, daha fazla entegrasyonu gösterir. Ölçekte 3 alt bölüm vardır: Yetenek İndeksi (0–47), Uyum İndeksi (0–46) ve Katılım İndeksi (0–30). Genel puan 0–111 aralığındadır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Beyin Hasarı (TBI, ABI)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Mayo-Portland Uyarlanabilirlik Envanteri-4 (MPAI-4), beyin hasarı sonrası engelliliği değerlendiren 35 maddelik bir araçtır. İlk 29 madde 3 alt ölçek içindedir ve ek 6 madde MPAI-4 skoruna dahil edilmez. İlk 29 ölçek maddesi, edinilmiş beyin hasarının (EBH) bireyin mevcut durumunu etkileyip etkilemediğini belirlemeye çalışmadan, EBH’li bireyin mevcut durumunu yansıtır. Ek altı, puanlanmamış madde, bireyin mevcut durumuna katkıda bulunabilecek diğer faktörlerin varlığını tanımlar.</p>
+
+<p>Öğeler 5 noktalı Likert ölçeğinde puanlanır ve edinilmiş beyin hasarı olan kişilerin karşılaşabileceği fiziksel, bilişsel, duygusal, davranışsal ve sosyal sorunların aralığını temsil eder. Araç ayrıca topluma yeniden entegrasyonun önündeki başlıca engellerin yanı sıra sosyal ve fiziksel çevrenin özelliklerinin bir değerlendirmesini de sağlar. MPAI-4’ün üç alt ölçeği vardır: 1) Yetenek İndeksi (0–47 aralığı) 2) Uyum İndeksi (0–46 aralığı) 3) Katılım İndeksi (0–30 aralığı). Genel puan 0–111’dir, daha düşük puanlar daha fazla entegrasyonu gösterir. Bazı maddeler hem Uyum alt ölçeğine hem de Katılım alt ölçeğine katkıda bulunduğundan, toplam puan üç alt ölçeğin toplamından daha azdır. Kısa 8 maddelik Katılım İndeksi, rehabilitasyonun veya diğer müdahale çabalarının nihai ortak amacı olan toplumsal katılımın özellikle yararlı bir ölçüsü olarak hizmet edebilir. Sadece edinilmiş beyin hasarı geçirmiş 1 yaşından büyük kişiler için tasarlanmıştır. Rehabilitasyon uzmanları, beyin hasarı olan bir birey ve önemli bir başkası tarafından tamamlanabilir. Uzmanlar tarafından kullanım için MPAI-4 en iyi şekilde rehabilitasyon ekibinin fikir birliği ile tamamlanır. Aynı bireyi birden fazla klinisyen değerlendiriyorsa, puanlama ile ilgili tartışmalar yapılmalı ve personel her bir madde için puan konusunda hemfikir olmalıdır.</p>
+
+<p>Öğe puanları 0 ile 4 arasında değişir:
+0 = öğe tarafından belirtilen alan için işlevsel engellilik yoktur.
+1 = bozukluk hafiftir ve uygun yardımlarla işlev genellikle normaldir.
+2 = bozukluk aktiviteyi zamanın %25’inden daha azında etkiler.
+3 = beyin hasarı olan kişinin bu öğe veya aktiviteden zamanın %25’inden %50’sine kadar etkilendiğini gösterir.
+4 = bozukluk çoğu zaman müdahale eder.</p>
+
+<p>Formu tamamlayan tüm kişilerin aynı sürümü kullanması önemlidir. Fransızca, Felemenkçe, İspanyolca, Almanca, İtalyanca, Portekizce, İsveççe versiyonlarına çevrilmiştir.</p>
+
+<p>MPAI-4 rehabilitasyon uzmanları, beyin hasarı olan bir birey veya onun bakım veren yakını tarafından tamamlanabilir. Puanlamayla ilgili tartışmalar yapılmalı ve personel her bir madde için puan konusunda hemfikir olmalıdır.</p>
+
+<p>Öğeler 5 noktalı Likert ölçeğinde puanlanır.</p>
+<ul>
+  <li>0 = sorun yok</li>
+  <li>1 = hafif sorun</li>
+  <li>2 = sorun aktiviteyi zamanın %25’inden daha azında etkiliyor.</li>
+  <li>3 = sorun aktiviteyi zamanın %25 ile %50’si arasında etkiliyor.</li>
+  <li>4 = sorun aktiviteyi çoğu zaman etkiliyor.</li>
+</ul>
+
+<p>MPAI-4’te üç alt ölçek vardır: Yetenek İndeksi (0–47), Uyum İndeksi (0–46) ve Katılım İndeksi (0–30). Genel puan 0–111’dir ve daha düşük puanlar daha fazla entegrasyonu gösterir.</p>
+
+<p>Edinilmiş Beyin Hasarı için kesme puanları (Malec ve Lezak, 2003; el kitabı):</p>
+
+<p>T-skorları, EBH’li bireylerin iki popülasyonundan elde edilen veri kümelerine dayanmaktadır. EBH olmayan örneklerle referans alınmamıştır.</p>
+
+<p>EBH’li referans popülasyonlarla karşılaştırıldığında:</p>
+<ul>
+  <li>Toplam T-skorları 30’dan az: iyi sonuç</li>
+  <li>30 – 40: hafif sınırlamalar</li>
+  <li>40 – 50: hafif ila orta düzeyde sınırlamalar</li>
+  <li>50 – 60: orta ila şiddetli zorluklar</li>
+  <li>60’ın üstü: şiddetli sınırlamalar</li>
+</ul>
+
+<p><strong>Güvenilirlik:</strong> Çocuklarda EBH ile test-tekrar test güvenilirliğinin yeterli-mükemmel olduğu bildirilmiştir (Spearman rho = .45–.93); tüm korelasyonlar anlamlı, p&lt;.001. EBH’de madde içi korelasyonlar, İşitme, Yasa İhlalleri, Alkol Kullanımı ve Yasadışı Uyuşturucu Kullanımı maddeleri için &lt;0.30’du. Yasa ihlalleri, alkol kullanımı ve yasadışı uyuşturucu kullanımı yalnızca birbirleriyle anlamlı bir şekilde ilişkiliydi.</p>
+
+<p><strong>Geçerlilik:</strong> Rasch analizinden türetilen 22 maddelik MPAI, MPAI skorlarını, hedef-başarı skorlarını ve taburcu olurken bağımsız yaşam sonuçlarını tahmin etmede ham skor toplamı 30 maddelik versiyon kadar iyidir. 22 maddelik versiyon, taburcu olurken mesleki sonucu tahmin etmede daha az iyi, ancak bir yıl sonra mesleki sonucu tahmin etmede eşit derecede iyidir. Hem ham skor toplamı 30 maddelik hem de Rasch analizi türetilmiş 22 maddelik versiyon, daha uzun vadeli mesleki sonuçları, ayakta tedavi rehabilitasyon programından taburcu olarak elde edilen ilerlemeden daha iyi tahmin eder.</p>
+
+<p><strong>Duyarlılık:</strong> MPAI, DRS’den daha düşük engellilik seviyelerinde daha geniş bir değerlendirme sağlar (Malec &amp; Thompson, 1994). Kapsamlı gündüz tedavi programına kabul öncesinden sonuna kadar MPAI-22 skorunda anlamlı değişiklik (eşleştirilmiş t= 8.35, p&lt;0.0001) (Malec, 2001).</p>
+
+<p>Bohac, D. L., Malec, J. F., et al. (1997). “Factor analysis of the Mayo-Portland Adaptability Inventory: structure and validity.” Brain Inj 11(7): 469-482.</p>
+
+<p>Kean, J., Malec, J. F., et al. (2011). “Rasch measurement analysis of the Mayo-Portland Adaptability Inventory (MPAI-4) in a community-based rehabilitation sample.” J Neurotrauma 28(5): 745-753.</p>
+
+<p>Kostadinov Neychev, B. O., Rumney, P., et al. (2006). “Clinical use of the Mayo‐Portland Adaptability Inventory in rehabilitation after paediatric acquired brain injury.” Developmental Medicine &amp; Child Neurology 48(11): 918-923.</p>
+
+<p>Malec, J. F. (2001). “Impact of comprehensive day treatment on societal participation for persons with acquired brain injury.” Arch Phys Med Rehabil 82(7): 885-895.</p>
+
+<p>Malec, J. F. (2004). Comparability of Mayo-Portland Adaptability Inventory ratings by staff, significant others and people with acquired brain injury. Brain Inj, 18(6), 563-575.</p>
+
+<p>Malec, J. F., Buffington, A. L., et al. (2000). “A medical/vocational case coordination system for persons with brain injury: an evaluation of employment outcomes.” Arch Phys Med Rehabil 81(8): 1007-1015.</p>
+
+<p>Malec, J. F. and Degiorgio, L. (2002). “Characteristics of successful and unsuccessful completers of 3 postacute brain injury rehabilitation pathways.” Arch Phys Med Rehabil 83(12): 1759-1764.</p>
+
+<p>Malec, J. F., Moessner, A. M., et al. (2000). “Refining a measure of brain injury sequelae to predict postacute rehabilitation outcome: rating scale analysis of the Mayo-Portland Adaptability Inventory.” J Head Trauma Rehabil 15(1): 670-682.</p>
+
+<p>Malec, J. F. and Thompson, J. M. (1994). “Relationship of the Mayo-Portland Adaptability Inventory to functional outcome and cognitive performance measures.” The Journal of Head Trauma Rehabilitation.</p>
+
+<p>Murrey, G. J., Hale, F. M., et al. (2005). “Assessment of anosognosia in persons with frontal lobe damage: clinical utility of the Mayo-Portland Adaptability Inventory (MPAI).” Brain Inj 19(8): 599-603.</p>
+
+<p>Resnik, L. and Plow, M. A. (2009). “Measuring participation as defined by the International Classification of Functioning, Disability and Health: an evaluation of existing measures.” Archives of physical medicine and rehabilitation 90(5): 856-866.</p>
+
+<p>Testa, J. A., Malec, J. F., et al. (2005). “Outcome after traumatic brain injury: effects of aging on recovery.” Arch Phys Med Rehabil 86(9): 1815-1823.</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Malec, J. F. (2004). Comparability of Mayo-Portland Adaptability Inventory ratings by staff, significant others and people with acquired brain injury. Brain Inj, 18(6), 563-575.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

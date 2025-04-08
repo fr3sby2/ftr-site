@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Ayak ve Ayak Bileği Yetenek Ölçütü (FAAM) - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Ayak ve Ayak Bileği Yetenek Ölçütü (FAAM)</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Foot and Ankle Ability Measure (FAAM)</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> FAAM</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">FAAM, bacak, ayak bileği ve ayak kas-iskelet sistemi bozuklukları olan hastaların fiziksel işlevselliğindeki değişimi ölçmek için geliştirilmiştir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Kas-iskelet Sistemi Hastalıkları</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> FAAM, 2 alt ölçek içerir: Günlük Yaşam Aktiviteleri (GYA) ve Spor. Her alt ölçek için, hastaların her soruyu durumlarını en iyi tanımlayan tek bir yanıtla cevaplamaları istenir (4-0 Likert ölçeği). Puanlama için, her alt ölçek için bir puan hesaplanır. Daha yüksek puan, daha yüksek bir fiziksel işlev düzeyini yansıtır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Kas-İskelet Sistemi (Genel)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Ayak ve Ayak Bileği Yetenek Ölçütü (FAAM), alt bacak, ayak ve ayak bileği kas-iskelet sistemi rahatsızlıkları olan bireylerin fiziksel işlevlerini değerlendiren bir ölçektir.</p>
+
+<p>Bu araç 2 alt ölçek içerir:
+1) 21 maddeden oluşan Günlük Yaşam Aktiviteleri (GYA) alt ölçeği
+2) 8 maddeden oluşan Spor alt ölçeği.</p>
+
+<p>Her alt ölçek için hastalardan, son bir hafta içindeki durumlarını en iyi tanımlayan tek bir yanıtla her soruyu yanıtlamaları istenir.</p>
+
+<p>Her iki ölçek için de yanıtlar, şu Likert ölçeğine (4-0) dayanmaktadır:
+4) “zorluk yok”
+3) “hafif zorluk”
+2) “orta zorluk”
+1) “aşırı zorluk”
+0) “yapamıyorum”</p>
+
+<p>Söz konusu aktivite, ayak veya ayak bileği dışındaki bir şeyle sınırlıysa, hastadan N/A olarak kaydetmesi istenir.</p>
+
+<p>Buna ek olarak, her alt ölçek hastadan, olağan günlük yaşam aktiviteleri ve sporla ilgili aktiviteler sırasında mevcut işlev düzeylerini ayrı ayrı 0 ile 100 arasında derecelendirmelerini ister; burada 100 hastanın önceki işlev düzeyi ve 0 olağan günlük aktivitelerini gerçekleştirememesidir.</p>
+
+<p>FAAM ayrıca hastadan mevcut işlev düzeylerini “normal”, “neredeyse normal”, “anormal” ve “ciddi derecede anormal” olarak belirtmelerini ister.</p>
+
+<ul>
+  <li>Anket ve kalem</li>
+</ul>
+
+<p>Hastalar her soruya, son bir hafta içindeki durumlarını en iyi tanımlayan tek bir yanıtla cevap vermelidir. Eğer bir aktivite ayak veya ayak bileği dışındaki bir şeyle sınırlıysa, hasta N/A olarak kaydetmelidir.</p>
+
+<p>FAAM’ı puanlarken, her alt ölçek için bir tane olmak üzere iki puan olmalıdır. GYA alt ölçeğini ve Spor alt ölçeğini puanlamak için sırasıyla 21 maddeden 20’si ve 8 maddeden 7’si tamamlanmış olmalıdır. Diğer tüm yanıtlar için, her kategori arasında bir puanlık bir aralık vardır. “N/A” olarak belirtilen sorular sayılmaz.</p>
+
+<p>Herhangi bir alt ölçeğin puanını hesaplamak için, toplam puan sayısı toplanır, olası toplam puan sayısına (GYA alt ölçeği için 84 ve Spor alt ölçeği için 32) bölünür ve ardından 100 ile çarpılır. Bu nedenle, daha yüksek bir puan daha yüksek bir fiziksel işlev düzeyini yansıtır.</p>
+
+<p>GYA alt ölçeği ve Spor alt ölçeği için MDC ve MCID sırasıyla 5,7 ve 8 puan ve 12,3 ve 9 puandır.</p>
+
+<p>Daha yüksek puanlar, daha yüksek bir fiziksel işlevsellik düzeyini gösterir. GYA ve Spor alt ölçekleri için MDC ve MCID değerleri sırasıyla 5.7 ve 8 puan, 12.3 ve 9 puandır. Bu değerler, klinik olarak anlamlı değişiklikleri yorumlamak için kullanılabilir.</p>
+
+<p><strong>Güvenilirlik:</strong> Çeşitli Ayak/Ayak Bileği Kas-İskelet Sistemi Bozukluklarında test/tekrar test güvenilirliği GYA Alt Ölçeği için mükemmel (ICC=0.89) ve Spor Alt Ölçeği için mükemmeldir (ICC= 0.87).
+İç tutarlılık, GYA için mükemmel (Cronbach Alfa= 0.98) ve Spor için mükemmeldir (Cronbach Alfa= 0.98).</p>
+
+<p><strong>Geçerlilik:</strong> GYA ve spor alt ölçekleri ile fiziksel ve duygusal işlevin eş zamanlı ölçümleri arasındaki korelasyon katsayıları şunlardır: Fiziksel İşlev Alt Ölçeği GYA için Mükemmel (r= 0.84); Spor için Yeterli (r= 0.78). Fiziksel Bileşen Özet Puanı: GYA için Mükemmel (r= 0.84); Spor için Mükemmel (r= 0.80)</p>
+
+<p><strong>Duyarlılık:</strong> Değişim beklenen gruptaki katılımcıların %73.3’ü “çok gelişti” bildirirken, %25.6’sı “gelişti” bildirdi ve tamamı gelişmiş grubuna yerleştirildi. %14.6’sı “biraz gelişti” bildirirken, %3’ü “değişmedi” ve %1.2’si “biraz kötüleşti” bildirdi ve iyileşmeyen gruba yerleştirildi. Spor alt ölçeğindeki ortalama değişim, değişim beklenen ve değişim beklemeyen grup için sırasıyla 17.2 ve 0.0 idi. GYA alt ölçeği skorundaki ortalama değişim, aynı gruplarda sırasıyla 17.1 ve -0.2 idi.</p>
+
+<p>Martin, R.L., Irrgang, J.J., Burdett, R.G., Conti, S.F., Van Swearingen, J.M. Evidence of validity for the foot and ankle ability measure (FAAM). Foot &amp; Ankle International. 2005; 26(11): 968-83.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Martin, R.L., Irrgang, J.J., Burdett, R.G., Conti, S.F., Van Swearingen, J.M. Evidence of validity for the foot and ankle ability measure (FAAM). Foot & Ankle International. 2005; 26(11): 968-83.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

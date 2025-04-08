@@ -1,0 +1,10 @@
+<!-- _includes/search-bar.html -->
+<div class="search-bar-wrapper mb-3">
+  <form id="site-search-form" action="#" method="get" role="search" onsubmit="return false;">
+    <label for="search-input" class="visually-hidden">Arama</label> <!-- Erişilebilirlik için label -->
+    <input type="search" id="search-input" class="form-control" placeholder="{{ include.placeholder | default: "Sitede ara..." }}" aria-label="Arama terimi">
+    <!-- Arama butonu kaldırıldı, arama yazarken tetiklenecek -->
+  </form>
+  <!-- Arama sonuçları buraya dinamik olarak eklenecek -->
+  <div id="search-results-container" class="search-results mt-2"></div>
+</div>

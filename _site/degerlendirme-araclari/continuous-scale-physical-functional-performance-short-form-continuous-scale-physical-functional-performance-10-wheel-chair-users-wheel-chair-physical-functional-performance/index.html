@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Sürekli Ölçek-Fiziksel Fonksiyonel Performans - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Sürekli Ölçek-Fiziksel Fonksiyonel Performans</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Continuous Scale-Physical Functional Performance</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> CS-PFP</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Bireyin çeşitli fonksiyonel aktiviteleri gerçekleştirme yeteneğini, bu aktiviteleri simüle etmek yerine gerçekte yapmasını sağlayarak değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Parkinson Hastalığı, Yaşlı Yetişkinler ve Geriatrik Bakım, Spesifik Olmayan Hasta Popülasyonu, Karışık Popülasyonlar, Kronik Ağrı, Tekerlekli Sandalye Kullanımı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Testler, tamamlanma süresi ve/veya taşınan ağırlık veya ulaşılan yüksekliğe göre puanlanır. Ham puanlar, her görev için yüzde puanlarına dönüştürülür: Düzeltilmiş puan = [(gözlemlenen puan - alt sınır) / (üst sınır - alt sınır)] * 100. Puanlar 0 ile 100 arasında değişir, daha yüksek puanlar daha iyi fonksiyonu gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Kas Kuvveti</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Sürekli Ölçek-Fiziksel Fonksiyonel Performans (CS-PFP), bir kişinin çeşitli fonksiyonel aktiviteleri gerçekleştirme yeteneğini değerlendirmek için kullanılır. Kişinin bu aktiviteleri simüle etmek yerine gerçekte yapması istenir. Test, kolaydan zora doğru sıralanan on altı görevden oluşur. Bu görevler, CS-PFP toplam puanına katkıda bulunur, ancak aynı zamanda üst ekstremite gücü, üst ekstremite esnekliği, alt ekstremite gücü, denge ve koordinasyon ile dayanıklılık dahil olmak üzere 5 ayrı alan puanına da katkıda bulunur. CS-PFP’nin kısa formu CS-PFP10 ve tekerlekli sandalye kullananlar için WC-PFP versiyonu da bulunmaktadır.</p>
+
+<ul>
+  <li>İki adet belirli boyutlarda tezgah</li>
+  <li>Ağırlıklar: 9 adet 1-lb kum torbası, 18 adet 2-lb kum torbası, 9 adet 5-lb kum torbası, 8 adet 10-lb kum torbası</li>
+  <li>İki tencere</li>
+  <li>Maskeleme bandı</li>
+  <li>Kilogram ve pound cinsinden ölçüm yapabilen dijital terazi</li>
+  <li>Sürahi</li>
+  <li>Bardak</li>
+  <li>Yaylı terazi</li>
+  <li>S, M, L, XL, 3XL bedenlerinde hafif kumaş ceketler</li>
+  <li>S(38), M(42), L(46), XL(50), 3XL(58) bedenlerinde laboratuvar ceketi</li>
+  <li>Oturma yüksekliğinde yüzey</li>
+  <li>4 adet eşarp</li>
+  <li>Ayak taburesi</li>
+  <li>Stadiometre</li>
+  <li>Sünger</li>
+  <li>Fayans zemin alanı</li>
+  <li>1 adet kısa saplı faraş (kalça kırığı sonrası hastalar için modifikasyon: uzun saplı faraş)</li>
+  <li>Sentetik lifli 1 adet süpürge</li>
+  <li>Kedi kumu</li>
+  <li>Ölçü kabı</li>
+  <li>Kedi kumunu saklamak için plastik ayakkabı kutusu</li>
+  <li>~4lb ağırlığında 6 adet yetişkin giysisi (havlu, bornoz, çarşaf hariç)</li>
+  <li>Vinil kum torbalarını örtmek için ağ/tüp çorap</li>
+  <li>Çamaşır sepeti</li>
+  <li>Çamaşır makinesi (üstten yüklemeli) (belirli boyutlarda)</li>
+  <li>Kurutucu (önden yüklemeli; menteşe sağda) (belirli boyutlarda)</li>
+  <li>Kurutucunun sağında tezgah (yerden 90 cm)</li>
+  <li>Bacaklarında lastik tıpa olan 2 adet sağlam sandalye (belirli boyutlarda)</li>
+  <li>Egzersiz Matı</li>
+  <li>Elektrik süpürgesi</li>
+  <li>Yatak (belirli boyutlarda)</li>
+  <li>4 basamaklı, kapıdan geçişi içeren ve tezgahta biten 52,3 m’lik açık yol</li>
+  <li>Korkuluklu 3 veya 4 basamaklı platform (belirli boyutlarda) veya korkuluklu dokuz ila on bir basamak</li>
+  <li>Mutfak tezgahı/katlanır masa (belirli boyutlarda)</li>
+  <li>Farklı hacim ve ağırlıkta market ürünleri</li>
+  <li>2 adet büyük bez çanta ve 2 adet orta boy bez çanta</li>
+  <li>2 x 12 inç koni</li>
+  <li>Metrik ölçüm tekerleği</li>
+  <li>Yürüyüş kemeri</li>
+  <li>Vücut ağırlığı terazisi</li>
+  <li>İçme suyu ve portakal suyu (gerekirse)</li>
+  <li>Bant, kalemler, sharpieler, pano, kronometre, PFP-10 veri sayfası, PFP-10 veri yönetimi yazılımı, Borg RPE Ölçeği</li>
+  <li>Yardımcı araba (gerekirse malzemeleri taşımak için)</li>
+  <li>Tekerlekli sandalye (gerekirse)</li>
+</ul>
+
+<p>CS-PFP, kişilerin günlük yaşam aktivitelerini içeren çeşitli görevleri gerçekleştirmesini gerektirir. Bu görevler arasında ağırlıklı bir tencere taşımak, bir sürahiden bardağa su dökmek, bir ceketi giyip çıkarmak, bir raftan sünger yerleştirmek ve çıkarmak, yerleri süpürmek, kapıyı çekmek, çamaşırları makineden kurutucuya ve kurutucudan sepete aktarmak, yatak yapmak, elektrik süpürgesiyle temizlemek, ayakkabının üzerine bir kayış yerleştirmek, yerden eşarp toplamak, ağırlıklı bir çantayı otobüs durağına taşıyıp indirmek, yerden kalkıp oturmak, merdiven çıkmak, market alışverişi yapmak ve altı dakika yürümek yer alır. WC-PFP versiyonunda ise tekerlekli sandalyeden sandalyeye transfer ve 6 dakikalık tekerlekli sandalye sürüşü görevleri eklenmiştir.</p>
+
+<p>Testler, tamamlanma süresi ve/veya taşınan ağırlık veya ulaşılan yüksekliğe göre puanlanır. Ham puanlar, her görev için yüzde puanlarına dönüştürülür: Düzeltilmiş puan = [(gözlemlenen puan - alt sınır) / (üst sınır - alt sınır)] * 100. Üst ve alt sınırlar, Cress ve diğerleri (1996) tarafından yapılan validasyon çalışmasından alınmıştır ve 65 ila 85 yaş arasındaki yaşlı yetişkinlerden elde edilen verilere dayanmaktadır. Puanlar 0 ile 100 arasında değişir, daha yüksek puanlar daha iyi fonksiyonu gösterir.</p>
+
+<p>CS-PFP puanı ³ 57 birim olan kişiler bağımsız olarak değerlendirilir. Bu kişiler genellikle bağımsız yaşayan bireylerdir (toplulukta yaşayanlar veya bakım evinde yaşayanlar). CS-PFP puanı &lt; 57 olan kişiler bağımsız olarak değerlendirilmez.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+<ul>
+  <li>Yaşlı yetişkinlerde test-tekrar test güvenilirliği mükemmeldir (UBS = 0.95, UBF = 0.85, LBS = 0.94, BALC = 0.96, END = 0.93, Toplam = 0.97).</li>
+  <li>Manuel tekerlekli sandalye kullanıcılarında test-tekrar test güvenilirliği de mükemmeldir (Üst Vücut Gücü: ICC = 0.95, Üst Vücut Esnekliği: ICC = 0.87, Denge &amp; Koordinasyon: ICC = 0.88, Dayanıklılık: ICC = 0.96, Toplam: ICC = 0.96).</li>
+  <li>Fibromiyaljisi olan kadınlarda test-tekrar test güvenilirliği mükemmeldir (r = 0.90).</li>
+  <li>Parkinson hastalığında test-tekrar test güvenirliği mükemmeldir (Kappa = -0.95).</li>
+  <li>Yaşlı yetişkinlerde inter-rater güvenilirliği mükemmeldir (ICC = 0.97 - 0.99).</li>
+  <li>Yaşlı yetişkinlerde iç tutarlılık, üst vücut esnekliği dışında her alan için mükemmeldir (UBS = 0.87, UBF = 0.74, LBS = 0.83, BALC = 0.91, END = 0.86, Toplam = 0.9).</li>
+  <li>Manuel tekerlekli sandalye kullanıcılarında iç tutarlılık, üst vücut esnekliği dışında her alan için mükemmeldir (Üst Vücut Gücü: Chronbach’s a = 0.85, Üst Vücut Esnekliği: Chronbach’s a = 0.58, Denge &amp; Koordinasyon: Chronbach’s a = 0.83, Dayanıklılık: Chronbach’s a = 0.90, Toplam: Chronbach’s a = 0.93).</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+<ul>
+  <li>Yaşlı yetişkinlerde CS-PFP Toplam Puanı ile SF-36 Toplam arasında mükemmel (r = 0.75) ve Hastalık Etki Profili toplamı arasında yeterli (r = -0.58) düzeyde convergent geçerliliği vardır.</li>
+  <li>Yaşlı yetişkinlerde üst vücut gücü &amp; izometrik dirsek fleksiyonu, alt vücut gücü &amp; isokinetik diz ekstansiyonu, dayanıklılık &amp; maksimal O2 tüketimi ile mükemmel düzeyde convergent geçerliliği vardır.</li>
+  <li>İnme hastalarında CS-PFP10 toplam puanı ile VO2 zirvesi ve CMSA toplu puanları arasında mükemmel düzeyde convergent geçerliliği vardır.</li>
+  <li>Kronik kalp yetmezliği olan hastalarda CS-PFP10 ile zirve VO2 ve kompozit 1RM arasında mükemmel düzeyde convergent geçerliliği vardır.</li>
+</ul>
+
+<p><strong>Duyarlılık:</strong></p>
+<ul>
+  <li>
+    <p>CS-PFP ve CS-PFP10, SF-36PF’ye göre değişime daha duyarlıdır.</p>
+  </li>
+  <li>Arnett, S. W., Laity, J. H., et al. (2008). “Aerobic reserve and physical functional performance in older adults.” Age Ageing 37(4): 384-389.</li>
+  <li>Brochu, M., Savage, P., et al. (2002). “Effects of resistance training on physical function in older disabled women with coronary heart disease.” J Appl Physiol (1985) 92(2): 672-678.</li>
+  <li>Cress, M. E. (1997). “Quantifying physical functional performance in older adults.” Muscle Nerve Suppl 5(S5): S17-20.</li>
+  <li>Cress, M. E., Buchner, D. M., et al. (1996). “Continuous-scale physical functional performance in healthy older adults: a validation study.” Arch Phys Med Rehabil 77(12): 1243-1250.</li>
+  <li>Cress, M. E., Buchner, D. M., et al. (1999). “Exercise: effects on physical functional performance in independent older adults.” J Gerontol A Biol Sci Med Sci 54(5): M242-248.</li>
+  <li>Cress, M. E., Kinne, S., et al. (2002). “Physical functional performance in persons using a manual wheelchair.” The Journal of orthopaedic and sports physical therapy 32(3): 104-113.</li>
+  <li>Cress, M. E. and Meyer, M. (2003). “Maximal voluntary and functional performance levels needed for independence in adults aged 65 to 97 years.” Phys Ther 83(1): 37-48.</li>
+  <li>Cress, M. E., Petrella, J. K., et al. (2005). “Continuous-scale physical functional performance test: validity, reliability, and sensitivity of data for the short version.” Phys Ther 85(4): 323-335.</li>
+  <li>Frisard, M. I., Fabre, J. M., et al. (2007). “Physical activity level and physical functionality in nonagenarians compared to individuals aged 60-74 years.” J Gerontol A Biol Sci Med Sci 62(7): 783-788.</li>
+  <li>Hearty, T. M., Schenkman, M. L., et al. (2007). “Continuous scale physical functional performance test: appropriateness for middle-aged adults with and without Parkinson’s disease.” Journal of Neurologic Physical Therapy 31(2): 64.</li>
+  <li>Manns, P. J., Tomczak, C. R., et al. (2009). “Use of the continuous scale physical functional performance test in stroke survivors.” Archives of physical medicine and rehabilitation 90(3): 488-493.</li>
+  <li>Panton, L. B., Kingsley, J. D., et al. (2006). “A comparison of physical functional performance and strength in women with fibromyalgia, age- and weight-matched controls, and older women who are healthy.” Phys Ther 86(11): 1479-1488.</li>
+  <li>Savage, P. A., Shaw, A. O., et al. (2011). “Effect of resistance training on physical disability in chronic heart failure.” Med Sci Sports Exerc 43(8): 1379-1386.</li>
+  <li>Schenkman, M., Cutson, T. M., et al. (2002). “Application of the continuous scale physical functional performance test to people with Parkinson disease.” Journal of Neurologic Physical Therapy 26(3): 130-138.</li>
+  <li>Schenkman, M., Ellis, T., et al. (2011). “Profile of functional limitations and task performance among people with early- and middle-stage Parkinson disease.” Phys Ther 91(9): 1339-1354.</li>
+  <li>Schenkman, M., Hall, D., et al. (2008). “Endurance exercise training to improve economy of movement of people with Parkinson disease: three case reports.” Phys Ther 88(1): 63-76.</li>
+  <li>Schenkman, M., Hall, D. A., et al. (2012). “Exercise for people in early- or mid-stage Parkinson disease: a 16-month randomized controlled trial.” Phys Ther 92(11): 1395-1410.</li>
+</ul>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Cress, M. E., Buchner, D. M., et al. (1996). Continuous-scale physical functional performance in healthy older adults: a validation study. Arch Phys Med Rehabil 77(12): 1243-1250.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

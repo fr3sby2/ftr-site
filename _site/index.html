@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Ana Sayfa - FTR Bilgi Portalı - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link active" href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <!-- Hero Alanı -->
+<section class="home-hero text-center">
+  <div class="container">
+    <h1 class="mb-3">FTR Değerlendirme Araçları ve Bilgi Portalı</h1>
+    <p class="lead mb-4">Fizik Tedavi ve Rehabilitasyon (FTR) öğrencileri ve profesyonelleri için kapsamlı bir Türkçe kaynak, güncel değerlendirme ölçekleri, sık karşılaşılan hastalıklar hakkında bilgiler ve klinik pratik araçları sunan bir platform.</p>
+    <div class="search-container mx-auto">
+       <!-- _includes/search-bar.html -->
+<div class="search-bar-wrapper mb-3">
+  <form id="site-search-form" action="#" method="get" role="search" onsubmit="return false;">
+    <label for="search-input" class="visually-hidden">Arama</label> <!-- Erişilebilirlik için label -->
+    <input type="search" id="search-input" class="form-control" placeholder="[Gelişme aşamasında] Ölçek, hastalık veya anahtar kelime ara..." aria-label="Arama terimi">
+    <!-- Arama butonu kaldırıldı, arama yazarken tetiklenecek -->
+  </form>
+  <!-- Arama sonuçları buraya dinamik olarak eklenecek -->
+  <div id="search-results-container" class="search-results mt-2"></div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- Ana İçerik Alanı (index.md'den gelen) -->
+<section class="home-content my-5">
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+             <p>FTR Değerlendirme Araçları ve Bilgi Portalı’na <strong>hoş geldiniz!</strong></p>
+
+<p>Bu platform, Fizik Tedavi ve Rehabilitasyon (FTR) alanındaki <strong>öğrenciler, klinisyenler ve akademisyenler</strong> için güvenilir ve kapsamlı bir Türkçe kaynak olmayı hedeflemektedir.</p>
+
+<p>Amacımız, klinik pratikte ve eğitimde ihtiyaç duyulan <strong>değerlendirme yöntemlerini, hastalık bilgilerini ve pratik araçları</strong> modern ve erişilebilir bir formatta sunmaktır.</p>
+
+<hr />
+
+<h3 id="sitede-neler-bulacaksınız">Sitede Neler Bulacaksınız?</h3>
+
+<ul>
+  <li><strong>Kapsamlı Değerlendirme Aracı Veritabanı:</strong> Uluslararası kabul görmüş ölçeklerin Türkçe çevirileri, uygulama talimatları, puanlama ve yorumlama bilgileri.</li>
+  <li><strong>Hastalık Özelinde Bilgiler:</strong> İnme, Parkinson, MS, SP gibi durumlara özel tanımlar, klinik özellikler ve önerilen değerlendirmeler.</li>
+  <li><strong>Gelişmiş Arama:</strong> Aradığınız ölçeği veya hastalığı kolayca bulun.</li>
+  <li><strong>(Geliştirme Aşamasında):</strong> Filtreleme, görsel içerikler, güncel literatür özetleri.</li>
+</ul>
+
+<hr />
+
+<h4 id="lütfen-dikkat">Lütfen Dikkat:</h4>
+
+<p>Bu site <strong>eğitim ve bilgilendirme amaçlıdır.</strong> Sağlanan bilgiler profesyonel tıbbi tavsiyenin yerini tutmaz. Tanı ve tedavi kararları için mutlaka yetkin sağlık profesyonellerine danışılmalıdır. Değerlendirme araçlarının kullanımı orijinal kaynaklardan ve ilgili eğitimlerden öğrenilmelidir. SRALab içerikleri izin alınarak kullanılmıştır.</p>
+
+<p><em>Site aktif geliştirme aşamasındadır.</em></p>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Öne Çıkanlar Bölümü -->
+<section class="home-featured bg-light py-5">
+  <div class="container">
+    <div class="row text-center mb-4">
+        <div class="col">
+            <h2>Öne Çıkanlar</h2>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Öne Çıkan Değerlendirme Araçları Sütunu -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3 class="mb-3 h4 text-center">Değerlendirme Araçları</h3>
+            
+            
+            
+              <p class="text-muted text-center">Öne çıkan değerlendirme aracı bulunamadı.</p>
+              <div class="text-center mt-3">
+                <a href="/ftr-web-olcekler/tum-araclar/" class="btn btn-sm btn-outline-primary">Tüm Araçları Gör →</a>
+              </div>
+            
+        </div>
+
+        <!-- Sık Karşılaşılan Hastalıklar Sütunu -->
+        <div class="col-lg-6">
+            <h3 class="mb-3 h4 text-center">Hastalıklar ve Durumlar</h3>
+            
+            
+              <div class="list-group">
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/achilles-tendinopathy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Aşil Tendinopatisi</h5>
+                       <small class="text-muted">Aşil Tendiniti</small>
+                    </div>
+                     <p class="mb-1 small">Aşil tendinopatisi, aşil tendonunda ağrı ve fonksiyon kaybına neden olan bir durumdur. Genellikle aşırı kullanım...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/acl-reconstruction/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Ön Çapraz Bağ (ÖÇB) Rekonstrüksiyonu</h5>
+                       <small class="text-muted">ÖÇB Ameliyatı</small>
+                    </div>
+                     <p class="mb-1 small">Ön çapraz bağ rekonstrüksiyonu, yırtılmış bir ön çapraz bağı (ÖÇB) onarmak için yapılan cerrahi bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/acquired-brain-injury/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Edinilmiş Beyin Hasarı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Edinilmiş beyin hasarı, doğumdan sonra meydana gelen ve travmatik olmayan çeşitli nedenlerle oluşan beyin hasarlarını...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/adhesive-capsulitis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Donuk Omuz</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Donuk omuz, omuz eklemindeki kapsülün kalınlaşması ve gerginleşmesi sonucu ağrı ve hareket kısıtlılığına neden olan...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/alzheimers-disease/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Alzheimer Hastalığı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Alzheimer hastalığı, ilerleyici nörodejeneratif bir hastalık olup, hafıza, düşünme ve davranışlarda bozulmaya neden olur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/amyotrophic-lateral-sclerosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Amyotrofik Lateral Skleroz</h5>
+                       <small class="text-muted">ALS</small>
+                    </div>
+                     <p class="mb-1 small">Amyotrofik Lateral Skleroz (ALS), motor nöronların ilerleyici dejenerasyonu ile karakterize, kas güçsüzlüğüne ve atrofiye yol...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/ankle-fracture/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Ayak Bileği Kırığı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Ayak bileği kırığı, ayak bileğini oluşturan kemiklerden bir veya daha fazlasının bütünlüğünün bozulmasıdır. Genellikle düşme...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/ankylosing-spondylitis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Ankilozan Spondilit</h5>
+                       <small class="text-muted">AS</small>
+                    </div>
+                     <p class="mb-1 small">Ankilozan spondilit, öncelikle omurgayı etkileyen kronik inflamatuvar bir hastalıktır ve zamanla omurların kaynaşmasına neden olabilir....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/asthma/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Astım</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Astım, akciğerlerdeki hava yollarının daralması ve iltihaplanması sonucu ortaya çıkan kronik bir solunum yolu hastalığıdır....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/ataxia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Ataksi</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Ataksi, kas koordinasyonunun bozulması sonucu ortaya çıkan bir durumdur. Denge, yürüme, konuşma ve diğer istemli...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/autism-spectrum-disorder/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Otizm Spektrum Bozukluğu</h5>
+                       <small class="text-muted">OSB</small>
+                    </div>
+                     <p class="mb-1 small">Otizm Spektrum Bozukluğu (OSB), sosyal etkileşim, iletişim ve davranışlarda zorluklarla karakterize edilen, nörogelişimsel bir bozukluktur....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/bells-palsy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Bell Felci</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Bell Felci, yüz sinirinin (fasiyal sinir) işlev bozukluğu sonucu yüz kaslarında ani başlayan geçici bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/benign-paroxysmal-positional-vertigo/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Pozisyonel Vertigo</h5>
+                       <small class="text-muted">BPPV</small>
+                    </div>
+                     <p class="mb-1 small">Pozisyonel Vertigo, baş pozisyonundaki değişikliklerle tetiklenen ani baş dönmesi (vertigo) ataklarına neden olan bir iç...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/breast-cancer-rehabilitation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Meme Kanseri Rehabilitasyonu</h5>
+                       <small class="text-muted">Meme Kanseri Sonrası Rehabilitasyon</small>
+                    </div>
+                     <p class="mb-1 small">Meme kanseri rehabilitasyonu, meme kanseri tedavisi sürecinde ve sonrasında ortaya çıkabilecek fiziksel, psikolojik ve sosyal...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/burns/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Yanıklar</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Yanıklar, ısı, radyasyon, elektrik, sürtünme veya kimyasallar gibi dış etkenler nedeniyle ciltte ve bazen altta...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/cancer-rehabilitation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kanser Rehabilitasyonu</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Kanser rehabilitasyonu, kanser tedavisi sürecinde ve sonrasında hastaların fiziksel, psikolojik ve sosyal iyilik halini desteklemeyi...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/carpal-tunnel-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Karpal Tünel Sendromu</h5>
+                       <small class="text-muted">KTS</small>
+                    </div>
+                     <p class="mb-1 small">Karpal Tünel Sendromu, el bileğindeki karpal tünel içinden geçen median sinirin sıkışması sonucu ortaya çıkan...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/cerebral-palsy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Serebral Palsi</h5>
+                       <small class="text-muted">SP</small>
+                    </div>
+                     <p class="mb-1 small">Serebral palsi, doğum öncesi, doğum sırasında veya doğumdan kısa süre sonra meydana gelen beyin hasarı...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/cervical-disc-herniation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Servikal Disk Herniasyonu</h5>
+                       <small class="text-muted">Boyun Fıtığı</small>
+                    </div>
+                     <p class="mb-1 small">Servikal disk herniasyonu, boyun omurgasındaki intervertebral disklerin yırtılması veya fıtıklaşması sonucu sinirlere baskı yapması durumudur...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/cervical-spondylosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Servikal Spondiloz</h5>
+                       <small class="text-muted">Boyun Kireçlenmesi</small>
+                    </div>
+                     <p class="mb-1 small">Servikal spondiloz, boyun omurlarında yaşa bağlı olarak meydana gelen dejeneratif değişiklikleri ifade eder ve genellikle...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/charcot-marie-tooth-disease/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Charcot-Marie-Tooth Hastalığı</h5>
+                       <small class="text-muted">CMT</small>
+                    </div>
+                     <p class="mb-1 small">Charcot-Marie-Tooth (CMT) hastalığı, periferik sinirleri etkileyen, genetik geçişli bir grup nörolojik bozukluğu ifade eder ve...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/chronic-low-back-pain/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kronik Bel Ağrısı</h5>
+                       <small class="text-muted">KBA</small>
+                    </div>
+                     <p class="mb-1 small">Kronik bel ağrısı, 3 aydan uzun süren ve sürekli veya aralıklı olarak devam eden bel...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/chronic-obstructive-pulmonary-disease/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kronik Obstrüktif Akciğer Hastalığı (KOAH)</h5>
+                       <small class="text-muted">KOAH</small>
+                    </div>
+                     <p class="mb-1 small">Kronik Obstrüktif Akciğer Hastalığı (KOAH), akciğerlere hava akışını engelleyen ve nefes almayı zorlaştıran ilerleyici bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/chronic-pain/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kronik Ağrı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Kronik ağrı, vücutta iyileşme sürecinin ötesinde devam eden, uzun süreli ve sürekli ağrıdır.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/complex-regional-pain-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kompleks Bölgesel Ağrı Sendromu</h5>
+                       <small class="text-muted">KBAS</small>
+                    </div>
+                     <p class="mb-1 small">Kompleks Bölgesel Ağrı Sendromu (KBAS), genellikle bir yaralanma sonrası ortaya çıkan kronik bir ağrı durumudur....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/coronary-artery-bypass-graft-surgery/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Koroner Arter Bypass Greftleme Cerrahisi</h5>
+                       <small class="text-muted">CABG</small>
+                    </div>
+                     <p class="mb-1 small">Koroner arter bypass greftleme cerrahisi, tıkanmış veya daralmış koroner arterleri bypass ederek kalbe kan akışını...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/critical-illness-myopathy-and-neuropathy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kritik Hastalık Miyopatisi ve Nöropatisi</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Kritik hastalık miyopatisi ve nöropatisi, yoğun bakımda uzun süre kalan hastalarda gelişebilen kas ve sinir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/cystic-fibrosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kistik Fibrozis</h5>
+                       <small class="text-muted">KF</small>
+                    </div>
+                     <p class="mb-1 small">Kistik fibrozis, başta akciğerler, pankreas, karaciğer, bağırsaklar ve üreme organları olmak üzere birçok organı etkileyen...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/dementia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Demans</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Demans, bilişsel yeteneklerde ilerleyici bir azalmaya neden olan, hafıza, düşünme ve davranışları etkileyen bir grup...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/developmental-coordination-disorder/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Gelişimsel Koordinasyon Bozukluğu</h5>
+                       <small class="text-muted">GKB</small>
+                    </div>
+                     <p class="mb-1 small">Gelişimsel Koordinasyon Bozukluğu (GKB), motor becerileri öğrenme ve uygulamada zorluklarla karakterize edilen nörogelişimsel bir durumdur....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/developmental-delay/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Gelişimsel Gerilik</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Gelişimsel gerilik, bir çocuğun yaşına göre beklenen gelişimsel kilometre taşlarına ulaşmasında gecikme olması durumudur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/diabetic-neuropathy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Diabetik Nöropati</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Diabetik nöropati, yüksek kan şekeri seviyelerinin sinirlerde hasara yol açması sonucu ortaya çıkan bir sinir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/down-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Down Sendromu</h5>
+                       <small class="text-muted">Trizomi 21</small>
+                    </div>
+                     <p class="mb-1 small">Down Sendromu, 21. kromozomun fazladan bir kopyasına sahip olmakla karakterize genetik bir durumdur. Bu durum,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/dystonia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Distoni</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Distoni, istemsiz kas kasılmaları sonucu anormal duruşlara, tekrarlayan hareketlere veya titremelere neden olan bir hareket...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/epilepsy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Epilepsi (Sara)</h5>
+                       <small class="text-muted">Sara</small>
+                    </div>
+                     <p class="mb-1 small">Epilepsi, beyin aktivitesindeki anormal değişiklikler sonucu tekrarlayan nöbetlerle karakterize kronik bir nörolojik hastalıktır.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/essential-tremor/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Esansiyel Tremor</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Esansiyel tremor, genellikle ellerde görülen ve istem dışı titremelere neden olan nörolojik bir hastalıktır. Bu...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/falls-in-older-adults/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Yaşlılarda Düşmeler</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Yaşlılarda düşmeler, önemli bir halk sağlığı sorunudur ve yaralanmalara, sakatlıklara ve yaşam kalitesinde azalmaya neden...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/femur-fracture/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Femur Kırığı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Femur kırığı, uyluk kemiğinin (femur) bütünlüğünün bozulmasıdır ve genellikle travma sonucu meydana gelir.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/fibromyalgia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Fibromiyalji</h5>
+                       <small class="text-muted">Yaygın Ağrı Sendromu</small>
+                    </div>
+                     <p class="mb-1 small">Fibromiyalji, yaygın kas-iskelet sistemi ağrısı, yorgunluk ve hassas noktalar ile karakterize kronik bir durumdur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/frailty/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kırılganlık Sendromu</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Kırılganlık sendromu, yaşlı bireylerde görülen ve stres faktörlerine karşı direncin azalması, fizyolojik rezervlerin tükenmesi ve...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/friedreichs-ataxia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Friedreich Ataksisi</h5>
+                       <small class="text-muted">FA</small>
+                    </div>
+                     <p class="mb-1 small">Friedreich Ataksisi, ilerleyici denge ve koordinasyon kaybına neden olan kalıtsal bir nörolojik hastalıktır.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/general-deconditioning/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Genel Kondisyon Kaybı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Genel kondisyon kaybı, uzun süreli hareketsizlik, hastalık veya yaralanma sonucu fiziksel fonksiyonlarda ve genel sağlık...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/golfers-elbow/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Golfçü Dirseği</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Golfçü dirseği, dirseğin iç kısmındaki tendonların aşırı kullanımı sonucu oluşan ağrılı bir durumdur. Özellikle el...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/guillain-barre-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Guillain-Barre Sendromu</h5>
+                       <small class="text-muted">GBS</small>
+                    </div>
+                     <p class="mb-1 small">Guillain-Barre Sendromu (GBS), vücudun bağışıklık sisteminin sinirlere saldırması sonucu ortaya çıkan nadir bir otoimmün hastalıktır...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/hand-osteoarthritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">El Osteoartriti</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">El osteoartriti, el eklemlerinde kıkırdağın hasar görmesi sonucu oluşan dejeneratif bir eklem hastalığıdır. Ağrı, sertlik...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/head-and-neck-cancer-rehabilitation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Baş ve Boyun Kanserleri Rehabilitasyonu</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Baş ve boyun kanserleri rehabilitasyonu, kanser tedavisi sonrası ortaya çıkan fiziksel ve fonksiyonel kayıpların giderilmesine,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/heart-failure/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kalp Yetmezliği</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Kalp yetmezliği, kalbin vücudun ihtiyaçlarını karşılayacak kadar kan pompalayamaması durumudur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/hemorrhagic-stroke/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Hemorajik İnme</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Hemorajik inme, beyin damarlarından birinin yırtılması sonucu beyin dokusuna kan sızmasıyla meydana gelen bir inme...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/hip-fracture/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kalça Kırığı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Kalça kırığı, uyluk kemiğinin kalça eklemine yakın bölgesinde meydana gelen bir kırılmadır ve genellikle düşme...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/hip-osteoarthritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kalça Osteoartriti</h5>
+                       <small class="text-muted">Kalça Kireçlenmesi</small>
+                    </div>
+                     <p class="mb-1 small">Kalça osteoartriti, kalça eklemindeki kıkırdağın zamanla yıpranması sonucu oluşan dejeneratif bir eklem hastalığıdır. Bu durum...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/hiv-aids/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">İnsan Bağışıklık Yetmezliği Virüsü/Edinilmiş Bağışıklık Yetmezliği Sendromu</h5>
+                       <small class="text-muted">HIV/AIDS</small>
+                    </div>
+                     <p class="mb-1 small">HIV/AIDS, İnsan Bağışıklık Yetmezliği Virüsü'nün (HIV) neden olduğu, bağışıklık sistemini zayıflatarak enfeksiyonlara ve kansere karşı...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/huntingtons-disease/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Huntington Hastalığı</h5>
+                       <small class="text-muted">HD</small>
+                    </div>
+                     <p class="mb-1 small">Huntington Hastalığı, beyindeki sinir hücrelerininProgressive yıkımına yol açan kalıtsal bir nörolojik hastalıktır; bu da hareket,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/hydrocephalus/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Beyin Omurilik Sıvısı Birikimi (Hidrosefali)</h5>
+                       <small class="text-muted">Hidrosefali</small>
+                    </div>
+                     <p class="mb-1 small">Hidrosefali, beyinde aşırı miktarda beyin omurilik sıvısı (BOS) birikmesi durumudur. Bu birikim, beyin ventriküllerinde genişlemeye...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/ischemic-stroke/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">İskemik İnme</h5>
+                       <small class="text-muted">İnme</small>
+                    </div>
+                     <p class="mb-1 small">İskemik inme, beyne kan akışının tıkanması sonucu oluşan ve beyin hücrelerinin hasar görmesine neden olan...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/juvenile-idiopathic-arthritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Juvenil İdiyopatik Artrit</h5>
+                       <small class="text-muted">JIA</small>
+                    </div>
+                     <p class="mb-1 small">Juvenil İdiyopatik Artrit (JIA), 16 yaşından önce başlayan ve en az altı hafta süren, nedeni...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/knee-osteoarthritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Diz Osteoartriti (Kireçlenme)</h5>
+                       <small class="text-muted">Diz Kireçlenmesi</small>
+                    </div>
+                     <p class="mb-1 small">Diz osteoartriti, diz eklemindeki kıkırdağın zamanla aşınması sonucu oluşan, ağrı, hareket kısıtlılığı ve fonksiyonel kayıplara...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/labyrinthitis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Labirentit</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Labirentit, iç kulaktaki labirent adı verilen yapının iltihaplanması sonucu ortaya çıkan bir denge bozukluğudur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/lewy-body-dementia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Lewy Cisimcikli Demans</h5>
+                       <small class="text-muted">LBD</small>
+                    </div>
+                     <p class="mb-1 small">Lewy Cisimcikli Demans (LBD), ilerleyici bir demans türü olup, anormal protein birikimleri (Lewy cisimcikleri) nedeniyle...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/low-back-pain/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Bel Ağrısı</h5>
+                       <small class="text-muted">LBP</small>
+                    </div>
+                     <p class="mb-1 small">Bel ağrısı, omurganın alt kısmında hissedilen ağrı ve rahatsızlık durumudur ve günlük aktiviteleri etkileyebilir.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/lower-limb-amputation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Alt Ekstremite Amputasyonu</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Alt ekstremite amputasyonu, bacak, ayak veya ayak parmaklarının cerrahi olarak çıkarılması işlemidir. Genellikle dolaşım sorunları,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/lumbar-disc-herniation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Bel Omurga Disk Herniasyonu</h5>
+                       <small class="text-muted">Bel Fıtığı</small>
+                    </div>
+                     <p class="mb-1 small">Bel omurga disk herniasyonu (bel fıtığı), omurlar arasındaki disklerin yırtılması veya fıtıklaşması sonucu sinirlere baskı...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/lumbar-spinal-stenosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Lomber Spinal Stenoz</h5>
+                       <small class="text-muted">Dar Kanal</small>
+                    </div>
+                     <p class="mb-1 small">Lomber spinal stenoz, omuriliğin ve sinir köklerinin geçtiği spinal kanalın daralması sonucu oluşan bir durumdur....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/lymphedema/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Lenfödem</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Lenfödem, lenfatik sistemdeki hasar veya tıkanıklık sonucu vücudun belirli bölgelerinde aşırı sıvı birikmesiyle karakterize kronik...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/menieres-disease/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Meniere Hastalığı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Meniere hastalığı, iç kulakta denge ve işitme sorunlarına yol açan kronik bir hastalıktır. Baş dönmesi...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/meniscus-tear/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Menisküs Yırtığı</h5>
+                       <small class="text-muted">Menisküs</small>
+                    </div>
+                     <p class="mb-1 small">Menisküs yırtığı, diz ekleminde bulunan ve kıkırdaktan oluşan menisküs yapısının hasar görmesi durumudur. Bu durum,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/multiple-sclerosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Multipl Skleroz</h5>
+                       <small class="text-muted">MS</small>
+                    </div>
+                     <p class="mb-1 small">Multipl Skleroz (MS), beyin ve omurilikte (merkezi sinir sistemi) sinir liflerini koruyan miyelin kılıfına zarar...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/muscular-dystrophy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Musküler Distrofi</h5>
+                       <small class="text-muted">MD</small>
+                    </div>
+                     <p class="mb-1 small">Musküler distrofi, kas zayıflığı ve kas kaybı ile karakterize genetik bir hastalık grubudur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/myasthenia-gravis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Myastenia Gravis</h5>
+                       <small class="text-muted">MG</small>
+                    </div>
+                     <p class="mb-1 small">Myastenia Gravis, kas güçsüzlüğüne ve yorgunluğa neden olan kronik bir otoimmün nöromüsküler hastalıktır.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/myocardial-infarction/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Miyokard Enfarktüsü</h5>
+                       <small class="text-muted">Kalp Krizi</small>
+                    </div>
+                     <p class="mb-1 small">Miyokard enfarktüsü, kalp kasının bir bölgesine yeterli kan akışı olmaması sonucu o bölgedeki hücrelerin hasar...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/neck-pain/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Boyun Ağrısı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Boyun ağrısı, boyun bölgesinde hissedilen ağrı veya rahatsızlık hissidir ve çeşitli nedenlerle ortaya çıkabilir.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/non-traumatic-spinal-cord-injury/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Travmatik Olmayan Spinal Kord Yaralanması</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Travmatik olmayan spinal kord yaralanması, düşme veya kaza gibi dışsal bir travma olmaksızın, omurilikte meydana...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/normal-pressure-hydrocephalus/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Normal Basınçlı Hidrosefali</h5>
+                       <small class="text-muted">NBH</small>
+                    </div>
+                     <p class="mb-1 small">Normal Basınçlı Hidrosefali (NBH), beyin omurilik sıvısının (BOS) ventriküllerde birikmesi sonucu ortaya çıkan ve yürüme...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/obesity/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Obezite</h5>
+                       <small class="text-muted">Şişmanlık</small>
+                    </div>
+                     <p class="mb-1 small">Obezite, vücutta aşırı miktarda yağ birikmesi sonucu ortaya çıkan, sağlık sorunlarına yol açabilen kronik bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/organ-transplantation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Organ Nakli</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Organ nakli, hastalıklı veya hasar görmüş bir organın yerine sağlıklı bir organın cerrahi olarak yerleştirilmesi...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/osteoarthritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Osteoartrit (Kireçlenme)</h5>
+                       <small class="text-muted">Kireçlenme</small>
+                    </div>
+                     <p class="mb-1 small">Osteoartrit (kireçlenme), eklem kıkırdağının yıkımı ve alttaki kemikte değişikliklerle karakterize, yaygın bir eklem hastalığıdır. Ağrı,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/osteoporosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Osteoporoz</h5>
+                       <small class="text-muted">Kemik Erimesi</small>
+                    </div>
+                     <p class="mb-1 small">Osteoporoz, kemik yoğunluğunun azalması sonucu kemiklerin zayıflaması ve kırılgan hale gelmesiyle karakterize edilen bir hastalıktır....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/parkinsons-disease/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Parkinson Hastalığı</h5>
+                       <small class="text-muted">Parkinson</small>
+                    </div>
+                     <p class="mb-1 small">Parkinson hastalığı, beyindeki dopamin üreten nöronların kaybıyla karakterize, ilerleyici bir nörolojik hastalıktır. Titreme, katılık, hareketlerde...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/patellar-tendinopathy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Patellar Tendinopati</h5>
+                       <small class="text-muted">Jumper's Knee</small>
+                    </div>
+                     <p class="mb-1 small">Patellar tendinopati, diz kapağını kaval kemiğine bağlayan patellar tendonun aşırı kullanımından kaynaklanan bir durumdur ve...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/patellofemoral-pain-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Patellofemoral Ağrı Sendromu</h5>
+                       <small class="text-muted">Diz Önü Ağrısı</small>
+                    </div>
+                     <p class="mb-1 small">Patellofemoral Ağrı Sendromu (PFAS), diz kapağı ve uyluk kemiği arasındaki eklemde ağrıya neden olan bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/peripheral-neuropathy/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Periferik Nöropati</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Periferik nöropati, periferik sinirlerin hasar görmesi sonucu ortaya çıkan ve genellikle ağrı, uyuşma, karıncalanma ve...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/plantar-fasciitis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Plantar Fasiit</h5>
+                       <small class="text-muted">Topuk Dikeni</small>
+                    </div>
+                     <p class="mb-1 small">Plantar fasiit, topuktan ayak parmaklarına kadar uzanan plantar fasyanın iltihaplanması sonucu oluşan, yaygın bir ayak...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/post-intensive-care-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Yoğun Bakım Sonrası Sendromu</h5>
+                       <small class="text-muted">PICS</small>
+                    </div>
+                     <p class="mb-1 small">Yoğun bakımda uzun süre kalan hastalarda ortaya çıkabilen, fiziksel, bilişsel ve psikolojik sorunları içeren bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/post-polio-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Post-Polio Sendromu</h5>
+                       <small class="text-muted">PPS</small>
+                    </div>
+                     <p class="mb-1 small">Post-Polio Sendromu (PPS), çocuk felci geçiren kişilerde yıllar sonra ortaya çıkabilen bir nörolojik durumdur ve...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/pulmonary-fibrosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Akciğer Fibrozisi</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Akciğer fibrozisi, akciğer dokusunun zamanla kalınlaşıp sertleşmesiyle karakterize, ilerleyici bir akciğer hastalığıdır. Bu durum, nefes...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/pulmonary-hypertension/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Pulmoner Hipertansiyon</h5>
+                       <small class="text-muted">PAH</small>
+                    </div>
+                     <p class="mb-1 small">Pulmoner hipertansiyon, akciğerlerdeki atardamarlarda yüksek tansiyon ile karakterize, ilerleyici bir hastalıktır. Bu durum kalbin sağ...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/rheumatoid-arthritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Romatoid Artrit</h5>
+                       <small class="text-muted">RA</small>
+                    </div>
+                     <p class="mb-1 small">Romatoid artrit (RA), genellikle eklemleri etkileyen kronik, inflamatuvar bir otoimmün hastalıktır. Ağrı, şişlik ve sertliğe...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/rotator-cuff-tear/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Rotator Manşet Yırtığı</h5>
+                       <small class="text-muted">Omuz Yırtığı</small>
+                    </div>
+                     <p class="mb-1 small">Rotator manşet yırtığı, omuz eklemini stabilize eden ve kolun hareketini sağlayan kas ve tendon grubunda...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/sarcopenia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Sarkopeni (Kas Kaybı)</h5>
+                       <small class="text-muted">Kas Kaybı</small>
+                    </div>
+                     <p class="mb-1 small">Sarkopeni, yaşlanma ile birlikte kas kütlesi ve gücünde azalma ile karakterize edilen bir durumdur ve...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/scoliosis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Skolyoz</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Skolyoz, omurganın yana doğru eğriliği ile karakterize bir durumdur. Genellikle çocukluk veya ergenlik döneminde ortaya...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/shoulder-arthroplasty/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Omuz Artroplastisi</h5>
+                       <small class="text-muted">Omuz Protezi</small>
+                    </div>
+                     <p class="mb-1 small">Omuz artroplastisi, hasar görmüş veya hastalıklı omuz ekleminin yapay bir eklemle değiştirilmesi işlemidir.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/shoulder-impingement-syndrome/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Omuz Sıkışma Sendromu</h5>
+                       <small class="text-muted">Omuz Sıkışması</small>
+                    </div>
+                     <p class="mb-1 small">Omuz sıkışma sendromu, omuz eklemi içindeki yapıların (özellikle rotator manşet tendonları ve bursa) sıkışması sonucu...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/shoulder-instability/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Omuz İnstabilitesi</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Omuz instabilitesi, omuz ekleminin normal pozisyonunu koruyamaması durumudur ve tekrarlayan çıkıklara veya subluksasyonlara (kısmi çıkık)...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/spina-bifida/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Açık Omurga</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Spina Bifida, omuriliğin ve/veya omurların doğumda tam olarak kapanmaması sonucu oluşan bir doğum kusurudur. Bu...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/spinal-cord-injury/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Omurilik Yaralanması</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Omurilik yaralanması, omuriliğe gelen bir travma sonucu meydana gelen ve motor, duyusal veya otonom fonksiyonlarda...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/spinocerebellar-ataxia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Spinoserebellar Ataksi</h5>
+                       <small class="text-muted">SCA</small>
+                    </div>
+                     <p class="mb-1 small">Spinoserebellar ataksi (SCA), ilerleyici koordinasyon kaybına (ataksi) neden olan genetik bir nörolojik bozukluklar grubudur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/spondylolisthesis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Omurga Kayması</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Omurga kayması, bir omurun altındaki omur üzerinden öne doğru kayması durumudur. Bu durum genellikle bel...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/stroke/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">İnme</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">İnme, beyne giden kan akışının kesilmesi veya azalması sonucu oluşan, ani gelişen bir nörolojik tablodur....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/temporomandibular-joint-dysfunction/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Temporomandibular Eklem Disfonksiyonu</h5>
+                       <small class="text-muted">TME Disfonksiyonu</small>
+                    </div>
+                     <p class="mb-1 small">Temporomandibular eklem disfonksiyonu (TME disfonksiyonu), çene eklemi ve çiğneme kaslarını etkileyen bir durumdur ve ağrı,...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/tennis-elbow/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Tenisçi Dirseği</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Tenisçi dirseği, dirseğin dış kısmındaki kemik çıkıntısında ağrıya neden olan, ön kol kaslarının aşırı kullanımından...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/tibial-fracture/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kaval Kemiği Kırığı</h5>
+                       <small class="text-muted">Kaval Kemiği Kırığı</small>
+                    </div>
+                     <p class="mb-1 small">Kaval kemiği kırığı, bacağın alt kısmında bulunan ve vücut ağırlığını taşımada önemli rol oynayan kaval...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/torticollis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Boyun Eğriliği</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Boyun eğriliği (torticollis), boyun kaslarının anormal kasılması sonucu başın bir tarafa eğik durması durumudur.</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/total-hip-arthroplasty/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Total Kalça Artroplastisi</h5>
+                       <small class="text-muted">Kalça Protezi</small>
+                    </div>
+                     <p class="mb-1 small">Total Kalça Artroplastisi (TKA), hasar görmüş kalça ekleminin cerrahi olarak yapay bir eklemle (protez) değiştirilmesi...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/total-knee-arthroplasty/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Total Diz Artroplastisi</h5>
+                       <small class="text-muted">TKA</small>
+                    </div>
+                     <p class="mb-1 small">Total diz artroplastisi (TKA), hasar görmüş veya hastalıklı diz ekleminin yapay bir eklemle değiştirildiği cerrahi...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/transfemoral-amputation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Transfemoral Amputasyon</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Transfemoral amputasyon, uyluk kemiğinin bir kısmının çıkarılmasını içeren cerrahi bir işlemdir ve kalça ekleminin altında...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/transient-ischemic-attack/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Geçici İskemik Atak</h5>
+                       <small class="text-muted">TIA</small>
+                    </div>
+                     <p class="mb-1 small">Geçici iskemik atak (TIA), beyne giden kan akışının kısa süreliğine kesilmesi sonucu oluşan, felç benzeri...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/transtibial-amputation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Transtibial Amputasyon (Diz Altı Amputasyon)</h5>
+                       <small class="text-muted">Diz Altı Amputasyon</small>
+                    </div>
+                     <p class="mb-1 small">Transtibial amputasyon, tibia (kaval kemiği) ve fibula (kamış kemiği) kemiklerinin kesilmesiyle diz altından yapılan bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/transverse-myelitis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Transvers Miyelit</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Transvers miyelit, omuriliğin inflamasyonu sonucu oluşan, motor ve duyusal fonksiyonlarda bozukluklara yol açabilen nadir bir...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/traumatic-brain-injury/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Travmatik Beyin Hasarı</h5>
+                       <small class="text-muted">TBH</small>
+                    </div>
+                     <p class="mb-1 small">Travmatik beyin hasarı (TBH), kafaya alınan bir darbe veya sarsıntı sonucu beyin fonksiyonlarında geçici veya...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/traumatic-spinal-cord-injury/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Travmatik Omurilik Yaralanması</h5>
+                       <small class="text-muted">TOY</small>
+                    </div>
+                     <p class="mb-1 small">Travmatik omurilik yaralanması, omuriliğe dışarıdan gelen bir travma sonucu meydana gelen hasardır ve motor, duyusal...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/trigeminal-neuralgia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Trigeminal Nevralji</h5>
+                       <small class="text-muted">Tik Douloureux</small>
+                    </div>
+                     <p class="mb-1 small">Trigeminal nevralji, trigeminal sinirin etkilenmesi sonucu yüz bölgesinde şiddetli, bıçak saplanır tarzda ağrılara neden olan...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/upper-limb-amputation/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Üst Ekstremite Amputasyonu</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Üst ekstremite amputasyonu, kolun bir kısmının veya tamamının cerrahi olarak çıkarılması işlemidir ve travma, enfeksiyon...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/vascular-dementia/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Vasküler Demans</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Vasküler demans, beyne kan akışının azalması sonucu ortaya çıkan ve bilişsel fonksiyonlarda bozulmaya neden olan...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/vertebral-compression-fracture/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Vertebra Kompresyon Kırığı</h5>
+                       <small class="text-muted">Çökme Kırığı</small>
+                    </div>
+                     <p class="mb-1 small">Vertebra kompresyon kırığı, omurganın bir veya daha fazla omurunun çökmesiyle karakterize edilen bir kırık türüdür....</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/vestibular-disorders/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Vestibüler Bozukluklar</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Vestibüler bozukluklar, iç kulaktaki denge organı olan vestibüler sistemin işlev bozukluğundan kaynaklanan çeşitli durumları ifade...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/vestibular-neuritis/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Vestibüler Nörit</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">Vestibüler nörit, iç kulaktaki denge sinirinin iltihaplanması sonucu ani başlayan baş dönmesi ve denge problemlerine...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/whiplash-associated-disorders/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">Kamçı Yaralanmasıyla İlişkili Bozukluklar</h5>
+                       <small class="text-muted">WAD</small>
+                    </div>
+                     <p class="mb-1 small">Kamçı yaralanmasıyla ilişkili bozukluklar (WAD), genellikle bir trafik kazası gibi ani bir hareketin neden olduğu...</p>
+                   </a>
+                 
+                  <a href="/ftr-web-olcekler/hastaliklar/wrist-fracture/" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">El Bileği Kırığı</h5>
+                       <small class="text-muted"></small>
+                    </div>
+                     <p class="mb-1 small">El bileği kırığı, genellikle düşme sonucu meydana gelen ve el bileğini oluşturan kemiklerden bir veya...</p>
+                   </a>
+                 
+              </div>
+              <div class="text-center mt-3">
+                 <a href="/ftr-web-olcekler/hastaliklar-genel/" class="btn btn-sm btn-outline-primary">Tüm Hastalıkları Gör →</a>
+              </div>
+            
+        </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

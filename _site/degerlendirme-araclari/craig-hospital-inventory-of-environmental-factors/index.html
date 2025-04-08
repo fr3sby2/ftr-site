@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Craig Hastanesi Çevresel Faktörler Envanteri - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Craig Hastanesi Çevresel Faktörler Envanteri</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Craig Hospital Inventory of Environmental Factors</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> CHIEF/ CHIEF-SF</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Engelli bireyler için fiziksel, sosyal ve politik ortamların tam katılımı engelleyen veya kolaylaştıran unsurlarının derecesini değerlendirmek.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Spinal Yaralanmalar, Spesifik Olmayan Hasta Popülasyonu, Karışık Popülasyonlar, Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Her bir maddenin sıklık (0-4 aralığında) ve büyüklük (1-2 aralığında) puanları çarpılarak hesaplanır ve genel bir 'etki' puanı (0-8 aralığında) elde edilir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Yaşam Kalitesi</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Craig Hastanesi Çevresel Faktörler Envanteri (CHIEF) ve kısa formu (CHIEF-SF), fiziksel, sosyal ve politik çevrenin unsurlarının engelli bireylerin tam katılımını ne ölçüde engellediğini veya kolaylaştırdığını değerlendirir.  Çevresel engellerin genel etkisini 5 alanda değerlendirir. Karşılaşılan sorunun hem sıklığı hem de derecesi ile hesaplanır.</p>
+
+<p>Değerlendirilen alanlar:
+1) Erişilebilirlik
+2) Uygunluk
+3) Kaynakların mevcudiyeti
+4) Sosyal destek
+5) Eşitlik</p>
+
+<p>CHIEF: Puanlar, 25 maddenin her birinin sıklık puanı (0 ila 4 aralığında) ile büyüklük (1 ila 2 aralığında) ile çarpılmasıyla hesaplanır ve genel bir “etki” puanı (0-8 aralığında) elde edilir.
+1) Sıklık: Engellerle karşılaşma sıklığı
+2) Büyüklük: Engelin yarattığı sorunun büyüklüğünü gösterir
+3) Sıklık büyüklük çarpımı: Engelin genel etkisini belirlemek için sıklık X büyüklük çarpımı</p>
+
+<p>CHIEF-SF: Orijinal CHIEF’ten geliştirilen 12 maddelik versiyon, 5 alt ölçeğin tamamını korur. Daha büyük engelleri gösteren, alt ölçek ve toplam puanlarla en yüksek korelasyonlara sahip, en yüksek kavramsal netliğe ve ayırt edici geçerliliğe (engelli olanlar ve olmayanlar arasında ayrım yapan) sahip maddelerden oluşur; Puanlar, CHIEF için belirtildiği gibi, orijinal 5 alt ölçek içinde 25 madde yerine yalnızca 12 madde kullanılarak hesaplanır.</p>
+
+<p>CHIEF uzun formunun hangi maddelerinin CHIEF-SF’ye dahil edilmek üzere tutulacağını belirlemek için aşağıdaki kriterler kullanılmıştır:
+1) En yüksek engel ortalama puanlarına sahip maddeler
+2) En yüksek engel büyüklüğü ortalama puanlarına sahip maddeler
+3) En yüksek madde puanı-alt ölçek puanı korelasyonlarına sahip maddeler
+4) En sık bildirilen engeller
+5) Engelli olan ve olmayan kişiler arasında en iyi ayrım yapan maddeler
+6) Yazarların kavramsal olarak ölçeğe dahil edilmesi gerektiğini düşündükleri maddeler de saklandı</p>
+
+<p>CHIEF: 10 dakika
+CHIEF-SF: 5 dakika
+Mülakat yoluyla uygulandığında her teste 5 dakika ekleyin.</p>
+
+<p>CHIEF: Puanlar, 25 maddenin her birinin sıklık puanı (0 ila 4 aralığında) ile büyüklük (1 ila 2 aralığında) ile çarpılmasıyla hesaplanır ve genel bir “etki” puanı (0-8 aralığında) elde edilir.
+1) Sıklık: Engellerle karşılaşma sıklığı
+2) Büyüklük: Engelin yarattığı sorunun büyüklüğünü gösterir
+3) Sıklık büyüklük çarpımı: Engelin genel etkisini belirlemek için sıklık X büyüklük çarpımı</p>
+
+<p>CHIEF-SF: Orijinal CHIEF’ten geliştirilen 12 maddelik versiyon, 5 alt ölçeğin tamamını korur ve puanlama CHIEF ile aynı şekilde yapılır.</p>
+
+<p>CHIEF-SF (Kısa Form) 12 maddeden oluşur.</p>
+
+<p><strong>Test-Tekrar Test Güvenilirliği:</strong> SCI ve TBI popülasyonlarında mükemmel test-tekrar test güvenilirliğine sahiptir (ICC &gt; 0.90). Alt ölçek test-tekrar test güvenilirliği de mükemmeldir (ICC aralığı 0.77-0.89).</p>
+
+<p><strong>İç Tutarlılık:</strong> Ölçeğin iç tutarlılığı mükemmeldir (Cronbach alfa = 0.93). Fiziksel ve yapısal engeller alt ölçeği (0.77), politika engelleri alt ölçeği (0.77), tutum ve destek engelleri alt ölçeği (0.79) ve hizmetler ve yardım engelleri alt ölçeği (0.76) yeterli iç tutarlılığa sahipken, iş ve okul engelleri alt ölçeği (0.81) mükemmel iç tutarlılığa sahiptir.</p>
+
+<p><strong>Yapı Geçerliliği:</strong> Engelli bireyler, tüm alt ölçeklerde ve toplam CHIEF puanında genel olarak daha yüksek düzeyde çevresel engel bildirmişlerdir.</p>
+
+<p>Han, C. W., Yajima, Y., et al. (2005). “Validity and utility of the Craig Hospital Inventory of Environmental Factors for Korean community-dwelling elderly with or without stroke.” Tohoku J Exp Med 206(1): 41-49.
+Kennedy, P., Sherlock, O., et al. (2009). “A multi-centre study of the community needs of people with spinal cord injuries: the first 18 months.” Spinal cord 48(1): 15-20.
+Law, M., Petrenchik, T., et al. (2007). “Perceived environmental barriers to recreational, community, and school participation for children and youth with physical disabilities.” Arch Phys Med Rehabil 88(12): 1636-1642.
+Whiteneck, G., Meade, M. A., et al. (2004). “Environmental factors and their role in participation and life satisfaction after spinal cord injury.” Arch Phys Med Rehabil 85(11): 1793-1803.
+Whiteneck, G. G., Gerhart, K. A., et al. (2004). “Identifying environmental factors that influence the outcomes of people with traumatic brain injury.” J Head Trauma Rehabil 19(3): 191-204.
+Whiteneck, G. G., Harrison-Felix, C. L., et al. (2004). “Quantifying environmental factors: a measure of physical, attitudinal, service, productivity, and policy barriers.” Archives of physical medicine and rehabilitation 85(8): 1324-1335.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Whiteneck, G. G., Harrison-Felix, C. L., et al. (2004). Quantifying environmental factors: a measure of physical, attitudinal, service, productivity, and policy barriers. Archives of physical medicine and rehabilitation 85(8): 1324-1335.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

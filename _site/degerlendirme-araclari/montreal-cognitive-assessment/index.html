@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Montreal Bilişsel Değerlendirmesi (MoCA) - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Montreal Bilişsel Değerlendirmesi (MoCA)</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Montreal Cognitive Assessment</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> MoCA</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Hafif kognitif bozukluğu tespit etmek için tasarlanmış hızlı bir bilişsel yetenek taramasıdır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Parkinson Hastalığı, Yaşlı Yetişkinler ve Geriatri Bakımı, Spesifik Olmayan Hasta Popülasyonu, Nöromüsküler Durumlar, Alzheimer Hastalığı ve Progresif Demans, Karışık Popülasyonlar, Ruh Sağlığı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Toplam olası puan 30'dur. Her kategori/öğe için puanlama kriterleri sağlanmıştır. Pratik etkileri azaltmak için testin üç farklı formu mevcuttur.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Genel / Sağlıklı Yetişkin</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Montreal Bilişsel Değerlendirmesi (MoCA), hafif bilişsel işlev bozukluğunu tespit etmek için tasarlanmış hızlı bir bilişsel yetenek taramasıdır. Çoklu bilişsel alanları değerlendirmek için 16 madde ve 11 kategori içerir (örneğin, visuo-mekansal ve yönetici işlevler, adlandırma, hafıza, dikkat, dil, soyutlama ve yönelim).</p>
+
+<p>MoCA, birden fazla bilişsel alanı değerlendirmek için 16 madde ve 11 kategori içerir:</p>
+<ul>
+  <li>Visuo-mekansal / Yönetici: İz sürme, küp kopyalama (veya başka bir şekil), saat çizimi</li>
+  <li>Adlandırma: Hayvanlar</li>
+  <li>Hafıza: Kelime listesi tanıtımı ve gecikmeli hatırlama</li>
+  <li>Dikkat: İleriye doğru rakam aralığı, geriye doğru rakam aralığı, dikkat, seri 7’ler</li>
+  <li>Dil: Cümle tekrarı ve sözel akıcılık</li>
+  <li>Soyutlama: Benzerliği tanıma</li>
+  <li>Oryantasyon: Yer ve tarih hatırlama
+Puanlama kriterleri her kategori/madde için sağlanmıştır. Pratik etkileri azaltmak için testin üç farklı formu mevcuttur. Test kılavuzu (talimatlar, puanlama talimatları) ve puanlama sayfaları www.mocatest.org adresinde mevcuttur.</li>
+</ul>
+
+<p>Toplam olası puan 30’dur. Normal kabul edilen skor 26 veya üzeridir. 12 yıl veya daha az eğitim almış kişiler için, düzeltme olarak skora bir puan eklenir.</p>
+
+<p>Chou ve ark., 2010, görev gücü tavsiyesinin (353 yayınlanmış makalenin gözden geçirilmesine dayanarak), bilişin birincil sonuç ölçüsü olmadığında, Parkinson hastalığı olanlarda hafif bilişsel bozukluğu (MCI) tespit etmek için MoCA’yı diğer bilişsel değerlendirme ekranlarına (MMSE, MMP, PANDA ve SCOPA-cog) göre kullanmak olduğunu bildirdi.</p>
+
+<p>MoCA, özellikle bilişsel bozukluğun sorunlu olduğu yaşlı yetişkin popülasyonlarında ve Parkinson hastalığında yaygın olarak kullanılmış ve incelenmiştir.</p>
+
+<p>MoCA, yaygın olarak kullanılan Mini-Mental Durum Muayenesi’nden (MMSE) daha fazla dikkat ve yönetici işlevine vurgu yapmaktadır.</p>
+
+<p>Hafif eksiklikleri olanlar için MoCA, yüksek premorbid IQ’ya, AD dışı demansa ve demansın erken evrelerine sahip olanlar için daha hassas görünmektedir.</p>
+
+<p>MoCA’nın birden fazla paralel versiyonu vardır, bu da bir hasta ile birden fazla kez kullanıldığında bir avantajdır.</p>
+
+<p><strong>Güvenilirlik:</strong> Yaşlı yetişkinlerde mükemmel test-tekrar test güvenilirliği (r = 0.92) ve mükemmel iç tutarlılık (a = 0.83) bulunmuştur. Parkinson hastalığında mükemmel test-tekrar test güvenilirliği (ICC = 0.79) ve mükemmel gözlemciler arası güvenilirlik (ICC = 0.81) bulunmuştur.</p>
+
+<p><strong>Geçerlilik:</strong> Alzheimer Hastalığı ve Hafif Bilişsel Bozuklukta, MMSE ile MoCA arasında karşılaştırılabilir skorlar elde etmek için eş yüzdelik eşitleme kullanılmıştır. Düşük MoCA skorları, yüksek MMSE skorları ile ilişkilendirilmiştir. MoCA toplam skorları ile Demans Derecelendirme Ölçeği arasında mükemmel korelasyonlar bulunmuştur (r = 0.77, P &lt; 0.001).</p>
+
+<p><strong>Duyarlılık ve Özgüllük:</strong> Farklı kesme noktaları için çeşitli popülasyonlarda duyarlılık ve özgüllük değerleri belirlenmiştir. Örneğin, kognitif bozukluk için önerilen MoCA kesme puanı (≤ 26) kullanıldığında, MoCA’nın MCI veya demansı belirlemede mükemmel duyarlılık (%100) gösterdiği, ancak düşük özgüllük (%31) gösterdiği bulunmuştur.</p>
+
+<p>Bezdicek, O., Majerova, V., Novak, M., Nikolai, T., Ruzicka, E., &amp; Roth, J. (2013). Validity of the Montreal Cognitive Assessment in the detection of cognitive dysfunction in Huntington’s Disease.
+Applied
+Neuropsychology: Adult, 20, 33-40.
+DOI: 10.1080/09084282.2012.670158
+Bruijnen, C. J. W. H., Jansen, M., Dijkstra, B. A. G., Walvoort, S. J. W., Lugtmeijer, S., Markus, W., Jong, C. A. J. D., &amp; Kessels, R. P. C. (2019). The Montreal Cognitive Assessment (MoCA) as a cognitive screen in addiction health care: A validation study for clinical practice.
+Journal of Substance Use
+,
+24
+(1), 47–54.
+https://doi.org/10.1080/14659891.2018.1497102
+Carson, N., Leach, L., &amp; Murphy, K. J. (2017). A re-examination of Montreal Cognitive Assessment (MoCA) cutoff scores.
+International Journal of Geriatric Psychiatry
+,
+33
+(2), 379–388. doi: 10.1002/gps.4756
+Chou, K. L., Amick, M. M., et al. (2010). “A recommended scale for cognitive screening in clinical trials of Parkinson’s disease.” Movement Disorders 25(15): 2501-2507.
+Cumming, T. B., Lowe, D., Linden, T., &amp; Bernhardt, J. (2018). The AVERT MoCA Data: Scoring Reliability in a Large Multicenter Trial.
+Assessment
+, 1073191118771516.
+https://doi.org/10.1177/1073191118771516
+Dalrymple-Alford, J., MacAskill, M., et al. (2010). “The MoCA Well-suited screen for cognitive impairment in Parkinson disease.” Neurology 75(19): 1717-1725.
+Ewert, V., Pelletier, S., Alarcon, R., Nalpas, B., Donnadieu-Rigole, H., Trouillet, R., &amp; Perney, P. (2017). Determination of MoCA Cutoff Score in Patients with Alcohol Use Disorders. Alcoholism: Clinical and Experimental Research, 42(2), 403–412. doi: 10.1111/acer.13547
+Fazeli, P. L., Casaletto, K. B., Paolillo, E., Moore, R. C., Moore, D. J., &amp; the HNRP Group. (2017). Screening for neurocognitive impairment in HIV-positive adults aged 50 years and older: Montreal Cognitive Assessment relates to self-reported and clinician-rated everyday functioning.
+Journal of Clinical &amp; Experimental Neuropsychology
+,
+39
+(9), 842–853.
+https://doi.org/10.1080/13803395.2016.1273319
+Feeney, J., Savva, G. M., O’Regan, C., King-Kallimanis, B., Cronin, H., &amp; Kenny, R. A. (2016). Measurement error, reliability, and minimum detectable change in the Mini-Mental State Examination, Montreal Cognitive Assessment, and Color Trails Test among community living middle-aged and older adults.
+Journal of Alzheimer’s Disease
+,
+53
+(3), 1107-1114.
+Gill, D. J., Freshman, A., et al. (2008). “The Montreal cognitive assessment as a screening tool for cognitive impairment in Parkinson’s disease.” Mov Disord 23(7): 1043-1046.
+Goldstein, F. C., Ashley, A. V., Miller, E., Alexeeva, O., Zanders, L., &amp; King, V. (2014). Validity of the Montreal Cognitive Assessment as a Screen for Mild Cognitive Impairment and Dementia in African Americans.
+Journal of Geriatric Psychiatry and Neurology
+,
+27
+(3), 199–203.
+https://doi.org/10.1177/0891988714524630
+Hoops, S., Nazem, S., et al. (2009). “Validity of the MoCA and MMSE in the detection of MCI and dementia in Parkinson disease.” Neurology 73(21): 1738-1745.
+Kletzel, S. L., Hernandez, J. M., Miskiel, E. F., Mallinson, T., &amp; Pape, T. L.-B. (2017). “Evaluating the performance of the Montreal Cognitive Assessment in early stage Parkinson’s disease”.
+Parkinsonism &amp; Related Disorders
+,
+37
+, 58–64. doi:10.1016/j.parkreldis.2017.01.012
+Koski, L. (2013). Validity and applications of the Montreal Cognitive Assessment for the assessment of vascular cognitive impairment.
+Cerebrovascular Disease
+, 36, 6-13. DOI: 10.1159/000352051
+Lam, B., Middleton, L. E., Masellis, M., Stuss, D. T., Harry, R. D., Kiss, A., &amp; Black, S. E. (2013). Criterion and Convergent Validity of the Montreal Cognitive Assessment with Screening and Standardized Neuropsychological Testing.
+Journal of the American Geriatrics Society
+,
+61
+(12), 2181–2185.
+https://doi.org/10.1111/jgs.12541
+Malek-Ahmadi, M., Powell, J. J., Belden, C. M., O’Connor, K., Evans, L., Coon, D. W., &amp; Nieri, W. (2015). Age- and education-adjusted normative data for the Montreal Cognitive Assessment (MoCA) in older adults age 70–99.
+Aging, Neuropsychology, and Cognition
+,
+22
+(6), 755–761.
+https://doi.org/10.1080/13825585.2015.1041449
+McLennan, S. N., Mathias, J. L., Brennan, L. C., &amp; Stewart, S. (2011). Validity of the Montreal Assessment (MoCA) as a screening test for Mild Cognitive Impairment (MCI) in a cardiovascular population.
+Journal of Geriatric Psychiatry and Neurology,
+24(1), 33-38
+.
+DOI: 10.1177/0891988710390813
+MoCA Montreal Cognitive Assessment (2019). FAQ. Retrieved from
+https://www.mocatest.org/
+Nasreddine, Z. S., Phillips, N. A., et al. (2005). “The Montreal Cognitive Assessment, MoCA: a brief screening tool for mild cognitive impairment.” Journal of the American Geriatrics Society 53(4): 695-699.
+Nazem, S., Siderowf, A. D., et al. (2009). “Montreal Cognitive Assessment Performance in Patients with Parkinson’s Disease with “Normal” Global Cognition According to Mini‐Mental State Examination Score.” Journal of the American Geriatrics Society 57(2): 304-308.
+Roalf, D. R., Moberg, P. J., Xie, S. X., Wolk, D. A., Moelter, S. T., &amp; Arnold, S. E. (2013). Comparative accuracies of two common screening instruments for the classification of Alzheimer’s disease, mild cognitive impairment and healthy aging.
+Alzheimer’s &amp; Dementia : The Journal of the Alzheimer’s Association
+,
+9
+(5), 529–537.
+https://doi.org/10.1016/j.jalz.2012.10.001
+Robben, S. H., Sleegers, M. J., et al. (2010). “Pilot study of a three‐step diagnostic pathway for young and old patients with Parkinson’s disease dementia: screen, test and then diagnose.” International journal of geriatric psychiatry 25(3): 258-265.
+Rossetti, H. C., Lacritz, L. H., et al. (2011). “Normative data for the Montreal Cognitive Assessment (MoCA) in a population-based sample.” Neurology 77(13): 1272-1275.
+Smith, T., Gildeh, N., et al. (2007). “The Montreal Cognitive Assessment: validity and utility in a memory clinic setting.” Canadian Journal of Psychiatry. Revue Canadienne de Psychiatrie 52(5): 329-332.
+Tiffin-Richards, F. E., Costa, A. S., Holschbach, B., Frank, R. D., Vassiliadou, A., Krüger, T., Kuckuck, K., Gross, T., Eitner, F., Floege, J., Schulz, J. B., &amp; Reetz, K. (2014). The Montreal Cognitive Assessment (MoCA)—a sensitive screening instrument for detecting cognitive impairment in chronic hemodialysis patients.
+PLOS ONE
+,
+9
+(10), 1-9.
+https://doi.org/10.1371/journal.pone.0106700
+Toglia, J., Fitzgerald, K. A., et al. (2011). “The Mini-Mental State Examination and Montreal Cognitive Assessment in persons with mild subacute stroke: relationship to functional outcome.” Archives of Physical Medicine and Rehabilitation 92(5): 792-798.
+Yang, Z., Abdul Rashid, N.A., Feng Quek, Y., Lam, M., Mei See, Y., Maniam, Y., Dauwels, J., Leet Tan, B., &amp; Lee, J. (2018). “Montreal cognitive assessment as a screening instrument for cognitive impairments in schizophrenia.”
+Schizophrenia Research, 199
+.
+https://doi.org/10.1016/j.schres.2018.03.008
+Zadikoff, C., Fox, S. H., et al. (2008). “A comparison of the mini mental state exam to the Montreal cognitive assessment in identifying cognitive deficits in Parkinson’s disease.” Mov Disord 23(2): 297-299.
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="instrument details" target="_blank" rel="noopener noreferrer">instrument details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Nasreddine, Z. S., Phillips, N. A., et al. (2005). The Montreal Cognitive Assessment, MoCA: a brief screening tool for mild cognitive impairment. Journal of the American Geriatrics Society 53(4): 695-699.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Yaşlılar için Fiziksel Aktivite Ölçeği - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Yaşlılar için Fiziksel Aktivite Ölçeği</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Physical Activity Scale for the Elderly</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> PASE</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">PASE, 65 yaş ve üzeri bireylerde öz bildirim yoluyla fiziksel aktivite düzeyini ölçer ve son 7 gün içindeki mesleki, ev ve boş zaman aktiviteleriyle ilgili maddelerden oluşur.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Osteoartrit, Yaşlı Yetişkinler ve Geriatrik Bakım, Non-Spesifik Hasta Popülasyonu, Eklem Ağrısı ve Kırıkları, Kanser</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Boş zaman ve güçlendirme aktivitelerine katılım: 1) asla, 2) nadiren (haftada 1-2 gün), 3) bazen (haftada 3-4 gün), 4) sık sık (haftada 5-7 gün) olarak puanlanır. Bu aktivitelerin süresi: A) 1 saatten az, B) 1-2 saat, C) 2-4 saat, D) 4 saatten fazla olarak puanlanır. Ev ve işle ilgili aktiviteler evet veya hayır olarak puanlanır. İşle ilgili aktivitelerde, ücretli veya ücretsiz çalışma saat/hafta olarak puanlanır. Toplam PASE puanı, her bir aktivitede harcanan süre (haftada saat) veya bir aktiviteye katılım (yani, evet/hayır) ile ampirik olarak türetilmiş madde ağırlıklarının çarpılması ve ardından tüm aktivitelerin toplanmasıyla hesaplanır. Genel PASE puanı 0 ile 400 veya daha fazla arasında değişir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Katılım (Sosyal & Yaşam)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Kanser Rehabilitasyonu</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>translator: &lt;Oluşturan: Yapay Zeka&gt;</p>
+
+<p>Yaşlılar için Fiziksel Aktivite Ölçeği (PASE), 65 yaş ve üzeri bireylerde öz bildirim yoluyla fiziksel aktivite düzeyini ölçmek için kullanılan bir araçtır. Ölçek, bireylerin son 7 gün içindeki mesleki, ev ve boş zaman aktiviteleriyle ilgili 12 sorudan oluşmaktadır. Amaç, yaşlı yetişkinlerin fiziksel aktivite alışkanlıklarını değerlendirmek ve sağlıkla ilgili sonuçları belirlemektir. Ölçek telefon, posta veya yüz yüze uygulanabilir.</p>
+
+<p>PASE, son 7 gün içinde gerçekleştirilen boş zaman aktiviteleri (spor, koşu, yüzme, güçlendirme ve dayanıklılık egzersizleri gibi), ev aktiviteleri ve işle ilgili aktivitelerin sıklığı ve süresi hakkında 12 soru içerir.</p>
+
+<p>Puanlama şu şekilde yapılır:</p>
+<ul>
+  <li>Boş zaman ve güçlendirme aktivitelerine katılım:
+    <ul>
+      <li>1) asla</li>
+      <li>2) nadiren (haftada 1-2 gün)</li>
+      <li>3) bazen (haftada 3-4 gün)</li>
+      <li>4) sık sık (haftada 5-7 gün)</li>
+    </ul>
+  </li>
+  <li>Bu aktivitelerin süresi:
+    <ul>
+      <li>A) 1 saatten az</li>
+      <li>B) 1-2 saat</li>
+      <li>C) 2-4 saat</li>
+      <li>D) 4 saatten fazla</li>
+    </ul>
+  </li>
+  <li>Ev ve işle ilgili aktiviteler evet veya hayır olarak puanlanır. İşle ilgili aktivitelerde, ücretli veya ücretsiz çalışma saat/hafta olarak puanlanır.</li>
+  <li>Toplam PASE puanı, her bir aktivitede harcanan süre (haftada saat) veya bir aktiviteye katılım (yani, evet/hayır) ile ampirik olarak türetilmiş madde ağırlıklarının çarpılması ve ardından tüm aktivitelerin toplanmasıyla hesaplanır.</li>
+  <li>Genel PASE puanı 0 ile 400 veya daha fazla arasında değişir.</li>
+</ul>
+
+<p>Toplam PASE puanı, her bir aktivitede harcanan süre (haftada saat) veya bir aktiviteye katılım (yani, evet/hayır) ile ampirik olarak türetilmiş madde ağırlıklarının çarpılması ve ardından tüm aktivitelerin toplanmasıyla hesaplanır. Ölçek 0 ile 400 arasında veya daha yüksek bir puan aralığına sahiptir.</p>
+
+<p>PASE, yaşlılarda fiziksel aktivite düzeyini belirlemek için kullanılır. Ölçeğin uygulanması kolaydır. PASE daha genç yaş grupları için de kullanılabilir. PASE’nin en yüksek puanı genç insanlar için 50-64 yaş grubunda ve yaşlılar için 65 yaşın üzerindedir. Japonca ve Çince gibi çeşitli dillere çevrilmiş ve doğrulanmıştır.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li>Kalça Osteoartriti: Test-tekrar test güvenirliği mükemmel (ICC = 0.77) (Svege, 2012).</li>
+  <li>Kanser: Test-tekrar test güvenirliği yeterli ila mükemmel (ICC = 0.67 ila 0.90) (Liu, 2011).</li>
+  <li>Total Diz Artroplastisi: Erkekler için test-tekrar test güvenirliği yeterli (ICC=0.77), kadınlar için zayıf (ICC=0.58) (Bolszak, 2014).</li>
+  <li>Total Kalça Artroplastisi: Test-tekrar test güvenirliği mükemmel (ICC = 0.77) (Casartelli, 2015).</li>
+  <li>Yaşlılar: 3-7 haftalık aralıklarla test-tekrar test güvenirliği mükemmel (ICC = 0.75) (Washburn ve diğerleri, 1993). Posta uygulaması için güvenilirlik (r = 0.84), telefon uygulamasından (r = 0.68) daha yüksektir. Japon yaşlılarda test-tekrar test güvenirliği yeterli (ICC=0.65) (Hagiwara, 2008). Norveç yaşlılarda 3 günlük aralıklarla test-tekrar test güvenirliği mükemmel (r=0.997), 3 haftalık aralıklarla test-tekrar test güvenirliği mükemmel (r=0.993) (Loland, 2002).</li>
+  <li>Akut Koroner Olay ve Kardiyak Rehabilitasyona Katılım: İç tutarlılık yeterli (Cronbach alfa=0.71) (Allison, 1998).</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li>Kalça Osteoartriti: PASE toplam puanı ile Actigraph GT1M ivmeölçer arasında zayıf korelasyon (r = 0.30). PASE toplam puanı ile Uluslararası Fiziksel Aktivite Anketi (IPAQ) toplam MET-dakika arasında mükemmel korelasyon (r = 0.61) (Svege, 2012).</li>
+  <li>Akciğer Kanseri: EORTC-QLQ-C30 global yaşam kalitesi puanları ile yeterli prediktif geçerlilik (Granger, 2015).</li>
+  <li>Total Diz Artroplastisi: Erkeklerde PASE ile yürüme için ivmeölçer arasında yeterli korelasyon (r=0.45), kadınlarda zayıf korelasyon (r=0.06) (Bolszak, 2014).</li>
+  <li>Diz Ağrısı: PASE ile 6 dakika yürüme (r=0.35) ve diz gücü (r=0.41) arasında yeterli korelasyon (Martin, 1999).</li>
+  <li>Total Kalça Artroplastisi: PASE toplam puanı ile Actigraph ivmeölçerler (hafif yoğunluklu fiziksel aktivitelerde geçirilen süre) arasında yeterli korelasyon (r = 0.38) (Casartelli, 2015).</li>
+  <li>Yaşlılar: PASE puanları ile kavrama gücü (r = 0.37), statik denge (r = +0.33), yaş (r = -0.34) ve algılanan sağlık durumu (r = -0.34) arasında yeterli korelasyon (Washburn, 1993).</li>
+</ul>
+
+<p>Allison, M. J., Keller, C., &amp; Hutchinson, P. L. (1998) Selection of an instrument to measure the physical activity of elderly people in rural areas. Rehabilitation Nursing, 23 (6), 309-314.
+Find it on PubMed
+Casartelli, N.C., Bolszak, S., Impellizzeri, F.M., &amp; Maffiuletti, N.A. (2015). Reproducibility and Validity of the Physical Activity Scale for the Elderly (PASE) Questionnaire in Patients After Total Hip Arthroplasty. Physical Therapy, 95(1), 86-94.
+Find it on PubMed
+Cavanaugh, J. T., &amp; Crawford, K. (2014). Life-space assessment and physical activity scale for the elderly: Validity of proxy informant responses. Archives of Physical Medicine and Rehabilitation, 95(8), 1527–1532.
+Find it on PubMed
+Dibble, L. E., Cavanaugh, J. T., et al. (2010). “Charting the progression of disability in Parkinson disease: study protocol for a prospective longitudinal cohort study.” BMC Neurol 10: 110.
+Find it on PubMed
+Dinger, M. K., Oman, R. F., et al. (2004). “Stability and convergent validity of the Physical Activity Scale for the Elderly (PASE).” J Sports Med Phys Fitness 44(2): 186-192.
+Find it on PubMed
+=
+Ewald, B., McEvoy, M., et al. (2010). “Pedometer counts superior to physical activity scale for identifying health markers in older adults.” Br J Sports Med 44(10): 756-761.
+Find it on PubMed
+Granger, C. L., Parry, S. M., &amp; Denehy, L. (2015). The self-reported physical activity scale for the elderly (PASE) is valid and clinically applicability measure in lung cancer. Support Care Cancer 23, 3211–3218.
+Find it on PubMed
+Hagiwara, A., Ito, N., et al. (2008). “Validity and reliability of the Physical Activity Scale for the Elderly (PASE) in Japanese elderly people.” Geriatr Gerontol Int 8(3): 143-151.
+Find it on PubMed
+Harada, N. D., Chiu, V., King, A. C., &amp; Stewart, A. L. (2001). An evaluation of three self-report physical activity instruments for older adults. Med. Sci. Sports Exerc, 33(6), 962–970.
+Find it on PubMed
+Lindahl, M., Hansen, L., et al. (2008). “Self-reported physical activity after ischemic stroke correlates with physical capacity.” Advances in Physiotherapy 10(4): 188-194.
+Liu, R. D., Buffart, L. M., et al. (2011). “Psychometric properties of two physical activity questionnaires, the AQuAA and the PASE, in cancer patients.” BMC Med Res Methodol 11: 30.
+Find it on PubMed
+Loland, N. (2002). Reliability of the Physical Activity Scale for the Elderly (PASE). Eur J Sport Sci, 2(5), 1–12.
+Martin, K. A., Rejeski, W. J., et al. (1999). “Validation of the PASE in older adults with knee pain and physical disability.” Med Sci Sports Exerc 31(5): 627-633.
+Find it on PubMed
+Ngai, S. P., Cheung, R. T., et al. (2012). “Validation and reliability of the Physical Activity Scale for the Elderly in Chinese population.” J Rehabil Med 44(5): 462-465.
+Find it on PubMed
+Schuit, A. J., Schonten, E. G., Westerterp, K. R., &amp; Saris, W. H. M. (1997). Validity of the Physical Activity Scale for the Elderly (PASE): According to energy expenditure assessed by the doubly labeled water method. Journal of Clinical Epidemiology, 50(5), 541–546.
+Find it on PubMed
+Siordia, C. (2012). Alternative scoring for Physical Activity Scale for the Elderly (PASE). Maturitas, 72(4), 379–382.
+Find it on PubMed
+Svege, I., Kolle, E., et al. (2012). “Reliability and validity of the Physical Activity Scale for the Elderly (PASE) in patients with hip osteoarthritis.” BMC Musculoskelet Disord 13: 26.
+Find it on PubMed
+Washburn, R. A. and Ficker, J. L. (1999). “Physical Activity Scale for the Elderly (PASE): the relationship with activity measured by a portable accelerometer.” J Sports Med Phys Fitness 39(4): 336-340.
+Find it on PubMed
+Washburn, R. A., Smith, K. W., et al. (1993). “The Physical Activity Scale for the Elderly (PASE): development and evaluation.” J Clin Epidemiol 46(2): 153-162.
+Find it on PubMed
+Washburn, R. A., McAuley, E., Katula, J., Mihalko, S. L., &amp; Boileau, R. A. (1999). The Physical Activity Scale for the Elderly (PASE): Evidence for validity. Journal of Clinical Epidemiology, 52(7), 643–651.
+Find it on PubMed</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Washburn, R. A., Smith, K. W., et al. (1993). The Physical Activity Scale for the Elderly (PASE): development and evaluation. J Clin Epidemiol 46(2): 153-162.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

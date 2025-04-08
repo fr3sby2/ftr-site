@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Saat Çizme Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Saat Çizme Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Clock Drawing Test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> CDT</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Görsel-mekansal yetenekleri ve praksiyi (el becerisi/planlama) değerlendirir. Dikkat ve yürütücü işlev bozukluklarını da yansıtabilir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Demans (Alzheimer vb.), İnme, Genel Bilişsel Tarama (Yaşlılar dahil).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Çok sayıda farklı puanlama sistemi vardır (örn. Sunderland, Mendez, Rouleau, Manos). Puanlama genellikle saat yüzünün doğruluğu, sayıların yerleşimi ve doğruluğu, ve istenen zamanı gösteren akrep/yelkovanın doğruluğuna dayanır. Hatalar ve bozulmalar (sayı atlama, yanlış yerleştirme, perseverasyon vb.) değerlendirilir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Dikkat & Çalışma Belleği</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Demans / Alzheimer</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Saat Çizme Testi (CDT), bilişsel fonksiyonları, özellikle görsel-mekansal yetenekleri, yapılandırma becerilerini (praksis) ve yürütücü işlevleri (planlama, organizasyon) hızlı bir şekilde taramak için yaygın olarak kullanılan bir nöropsikolojik testtir. Demans ve diğer bilişsel bozuklukların taranmasında sıklıkla kullanılır.</p>
+
+<p>Testin uygulanışında farklılıklar olabilir. Hastadan boş bir kağıda bir saat çizmesi, tüm sayıları yerleştirmesi ve ardından belirli bir zamanı (örn. 11:10) gösterecek şekilde akrep ve yelkovanı çizmesi istenebilir. Bazen hastaya önceden çizilmiş bir daire verilir ve sadece sayıları ve kolları yerleştirmesi istenir.</p>
+
+<p>Puanlama için geliştirilmiş çok sayıda farklı sistem bulunmaktadır. Bu sistemler genellikle çizimin genel doğruluğunu, sayıların varlığını, sırasını ve mekansal yerleşimini, kolların doğru yerleştirilip yerleştirilmediğini ve yapılan hataların türünü (örn. sayı atlama, perseverasyon, mekansal ihmal) değerlendirir. Basit kantitatif puanlama sistemleri, bilişsel bozukluğun varlığını veya yokluğunu ayırt etmek için ilk tarama amacıyla yeterli olabilir.</p>
+
+<ul>
+  <li>Boş bir kağıt (veya üzerinde önceden çizilmiş bir daire bulunan bir kağıt).</li>
+  <li>Kalem/kurşun kalem.</li>
+  <li>Seçilen puanlama sistemine ait kriterler.</li>
+</ul>
+
+<ol>
+  <li>Hastaya boş bir kağıt ve kalem verilir.</li>
+  <li>“Lütfen bu kağıda bir saatin yüzünü çizin. Tüm sayıları doğru yerlerine yerleştirin.” gibi bir yönerge verilir. (Eğer önceden çizilmiş daire kullanılacaksa, “Lütfen bu dairenin içine bir saatin sayılarını doğru yerlerine yerleştirin” denir).</li>
+  <li>Hasta sayıları yerleştirdikten sonra, “Şimdi lütfen akrep ve yelkovanı çizerek saatin 11’i 10 geçeyi göstermesini sağlayın” gibi belirli bir zamanı göstermesi istenir.</li>
+  <li>Hastanın çizimi tamamlaması beklenir. Süre kısıtlaması genellikle yoktur.</li>
+  <li>Çizim, seçilen puanlama sistemine göre değerlendirilir.</li>
+</ol>
+
+<p>Kullanılan puanlama sistemine göre değişir. Örnek sistemler ve odaklandıkları noktalar:</p>
+
+<ul>
+  <li><strong>Sunderland:</strong> 10 puanlık sistem, daha çok saat yüzünün genel doğruluğuna odaklanır.</li>
+  <li><strong>Mendez:</strong> 20 puanlık sistem, sayıların yerleşimi, kolların yerleşimi gibi daha fazla detayı puanlar.</li>
+  <li><strong>Rouleau:</strong> 10 puanlık sistem, kontur, sayılar ve kollar için ayrı puanlar verir.</li>
+  <li><strong>Manos (10 puanlık saat testi):</strong> Hızlı bir tarama ve derecelendirme yöntemidir.</li>
+  <li><strong>Freedman:</strong> Daha kalitatif analizlere de olanak tanır.</li>
+</ul>
+
+<p>Genellikle daha düşük puanlar daha fazla bozulmayı gösterir (bazı sistemlerde tersi olabilir, örn. Watson).</p>
+
+<p>CDT performansı çeşitli faktörlerden etkilenebilir:</p>
+<ul>
+  <li><strong>Yaş:</strong> İlerleyen yaşla birlikte performans düşebilir.</li>
+  <li><strong>Eğitim Düzeyi:</strong> Düşük eğitim performansı olumsuz etkileyebilir.</li>
+  <li><strong>Depresyon:</strong> Depresyon varlığı performansı düşürebilir.</li>
+  <li><strong>Nörolojik Durum:</strong>
+    <ul>
+      <li>Görsel ihmal (özellikle sağ hemisfer lezyonlarında) saatin bir yarısındaki sayıların sıkışmasına veya ihmal edilmesine neden olabilir.</li>
+      <li>Motor koordinasyon bozuklukları veya hemiparezi çizim kalitesini etkileyebilir.</li>
+      <li>Yürütücü işlev bozuklukları planlama, organizasyon ve hata düzeltmede sorunlara yol açabilir.</li>
+    </ul>
+  </li>
+  <li><strong>Demans Tipi:</strong> Çoklu enfarkt demansı olan hastaların zaman ayarlamada, Alzheimer hastalarının ise sayı yerleştirmede daha fazla hata yapma eğiliminde olduğu belirtilmiştir.</li>
+</ul>
+
+<p>Kullanılan puanlama sistemine göre belirlenen kesme noktaları, bilişsel bozukluk riskini belirlemede yardımcı olabilir (örn. Manos sisteminde 7 puanın altı demansı düşündürebilir). Ancak CDT tek başına tanı koymak için yeterli değildir ve diğer bilişsel testler ve klinik değerlendirme ile birlikte yorumlanmalıdır.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> Alzheimer hastalarında <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında (r = 0.70 - 0.78). Medikal/cerrahi hastalarda <strong>Mükemmel</strong> (r = 0.87 - 0.94).</li>
+      <li><strong>Değerlendiriciler Arası:</strong> Alzheimer hastalarında <strong>Mükemmel</strong> (r = 0.92 - 0.97). Medikal/cerrahi hastalarda <strong>Mükemmel</strong> (r = 0.88 - 0.96).</li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong> Akut inme hastalarında FIM-Bilişsel alt skoru ve MMSE ile <strong>Yeterli</strong> korelasyon göstermiştir (r = 0.51 ve 0.59).</li>
+    </ul>
+  </li>
+  <li><strong>Yanıt Verebilirlik / Duyarlılık &amp; Özgüllük:</strong> İnme sonrası bilişsel defisitleri taramada kullanılan farklı puanlama sistemlerinin duyarlılık ve özgüllükleri değişmektedir. Örneğin, 7 dakikalık CDT’nin visuospatial fonksiyon için duyarlılığı %55, özgüllüğü %74 bulunmuştur (Nøkleby et al, 2008). Manos skorlamasında 7 puan kesme noktası demanslı hastaların %76’sını doğru sınıflandırmıştır.</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Adunsky, A., Fleissig, Y., et al. (2002). “Clock drawing task, mini-mental state examination and cognitive-functional independence measure: relation to functional outcome of stroke patients.” Arch Gerontol Geriatr 35(2): 153-160.
+… (diğer tüm referanslar) …
+Tuokko, H., Hadjistavropoulos, T., et al. (1992). “The Clock Test: a sensitive measure to differentiate normal elderly from those with Alzheimer disease.” J Am Geriatr Soc 40: 579-584.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> </p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

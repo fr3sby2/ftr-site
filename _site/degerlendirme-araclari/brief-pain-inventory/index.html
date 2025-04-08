@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Kısa Ağrı Envanteri - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Kısa Ağrı Envanteri</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Brief Pain Inventory</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> BPI</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">BPI, hastaların ağrılarının şiddetini ve ağrılarının duygu ve işlevin yaygın boyutlarını ne derece etkilediğini değerlendirmelerini sağlar.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Acil Servis Hastaları/Hastanede Yatan Hastalar, Pulmoner Hastalıklar, Osteoartrit, Karışık Popülasyonlar, Kronik Ağrı, Kanser, Sırt Ağrısı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Ağrı yoğunluğu ortalama ağrı, mevcut ağrı, en kötü ağrı ve en az ağrı için 0-10 sayısal derecelendirme ölçeğinde (NRS) ölçülür; burada 0 = 'ağrı yok' ve 10 = 'hayal edilebilecek en kötü ağrı'dır. Ağrı hafiflemesi %0-%100 ölçeğinde ölçülür; burada %0 = 'hafifleme yok' ve %100 = 'tamamen hafifleme'dir. Ağrı interferansı genel aktivite, ruh hali, yürüme yeteneği, iş, ilişkiler, uyku ve yaşamdan zevk alma için 0-10 NRS'de ölçülür; burada 0 = 'müdahale etmez' ve 10 = 'tamamen müdahale eder'dir. Yüksek puanlar daha fazla ağrı yoğunluğunu veya fonksiyonla daha fazla etkileşimi gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Ağrı</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Genel / Sağlıklı Yetişkin</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Kas-İskelet Sistemi (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Kanser Rehabilitasyonu</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Kısa Ağrı Envanteri (BPI), ağrı yoğunluğunu, ağrının günlük işlev üzerindeki etkisini, ağrının yerini, ağrı ilaçlarını ve son 24 saat veya son bir hafta içindeki ağrı kesici miktarını değerlendiren bir öz bildirim veya görüşme ölçüsüdür.</p>
+
+<p>BPI’nın iki versiyonu vardır:</p>
+<ol>
+  <li>Kısa Form (BPI-SF) – 9 Madde</li>
+  <li>Uzun Form (BPI-LF) – 32 Madde</li>
+</ol>
+
+<p>BPI-SF ağrının yerini, ağrı şiddetini, ağrı kesiciyi, ağrı girişimini ve ek ağrı türlerini değerlendirir. Ağrı yoğunluğu ortalama ağrı, mevcut ağrı, en kötü ağrı ve en az ağrı için 0-10 sayısal derecelendirme ölçeğinde (NRS) ölçülür; burada 0 = “ağrı yok” ve 10 = “hayal edilebilecek en kötü ağrı”dır. Ağrı kesici %0-%100 ölçeğinde ölçülür; burada %0 = “hafifleme yok” ve %100 = “tamamen hafifleme”dir. Ağrı girişimi genel aktivite, ruh hali, yürüme yeteneği, iş, ilişkiler, uyku ve yaşamdan zevk alma için 0-10 NRS’de ölçülür; burada 0 = “girişimde bulunmaz” ve 10 = “tamamen girişimde bulunur”dur. Yüksek puanlar daha fazla ağrı yoğunluğunu veya fonksiyonla daha fazla etkileşimi gösterir. BPI-LF, BPI-SF’ye ek olarak sosyoekonomik ve demografik faktörleri, ağrının karakterizasyonunu, kötüleştirici ve hafifletici faktörleri, ilaç geçmişini ve etkisini değerlendirir.</p>
+
+<p>BPI, hastaya ya kendi kendine doldurması için verilir ya da bir sağlık uzmanı tarafından uygulanır. Hastadan, ağrısının şiddetini ve ağrının günlük aktivitelerini ne kadar etkilediğini belirtmesi istenir. Ağrının yeri bir vücut diyagramında belirtilir. Hasta ayrıca kullandığı ağrı kesici ilaçları ve bu ilaçların ne kadar rahatlama sağladığını da belirtir.</p>
+
+<p>Ağrı şiddeti, 0 ile 10 arasında değişen bir sayısal derecelendirme ölçeği kullanılarak puanlanır; burada 0 “ağrı yok” ve 10 “hayal edilebilecek en kötü ağrı” anlamına gelir. Ağrıya müdahale de 0 ile 10 arasında değişen bir sayısal derecelendirme ölçeği kullanılarak puanlanır; burada 0 “müdahale yok” ve 10 “tamamen müdahale” anlamına gelir. Toplam BPI puanı, ağrı şiddeti ve ağrıya müdahale puanlarının toplamıdır.</p>
+
+<p>Daha yüksek BPI puanları daha fazla ağrı ve müdahaleyi gösterir. BPI, ağrının hastanın işlevi üzerindeki etkisini izlemek ve tedaviye yanıtı değerlendirmek için kullanılabilir.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li>Osteoartrit: Mükemmel (ICC = .83 - .93)</li>
+  <li>Kanser: Mükemmel alternatif formlar güvenilirliği (ICC = 0.88 ve 0.95) ve mükemmel test-tekrar test güvenilirliği (ICC = 0.93, 0.78, 0.59). İleri evre kanser için Spearman korelasyonu 0.8’dir.</li>
+  <li>Karışık popülasyonlar: Mükemmel test-tekrar test güvenilirliği (ICC = 0.72 ve 0.95) ve yeterli test-tekrar test güvenilirliği (ICC = 0.58).</li>
+  <li>Kronik ağrı: Ağrı şiddeti, müdahale ve “en az” ağrı için mükemmel test-tekrar test güvenilirliği (ICC = 0.98; ICC = 0.97; ICC = 0.78).</li>
+  <li>Pulmoner hastalıklar: Toplam BPI için mükemmel test-tekrar test güvenilirliği (ICC = 0.93).</li>
+</ul>
+
+<p><strong>İç Tutarlılık:</strong></p>
+
+<ul>
+  <li>Osteoartrit: Ağrı yoğunluğu, ruh hali ve aktivite ölçekleri için mükemmel iç tutarlılık (Cronbach alfaları = .86 - .96).</li>
+  <li>Kanser: Girişim ve şiddet ölçekleri için mükemmel iç tutarlılık (Cronbach alfaları = 0.91 ve 0.89). Metastatik kemik ağrısı için ağrı, aktiviteye müdahale ve duyguyu etkileme için mükemmel iç tutarlılık (Cronbach alfaları = 0.81 - 0.89).</li>
+  <li>Karışık popülasyonlar: Şiddet ve müdahale ölçekleri için mükemmel iç tutarlılık (Cronbach alfaları = 0.82 - 0.95).</li>
+  <li>Kronik ağrı: Yoğunluk Ölçeği için mükemmel iç tutarlılık (Cronbach alfaları = .85) ve Girişim ölçeği (Cronbach alfaları = .88).</li>
+  <li>Acil servis hastaları: BPI Ağrı Yoğunluğu alt ölçeği (cronbach’s ⍺ = 0.86) ve Ağrı Girişimi alt ölçeği (0.86) için mükemmel iç tutarlılık.</li>
+  <li>Pulmoner hastalıklar: BPI Ağrı Yoğunluğu alt ölçeği (cronbach’s ⍺ = 0.91) ve BPI Ağrı Girişimi alt ölçeği (cronbach’s ⍺ = 0.94) için mükemmel iç tutarlılık.</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li>Osteoartrit: BPI-sf ölçeklerinin, Ağrı Görsel Analog Ölçeği (VAS) ve Western Ontario ve McMaster Üniversiteleri Osteoartrit İndeksi (WOMAC) ile yakınsak geçerliliği.</li>
+  <li>Kanser: Palliative Outcome Scale (POS) üzerindeki BPI Ağrı Yoğunluğu alt ölçeği ve Toplam Puan arasında mükemmel eş zamanlı geçerlilik (Spearman korelasyonu = 0.7).</li>
+  <li>Karışık popülasyonlar: Sternotomi ağrısı maddesi ile “en kötü ağrı” maddesi arasında mükemmel korelasyon (0.71-0.82).</li>
+  <li>Sırt ağrısı: BPI Ağrı Girişimi alt ölçeği ile Owestry Özürlülük İndeksi (ODI) puanı arasında yeterli yakınsak geçerlilik (Spearman korelasyonu = 0.66).</li>
+</ul>
+
+<p>Ballout, S., Noureddine, S., Huijer, H. A. S., &amp; Kanazi, G. (2011). Psychometric evaluation of the Arabic Brief Pain Inventory in a sample of Lebanese cancer patients. Journal of pain and symptom management, 42(1), 147-154.
+Chen, Y.W., HajGhanbari, B., Road, J.D., Coxson, H.O., Camp P.G., &amp; Reid, W.D. (2018). Reliability and validity of the Brief Pain Inventory in individuals with chronic obstructive pulmonary disease. Eur J Pain 22: 1718-1726.
+Daut, R.L., Cleeland, C.S., Flanery, R.C. (1983) Development of the Wisconsin Brief Pain Questionnaire to assess pain in cancer and other diseases. Pain 17(2): 197- 210.
+Erdemoglu, A.K., Koc, R. (2013). Brief Pain Inventory score identifying and discriminating neuropathic and nociceptive pain. Acta Neurol Scand 128: 351-358.
+Gjeilo, K.H., Stenseth, R., Wahba, A., Lydersen, S., Klepstad, P. (2007) Validation of the Brief Pain Inventory Patients Six Months After Cardiac Surgery. Journal of Pain and Symptom Management, 34(6), 648-656.
+Im, D.D., Jambaulidar, G.D., Kikut, A., Gale, J., &amp; Weiner, S.G. (2020). Brief Pain Inventory – Short form: A new method for assessing pain in the emergency department. Pain Med 21(12): 3263-3269.
+Keller, S., Bann, C.M., Dodd, S.L., Schein, J., Mendoza, T.R., Cleeland, C.S. (2004) Validity of the Brief Pain Inventory for Use in Documenting the Outcomes of Patients With Noncancer Pain. Clinical Journal of Pain, 20(5), 309-318.
+Mendoza, T. R., Chen, C., Brugger, A., Hubbard, R., Snabes, M., Palmer, S. N., … &amp; Cleeland, C. S. (2004). The utility and validity of the modified brief pain inventory in a multiple-dose postoperative analgesic trial. The Clinical journal of pain, 20(5), 357-362.
+Mendoza, T., Mayne, T., Rublee, D., Cleeland, C. (2006). Reliability and validity of a modified Brief Pain Inventory short form in patients with osteoarthritis. European Journal of Pain, 10 (2006). 353-361. http://doi:10.1016/j.ejpain.2005.06.002
+Pelayo-Alvarez, M., Perez-Hoyos, S., &amp; Agra-Varela, Y. (2013). Reliability and Concurrent Validity of the Palliative Outcome Scale, Rotterdam Symptom Checklist, and the Brief Pain Inventory. J Palliat Med 16(8): 867-874.
+Philip, J., Smith, W.B., Craft, P., &amp; Lickiss, N. (1998). Concurrent validity of the modified Edmonton Symptom Assessment System with the Rotterdam Symptom Checklist and the Brief Pain Inventory. Support Care Cancer 6: 539-541.
+Radbruch, L., Loick, G., Kiencke, P., Lindena, G., Sabatowski, R., Grond, S., Lehmann, K. A., Cleeland, C.S. (1999) Validation of the German version of the Brief Pain Inventory. Journal of Pain and Symptom Management,18(3), 180-187.
+Saxena, A., Mendoza, T., Cleeland, C.S. (1999) The assessment of cancer pain in north India: the validation of the Hindi Brief Pain Inventory – BPI-H. Journal of Pain and Symptom Management, 17(1), 27-41.
+Shafshak, T.S., &amp; Elnemr, R. (2021). The Visual Analogue Scale Versus Numerical Rating Scale in Measuring Pain Severity and Predicting Disability in Low Back Pain. J Clin Rheumatol 27(7): 282-285.
+Song, C-Y., Lin, S-F, Huang, C-Y., Wu, H-C., Chen, C-H., &amp; Hsieh, C-L. (2016). Validation of the Brief Pain Inventory in Patients with Low Back Pain. Spine 41(15): 937-942.
+Tan, G., Jensen, M.P., Thornby, J.I., &amp; Shanti, B.F. (2004). Validation of the Brief Pain Inventory for chronic nonmalignant pain. Journal of Pain, 5(2): 133-137.
+Tittle, M.B., McMillan, S.C., &amp; Hagan, S. (2003). Validating the Brief Pain Inventory for use with surgical patients with cancer. Oncol Nurs Forum 30(2): 325-330.
+Wu, J.S.Y., Benton, D., Smith, P.M., &amp; Hagen, N.A. (2010). Patterns of Pain and Interference in Patients with Painful Bone Metastases: A Brief Pain Inventory Validation Study. Journal of Pain and Symptom Management, 39(2): 230-240.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Ballout, S., Noureddine, S., Huijer, H. A. S., & Kanazi, G. (2011). Psychometric evaluation of the Arabic Brief Pain Inventory in a sample of Lebanese cancer patients. Journal of pain and symptom management, 42(1), 147-154.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Dix-Hallpike Manevrası - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Dix-Hallpike Manevrası</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Dix–Hallpike Maneuver</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> Dix-Hallpike</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Posterior semisirküler kanal kaynaklı Benign Paroksismal Pozisyonel Vertigo'yu (BPPV) teşhis etmek için kullanılır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Vestibüler Bozukluklar, Baş Dönmesi ve Dengesizlik Şikayeti Olan Hastalar (Yaşlılar dahil).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Gözlemseldir. Test sırasında tipik nistagmus (genellikle yukarı vuran ve ipsitorsiyonel) ve vertigo semptomları ortaya çıkarsa test pozitiftir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Dix-Hallpike Manevrası, iç kulaktaki denge organlarından biri olan posterior semisirküler kanaldaki kalsiyum karbonat kristallerinin (otokoni) yerinden oynamasıyla karakterize Benign Paroksismal Pozisyonel Vertigo’nun (BPPV) tanısında altın standart kabul edilen bir klinik testtir. Bu manevra, yerinden oynamış otokonilerin posterior kanalda hareket etmesini tetikleyerek karakteristik göz hareketleri (nistagmus) ve baş dönmesi (vertigo) semptomlarını ortaya çıkarmayı amaçlar.</p>
+
+<ul>
+  <li>Muayene masası</li>
+  <li>(Önerilir) Frenzel gözlükleri veya kızılötesi (infrared) video gözlükleri: Nistagmusu daha net gözlemlemek için kullanılır, ancak zorunlu değildir. Test oda ışığında gözlüksüz de yapılabilir.</li>
+  <li>(Gerekirse) Yastık veya kama: Hastanın servikal ekstansiyonu kısıtlıysa omuzlarının altına yerleştirmek için.</li>
+</ul>
+
+<ol>
+  <li>Hasta muayene masasına bacakları uzatılmış şekilde (uzun oturuş pozisyonunda) oturtulur.</li>
+  <li>Frenzel/infrared gözlükler kullanılacaksa hastaya takılır.</li>
+  <li>Hastadan başını test edilecek kulak yönüne doğru <strong>45 derece</strong> çevirmesi istenir.</li>
+  <li>Klinisyen hastayı destekleyerek, başı 45 derece dönük pozisyonunu koruyarak, hastanın hızlıca sırtüstü yatmasını sağlar. Yatış pozisyonunda başın masadan hafifçe sarkması veya omuzların altına yastık konularak boynun yaklaşık <strong>20-30 derece ekstansiyonda</strong> olması hedeflenir.</li>
+  <li>Bu pozisyonda hastanın gözleri dikkatlice <strong>en az 30-60 saniye</strong> boyunca nistagmus açısından gözlemlenir. Ayrıca hastaya baş dönmesi hissedip hissetmediği sorulur.</li>
+  <li>Gözlem süresi bittikten sonra hasta yavaşça tekrar oturur pozisyona getirilir.</li>
+  <li>Aynı işlem diğer taraf için (başı diğer yöne 45 derece çevirerek) tekrarlanır.</li>
+</ol>
+
+<p>Test sonucu pozitif veya negatif olarak değerlendirilir:</p>
+
+<ul>
+  <li><strong>Pozitif (+):</strong> Test edilen tarafa doğru manevra yapıldığında aşağıdakiler gözlemlenir:
+    <ul>
+      <li><strong>Nistagmus:</strong> Genellikle birkaç saniyelik bir gecikmeyle başlayan (latent), geçici (genellikle 30-60 saniyeden kısa süren), yorulabilen (tekrarlayan manevralarda azalan) ve tipik olarak <strong>yukarı vuran (upbeating) ve test edilen kulak tarafına doğru torsiyonel (dönme)</strong> komponenti olan göz hareketleri.</li>
+      <li><strong>Vertigo:</strong> Hastanın genellikle nistagmusla eş zamanlı olarak baş dönmesi hissettiğini belirtmesi.</li>
+    </ul>
+  </li>
+  <li><strong>Negatif (-):</strong> Manevra sırasında yukarıda tanımlanan tipik nistagmus ve vertigo semptomlarının ortaya çıkmaması.</li>
+</ul>
+
+<p><strong>Not:</strong> Farklı semisirküler kanalların BPPV’si farklı nistagmus paternleri oluşturabilir (örn. horizontal kanal BPPV’si için horizontal nistagmus). Dix-Hallpike öncelikle posterior kanal için tasarlanmıştır.</p>
+
+<ul>
+  <li><strong>Pozitif Dix-Hallpike testi,</strong> test edilen taraftaki posterior semisirküler kanal BPPV’si tanısını güçlü bir şekilde destekler.</li>
+  <li><strong>Negatif test,</strong> posterior kanal BPPV’sini dışlamaz. Hastaların %11’inde ilk testte yanlış negatif sonuç alınabilir (Burston et al, 2012) ve %25 kadarında nistagmus görülmeyebilir (Noda et al, 2011). Semptomlar devam ediyorsa testin tekrarlanması veya diğer manevraların (örn. yan yatış testi) yapılması düşünülebilir.</li>
+  <li>Eğer atipik nistagmus (örn. sadece aşağı vuran, saf torsiyonel veya horizontal, sürekli) veya diğer nörolojik bulgular varsa, santral vestibüler patolojiler düşünülmelidir.</li>
+</ul>
+
+<p>Dix-Hallpike manevrası tanısal bir test olduğu için psikometrik özellikleri genellikle tanısal doğruluk (duyarlılık, özgüllük) açısından değerlendirilir, ancak bu konuda yayınlanmış veriler sınırlıdır ve değişkenlik gösterebilir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik (Değerlendiriciler Arası):</strong> Vertigo öyküsü olan yetişkinlerde iki değerlendirici arasında <strong>Mükemmel</strong> uyum bulunmuştur (Kappa = 0.92) (Burston et al, 2012).</li>
+  <li><strong>Geçerlilik (Kriter):</strong> Genellikle BPPV tanısı için klinik altın standart olarak kabul edilir. Başarılı bir kanalit repozisyon manevrası (örn. Epley) sonrası testin negatife dönmesi, manevranın etkinliğini ve dolayısıyla testin geçerliliğini dolaylı olarak destekler. Pollak ve ark. (2002) çalışmasında, tedavi sonrası hastaların %74’ünde Dix-Hallpike negatifleşmiştir.</li>
+  <li><strong>Duyarlılık/Özgüllük:</strong> Literatürde kesin ve tutarlı değerler bulmak zordur. Bazı kaynaklar duyarlılığın %50-88 arasında değişebileceğini belirtir. Özgüllüğünün genellikle daha yüksek olduğu kabul edilir, ancak yanlış pozitiflikler de (özellikle santral patolojilerde) mümkündür.</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Burston, A., Mossman, S., et al. (2012). “Are there diurnal variations in the results of the Dix-Hallpike manoeuvre?” J Clin Neurosci 19(3): 415-417.
+Cohen, H. S. (2004). “Side-lying as an alternative to the Dix-Hallpike test of the posterior canal.” Otol Neurotol 25(2): 130-134.
+Dix, M. and Hallpike, C. (1952). “The pathology, symptomatology and diagnosis of certain common disorders of the vestibular system.” Proceedings of the Royal Society of Medicine 45(6): 341.
+… (diğer tüm referanslar) …
+Pollak, L., Davies, R. A., et al. (2002). “Effectiveness of the particle repositioning maneuver in benign paroxysmal positional vertigo with and without additional vestibular pathology.” Otology &amp; neurotology 23(1): 79.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Dix, M. and Hallpike, C. (1952). "The pathology, symptomatology and diagnosis of certain common disorders of the vestibular system." Proceedings of the Royal Society of Medicine 45(6): 341.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

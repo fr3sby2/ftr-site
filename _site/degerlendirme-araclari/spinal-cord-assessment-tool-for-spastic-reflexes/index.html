@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Spastik Refleksler için Omurilik Yaralanması Değerlendirme Aracı - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Spastik Refleksler için Omurilik Yaralanması Değerlendirme Aracı</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Spinal Cord Assessment Tool for Spastic Reflexes</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> SCATS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Omurilik Yaralanması (OY) hastalarında üç tip spastik motor davranışı (klonus, fleksör spazmlar, ekstansör spazmlar) değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Omurilik Yaralanması (Spastisitesi olanlar).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 3 alt ölçek (Klonus, Fleksör Spazm, Ekstansör Spazm). Her alt ölçek ortaya çıkan reaksiyonun şiddetine göre 0 (reaksiyon yok) ile 3 (şiddetli reaksiyon) arasında 4 puanlık bir skala ile derecelendirilir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Spastisite / Tonus</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Motor Kontrol / Beceri</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Omurilik Yaralanması (SCI)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Spastik Refleksler için Omurilik Yaralanması Değerlendirme Aracı (SCATS), omurilik yaralanması (OY) sonrası yaygın olarak görülen spastik motor davranışları (istemsiz kas kasılmaları) değerlendirmek için kullanılan klinik bir ölçektir. Üç spesifik spastik yanıtı hedefler:</p>
+
+<ol>
+  <li><strong>Klonus:</strong> Ayak bileğine pasif dorsifleksiyon uygulandığında ortaya çıkan ritmik kas kasılmaları.</li>
+  <li><strong>Fleksör Spazmlar:</strong> Ayak tabanına (medial ark) iğne ucu gibi bir uyaran verildiğinde kalça ve dizde ortaya çıkan fleksiyon hareketi.</li>
+  <li><strong>Ekstansör Spazmlar:</strong> Kalça ve diz fleksiyondayken (90-110 derece) hızla ekstansiyona getirildiğinde ortaya çıkan ekstansör kasılmalar.</li>
+</ol>
+
+<p>Her bir yanıt tipi, ortaya çıkan reaksiyonun süresine veya hareket açıklığına göre 0’dan 3’e kadar 4 puanlık bir skala ile derecelendirilir. SCATS, tek bir eklemdeki direnci ölçen Ashworth Skalası gibi diğer spastisite ölçümlerinden farklı olarak, çoklu eklem spazmlarını ve klonusu değerlendirir.</p>
+
+<ul>
+  <li>Muayene masası/yatak.</li>
+  <li>İğne ucu veya benzeri bir uyaran (fleksör spazm için).</li>
+</ul>
+
+<p>Eğitimli bir klinisyen tarafından uygulanmalıdır.</p>
+
+<ol>
+  <li><strong>Klonus Değerlendirmesi:</strong> Hasta sırtüstü yatarken, ayak bileği pasif ve hızlı bir şekilde dorsifleksiyona getirilir ve bu pozisyonda tutulur. Ortaya çıkan klonusun süresi gözlemlenir.</li>
+  <li><strong>Fleksör Spazm Değerlendirmesi:</strong> Hasta sırtüstü, kalça ve diz tam ekstansiyonda iken, ayak tabanının medial arkına iğne ucu ile hafifçe dokunulur. Kalça ve dizde ortaya çıkan fleksiyon hareketinin derecesi veya ayak başparmağındaki ekstansiyon gözlemlenir.</li>
+  <li><strong>Ekstansör Spazm Değerlendirmesi:</strong> Hasta sırtüstü yatarken, bir bacağı kalça ve diz 90-110 derece fleksiyona getirilir. Ardından bu pozisyondan hızla tam ekstansiyona doğru hareket ettirilir. Ortaya çıkan ekstansör spazmın süresi gözlemlenir.</li>
+</ol>
+
+<p>Her alt ölçek 0-3 arası puanlanır:</p>
+
+<ul>
+  <li><strong>Klonus Skalası:</strong>
+    <ul>
+      <li>0 = Reaksiyon yok.</li>
+      <li>1 = Hafif (Klonus &lt; 3 saniye sürer).</li>
+      <li>2 = Orta (Klonus 3-10 saniye sürer).</li>
+      <li>3 = Şiddetli (Klonus &gt; 10 saniye sürer).</li>
+    </ul>
+  </li>
+  <li><strong>Fleksör Spazm Skalası:</strong>
+    <ul>
+      <li>0 = Reaksiyon yok.</li>
+      <li>1 = Hafif (Kalça/diz fleksiyonu &lt; 10 derece VEYA sadece başparmak ekstansiyonu).</li>
+      <li>2 = Orta (Kalça/diz fleksiyonu 10-30 derece).</li>
+      <li>3 = Şiddetli (Kalça/diz fleksiyonu &gt; 30 derece).</li>
+    </ul>
+  </li>
+  <li><strong>Ekstansör Spazm Skalası:</strong> (Klonus ile aynı süre kriterleri kullanılır)
+    <ul>
+      <li>0 = Reaksiyon yok.</li>
+      <li>1 = Hafif (Spazm &lt; 3 saniye sürer).</li>
+      <li>2 = Orta (Spazm 3-10 saniye sürer).</li>
+      <li>3 = Şiddetli (Spazm &gt; 10 saniye sürer).</li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>Not: Toplam bir SCATS skoru genellikle hesaplanmaz, alt ölçekler ayrı ayrı yorumlanır.</em></p>
+
+<p>Her bir alt ölçek skoru, ilgili spastik refleksin şiddetini gösterir. Yüksek skorlar daha şiddetli spastisiteyi ifade eder. Tedavi öncesi ve sonrası skorlar karşılaştırılarak tedavi etkinliği değerlendirilebilir. Örneğin, Kumru ve ark. (2010) çalışmasında, rTMS (tekrarlayan transkraniyal manyetik stimülasyon) sonrası SCATS skorlarında anlamlı düşüşler (iyileşme) gözlemlenmiştir.</p>
+
+<p><strong>Sınırlılık:</strong> Güvenilirliği ve yanıt verebilirliği konusunda daha fazla çalışmaya ihtiyaç vardır (Hsieh et al, 2008).</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong> Literatürde spesifik güvenilirlik katsayıları (örn. ICC) rapor edilmemiştir, daha fazla çalışma gereklidir.</li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı):</strong> SCATS alt skorlarının, ilgili kaslardaki EMG aktivasyon süresi veya eklem hareket açıklığı gibi laboratuvar bazlı kinematik ve elektromyografik ölçümlerle <strong>Mükemmel</strong> korelasyon gösterdiği bulunmuştur (rho = 0.69 - 0.94) (Benz et al, 2005).</li>
+      <li><strong>Yapı Geçerliliği (Yakınsak):</strong>
+        <ul>
+          <li>SCATS alt skorları ile Modifiye Ashworth Skalası (MAS) arasında <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında korelasyonlar bulunmuştur (rho = 0.35 - 0.98). En güçlü ilişki ekstansör spazm ile kalça/diz Ashworth skorları arasındadır.</li>
+          <li>SCATS Klonus ve Fleksör skorları ile Penn Spazm Frekans Skalası (PSFS) arasında <strong>Yeterli</strong> korelasyon bulunmuştur (rho = 0.59 ve 0.41).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Benz, E. N., Hornby, T. G., et al. (2005). “A physiologically based clinical measure for spastic reflexes in spinal cord injury.” Arch Phys Med Rehabil 86(1): 52-59.
+Hsieh, J., Wolfe, D., et al. (2007). “Spasticity outcome measures in spinal cord injury: psychometric properties and clinical utility.” Spinal Cord 46(2): 86-95.
+Kumru, H., Murillo, N., et al. (2010). “Reduction of Spasticity With Repetitive Transcranial Magnetic Stimulation in Patients With Spinal Cord Injury.” Neurorehabilitation and neural repair 24(5): 435.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Benz, E. N., Hornby, T. G., et al. (2005). "A physiologically based clinical measure for spastic reflexes in spinal cord injury." Arch Phys Med Rehabil 86(1): 52-59.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

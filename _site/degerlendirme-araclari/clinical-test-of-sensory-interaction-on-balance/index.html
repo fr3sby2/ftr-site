@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Duyusal Etkileşim ve Denge Klinik Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Duyusal Etkileşim ve Denge Klinik Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Clinical Test of Sensory Interaction in Balance</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> CTSIB</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">CTSIB, çeşitli duyusal koşullar altında postural kontrolü ölçmek için bir araç sağlar.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Spesifik Olmayan Hasta Popülasyonu, Yaşlı Yetişkinler ve Geriatrik Bakım, İnme, Vestibüler Bozukluklar</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Hastalar, elleri yanlarda ve ayakları bitişik olacak şekilde dururlar ve aşağıdaki 6 duyusal durumda değerlendirilirler: 1) Sert zeminde, gözler açık 2) Sert zeminde, gözler kapalı 3) Sert zeminde, görsel çakışma kubbesi 4) Köpük yüzeyde, gözler açık 5) Köpük yüzeyde, gözler kapalı 6) Köpük yüzeyde, görsel çakışma kubbesi. Hasta performansı 30 saniye boyunca zamanlanır. Bir denek kol veya ayak pozisyonunu değiştirdiğinde test sona erdirilir. Bir hasta pozisyonu 30 saniye koruyamazsa, 2 ek deneme hakkı verilir. 3 denemenin puanlarının ortalaması alınır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Vestibüler Bozukluklar</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Duyusal Etkileşim ve Denge Klinik Testi (CTSIB), postural kontrolü değerlendirmek ve çeşitli duyusal koşullar altında dengenin nasıl korunduğunu anlamak için kullanılan bir performans testidir. Test, hastanın farklı duyusal girdilere (görsel, somatosensoriyel ve vestibüler) ne kadar güvendiğini belirlemeye yardımcı olur. Altı farklı duyusal koşulda hastanın dengesini koruma yeteneği gözlemlenir ve kaydedilir. Bu koşullar, gözlerin açık veya kapalı olması, sabit veya hareketli bir yüzey üzerinde durulması gibi farklı kombinasyonları içerir. CTSIB, özellikle düşme riski taşıyan veya denge bozuklukları olan bireylerin değerlendirilmesinde faydalıdır.</p>
+
+<p>CTSIB testi, hastanın elleri yanlarda ve ayakları birleşik pozisyonda durmasıyla başlar. Aşağıdaki altı farklı duyusal koşulda hastanın dengesini koruma yeteneği değerlendirilir:</p>
+
+<ol>
+  <li>Sert zeminde, gözler açık</li>
+  <li>Sert zeminde, gözler kapalı</li>
+  <li>Sert zeminde, görsel çakışma kubbesi</li>
+  <li>Köpük yüzeyde, gözler açık</li>
+  <li>Köpük yüzeyde, gözler kapalı</li>
+  <li>Köpük yüzeyde, görsel çakışma kubbesi</li>
+</ol>
+
+<p>Her bir koşulda, hastanın dengesini 30 saniye boyunca koruması istenir. Eğer hasta bu süre içinde dengesini kaybederse (örn. ayaklarını hareket ettirir veya kollarını kullanırsa), test durdurulur. Her koşul için hastaya üç deneme hakkı verilir ve süreler kaydedilir.</p>
+
+<p>Her bir koşulda hastanın dengesini koruyabildiği süre (maksimum 30 saniye) kaydedilir. Üç denemenin ortalaması alınır. Her bir koşul için elde edilen süreler, dengenin hangi duyusal girdilere bağlı olduğunu gösterir.</p>
+
+<ul>
+  <li>1-3 arasındaki koşullarda sorun yaşayan hastalar, görme duyusuna bağımlı olabilirler.</li>
+  <li>4-6 arasındaki koşullarda sorun yaşayan hastalar, somatosensoriyel girdilere bağımlı olabilirler.</li>
+  <li>5 ve 6. koşullarda sorun yaşayan hastalar, vestibüler sistemde sorun yaşıyor olabilirler.</li>
+</ul>
+
+<p>CTSIB, hastanın hangi duyusal girdilere bağımlı olduğunu ve hangi durumlarda dengesini korumakta zorlandığını belirlemeye yardımcı olur.</p>
+
+<ul>
+  <li>Gözleri kapalı veya görsel çakışma olduğunda (2, 3, 5 ve 6. koşullar) dengesizleşen hastalar, görme duyusuna bağımlı olabilirler.</li>
+  <li>Yumuşak bir yüzeyde (4, 5 ve 6. koşullar) dengesizleşen hastalar, yüzey/somatosensoriyel girdilere bağımlı olabilirler.</li>
+  <li>5 ve 6. koşullarda dengesizleşen hastalar, görme veya yüzey/somatosensoriyel fonksiyonuna güvenemedikleri için vestibüler kayıp yaşayabilirler.</li>
+  <li>3-6 arasındaki koşullarda dengesizleşen hastalar, duyusal seçim sorunları yaşıyor olabilirler.</li>
+</ul>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li>Toplumda yaşayan yetişkinlerde mükemmel test-tekrar test güvenilirliği (r = 0.75) bulunmuştur.</li>
+  <li>Hemiplejili bireylerde mükemmel interrater güvenilirliği (kappa = 0.77) bulunmuştur.</li>
+  <li>Sağlıklı genç yetişkinlerde yüksek test-tekrar test güvenilirliği (r = 0.99) rapor edilmiştir.</li>
+  <li>Sağlıklı genç yetişkinlerde mükemmel interrater güvenilirliği (r = 0.99) bulunmuştur.</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li>Toplumda yaşayan yaşlılarda, çapraz doğrulama analizleri düşenlerin %75’ini ve düşmeyenlerin %60’ını tahmin etmiştir.</li>
+  <li>İnme sonrası CTSIB ve Fugl-Meyer Sensorimotor Değerlendirmesi (FMSA) duyusal alt puanı (r = 0.55), FMSA denge alt puanları (r = 0.77) ve FMSA alt ekstremite iyileşme puanı (r = 0.69) arasında anlamlı pozitif korelasyonlar bulunmuştur.</li>
+  <li>Vestibüler bozuklukları olan yetişkinlerde CTSIB ve Duyu Organizasyon Testi (SOT) arasında anlamlı korelasyonlar bulunmuştur (r değerleri 0.41 ile 0.89 arasında değişmektedir).</li>
+</ul>
+
+<p><strong>Duyarlılık:</strong></p>
+
+<ul>
+  <li>İnme hastalarında, standart duyarlılık ölçüleri (SRM) farklı koşullar için 0.34 ile 0.48 arasında değişmektedir.</li>
+</ul>
+
+<p><strong>Taban/Tavan Etkileri:</strong></p>
+
+<ul>
+  <li>İnme hastalarında, 4. haftada taban etkileri ve 8. haftada tavan etkileri gözlenmiştir.</li>
+</ul>
+
+<p>Anacker, S. L. and Di Fabio, R. P. (1992). “Influence of sensory inputs on standing balance in community-dwelling elders with a recent history of falling.” Phys Ther 72(8): 575-581; discussion 581-574.
+Find it on PubMed
+Bernhardt, J., Ellis, P., et al. (1998). “Changes in balance and locomotion measures during rehabilitation following stroke.” Physiother Res Int 3(2): 109-122.
+Find it on PubMed
+Cohen, H., Blatchly, C. A., et al. (1993). “A study of the clinical test of sensory interaction and balance.” Phys Ther 73(6): 346-351; discussion 351-344.
+Find it on PubMed
+Di Fabio, R. P. and Badke, M. B. (1990). “Relationship of sensory organization to balance function in patients with hemiplegia.” Phys Ther 70(9): 542-548.
+Find it on PubMed
+El-Kashlan, H. K., Shepard, N. T., et al. (1998). “Evaluation of clinical measures of equilibrium.” Laryngoscope 108(3): 311-319.
+Find it on PubMed
+Horak, F. B. (1987). “Clinical measurement of postural control in adults.” Physical Therapy 67(12): 1881-1885.
+Ricci, N. A., de Faria Figueiredo Goncalves, D., et al. (2009). “Sensory interaction on static balance: a comparison concerning the history of falls of community-dwelling elderly.” Geriatr Gerontol Int 9(2): 165-171.
+Find it on PubMed
+Shumway-Cook, A. and Horak, F. B. (1986). “Assessing the influence of sensory integration on balance. Suggestions from the field.” Physical Therapy 66: 1548-1549.
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Shumway-Cook, A. and Horak, F. B. (1986). Assessing the influence of sensory integration on balance. Suggestions from the field. Physical Therapy 66: 1548-1549.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

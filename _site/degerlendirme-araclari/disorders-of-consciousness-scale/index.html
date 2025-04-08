@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Bilinç Bozuklukları Ölçeği - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Bilinç Bozuklukları Ölçeği</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Disorders of Consciousness Scale</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> DOCS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">DOCS, şiddetli travmatik beyin hasarı sonrası bilinçlenme sürecinde nöro davranışsal işlevsellikteki ince değişiklikleri tespit etmek için geliştirilmiş yapılandırılmış bir klinik değerlendirme aracıdır. Bilinç iyileşmesini izlemek, müdahalelerin etkilerini değerlendirmek, klinik karar verme ve iyileşme prognozunu daha iyi bilgilendirmek için kullanılabilir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> DOCS-23: Ham puanlar (0-46) aralık seviyesindeki verilere (logitler) dönüştürülür ve 0 ile 100 arasında bir ölçekte yeniden ölçeklendirilir (0=min; 100=maks). DOCS-25: Ham puanlar (0-50) aralık seviyesindeki ölçülere (logitler) dönüştürülür ve 0 ile 100 arasında bir ölçekte yeniden ölçeklendirilir (0=min; 100=maks).</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Bilinç Bozuklukları Ölçeği (DOCS), şiddetli travmatik beyin hasarı sonrası bilinçlenme sürecindeki nöro davranışsal işlevsellikteki ince değişiklikleri tespit etmek için geliştirilmiş yapılandırılmış bir klinik değerlendirme aracıdır. Bilinç iyileşmesini izlemek ve müdahalelerin etkilerini değerlendirmek amacıyla kullanılır. DOCS-25, bu aracın en güncel versiyonudur.</p>
+
+<p>DOCS-23, 23 maddeden oluşurken, DOCS-25, 25 maddeden oluşmaktadır. Ölçek, test uyaranlarına verilen tepkilere göre nöro davranışsal bütünlük düzeylerini tanımlar. Her bir test maddesi için gözlemlenen yanıta bir puan atanır. Puanlama, tepki olmaması, genelleştirilmiş tepki ve lokalize tepki arasındaki geçişleri tanımlar.</p>
+
+<ul>
+  <li>Aroma özleri (vanilya, nane, portakal)</li>
+  <li>Az miktarda meyve suyu, soda ve/veya bilinen bir tat</li>
+  <li>Pamuk uçlu aplikatörler</li>
+  <li>Eldivenler</li>
+  <li>Havlu ve/veya bir yüz bezi</li>
+  <li>İki adet 3 boyutlu nesne (örn. blok, tenis topu vb.)</li>
+  <li>Hastanın tanıdığı kişilerin fotoğrafları (tanıdık, hastanın yaralanma tarihinden en az 1 yıl önce tanıdığı anlamına gelir)</li>
+  <li>El aynası: 4 inç x 6 inç</li>
+  <li>Buz parçaları</li>
+  <li>Metal kaşık</li>
+  <li>Bir mini vibratör masaj aleti</li>
+  <li>Tüy</li>
+  <li>Bir kutu basınçlı hava</li>
+  <li>Mutfak ovma telleri</li>
+  <li>Alkol hazırlık çubukları</li>
+  <li>Bir adet ‘rahatsız etmeyin’ işareti</li>
+  <li>Nabız oksimetre</li>
+  <li>Bir adet antrenör düdüğü (sadece DOCS-23 için)</li>
+  <li>Bir adet küçük/el tipi okul zili (sadece DOCS-23 için)</li>
+  <li>Bir adet el feneri (sadece DOCS-23 için)</li>
+  <li>El ısıtıcısı (sadece DOCS-25 için)</li>
+  <li>Göz bandı (sadece DOCS-25 için)</li>
+  <li>Isırma bloğu (sadece DOCS-25 için)</li>
+  <li>Şeker (sadece DOCS-25 için)</li>
+  <li>Limonata aromalı içecek karışımı tozu (ekşi tat) (sadece DOCS-25 için)</li>
+  <li>Diş fırçası (sadece DOCS-25 için)</li>
+  <li>Lamine Evet/Hayır Kartları (sadece DOCS-25 için)</li>
+</ul>
+
+<p>DOCS, hastanın çeşitli duyusal uyaranlara (tat, koku, dokunma, işitme, görme) verdiği tepkileri değerlendiren bir dizi madde içerir. Uygulayıcı, hastanın tepkilerini dikkatlice gözlemler ve her madde için uygun puanı belirler. DOCS test prosedürleri, duyusal uyarılara lokalize veya genelleştirilmiş düzeyde yanıt olarak çeşitli yanıt modlarına (jestler, sözlü, göz teması) izin verir.</p>
+
+<p>DOCS-23’te ham puanlar (0-46), DOCS-25’te ise ham puanlar (0-50) aralık seviyesindeki verilere (logitler) dönüştürülür ve 0 ile 100 arasında bir ölçekte yeniden ölçeklendirilir (0=min; 100=maks). Ölçek, tepki olmaması, genelleştirilmiş tepki ve lokalize tepki arasındaki geçişleri tanımlar.</p>
+
+<p>DOCS test prosedürleri, duyusal uyarılara lokalize veya genelleştirilmiş düzeyde yanıt olarak çeşitli yanıt modlarına (jestler, sözlü, göz teması) izin verir. Günün saati değerlendirme sonuçlarını etkileyebilir. Dışsal duyusal girdiyi azaltarak dış ortamı kontrol etmek önerilir. Ek olarak, optimal konumlandırmayı belirlemek için hasta sürekli olarak izlenmelidir.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li>DOCS-23 için iç tutarlılık mükemmeldir (kapalı kafa travması için Cronbach alfa .85, diğer kafa travmaları için .77).</li>
+  <li>DOCS-25 için iç tutarlılık mükemmeldir (Kişi ayırma güvenilirliği = 0.91, Ayırma İndeksi = 3.22; Cronbach Alfa: 0.86).</li>
+  <li>DOCS-25 için genel Mükemmel kişiler arası güvenilirlik (ICC = 0.90) bulunmuştur.</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li>DOCS-23 için temel DOCS &lt;48 veya ≥ 48 için doğru pozitif ve negatif oranları, temel DOCS’nin bilincin iyileşmesini ve iyileşme eksikliğini zamanın %71’i ve %68’i oranında tespit ettiğini gösterir.</li>
+  <li>DOCS-23 için temel DOCS’ye göre tahmin edilen iyileşmeyi bilincin gerçek iyileşmesiyle karşılaştırırken AUC = .73, temel DOCS’nin bu sonuçlar arasında zamanın %73’ü oranında doğru bir şekilde ayrım yaptığını gösterir.</li>
+  <li>DOCS-23 için yaralanmadan 4 ay sonra mükemmel öngörücü geçerlilik (Alıcı Çalışma Karakteristiği Eğrisi Altındaki Alan - AUC = .87)</li>
+  <li>DOCS-23 için yaralanmadan 8 ay sonra mükemmel öngörücü geçerlilik (AUC= .88)</li>
+  <li>DOCS-23 için yaralanmadan 12 ay sonra mükemmel öngörücü geçerlilik (AUC= .89 )</li>
+  <li>DOCS-25 için temelinde GCS ve CNC’ye toplam DOCS-25 ölçümleri kullanılarak yeterli eş zamanlı geçerlilik bulunmuştur.</li>
+  <li>DOCS-25 için temelinde GCS ve CNC’ye DOCS-25 alt ölçekleri ölçümleri kullanılarak zayıf eş zamanlı geçerlilik bulunmuştur.</li>
+  <li>DOCS-25’in mükemmel yapı geçerliliği vardır.</li>
+</ul>
+
+<p><strong>Duyarlılık:</strong></p>
+
+<ul>
+  <li>DOCS-25 için tüm katılımcılar için Etki Büyüklüğü = 0.45 (Orta Düzeyde Değişim)</li>
+  <li>DOCS-25 için iyileşmeyenler için Etki Büyüklüğü = 0.58 (Büyük Düzeyde Değişim)</li>
+  <li>DOCS-25 için iyileşenler için Etki Büyüklüğü = 0.45 (Orta Düzeyde Değişim)</li>
+  <li>DOCS-25 için tüm katılımcılar için Standartize Edilmiş Yanıt Ortalaması = 0.43 (Orta Düzeyde Değişim)</li>
+  <li>DOCS-25 için iyileşmeyenler için Standartize Edilmiş Yanıt Ortalaması = 1.3 (Büyük Düzeyde Değişim)</li>
+  <li>DOCS-25 için iyileşenler için Standartize Edilmiş Yanıt Ortalaması = 1.3 (Büyük Düzeyde Değişim)</li>
+</ul>
+
+<p>Kelly, J. P., Hurder, A. G., et al. (2005). “A measure of neurobehavioral functioning after coma. Part I: Theory, reliability, and validity of the Disorders of Consciousness Scale.” Journal of Rehabilitation Research &amp; Development 42(1): 1-18.</p>
+
+<p>Mallinson, T., Pape, T. L., &amp; Guernon, A. (2016). Responsiveness, minimal detectable change, and minimally clinically important differences for the disorders of consciousness scale.
+Journal of Head Trauma Rehabilitation, 31
+(4): E43-51.</p>
+
+<p>Pape, T. L. B., Heinemann, A. W., Kelly, J. P., Hurder, A. G., &amp; Lundgren, S. (2005). A measure of neurobehavioral functioning after coma. Part I: Theory, reliability, and validity of the Disorders of Consciousness Scale.
+Journal of Rehabilitation Research &amp; Development
+,
+42
+(1): 1-18.</p>
+
+<p>Pape, T., Senno, R., et al. (2005). “A measure of neurobehavioral functioning after coma. Part II: Clinical and scientific implementation.” Journal of Rehabilitation Research and Development 42(1): 19-28.</p>
+
+<p>Pape, T. L. B., Tang, C., et al. (2009). “Predictive Value of the Disorders of Consciousness Scale (DOCS).” PM&amp;R 1(2): 152-161.</p>
+
+<p>Pape, T. L., Guernon, A., Lundgren, S., Patil, V., Herrold, A. A., Smith, B., . . . Hoffmann, M. (2013). Predicting levels of independence with expressing needs and ideas 1 year after severe brain injury.
+Rehabil Psychol, 58
+(3), 253-262</p>
+
+<p>Pape, T. L., Mallinson, T., &amp; Guernon, A. (2014). Psychometric properties of the disorders of consciousness scale.
+ACRM
+,
+95
+(9): 1672-1684.</p>
+
+<p>Seel, R. T., Sherer, M., et al. (2010). “Assessment scales for disorders of consciousness: evidence-based recommendations for clinical practice and research.” Archives of physical medicine and rehabilitation 91(12): 1795-1813.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Kelly, J. P., Hurder, A. G., et al. (2005). "A measure of neurobehavioral functioning after coma. Part I: Theory, reliability, and validity of the Disorders of Consciousness Scale." Journal of Rehabilitation Research & Development 42(1): 1-18.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

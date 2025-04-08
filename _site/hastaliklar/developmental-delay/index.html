@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Gelişimsel Gerilik - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="disease">
+
+  <header class="disease-header">
+    <h1 class="disease-title">Gelişimsel Gerilik</h1>
+    
+      <p><em>(Yaygın İsim: )</em></p>
+    
+  </header>
+
+  <div class="disease-summary">
+    
+      <p><strong>Özet:</strong> Gelişimsel gerilik, bir çocuğun yaşına göre beklenen gelişimsel kilometre taşlarına ulaşmasında gecikme olması durumudur.</p>
+    
+     
+      <img src="/ftr-web-olcekler/assets/images/diseases/developmental-delay.jpg" alt="Gelişimsel Gerilik" style="max-width: 100%; height: auto; margin-bottom: 1em;">
+    
+  </div>
+
+  <hr>
+
+  <div class="disease-content">
+    <p>Gelişimsel gerilik (GG), çocukların motor becerileri (oturma, yürüme), dil ve iletişim becerileri, bilişsel beceriler (öğrenme, problem çözme) ve sosyal/duygusal becerileri gibi alanlarda yaşıtlarına göre belirgin bir gecikme göstermesi durumudur. Bu gecikme tek bir alanda olabileceği gibi, birden fazla alanı da etkileyebilir. Gelişimsel gerilik tanısı, genellikle çocuk doktorları veya gelişimsel pediatri uzmanları tarafından yapılan detaylı değerlendirmeler sonucunda konulur. Erken tanı ve uygun müdahaleler, çocukların potansiyellerine ulaşmalarına yardımcı olabilir.</p>
+
+<p>Gelişimsel geriliğin belirtileri, çocuğun yaşına ve etkilenen gelişim alanlarına göre değişiklik gösterir. Yaygın belirtiler şunlardır:</p>
+
+<ul>
+  <li><strong>Motor Beceriler:</strong> Oturma, emekleme, yürüme gibi becerilerde gecikme; kas tonusunda anormallikler (gevşek veya sert kaslar).</li>
+  <li><strong>Dil ve İletişim Becerileri:</strong> İlk kelimeleri söylemede gecikme, basit yönergeleri anlamada güçlük, iletişim kurmada zorluk.</li>
+  <li><strong>Bilişsel Beceriler:</strong> Öğrenme güçlüğü, problem çözme becerilerinde zayıflık, dikkat eksikliği.</li>
+  <li><strong>Sosyal/Duygusal Beceriler:</strong> Göz teması kurmada zorluk, sosyal etkileşimlere ilgi göstermeme, duygusal tepkilerde uygunsuzluk.</li>
+</ul>
+
+<p>Gelişimsel geriliği olan çocukların FTR’si, çocuğun bireysel ihtiyaçlarına ve etkilenen gelişim alanlarına göre uyarlanır. FTR’nin temel hedefleri şunlardır:</p>
+
+<ul>
+  <li><strong>Motor Becerilerin Geliştirilmesi:</strong> Fizyoterapistler, kas kuvvetini, koordinasyonu ve dengeyi geliştirmek için egzersizler uygular. Oturma, emekleme, yürüme gibi kaba motor becerilerinin yanı sıra, ince motor becerileri (tutma, kavrama) de geliştirilmeye çalışılır.</li>
+  <li><strong>Duruş ve Hareket Kontrolünün Sağlanması:</strong> Nörogelişimsel tedavi (Bobath), duyu bütünleme terapisi gibi yaklaşımlar kullanılarak, çocuğun duruşunu ve hareketlerini kontrol etme becerisi artırılır.</li>
+  <li><strong>Günlük Yaşam Aktivitelerinde (GYA) Bağımsızlığın Artırılması:</strong> Çocukların giyinme, yemek yeme, tuvalet gibi günlük yaşam aktivitelerini mümkün olduğunca bağımsız yapabilmeleri için rehabilitasyon programları uygulanır.</li>
+  <li><strong>Duyu Bütünleme:</strong> Duyu bütünleme terapisi ile çocukların duyusal bilgileri (dokunma, hareket, denge) işlemesini ve uygun tepkiler vermesini sağlamak amaçlanır.</li>
+  <li><strong>Yardımcı Cihazların Değerlendirilmesi ve Kullanımı:</strong> Gerekli durumlarda ortezler, yürüteçler, özel oturma sistemleri gibi yardımcı cihazlar değerlendirilir ve kullanılır.</li>
+</ul>
+
+ <!-- Hastalığın Markdown içeriği (Tanım, Nedenler, Belirtiler, FTR Yaklaşımı vb.) -->
+  </div>
+
+  <!-- Bu hastalıkla ilgili önerilen değerlendirme araçları (Opsiyonel) -->
+  
+  
+
+   <nav class="post-nav">
+     <a href="/hastaliklar-genel/">← Tüm Hastalık Bilgileri Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Omurilik Yaralanması için Yürüme İndeksi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Omurilik Yaralanması için Yürüme İndeksi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Walking Index for Spinal Cord Injury</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> WISCI / WISCI II</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Omurilik Yaralanması (OY) sonrası yürüme yeteneğindeki iyileşmeyi daha hassas bir şekilde ölçmek için tasarlanmıştır. Yürümek için gereken fiziksel yardım miktarını ve kullanılan cihazları (yürüteç, koltuk değneği, baston, ortez) değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Omurilik Yaralanması (Özellikle yürüme potansiyeli olan eksik yaralanmalar - AIS C/D).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Bireyin 10 metrelik bir mesafeyi yürürken ihtiyaç duyduğu yardım ve cihazlara göre 0 ile 20 arasında sıralı bir skordur. 0=Yardımla bile yürüyemez/ayakta duramaz, 20=Yardım veya cihaz olmadan bağımsız yürür. WISCI II şu an kullanılan versiyondur.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Omurilik Yaralanması (SCI)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Omurilik Yaralanması için Yürüme İndeksi (WISCI, şu anki versiyonu WISCI II), omurilik yaralanması (OY) geçiren bireylerin yürüme yeteneğindeki fonksiyonel iyileşmeyi derecelendirmek için özel olarak geliştirilmiş 21 seviyeli (0-20) sıralı bir ölçektir. Geleneksel yürüme hızı veya mesafesi ölçümlerinin yakalayamadığı, özellikle fiziksel yardım ve cihaz kullanımındaki değişiklikleri daha hassas bir şekilde yansıtmayı amaçlar.</p>
+
+<p>WISCI II, bireyin 10 metrelik bir mesafeyi yürürken ihtiyaç duyduğu fiziksel yardım düzeyini (2 kişi, 1 kişi, yok), kullandığı yardımcı cihazları (paralel bar, yürüteç, çift/tek koltuk değneği/baston) ve alt ekstremite ortezlerini (çift/tek, uzun/kısa) dikkate alarak 0’dan (hiç yürüyemez) 20’ye (tamamen bağımsız, cihazsız, ortezsiz yürür) kadar bir seviye atar. Daha yüksek seviyeler, daha az kısıtlamayla daha bağımsız yürüme anlamına gelir.</p>
+
+<p>Ölçek, OY rehabilitasyonunda ilerlemeyi izlemek, farklı tedavilerin etkinliğini karşılaştırmak ve fonksiyonel sonucu değerlendirmek için klinik ve araştırma ortamlarında kullanılır.</p>
+
+<ul>
+  <li>İşaretlenmiş 10 metrelik yürüme parkuru.</li>
+  <li>Gerekli olabilecek çeşitli yardımcı cihazlar (paralel bar, yürüteç, koltuk değnekleri, bastonlar) ve ortezler.</li>
+  <li>WISCI II skorlama formu/tanımları.</li>
+</ul>
+
+<ol>
+  <li>Hastanın mevcut yürüme yeteneği gözlemlenir veya biliniyorsa kaydedilir.</li>
+  <li>Hastadan, güvenli bir şekilde başarabileceği <strong>en az kısıtlayıcı</strong> koşulla (en az yardım, en az cihaz/ortez) 10 metrelik mesafeyi yürümesi istenir.</li>
+  <li>Hastanın 10 metreyi tamamlarken kullandığı yardım düzeyi, cihazlar ve ortezlere göre WISCI II seviye tanımlarından en uygun olanı belirlenir.</li>
+  <li>Örneğin, hasta 10 metreyi tek bir bastonla, ortezsiz ve fiziksel yardım almadan yürüyebiliyorsa, WISCI II seviyesi 19 olarak kaydedilir.</li>
+</ol>
+
+<p>WISCI II Seviyeleri (Özet):</p>
+
+<ul>
+  <li><strong>0:</strong> Ayakta duramaz/yardımla yürümeye katılamaz.</li>
+  <li><strong>1-5:</strong> Paralel bar kullanımı (farklı yardım ve ortez düzeyleriyle).</li>
+  <li><strong>6-9, 13:</strong> Yürüteç kullanımı (farklı yardım ve ortez düzeyleriyle).</li>
+  <li><strong>7, 11, 12, 16:</strong> Çift koltuk değneği kullanımı (farklı yardım ve ortez düzeyleriyle).</li>
+  <li><strong>10, 14, 15, 19:</strong> Tek baston/koltuk değneği kullanımı (farklı yardım ve ortez düzeyleriyle).</li>
+  <li><strong>17, 18, 20:</strong> Cihazsız yürüme (farklı yardım ve ortez düzeyleriyle).</li>
+</ul>
+
+<p><em>Detaylı seviye tanımları için orijinal WISCI II skalasına bakılmalıdır.</em></p>
+
+<p>WISCI II seviyesi, OY sonrası bireyin fonksiyonel yürüme kapasitesini hiyerarşik olarak gösterir. Seviyedeki artış, yürüme yeteneğinde iyileşme anlamına gelir. Özellikle rehabilitasyon sürecinde hastanın hangi aşamada olduğunu (örn. paralel bar aşaması, yürüteç aşaması, bağımsız yürüme) ve ne tür desteklere ihtiyaç duyduğunu gösterir.</p>
+
+<p><strong>Sınırlılıklar:</strong></p>
+<ul>
+  <li>Ölçek yürüme kalitesini, hızını veya enduransını doğrudan ölçmez, sadece gereken yardım ve cihaz düzeyini sınıflandırır.</li>
+  <li>Özellikle yüksek seviyelerde (örn. WISCI II 19-20) tavan etkisi görülebilir, yani bu seviyedeki hastalar arasında yürüme hızı veya kalitesi açısından önemli farklılıklar olabilir ancak WISCI II skoru aynı kalır.</li>
+  <li>Daha yüksek fonksiyonel seviyelerde (bağımsız yürüyenler) iyileşmeyi göstermede yürüme hızı veya 6MWT gibi ölçümlere göre daha az duyarlı olabilir (van Hedel et al, 2006).</li>
+</ul>
+
+<p>WISCI II, OY popülasyonunda iyi psikometrik özelliklere sahip, yaygın olarak kullanılan bir ölçektir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> Kronik OY hastalarında <strong>Mükemmel</strong> (ICC = 0.99).</li>
+      <li><strong>Değerlendiriciler Arası:</strong> Akut ve kronik OY hastalarında <strong>Mükemmel</strong> (ICC veya Kappa = 0.98 - 1.00).</li>
+      <li><strong>Değerlendirici İçi:</strong> Kronik OY hastalarında <strong>Mükemmel</strong> (ICC = 1.0).</li>
+    </ul>
+  </li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Kriter Geçerliliği (Eş Zamanlı/Öngörücü):</strong>
+        <ul>
+          <li>FIM (özellikle lokomotor alt skoru), Barthel İndeksi, SCIM (Spinal Cord Independence Measure), Rivermead Mobilite İndeksi gibi fonksiyonel bağımsızlık ölçümleriyle <strong>Mükemmel</strong> korelasyon gösterir (r = 0.67 - 0.97).</li>
+          <li>ASIA Alt Ekstremite Motor Skoru (LEMS) ile <strong>Mükemmel</strong> korelasyon gösterir (r = 0.70 - 0.88).</li>
+          <li>Yürüme hızı (10MWT) ve yürüme enduransı (6MWT) ile özellikle bağımsız yürüyebilen hastalarda <strong>Yeterli</strong> ile <strong>Mükemmel</strong> arasında korelasyon gösterir (r = -0.37 ila -0.79 veya 0.28 ila 0.81). Ancak bağımlı yürüyenlerde bu korelasyonlar <strong>zayıf</strong> olabilir.</li>
+          <li>Berg Denge Skalası (BBS) ile <strong>Mükemmel</strong> korelasyon (r = 0.89 - 0.92).</li>
+          <li>Baseline LEMS, WISCI skorunu 1 yıl sonra öngörmede en iyi belirleyicidir (r = 0.73).</li>
+        </ul>
+      </li>
+      <li><strong>Yapı Geçerliliği:</strong> LEMS ile korelasyonu tetraplejiklerde paraplejiklere göre daha yüksektir. Bağımsız yürüyenlerle bağımlı yürüyenler arasında diğer yürüme ölçümleriyle korelasyonları farklılık gösterir.</li>
+      <li><strong>İçerik/Yüz Geçerliliği:</strong> Uluslararası uzmanlar tarafından Delphi tekniği kullanılarak geliştirilmiş ve sıralama üzerinde yüksek düzeyde fikir birliği sağlanmıştır.</li>
+    </ul>
+  </li>
+  <li><strong>Tavan/Tavan Etkisi:</strong> Özellikle kronik OY popülasyonunda ve rehabilitasyon sonrası dönemde belirgin <strong>tavan etkisi</strong> rapor edilmiştir (%17 - %48). Bağımsız yürüyebilen hastaların çoğu en yüksek skoru (20) alabilir. Rehabilitasyon başlangıcında ise <strong>taban etkisi</strong> de görülebilir (%53).</li>
+  <li><strong>Yanıt Verebilirlik (Değişime Duyarlılık):</strong> Özellikle rehabilitasyonun erken dönemlerinde (ilk 3 ay) değişime duyarlıdır. Ancak daha sonraki dönemlerde veya yüksek fonksiyonel seviyelerde yürüme hızı gibi ölçümlere göre daha az duyarlı olabilir. FIM, SCIM, RMI gibi ölçümlere göre daha fazla sayıda değişim seviyesi (12 vs 2-5) sunarak daha hassas olabileceği belirtilmiştir (Morganti et al, 2005).</li>
+</ul>
+
+<p>(Metinde listelenen tüm bibliyografya buraya eklenebilir.)
+Burns, A. S., Delparte, J. J., et al. (2011). “The reproducibility and convergent validity of the Walking Index for Spinal Cord Injury (WISCI) in chronic spinal cord injury.” Neurorehabil Neural Repair 25(2): 149-157.
+… (diğer tüm referanslar) …
+van Hedel, H. J., Wirz, M., et al. (2008). “Standardized assessment of walking capacity after spinal cord injury: the European network approach.” Neurol Res 30(1): 61-73.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Ditunno, J. F., Jr., Ditunno, P. L., et al. (2000). "Walking index for spinal cord injury (WISCI): an international multicenter validity and reliability study." Spinal Cord 38(4): 234-243.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

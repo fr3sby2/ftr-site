@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Konuşurken Yürümeyi Durdurma Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Konuşurken Yürümeyi Durdurma Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Stops Walking When Talking</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> SWWT</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Yaşlı yetişkinlerde, konuşmaya dahil olduktan sonra yürürken durmaları gerekip gerekmediğini not ederek düşme riskini belirler. Konuşma ile yürüme ikili görevini başarıyla yerine getirme yeteneğini değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Parkinson Hastalığı, İnme, Yaşlı Yetişkinler ve Geriatrik Bakım.</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Gözlemseldir. Kişi konuşurken yürümeyi durdurursa test pozitiftir (1 madde).</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Konuşurken Yürümeyi Durdurma Testi (SWWT), özellikle yaşlı bireylerde düşme riskini öngörmek için kullanılan basit bir gözlemsel değerlendirmedir. Bireyin yürüme sırasında bilişsel bir göreve (konuşma) ne kadar iyi adapte olabildiğini, yani ikili görev (dual-task) yeteneğini yansıtır.</p>
+
+<p><strong>Önemli Not:</strong> Bu test, “Walking While Talking” (Konuşurken Yürüme) testinden farklıdır. SWWT, sadece kişinin konuşma başladığında veya devam ederken yürümeyi tamamen durdurup durdurmadığına odaklanır.</p>
+
+<p>Lundin-Olsson ve arkadaşlarının (1997) orijinal çalışmasında, uzun süreli bakım tesisindeki sakinler yaklaşık 150 metrelik bir koridorda yürürken onlarla sohbet başlatılmıştır. Eğer kişi konuşmaya başladığında veya konuşma sırasında yürümeyi durdurduysa, test pozitif kabul edilmiştir. Bu çalışmada, 6 aylık takipte düşenlerin önemli bir kısmında testin pozitif olduğu gözlemlenmiştir. Parkinson hastalarında yapılan çalışmalarda (Bloem, 2000) ise testin düşmeleri öngörmede duyarlılığının düşük olduğu bulunmuştur.</p>
+
+<p>Genellikle özel bir malzeme gerektirmez. Hastanın güvenli bir şekilde yürüyebileceği yeterli uzunlukta bir koridor veya düz bir alan yeterlidir. Gerekirse yürüme yardımcısı kullanılabilir.</p>
+
+<ol>
+  <li>Hastanın normal yürüme hızında, belirlenen bir koridorda veya alanda yürümesini isteyin.</li>
+  <li>Hasta yürürken, onunla basit bir sohbet başlatın (örn. “Bugün nasılsınız?”, “Hava nasıl?” gibi dikkatini gerektirecek, ancak karmaşık olmayan bir soru veya konu).</li>
+  <li>Hastanın konuşmaya yanıt verirken veya konuşma devam ederken yürümeye devam edip etmediğini gözlemleyin. Anahtar nokta, yürümeyi <strong>tamamen durdurup durdurmadığıdır</strong>. Yavaşlama değil, durma önemlidir.</li>
+</ol>
+
+<p>Test dikotomdur (iki sonuçlu):</p>
+
+<ul>
+  <li><strong>Pozitif (+):</strong> Kişi konuşmaya başladığında veya konuşma sırasında yürümeyi <strong>durdurur</strong>.</li>
+  <li>
+    <p><strong>Negatif (-):</strong> Kişi konuşmaya başladığında veya konuşma sırasında yürümeye <strong>devam eder</strong> (yavaşlasa bile durmaz).</p>
+  </li>
+  <li><strong>Pozitif (+)</strong> bir sonuç, genellikle artmış düşme riski ile ilişkilidir. Bu durum, bireyin yürüme gibi otomatik bir görevi, dikkat gerektiren bilişsel bir görevle (konuşma) aynı anda güvenli bir şekilde sürdürmekte zorlandığını gösterir (ikili görev bozukluğu).</li>
+  <li>Lundin-Olsson (1997) çalışmasında kurumsallaşmış yaşlılarda pozitif prediktif değer %83, negatif prediktif değer %76 bulunmuştur.</li>
+  <li>Ancak, Parkinson hastalarında (Bloem, 2000) ve inme sonrası bireylerde (Hyndman, 2004) prediktif doğruluğun daha düşük olabileceği belirtilmiştir. Özellikle Parkinson hastalarında düşmeleri öngörmede duyarlılığı düşüktür.</li>
+  <li>
+    <p>Sonuçlar yorumlanırken hastanın bilişsel durumu ve tanısı göz önünde bulundurulmalıdır.</p>
+  </li>
+  <li><strong>Yaşlı Yetişkinler (Kurumsallaşmış, Lundin-Olsson, 1997):</strong>
+    <ul>
+      <li>Duyarlılık: %48</li>
+      <li>Özgüllük: %95</li>
+      <li>Pozitif Prediktif Değer (PPV): %83</li>
+      <li>Negatif Prediktif Değer (NPV): %76</li>
+      <li><em>Not: Bu çalışmada bilişsel bozukluk ve depresyon dışlanmamıştır.</em></li>
+    </ul>
+  </li>
+  <li><strong>Parkinson Hastalığı (Bloem, 2000):</strong>
+    <ul>
+      <li>Düşmeleri öngörmede: Düşük Duyarlılık (%14.3), Yeterli Özgüllük (%91.7).</li>
+      <li>Sonuç: PD’de düşmeler için zayıf bir öngörücü.</li>
+      <li><em>Not: Bu çalışmada bilişsel bozukluğu olan PD hastaları dışlanmıştır.</em></li>
+    </ul>
+  </li>
+  <li><strong>İnme (Toplumda Yaşayan, Hyndman, 2004):</strong>
+    <ul>
+      <li>Tüm düşenler (&gt;1 düşme) için: PPV %62, NPV %62, Özgüllük %70, Duyarlılık %53.</li>
+      <li>Tekrarlayan düşenler (&gt;2 düşme) için: PPV %42, NPV %89, Özgüllük %69, Duyarlılık %73.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Beauchet, O., Annweiler, C., et al. (2009). “Stops walking when talking: a predictor of falls in older adults?” Eur J Neurol 16(7): 786-795.
+Bloem, B. R., Grimbergen, Y. A., et al. (2000). ““Stops walking when talking” does not predict falls in Parkinson’s disease.” Ann Neurol 48(2): 268.
+Bootsma‐van der Wiel, A., Gussekloo, J., et al. (2003). “Walking and Talking as Predictors of Falls in the General Population: The Leiden 85‐Plus Study.” Journal of the American Geriatrics Society 51(10): 1466-1471.
+Hyndman, D. and Ashburn, A. (2004). “Stops walking when talking as a predictor of falls in people with stroke living in the community.” J Neurol Neurosurg Psychiatry 75(7): 994-997.
+Lundin-Olsson, L., Nyberg, L., et al. (1997). ““Stops walking when talking” as a predictor of falls in elderly people.” Lancet 349(9052): 617.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Lundin-Olsson, L., Nyberg, L., et al. (1997). ""Stops walking when talking"" as a predictor of falls in elderly people." Lancet 349(9052): 617.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

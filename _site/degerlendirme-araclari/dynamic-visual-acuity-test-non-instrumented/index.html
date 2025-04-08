@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Enstrümansız Dinamik Görsel Keskinlik Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Enstrümansız Dinamik Görsel Keskinlik Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Non-instrumented Dynamic Visual Acuity Test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> DVAT-NI</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">DVAT-NI, muayene tarafından oluşturulan (yani “pasif”) rotasyonel baş hareketi uyaranlarına yanıt olarak vestibülo-oküler refleks (VOR) fonksiyonunun “düşük teknolojili”, objektif, davranışsal bir ölçüsünü sağlar.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Vestibüler Bozukluklar</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Statik baş hareketi koşulları altında görsel keskinlik değerlendirilir. Hastanın dinamik bileşen için başı sallanırken mümkün olan en düşük satırı okuması istenir. Statik görsel keskinliğe göre üç veya daha fazla satır kaybı klinik olarak anlamlı kabul edilir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Vestibüler Fonksiyon</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Vestibüler Bozukluklar</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Enstrümansız Dinamik Görsel Keskinlik Testi (DVAT-NI), baş-sabit görsel keskinliğe göre sinüzoidal, muayene aracılı baş rotasyonları sırasında bakış stabilitesini değerlendirir. Bu ölçü, bakış dengesizliğini (bir göz çizelgesinde “kaybedilen satırlar” olarak ölçülür) taramak ve karakterize etmek için kullanılır ve daha karmaşık değerlendirme tekniklerinin yokluğunda Baş İtme Testi veya Baş Sallama Nistagmus Testi gibi diğer “başucu” klinik vestibüler fonksiyon testleriyle birlikte yaygın olarak uygulanır.</p>
+
+<p>Bu testi uygulamak için, önce statik baş hareketi koşulları altında (yani: baş hareketi yok) görsel keskinlik değerlendirilir.
+Hastaya mesafe görüşü için ihtiyaç duyulması halinde reçeteli lensleri takması ve ardından bir optometrik göz muayene çizelgesinin önüne belirli bir mesafede oturtulması talimatı verilir (örn: yaygın olarak kullanılan Erken Diabetik Retinopati Tedavisi Çalışması (ETDRS) çizelgesi için 4 metre veya standart bir optometrik Snellen Çizelgesi için 20 fit).
+Hastaya tanınabilir en düşük satırı okuması ve belirli bir satırdaki tüm harfleri tanımlayana kadar okumaya devam etmesi talimatı verilir.
+Muayene eden kişi, tüm harflerin doğru bir şekilde tanımlandığı son satırı ve doğru bir şekilde tanımlanan toplam harf sayısını not etmelidir.
+Testin dinamik bileşeni için, muayene eden kişi hastanın arkasında durmalı ve hastanın başını her iki eliyle kulakların hemen üzerinde sıkıca kavramalıdır.
+Yaw düzleminde test için, yatay yarı dairesel kanalları test düzlemine (yani yatay düzlem) getirmek için hastanın başı ~30 derece öne doğru eğilmelidir.
+Ardından, muayene eden kişi, düzeltici lensleri olan hastalar için aralığı kısıtlamaya özen göstererek, başı orta hattan dikey bir eksende 20-30 derece büyüklüğünde salınımlı hareket ettirecektir.
+Rotasyon sıklığı, hipofonksiyonel bir vestibüler uç organı inhibitör kesintiye sürmek için yeterli uyaran yoğunluğu elde etmek üzere 2 Hz’de (yani saniyede 2 döngü) meydana gelmelidir.
+Hasta, göz çizelgesinin mümkün olan en düşük satırındaki harfleri doğru bir şekilde tanımlayana kadar okuyacaktır.
+Muayene eden kişi bu satırı not etmeli ve yanlış tanımlanan optotiplerin sayısını kaydetmelidir.
+Kişinin statik görsel keskinliğine göre üç veya daha fazla satır görsel keskinlik kaybı klinik olarak anlamlı kabul edilir ve olası vestibüler disfonksiyonu düşündürür.</p>
+
+<p>Hastanın statik ve dinamik koşullarda okuyabileceği en küçük satır kaydedilir. Statik ve dinamik görsel keskinlik arasındaki fark, Dinamik Görsel Keskinlik (DVA) skorunu temsil eder. Üç veya daha fazla satır kaybı klinik olarak anlamlı olarak kabul edilir ve olası vestibüler disfonksiyonu düşündürür.</p>
+
+<p>Dinamik test koşullarında &lt;3 satır görsel keskinlik kaybı “normal sınırlar içinde” kabul edilir. 3 veya daha fazla satır kaybı potansiyel vestibüler disfonksiyonu düşündürmektedir. (Herdman, 2007)
+Okunaksız E-testi kullanılarak dinamik görsel keskinlik sırasında &gt; 2 satır kaybı anormal kabul edilir (Longridge ve Mallinson, 1984 ve 1987)</p>
+
+<p><strong>Test/Tekrar Test Güvenilirliği:</strong></p>
+
+<p>Bilateral Vestibüler Hipofonksiyonlu Çocuklar (BVH) (Rine ve diğerleri, 2003; n = 76 tipik gelişen çocuk; ortalama yaş = 7 yıl; n = 26 yetişkin; ortalama yaş = 32 yıl; n = 11 BVH’li çocuk). Pasif Yaw Baş hareketleri (hDVA): n = 30 (güvenilirlik alt analizi), çalışma güvenilirlik bileşeni için ortalama yaş = 25 yıl. Mükemmel test-tekrar test güvenilirliği ICC(2,2) r = 0.94
+Pasif Pitch Baş hareketleri (vDVA): n = 11, ortalama yaş 25 yıl (güvenilirlik alt analizi). Not: Dikey DVA katılımcılar tarafından “kötü tolere edildi”. Mükemmel test-tekrar test güvenilirliği r = 0.88</p>
+
+<p><strong>Gözlemciler Arası/İçi Güvenilirlik:</strong></p>
+
+<p>Bilateral Vestibüler Hipofonksiyonlu Çocuklar (Rine ve diğerleri, 2003)
+Mükemmel gözlemciler arası güvenilirlik ICC(3,2) = 0.84</p>
+
+<p><strong>Kriter Geçerliliği (Öngörücü/Eşzamanlı):</strong></p>
+
+<p>Öngörücü Geçerlilik, Yaw Pasif
+BVH’li Çocuklar vs. Yetişkinler ve Tipik Gelişen Çocuklar (Rine ve diğerleri 2003);
+Mükemmel Duyarlılık: %100
+Mükemmel Özgüllük: %100
+Mükemmel Pozitif Öngörü Değeri: %100
+Mükemmel Negatif Öngörü Değerleri: %100</p>
+
+<p>Öngörücü Geçerlilik, Pitch Pasif
+Bilinen gruplar (TD - BVH) arasında istatistiksel farklılıklar bulunmuş olsa da, gözlemlenen farklılıklar klinik olarak anlamlı değildi (tüm DVA skorları &lt; 2 satır elde etti). Dikey dinamik keskinlik testi çoğu çocuk tarafından tolere edilmedi ve bu da kullanışlılığını engelledi (Rine ve diğerleri, 2003).</p>
+
+<p>Longridge ve Mallinson, 1984 (n normaller = 80)
+· Tüm kontrol denekleri normal kaloriler ve okunaksız E-testi sırasında &lt; 1 sıra bozulma gösterdi.
+· %82.5’i baş hareketleri sırasında okuma yeteneğinde bozulma göstermedi; %17.5’i 1 sıra bozulma gösterdi.</p>
+
+<p>Longridge ve Mallinson, 1987 (n normal= 30)
+· Tüm kontrol denekleri normal kaloriler ve okunaksız E-testi sırasında &lt; 1 sıra bozulma gösterdi.
+%94’ü baş hareketleri sırasında okuma yeteneğinde bozulma göstermedi; %6’sı 1 sıra bozulma gösterdi.</p>
+
+<p><strong>Yüz Geçerliliği:</strong></p>
+
+<p>Unilateral Vestibüler Hipofonksiyon (Dannenbaum ve diğerleri 2005, n = 41, 10 UVH’li ortalama yaş = 49.4(15.5); aralık 19-70 yıl.
+· Baş hareketi sıklığı, UVH’li deneklerde klinik DVA skorları üzerinde bir etkiye sahiptir. DVAT- NI skorları, baş hareketi sıklığı 0.5’ten 1.0 Hz’e ve 1.0’dan 1.5 Hz’e yükseldiğinde, yatay (yaw) ve dikey (pitch) hareketler sırasında ve her iki görme çizelgesiyle (p &lt; .001) önemli ölçüde azaldı.
+· Çalışma sonuçları, DVAT-NI’nin E-çizelgesi ile en az 1.5 Hz’lik yatay ve dikey rotasyonel baş hareketleriyle uygulanmasını önermektedir.</p>
+
+<p>Unilateral Vestibüler Hipofonksiyon (Dannenbaum 2009, n = 10, ortalama yaş 58.8 (16.3) aralık = 40-83, akustik nöroma rezeksiyonu sonrası UVH’li hastalar.
+DVAT-NI, bitermal kalorilerle belirlenen vestibüler defisit derecesi ile hafta korelasyonuna sahipti. Spearman korelasyon analizleri, kalori testindeki vestibüler parezi yüzdesi ile DVA skorları arasında düşük korelasyon katsayıları ortaya çıkardı (yatay yön: r = 0.31, p = 0.38 Snellen çizelgesi için ve r = -0.33, p = 0.35 E-çizelgesi için; dikey: r = 0.05, p = 0.91 Snellen çizelgesi için ve r = -0.28, p = 0.50 E-çizelgesi için).</p>
+
+<p>Dannenbaum, E., Paquet, N., et al. (2009). “Clinical evaluation of dynamic visual acuity in subjects with unilateral vestibular hypofunction.” Otol Neurotol 30(3): 368-372.
+Find it on PubMed
+Dannenbaum, E., Paquet, N., et al. (2005). “Optimal parameters for the clinical test of dynamic visual acuity in patients with a unilateral vestibular deficit.” J Otolaryngol 34(1): 13-19.
+Find it on PubMed
+Herdman, S. J. (2007). Vestibular Rehabilitation, F. A. Davis Company.
+Longridge, N. S. and Mallinson, A. I. (1984). “A discussion of the dynamic illegible “E” test: a new method of screening for aminoglycoside vestibulotoxicity.” Otolaryngol Head Neck Surg 92(6): 671-677.
+Find it on PubMed
+Longridge, N. S. and Mallinson, A. I. (1987). “The Dynamic Illegible E-test: A Technique for Assessing the Vestibulo-ocular Reflex.” Acta Otolaryngol 103(5-6): 273-279.
+Find it on PubMed
+Rine, R. M. and Braswell, J. (2003). “A clinical test of dynamic visual acuity for children.” Int J Pediatr Otorhinolaryngol 67(11): 1195-1201.
+Find it on PubMed</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Dannenbaum, E., Paquet, N., et al. (2009). Clinical evaluation of dynamic visual acuity in subjects with unilateral vestibular hypofunction. Otol Neurotol 30(3): 368-372.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

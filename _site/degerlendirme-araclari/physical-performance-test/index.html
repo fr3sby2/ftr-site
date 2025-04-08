@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Fiziksel Performans Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Fiziksel Performans Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Physical Performance Test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> PPT</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">PPT, yaşlı yetişkinler, Parkinson Hastalığı, non-spesifik popülasyonlar ve karışık popülasyonlar dahil olmak üzere çeşitli popülasyonlarda, günlük yaşam aktivitelerini çeşitli zorluk derecelerinde simüle eden görevlerin gözlemlenen performansı kullanılarak fiziksel fonksiyonun çeşitli alanlarını değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Parkinson Hastalığı, Yaşlı Yetişkinler ve Geriatrik Bakım, Non-spesifik Hasta Popülasyonu, Hareket ve Yürüyüş Bozuklukları, Kronik Ağrı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Her bir madde için 5 puanlık bir ölçek (0-4) kullanılır. Her iki ölçek için minimum puan 0'dır. 9 maddelik ölçek için maksimum 36, 7 maddelik ölçek için 28'dir. Toplam puanın yüksek olması, daha iyi fiziksel performansı gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">İletişim & Dil</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Demans / Alzheimer</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>translator: &lt;Oluşturan: Yapay Zeka&gt;</p>
+
+<p>Fiziksel Performans Testi (PPT), farklı zorluk seviyelerinde günlük yaşam aktivitelerini taklit eden görevlerin gözlemlenen performansı aracılığıyla fiziksel işlevselliğin çeşitli alanlarını değerlendirmek için kullanılır. Bu test, yaşlı yetişkinler, Parkinson hastalığı olan bireyler, non-spesifik hasta grupları ve çeşitli diğer popülasyonlar dahil olmak üzere geniş bir yelpazede uygulanabilir. Testin amacı, bireyin fiziksel yeteneklerini objektif bir şekilde ölçerek, günlük yaşam aktivitelerindeki bağımsızlığını ve performansını değerlendirmektir. PPT, 7 veya 9 maddeden oluşan iki farklı versiyonda uygulanabilir ve elde edilen puanlar, bireyin fiziksel performansı hakkında kapsamlı bir genel bakış sunar. Yüksek toplam puanlar, daha iyi fiziksel performansı işaret eder.</p>
+
+<ul>
+  <li>Kronometre</li>
+  <li>Kalem</li>
+  <li>Kağıt</li>
+  <li>5 adet kuru fasulye</li>
+  <li>Bir çay kaşığı</li>
+  <li>Boş bir kahve kutusu</li>
+  <li>Ağır bir kitap</li>
+  <li>Raf</li>
+  <li>Ceket, hırka veya laboratuvar önlüğü</li>
+  <li>Bir adet bozuk para</li>
+</ul>
+
+<ol>
+  <li>Deneklere bir görevi gerçekleştirmeleri için “başla” komutu verilir.</li>
+  <li>Görevi tamamlamak için geçen süre saniye cinsinden ölçülür.</li>
+  <li>Görevi tamamlamak için geçen süreye göre 0-4 arasında bir puan verilir.</li>
+  <li>Her görevden alınan puanlar toplanır.</li>
+</ol>
+
+<p>PPT’nin iki versiyonu bulunmaktadır: 9 maddelik ve 7 maddelik. Her bir madde 0 ile 4 arasında puanlanır. 9 maddelik versiyon için maksimum puan 36, 7 maddelik versiyon için ise 28’dir. Daha yüksek toplam puanlar, daha iyi fiziksel performansı gösterir.</p>
+
+<p>Lusardi ve ark. (2003) tarafından yapılan bir çalışmaya göre, 9 maddelik ölçekte 32-36 puan alanlar kırılgan olmayan, 25-32 puan alanlar hafif derecede kırılgan, 17-24 puan alanlar orta derecede kırılgan ve 17’den düşük puan alanların toplum içinde işlev görme olasılığı düşüktür. 7 maddelik ölçekte ise &lt;19.4 puan orta derecede kırılganlık olarak kabul edilirken, 19.4-24.8 puan hafif derecede kırılganlık olarak kabul edilir.</p>
+
+<p>Unutulmamalıdır ki, görevi yapmaya isteksiz ve yeteneksiz hastalar PPT ile ayırt edilemeyebilir. Seçilen görevler fonksiyonel durumun eksik ölçümleri olabilir.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li><em>Yaşlılar ve Parkinson Hastalığı:</em> Reuben &amp; Siu (1990) tarafından yapılan bir çalışmada, 9 maddelik ölçek için mükemmel interrater güvenilirliği (r=0.99) ve 7 maddelik ölçek için mükemmel interrater güvenilirliği (r=0.93) bulunmuştur. Aynı çalışmada, mükemmel iç tutarlılık Cronbach alfa (9 maddelik ölçekte 0.87 ve 7 maddelik ölçekte 0.79) olarak rapor edilmiştir.</li>
+  <li><em>Parkinson Hastalığı:</em> Paschal ve ark. (2006) tarafından yapılan bir çalışmada, mükemmel test-tekrar test güvenilirliği (ICC = 0.818) 7 maddelik ölçek için ve mükemmel test-tekrar test güvenilirliği (ICC = 0.895) 9 maddelik ölçek için bulunmuştur.</li>
+  <li><em>Demans:</em> Farrell ve ark. (2010) tarafından yapılan bir çalışmada, ICC (3,1) = 0.90 kullanılarak belirlenen mükemmel test-tekrar test güvenilirliği ve ICC (3,1) = 0.99 kullanılarak belirlenen mükemmel intrarater güvenilirliği ve ICC (3,1) = 0.96 kullanılarak belirlenen mükemmel interrater güvenilirliği bulunmuştur.</li>
+  <li><em>Kronik Ağrı:</em> Sato, Kaneko &amp; Okamura (2006) tarafından yapılan bir çalışmada, mükemmel interrater güvenilirliği ICC=0.997-1.000 (p&lt;0.01) ve mükemmel intrarater güvenilirliği ICC=0.919-0.993 bulunmuştur.</li>
+  <li><em>Huntington Hastalığı (HD):</em> Quinn ve ark. (2013) tarafından yapılan bir çalışmada, manifest HD’li katılımcılar için mükemmel test-tekrar test güvenilirliği (p&lt;0.05) bulunmuştur.</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li><em>Parkinson ve Yaşlılar:</em> Reuben &amp; Siu (1990) tarafından yapılan bir çalışmada, 9 maddelik ölçeğin temel Katz Günlük Yaşam Aktiviteleri ile mükemmel korelasyonu (r = 0.65), 7 maddelik ölçeğin temel Katz Günlük Yaşam Aktiviteleri ile yeterli korelasyonu (r = 0.50) ve 9 maddelik ölçeğin hiyerarşik enstrümantal ve temel günlük yaşam aktiviteleri ölçeği ile mükemmel korelasyonu (r = 0.69) bulunmuştur.</li>
+  <li><em>Yaşlılar:</em> Delbaere ve ark. (2006) tarafından yapılan bir çalışmada, düşük PPT puanı gelecekteki düşmelerin en iyi fiziksel belirleyicisiydi.</li>
+</ul>
+
+<p><strong>Duyarlılık:</strong></p>
+
+<ul>
+  <li>
+    <p><em>Parkinson Hastalığı:</em> Paschal ve ark. (2006) tarafından yapılan bir çalışmada, Parkinson Hastalığında tipik olan kısa vadeli semptom dalgalanmalarına karşı nispeten duyarsız olduğu bulunmuştur (7 maddelik %6, 9 maddelik %4).</p>
+  </li>
+  <li>J. Augschoell, G. Kemmler, M.E. Hamaker, R. Stauder. PPT and VES-13 in elderly patients with cancer: evaluation in multidimensional geriatric assessment and prediction of survival. J Geriatr Oncol, 5 (4) (2014), pp. 415-421
+Find it on PubMed.</li>
+  <li>Brown, M., Sinacore, D. R., et al. (2000). “Physical and performance measures for the identification of mild to moderate frailty.” J Gerontol A Biol Sci Med Sci 55(6): M350-355.
+Find it on PubMed</li>
+  <li>Delbaere, K., Van den Noortgate, N., et al. (2006). “The Physical Performance Test as a predictor of frequent fallers: a prospective community-based cohort study.” Clin Rehabil 20(1): 83-90.
+Find it on PubMed</li>
+  <li>Farrell, M. K., Rutt, R. A., et al. (2010). “Reliability of the physical performance test in people with dementia.” Physical &amp; Occupational Therapy in Geriatrics 28(2): 144-153.</li>
+  <li>Farrell, M. K., Rutt, R. A., et al. (2011). “Are scores on the physical performance test useful in determination of risk of future falls in individuals with dementia?” J Geriatr Phys Ther 34(2): 57-63.
+Find it on PubMed</li>
+  <li>Ghosn, M., Ibrahim, T., Rassy, E., Nassani, N., Ghanem, S., Assi, T. (2017). Abridged geriatric assessment is a better predictor of overall survival than the Karnofsky Performance Scale and Physical.
+Find it on PubMed.</li>
+  <li>King, M. B., Judge, J. O., et al. (2000). “Reliability and responsiveness of two physical performance measures examined in the context of a functional training intervention.” Phys Ther 80(1): 8-16.
+Find it on PubMed</li>
+  <li>King, L.A., Wilhelm, J., Chen, Y., Blehm, R., Nutt, J., Chen, Z., Serdar, A., Horak, F.B. (2015). Effects of group, individual, and home exercise in persons with Parkinson disease: A randomized clinical trial.
+Journal of Neurologic Physical Therapy, 39
+(4), 204-212.
+F
+ind it on PubMed.</li>
+  <li>Lusardi, M. M., Pellecchia, G. L., et al. (2003). “Functional performance in community living older adults.” Journal of Geriatric Physical Therapy 26: 14-22.</li>
+  <li>Morala, D. &amp; Shiomi, T. (2004). Assessing Reliability and Validity of Physical Performance Test for the Japanese Elderly.
+J. Phys. Ther. Sci.
+, 16(1), 15-20.
+DOI</li>
+  <li>Paschal, K., Oswald, A., et al. (2006). “Test-retest reliability of the physical performance test for persons with Parkinson disease.” J Geriatr Phys Ther 29(3): 82-86.
+Find it on PubMed</li>
+  <li>Quinn, L., Khalil, H., Dawes, H. Fritz, N., Kegelmeyer, D., Kloos, A., Gillard, J., Busse, M., for the Outcome Measures Subgroup of the European Huntington’s Disease Network. (2013).  Reliability and minimal detectable change of physical performance measures in individuals With pre-manifest and manifest Huntington Disease.
+Physical Therapy
+,
+93
+(7), 942–956.
+Find it on PubMed.</li>
+  <li>Reuben, D. B. and Siu, A. L. (1990). “An objective measure of physical function of elderly outpatients. The Physical Performance Test.” J Am Geriatr Soc 38(10): 1105-1112.
+Find it on PubMed</li>
+  <li>ROZZINI, R., FRISONI, G. B., et al. (1997). “The effect of chronic diseases on physical function. Comparison between activities of daily living scales and the Physical Performance Test.” Age and Ageing 26(4): 281-287.</li>
+  <li>Rozzini, R., Frisoni, G. B., et al. (2002). “Geriatric Index of Comorbidity: validation and comparison with other measures of comorbidity.” Age Ageing 31(4): 277-285.
+Find it on PubMed</li>
+  <li>Shah, K. R., Carr, D., et al. (2004). “Impaired physical performance and the assessment of dementia of the Alzheimer type.” Alzheimer Dis Assoc Disord 18(3): 112-119.
+Find it on PubMed</li>
+  <li>Tuttle, L., Sinacore, D., Mueller, J. (2012) Intermuscular adipose tissue is muscle specific and associated with poor functional performance.
+Journal of Aging Research
+,
+2012
+, 1-7.
+Find it on PubMed</li>
+  <li>Sato, D. Kaneko, F., Okamura, H. (2006). Reliability and validity of the Japanese-language version of the physical performance test (PPT) battery in chronic pain patients.
+Disability and Rehabilitation, 28
+(6), 397-405.
+Find it on PubMed</li>
+  <li>Vidoni, E. D., Billinger, S. A., et al. (2012). “The physical performance test predicts aerobic capacity sufficient for independence in early-stage Alzheimer disease.” J Geriatr Phys Ther 35(2): 72-78.
+Find it on PubMed</li>
+</ul>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Reuben, D. B. and Siu, A. L. (1990). "An objective measure of physical function of elderly outpatients. The Physical Performance Test." J Am Geriatr Soc 38(10): 1105-1112.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

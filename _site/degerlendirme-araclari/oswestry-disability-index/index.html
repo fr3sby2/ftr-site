@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Oswestry Özürlülük İndeksi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Oswestry Özürlülük İndeksi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Oswestry Disability Index</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> ODI</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">ODI, sırt veya bacak ağrısının fonksiyonel aktiviteleri ne ölçüde etkilediğini ve bel ağrısının semptomlarını ve şiddetini değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Bel Ağrısı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Puanlar şu şekilde hesaplanır: [toplam puan / (5 x cevaplanan soru sayısı)] x %100</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Ağrı</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Bel Ağrısı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Oswestry Özürlülük İndeksi (ODI), bel ağrısının semptomlarını ve şiddetini, bireyin fonksiyonel aktivitelerindeki kısıtlamalar açısından değerlendiren bir araçtır. Sırt veya bacak ağrısının günlük yaşam aktivitelerini ne derece etkilediğini belirlemeyi amaçlar. Anket, ağrı şiddeti, kişisel bakım, kaldırma, yürüme, oturma, ayakta durma, uyuma, cinsel yaşam (uygulanabilirse), sosyal yaşam ve seyahat gibi 10 farklı maddeyi içerir. Her madde, 0 ile 5 arasında değişen puanlarla ilişkilendirilen altı ifade içerir; hasta, kendi durumuna en uygun ifadeyi seçer. Daha düşük puanlar daha az özürlülüğü, daha yüksek puanlar ise daha fazla özürlülüğü gösterir.</p>
+
+<ul>
+  <li>Anket</li>
+  <li>Yazı gereci</li>
+  <li>Telefon (eğer telefonla uygulanacaksa)</li>
+</ul>
+
+<p>ODI genellikle kağıt üzerinde veya telefonla uygulanır. Hastalara her bir madde için, durumlarını en iyi tanımlayan ifadeyi seçmeleri talimatı verilir. ODI’nin farklı versiyonları bulunmaktadır (örn., Versiyon 1.0, 2.0, Chiropractic Revised ve AAOS/MODEMS). Versiyonlar arasında madde sayısı ve puanlama değişebilir. ODI Version 1.0, 2.0, Chiropractic Revised 10 maddeden oluşur ve her madde 6 ifadeden oluşur. Her ifade 0-5 arasında puanlanır. ODI AAOS/MODEMS Instrument 8 maddeden oluşur ve her madde 6 ifadeden oluşur. Her ifade 1-6 arasında puanlanır.</p>
+
+<p>Puanlama, cevaplanan soruların sayısına göre normalize edilir ve 0 ile 100 arasında bir yüzde puanı elde edilir. ODI Version 1.0, 2.0, Chiropractic Revised için puanlama şu şekilde hesaplanır: [toplam puan / (5 x cevaplanan soru sayısı)] x %100. ODI AAOS/MODEMS Instrument için puanlama şu şekilde hesaplanır: [toplam puan / (5 x cevaplanan soru sayısı)] x %100.</p>
+
+<p>ODI puanları, hastanın bel ağrısıyla ilişkili özürlülük düzeyini gösterir. Daha yüksek puanlar, daha fazla özürlülük anlamına gelir. ODI puanlarındaki değişim, tedavi etkinliğini değerlendirmek için de kullanılabilir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong> ODI’nin test-tekrar test güvenilirliği mükemmel olarak bulunmuştur (ICC = 0.83-0.97). İç tutarlılık da mükemmeldir (Cronbach alfa = 0.83-0.90).</li>
+  <li><strong>Geçerlilik:</strong> ODI, diğer özürlülük ve ağrı ölçütleriyle (örneğin, RMDQ, VAS) yeterli ila mükemmel korelasyon göstermiştir.</li>
+  <li>
+    <p><strong>Duyarlılık:</strong> ODI’nin tedaviye yanıtı değerlendirmede duyarlı olduğu gösterilmiştir.</p>
+  </li>
+  <li>Artus, M., van der Windt, D. A., et al. (2010). “Low back pain symptoms show a similar pattern of improvement following a wide range of primary care treatments: a systematic review of randomized clinical trials.” Rheumatology (Oxford) 49(12): 2346-2356.</li>
+  <li>Carreon, L. Y., Glassman, S. D., et al. (2009). “Predicting SF-6D utility scores from the Oswestry disability index and numeric rating scales for back and leg pain.” Spine (Phila Pa 1976) 34(19): 2085-2089.</li>
+  <li>Cho, S. K., Bridwell, K. H., et al. (2012). “Major complications in revision adult deformity surgery: risk factors and clinical outcomes with 2- to 7-year follow-up.” Spine (Phila Pa 1976) 37(6): 489-500.</li>
+  <li>Copay, A. G., Glassman, S. D., et al. (2008). “Minimum clinically important difference in lumbar spine surgery patients: a choice of methods using the Oswestry Disability Index, Medical Outcomes Study questionnaire Short Form 36, and pain scales.” Spine J 8(6): 968-974.</li>
+  <li>Dawson, A. P., Steele, E. J., et al. (2010). “Utility of the Oswestry Disability Index for studies of back pain related disability in nurses: evaluation of psychometric and measurement properties.” Int J Nurs Stud 47(5): 604-607.</li>
+  <li>Fairbank, J. (1995). “Use of Oswestry Disability Index (ODI).” Spine (Phila Pa 1976) 20(13): 1535-1537.</li>
+  <li>Fairbank, J. C. (2007). “Use and abuse of Oswestry Disability Index.” Spine (Phila Pa 1976) 32(25): 2787-2789.</li>
+  <li>Fairbank, J. C. and Pynsent, P. B. (2000). “The Oswestry Disability Index.” Spine (Phila Pa 1976) 25(22): 2940-2952; discussion 2952.</li>
+  <li>Frost, H., Lamb, S. E., et al. (2008). “Responsiveness of a patient specific outcome measure compared with the Oswestry Disability Index v2.1 and Roland and Morris Disability Questionnaire for patients with subacute and chronic low back pain.” Spine (Phila Pa 1976) 33(22): 2450-2457; discussion 2458.</li>
+  <li>Glassman, S., Gornet, M. F., et al. (2006). “MOS short form 36 and Oswestry Disability Index outcomes in lumbar fusion: a multicenter experience.” Spine J 6(1): 21-26.</li>
+  <li>Grotle, M., Garratt, A. M., et al. (2012). “Reliability and construct validity of self-report questionnaires for patients with pelvic girdle pain.” Phys Ther 92(1): 111-123.</li>
+  <li>Haro, H., Maekawa, S., et al. (2008). “Prospective analysis of clinical evaluation and self-assessment by patients after decompression surgery for degenerative lumbar canal stenosis.” Spine J 8(2): 380-384.</li>
+  <li>Horvath, G., Koroknai, G., et al. (2010). “Prevalence of low back pain and lumbar spine degenerative disorders. Questionnaire survey and clinical-radiological analysis of a representative Hungarian population.” Int Orthop 34(8): 1245-1249.</li>
+  <li>Jenks, K., Meikle, G., et al. (2009). “Osteitis condensans ilii: a significant association with sacroiliac joint tenderness in women.” Int J Rheum Dis 12(1): 39-43.</li>
+  <li>Johnsen, L. G., Hellum, C., et al. (2013). “Comparison of the SF6D, the EQ5D, and the oswestry disability index in patients with chronic low back pain and degenerative disc disease.” BMC Musculoskelet Disord 14: 148.</li>
+  <li>Kiaer, T. and Gehrchen, M. (2010). “Transpedicular closed wedge osteotomy in ankylosing spondylitis: results of surgical treatment and prospective outcome analysis.” Eur Spine J 19(1): 57-64.</li>
+  <li>Little, D. G. and MacDonald, D. (1994). “The use of the percentage change in Oswestry Disability Index score as an outcome measure in lumbar spinal surgery.” Spine (Phila Pa 1976) 19(19): 2139-2143.</li>
+  <li>Miekisiak, G., Kollataj, M., et al. (2013). “Validation and cross-cultural adaptation of the Polish version of the Oswestry Disability Index.” Spine (Phila Pa 1976) 38(4): E237-243.</li>
+  <li>Monticone, M., Baiardi, P., et al. (2012). “Responsiveness of the Oswestry Disability Index and the Roland Morris Disability Questionnaire in Italian subjects with sub-acute and chronic low back pain.” European Spine Journal 21(1): 122-129.</li>
+  <li>Vianin, M. (2008). “Psychometric properties and clinical usefulness of the Oswestry Disability Index.” J Chiropr Med 7(4): 161-163.</li>
+  <li>Wittink, H., Turk, D. C., et al. (2004). “Comparison of the redundancy, reliability, and responsiveness to change among SF-36, Oswestry Disability Index, and Multidimensional Pain Inventory.” Clin J Pain 20(3): 133-142.</li>
+</ul>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="https://eprovide.mapi-trust.org/instruments/oswestry-disability-index" target="_blank" rel="noopener noreferrer">https://eprovide.mapi-trust.org/instruments/oswestry-disability-index</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Fairbank, J. C. and Pynsent, P. B. (2000). "The Oswestry Disability Index." Spine (Phila Pa 1976) 25(22): 2940-2952; discussion 2952.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

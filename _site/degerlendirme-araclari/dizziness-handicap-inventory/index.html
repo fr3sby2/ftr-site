@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Baş Dönmesi Handikap Envanteri - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Baş Dönmesi Handikap Envanteri</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Dizziness Handicap Inventory</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> DHI</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">DHI, baş dönmesinin getirdiği öznel handikap etkilerini değerlendirmek için tasarlanmış 25 maddelik bir öz-değerlendirme envanteridir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Vestibüler Bozukluklar, Yaşlı Yetişkinler ve Geriatrik Bakım, Multipl Skleroz, Hareket ve Yürüme Bozuklukları, Beyin Hasarı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Her madde 0 (hayır), 2 (bazen) veya 4 (evet) olarak derecelendirilir. Puanlar toplanır. Maksimum puan 100'dür (fiziksel için 28, duygusal ve fonksiyonel için 36 puan) ve minimum puan 0'dır. Puan ne kadar yüksek olursa, baş dönmesine bağlı algılanan handikap da o kadar fazladır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Denge</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yürüme & Mesafe</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Vestibüler Fonksiyon</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Vestibüler Bozukluklar</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>translation_date: 2023-10-27
+translator: &lt;Oluşturan: Yapay Zeka&gt;</p>
+
+<p>Baş Dönmesi Handikap Envanteri (DHI), bireyin baş dönmesinin günlük yaşam üzerindeki etkisini ölçen 25 maddelik bir öz bildirim anketidir. Anket, baş dönmesinin neden olduğu algılanan handikapı ölçer.</p>
+
+<p>Üç alanı vardır:
+1) Fonksiyonel (9 soru, 36 puan)
+2) Duygusal (9 soru, 36 puan)
+3) Fiziksel (7 soru, 28 puan)</p>
+
+<p>DHI, bireyin semptomlarına dayanarak kendisi tarafından tamamlanan bir ankettir. Bireye 25 ifadenin her birini okuyun ve her birine nasıl yanıt vereceğini belirtin: “Evet”, “Bazen” veya “Hayır”. Anket genellikle yaklaşık 10 dakika içinde tamamlanabilir.</p>
+
+<p>Her madde 0 (hayır), 2 (bazen) veya 4 (evet) olarak derecelendirilir. Puanlar toplanır. Maksimum puan 100’dür (fiziksel için 28, duygusal ve fonksiyonel için 36 puan) ve minimum puan 0’dır. Puan ne kadar yüksek olursa, baş dönmesine bağlı algılanan handikap da o kadar fazladır.</p>
+
+<p>Whitney ve ark., 2005, DHI’nın beş maddesinin BPPV’yi öngördüğünü varsaymıştır. Bu ölçeğe DHI’nın beş maddelik BPPV alt ölçeği adı verilir. Beş maddelik BPPV alt ölçeği, DHI’dan aşağıdaki beş maddenin toplamıdır: yukarı bakmak, yataktan kalkmak, hızlı baş hareketleri, yatakta dönmek ve eğilmek, maksimum 20 puan.</p>
+
+<p>BPPV beş maddelik alt puanı, BPPV olasılığının önemli bir göstergesiydi (×2 = 8.35; p&lt;0.01)</p>
+
+<p>Yataktan kalkma ve yatakta dönme kombinasyonlu maddelerinde 4 ve 8 puanları, BPPV olasılığı ile anlamlı derecede ilişkiliydi. Yukarıda belirtilen birleşik maddelerde 4 puanı alan bir kişinin, 0 puan alan bir kişiye göre yaklaşık 2,7 kat daha fazla BPPV’ye sahip olma olasılığı vardı. Birleşik maddelerde 4 puanı alan bir kişinin, 0 puan alan bir kişiye göre yaklaşık 4,3 kat daha fazla BPPV’ye sahip olma olasılığı vardı.</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+<ul>
+  <li>Vestibüler disfonksiyonu olan bireylerde mükemmel test-tekrar test güvenilirliği gösterir (r = 0.97, df = 12, p &lt; 0.0001). Alt ölçekler için de mükemmel test-tekrar test güvenilirliği bildirilmiştir (r = 0.92-0.97, p &lt; 0.001).</li>
+  <li>MS hastalarında mükemmel test-tekrar test güvenilirliği (ICC = 0.90, %95 CI 0.77 - 0.96)</li>
+  <li>MS hastalarında mükemmel iç tutarlılık (Cronbach alfa = 0.91)</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+<ul>
+  <li>Vestibüler disfonksiyonu olan kişilerde ABC ölçeği ile mükemmel korelasyon gösterir (r = -0.64).</li>
+  <li>MS hastalarında Berg Denge Ölçeği (r = -0.32), Dinamik Yürüme İndeksi (r = -0.39), Süreli Kalk ve Yürü Testi (r = 0.35) ve Hauser Ambulasyon İndeksi (r = 0.32) ile yeterli korelasyon.</li>
+  <li>MS hastalarında Faaliyetlere Özgü Güven Ölçeği (ABC) ile mükemmel korelasyon (r = -0.70).</li>
+</ul>
+
+<p><strong>Duyarlılık:</strong></p>
+<ul>
+  <li>MS hastalarında duyarlılık = %50, özgüllük = %77 olarak bulunmuştur.</li>
+  <li>MS hastalarında yüksek düzeyde duyarlı (Deneysel grup için etki büyüklüğü 1.03 ve 1.12, egzersiz kontrol grubuna ve bekleme listesindeki kontrol grubuna göre sırasıyla 10 haftada).</li>
+  <li>MS hastalarında orta düzeyde duyarlı (Deneysel grup için etki büyüklüğü -0.35 ve -0.84, egzersiz kontrol grubuna ve bekleme listesindeki kontrol grubuna göre sırasıyla 14 haftada.)</li>
+</ul>
+
+<p>Alghwiri, A. A., Marchetti, G. F., et al. (2011). “Content comparison of self-report measures used in vestibular rehabilitation based on the international classification of functioning, disability and health.” Physical Therapy 91(3): 346-357.
+Alghwiri, A. A., Whitney, S. L., et al. (2012). “The development and validation of the vestibular activities and participation measure.” Arch Phys Med Rehabil 93(10): 1822-1831.
+Find it on PubMed
+Basford, J. R., Chou, L. S., et al. (2003). “An assessment of gait and balance deficits after traumatic brain injury.” Archives of Physical Medicine and Rehabilitation 84(3): 343-349.
+Find it on PubMed
+Cattaneo, D., Jonsdottir, J., et al. (2007). “Reliability of four scales on balance disorders in persons with multiple sclerosis.” Disability and Rehabilitation 29(24): 1920-1925.
+Find it on PubMed
+Cattaneo, D., Regola, A., et al. (2006). “Validity of six balance disorders scales in persons with multiple sclerosis.” Disability and Rehabilitation 28(12): 789-795.
+Find it on PubMed
+Clendaniel, R. A. (2000). “Outcome measures for assessment of treatment of the dizzy and balance disorder patient.” Otolaryngol Clin North Am 33(3): 519-533.
+Find it on PubMed
+Cohen, H. S. and Kimball, K. T. (2003). “Increased independence and decreased vertigo after vestibular rehabilitation.” Otolaryngol Head Neck Surg 128(1): 60-70.
+Find it on PubMed
+Cowand, J. L., Wrisley, D. M., et al. (1998). “Efficacy of vestibular rehabilitation.” Otolaryngol Head Neck Surg 118(1): 49-54.
+Find it on PubMed
+Duracinsky, M., Mosnier, I., et al. (2007). “Literature review of questionnaires assessing vertigo and dizziness, and their impact on patients’ quality of life.” Value in health 10(4): 273-284.
+Enloe, L. J. and Shields, R. K. (1997). “Evaluation of health-related quality of life in individuals with vestibular disease using disease-specific and general outcome measures.” Physical Therapy 77(9): 890-903.
+Fielder, H., Denholm, S. W., et al. (1996). “Measurement of health status in patients with vertigo.” Clin Otolaryngol Allied Sci 21(2): 124-126.
+Find it on PubMed
+Gamiz, M. J. and Lopez-Escamez, J. A. (2004). “Health-related quality of life in patients over sixty years old with benign paroxysmal positional vertigo.” Gerontology 50(2): 82-86.
+Find it on PubMed
+Gottshall, K., Drake, A., et al. (2003). “Objective vestibular tests as outcome measures in head injury patients.” Laryngoscope 113(10): 1746-1750.
+Find it on PubMed
+Hansson, E. E., Månsson, N. O., et al. (2005). “Balance performance and self-perceived handicap among dizzy patients in primary health care.” Scandinavian journal of primary health care 23(4): 215-220.
+Hebert, J. R., Corboy, J. R., et al. (2011). “Effects of vestibular rehabilitation on multiple sclerosis-related fatigue and upright postural control: a randomized controlled trial.” Phys Ther 91(8): 1166-1183.
+Find it on PubMed
+Jacobson, G. P. and Calder, J. H. (1998). “A screening version of the Dizziness Handicap Inventory (DHI-S).” Am J Otol 19(6): 804-808.
+Find it on PubMed
+Jacobson, G. P. and Calder, J. H. (2000). “Self-perceived balance disability/handicap in the presence of bilateral peripheral vestibular system impairment.” J Am Acad Audiol 11(2): 76-83.
+Find it on PubMed
+Jacobson, G. P. and Newman, C. W. (1990). “The development of the Dizziness Handicap Inventory.” Archives of Otolaryngology - Head and Neck Surgery 116(4): 424-427.
+Find it on PubMed
+Jacobson, G. P., Newman, C. W., et al. (1991). “Balance function test correlates of the Dizziness Handicap Inventory.” J Am Acad Audiol 2(4): 253-260.
+Find it on PubMed
+Jarlsäter, S. and Mattsson, E. (2003). “Test of reliability of the Dizziness Handicap Inventory and the Activities-specific Balance Confidence Scale for use in Sweden.” Advances in Physiotherapy 5(3): 137-144.
+Kammerlind, A. S., Bergquist Larsson, P., et al. (2005). “Reliability of clinical balance tests and subjective ratings in dizziness and disequilibrium.” Advances in Physiotherapy 7(3): 96-107.
+Kaufman, K. R., Brey, R. H., et al. (2006). “Comparison of subjective and objective measurements of balance disorders following traumatic brain injury.” Medical Engineering and Physics 28(3): 234-239.
+Find it on PubMed
+Krebs, D. E., Gill-Body, K. M., et al. (1993). “Double-blind, placebo-controlled trial of rehabilitation for bilateral vestibular hypofunction: preliminary report.” Otolaryngol Head Neck Surg 109(4): 735-741.
+Find it on PubMed
+Kurre, A., van Gool, C. J., et al. (2009). “Translation, cross-cultural adaptation and reliability of the german version of the dizziness handicap inventory.” Otol Neurotol 30(3): 359-367.
+Find it on PubMed
+Lim, H. W., Kim, K. M., et al. (2012). “Correlating the head shake-sensory organizing test with dizziness handicap inventory in compensation after vestibular neuritis.” Otol Neurotol 33(2): 211-214.
+Find it on PubMed
+Lopez-Escamez, J. A., Gamiz, M. J., et al. (2003). “Impact of treatment on health-related quality of life in patients with posterior canal benign paroxysmal positional vertigo.” Otol Neurotol 24(4): 637-641.
+Find it on PubMed
+Mruzek, M., Barin, K., et al. (1995). “Effects of vestibular rehabilitation and social reinforcement on recovery following ablative vestibular surgery.” Laryngoscope 105(7 Pt 1): 686-692.
+Find it on PubMed
+Perez, I. G., Marta García-Granero, Eduardo Martin, Rafael García-Tapia, Nicolas (2001). “Factor analysis and correlation between Dizziness Handicap Inventory and Dizziness Characteristics and Impact on Quality of Life scales.” Acta oto-laryngologica 121(545): 145-154.
+Perez, N., Martin, E., et al. (2003). “Dizziness: relating the severity of vertigo to the degree of handicap by measuring vestibular impairment.” Otolaryngol Head Neck Surg 128(3): 372-381.
+Find it on PubMed
+Poon, D., Chow, L., et al. (2004). “Translation of the dizziness handicap inventory into Chinese, validation of it, and evaluation of the quality of life of patients with chronic dizziness.” The Annals of otology, rhinology, and laryngology 113(12): 1006-1011.
+Robertson, D. D. and Ireland, D. J. (1995). “Dizziness Handicap Inventory correlates of computerized dynamic posturography.” J Otolaryngol 24(2): 118-124.
+Find it on PubMed
+Tamber, A. L., Wilhelmsen, K. T., et al. (2009). “Measurement properties of the Dizziness Handicap Inventory by cross-sectional and longitudinal designs.” Health Qual Life Outcomes 7(2): 101.
+Find it on PubMed
+Treleaven, J., Jull, G., et al. (2005). “Smooth pursuit neck torsion test in whiplash-associated disorders: relationship to self-reports of neck pain and disability, dizziness and anxiety.” J Rehabil Med 37(4): 219-223.
+Find it on PubMed
+Vereeck, L., Truijen, S., et al. (2007). “Internal consistency and factor analysis of the Dutch version of the Dizziness Handicap Inventory.” Acta Otolaryngol 127(8): 788-795.
+Find it on PubMed
+Wackym, P. A., Hannley, M. T., et al. (2008). “Gamma Knife surgery of vestibular schwannomas: longitudinal changes in vestibular function and measurement of the Dizziness Handicap Inventory.” J Neurosurg 109 Suppl: 137-143.
+Find it on PubMed
+Whitney, S. L., Hudak, M. T., et al. (1999). “The activities-specific balance confidence scale and the dizziness handicap inventory: a comparison.” Journal of Vestibular Research 9(4): 253-259.
+Find it on PubMed
+Whitney, S. L., Marchetti, G. F., et al. (2005). “Usefulness of the dizziness handicap inventory in the screening for benign paroxysmal positional vertigo.” Otol Neurotol 26(5): 1027-1033.
+Find it on PubMed
+Whitney, S. L., Wrisley, D. M., et al. (2000). “Physical therapy for migraine-related vestibulopathy and vestibular dysfunction with history of migraine.” Laryngoscope 110(9): 1528-1534.
+Find it on PubMed
+Whitney, S. L., Wrisley, D. M., et al. (2004). “Is perception of handicap related to functional performance in persons with vestibular dysfunction?” Otol Neurotol 25(2): 139-143.
+Find it on PubMed</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Jacobson, G.P., Newman, C.W. (1990). The development of the dizziness handicap inventory. Arch Otolaryngol Head Neck Surg, 116, 424-427.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

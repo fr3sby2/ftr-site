@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Fonksiyonel Öz Değerlendirme Ölçeği - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Fonksiyonel Öz Değerlendirme Ölçeği</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Functional Self-Assessment Scale</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> FSAS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Yaygın fonksiyonel görevleri bağımsız olarak gerçekleştirme yeteneğini veya bu görevleri güvenli bir şekilde yapmak için yardıma veya denetime duyulan ihtiyacı ölçer.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Karma Popülasyonlar</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Hasta, kendisini 4 adımlı bir derecelendirme ölçeğinde değerlendirir: A) yalnız yapabilir, B) güvenliği ve başarıyı sağlamak için birinin gözetimi ve ara sıra hatırlatmaları gerekir, C) güvenliği ve başarıyı sağlamak için birinin uygulamalı yardım ve/veya sık ipuçları gerekir, D) tamamen bağımlı veya terapiste hiç yardımcı olamaz. Terapist de aynı derecelendirme ölçeğini kullanarak hastanın bu görevleri gerçekleştirme yeteneğini değerlendirir. Her bir cevaba sayısal bir puan atanır (örn., A = 1, B = 2) ve puanlar toplanarak 12-48 arasında bir puan aralığı elde edilir. Hastanın öz değerlendirme yeteneğinin ne kadar iyi olduğunu göstermek için hasta ve terapist puanlarındaki farklılıklar karşılaştırılır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Kognisyon & Algı (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Fonksiyonel Öz Değerlendirme Ölçeği (FSAS), bireyin yaygın fonksiyonel görevleri bağımsız olarak gerçekleştirme yeteneğini değerlendirir. Aynı zamanda, bu görevleri güvenli bir şekilde tamamlamak için gerekli olan yardım veya denetim düzeyini de belirlemeye yardımcı olur. Hasta ve terapist tarafından yapılan değerlendirmeler karşılaştırılarak, hastanın kendi yeteneklerini ne kadar gerçekçi değerlendirdiği anlaşılabilir. Ölçek, özellikle kurumsal ortamlarda kullanım için tasarlanmıştır.</p>
+
+<p>Hasta, 12 madde üzerinden, her bir fonksiyonel görevi ne kadar bağımsız gerçekleştirebildiğini 4 adımlı bir ölçekte değerlendirir:</p>
+<ul>
+  <li><strong>A) Yalnız yapabilir:</strong> Görevi tamamen bağımsız olarak tamamlayabilir.</li>
+  <li><strong>B) Birinin gözetimi gerekir:</strong> Güvenliği ve başarıyı sağlamak için birinin gözetimi ve ara sıra hatırlatmaları gerekir.</li>
+  <li><strong>C) Uygulamalı yardım gerekir:</strong> Güvenliği ve başarıyı sağlamak için birinin uygulamalı yardımı ve/veya sık ipuçları gerekir.</li>
+  <li><strong>D) Tamamen bağımlı:</strong> Terapiste hiç yardımcı olamaz.</li>
+</ul>
+
+<p>Terapist de aynı görevleri aynı ölçekte hastanın performansına göre değerlendirir.</p>
+
+<p>Her bir cevap için sayısal bir puan atanır (A=1, B=2, C=3, D=4). Tüm maddelerdeki puanlar toplanarak toplam puan elde edilir. Toplam puan 12 ile 48 arasında değişir. Hasta ve terapist puanları arasındaki farklar, hastanın öz farkındalık düzeyini değerlendirmek için kullanılır.</p>
+
+<p>FSAS, hastanın öz farkındalık eksikliklerini tespit etmede yardımcı olabilir. Terapist ve hasta değerlendirmeleri arasındaki tutarsızlıklar, hastanın kendi yeteneklerini abarttığını veya olduğundan daha kötü değerlendirdiğini gösterebilir. Ölçek, özellikle yatan hasta rehabilitasyon ortamlarında kullanışlıdır.</p>
+
+<p><strong>Geçerlilik:</strong> Travmatik beyin hasarı (TBH) ve ortopedik yaralanmaları olan yatan hastaların karşılaştırıldığı bir çalışmada, TBH olan hastaların kendilerini terapistlere göre daha bağımsız değerlendirdiği ve terapist ile hasta arasındaki tutarsızlık oranlarının daha yüksek olduğu bulunmuştur.</p>
+
+<p>Garmoe, W., Newman, A. C., et al. (2005). “Early self-awareness following traumatic brain injury: Comparison of brain injury and orthopedic inpatients using the Functional Self-Assessment Scale (FSAS).” J Head Trauma Rehabil 20(4): 348.
+Newman, A. (2013). “Measuring self-awareness after brain Injury in the inpatient rehabilitation setting and at 6 months follow-up: Comparison of the Functional Self-Assessment Scale and Patient Competency Rating Scale in understanding outcome.” Archives of Clinical Neuropsychology 28(6): 601.
+Newman, A. C., Garmoe, W., et al. (2000). “Self-awareness of traumatically brain injured patients in the acute inpatient rehabilitation setting.” Brain Injury 14(4): 333-344.
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Garmoe, W., Newman, A. C., et al. (2005). "Early self-awareness following traumatic brain injury: Comparison of brain injury and orthopedic inpatients using the Functional Self-Assessment Scale (FSAS)." J Head Trauma Rehabil 20(4): 348.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

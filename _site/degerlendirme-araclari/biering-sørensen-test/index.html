@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Biering-Sørensen Testi - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Biering-Sørensen Testi</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Biering-Sørensen test</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> </p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Biering-Sørensen testi, gövde ekstansör kaslarının dayanıklılığını değerlendirmek için kullanılan zamanlı bir ölçüdür. Hastalarda bel ağrısının insidansını ve oluşumunu tahmin etmeye yardımcı olmak için kullanılır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Bel Ağrısı</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Hasta muayene masasına yüzüstü yatar ve iliak krestlerin üst kenarı masanın kenarıyla hizalanır. Alt vücut, sırasıyla pelvis, dizler ve ayak bilekleri etrafında üç kayışla masaya sabitlenir. Kollar göğüste kavuşturulmuş halde, hasta üst vücudu yatay pozisyonda izometrik olarak tutarken süre kaydedilir. Pozisyonu korumada zorluk yaşamayan hastalarda test 240 saniye sonra durdurulur.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Ağrı</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Kas Kuvveti</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Bel Ağrısı</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Biering-Sørensen testi, sırt ekstansör kaslarının dayanıklılığını değerlendirmek için kullanılan bir performans testidir. Bu test, hastanın yüzüstü pozisyonda belirli bir süre boyunca gövdesini yatay tutma yeteneğini ölçer. Test, bel ağrısı riskini değerlendirmede ve sırt kaslarının gücünü belirlemede yardımcı olabilir.</p>
+
+<p>Hasta, muayene masasına yüzüstü pozisyonda yatırılır. İliak krestlerin üst kenarı, masanın kenarıyla aynı hizada olmalıdır. Pelvis, dizler ve ayak bilekleri etrafına yerleştirilen üç kayış ile alt vücut masaya sabitlenir. Kollar göğüste kavuşturulur ve hasta, üst vücudunu yatay pozisyonda izometrik olarak tutmaya çalışır. Bu pozisyonda kalma süresi kaydedilir. Eğer hasta pozisyonu rahatlıkla koruyabiliyorsa, test 240 saniyede sonlandırılır.</p>
+
+<p>Test sırasında tutulan süre kaydedilir. Biering-Sørensen, 176 saniyeden kısa sürenin erkeklerde gelecek yıl içinde bel ağrısını öngördüğünü, 198 saniyeden uzun sürenin ise bel ağrısının olmadığını öngördüğünü belirtmiştir. Testin kadınlarda herhangi bir öngörücü geçerliliği olmadığı vurgulanmalıdır.</p>
+
+<p>Biering-Sørensen testinde elde edilen süre, sırt kaslarının dayanıklılığı hakkında bilgi sağlar. Düşük skorlar, sırt kaslarının zayıf olduğunu ve bel ağrısı riskinin yüksek olduğunu gösterebilir. Ancak, hastanın cinsiyeti, ağrı şiddeti ve motivasyonu gibi faktörler de dikkate alınmalıdır.</p>
+
+<ul>
+  <li>
+    <p><strong>Güvenilirlik:</strong> Test-tekrar test güvenirliği mükemmel olarak rapor edilmiştir (ICC = 0.87 - 0.99 aralığında). Interrater güvenirliği de genellikle mükemmel olarak değerlendirilmiştir (ICC = 0.85 - 0.99 aralığında).</p>
+  </li>
+  <li>
+    <p><strong>Geçerlilik:</strong> Testin, bel ağrısı ile ilişkili olduğu ve sırt kası gücüyle korelasyon gösterdiği bulunmuştur. Ayrıca, bel ağrısı olan hastalar ve sağlıklı kontroller arasında anlamlı farklılıklar göstermiştir.</p>
+  </li>
+  <li>
+    <p><strong>Duyarlılık:</strong> Çalışmalar küçükten orta dereceye kadar değişen etki büyüklükleri bildirmiştir.</p>
+  </li>
+</ul>
+
+<p>Adams, M. Mannion A., Dolan, P.(1999). “Personal Risk Factors for First-Time Low Back Pain.” Spine. (24) 23.
+Alaranta H, Hurri H, Heliovaara M, Soukka A, Harju R. (1994). “Non-dynamometric trunk performance tests: reliability and normative data.” Scand J Rehabil Med. 26: 211-5.
+Biering-Sorensen F.(1984). “Physical measurements as risk indicators for low-back trouble over a one-year period.” Spine. 9: 106-19.
+Demoulin, C., Vanderthommen, M., Duysens, C., Crielaard, C.M. (2006). “Spinal muscle evaluation using the sorensen test: a critical appraisal of the literature.” Joint Bone Spine. 73: 43-50.
+Holmstrom E, Mortiz U, Andersson M. (1992). “Trunk muscle strength and back muscle endurance in construction workers with and without low back disorder.” Scand J Rehabil Med. 24:3-10.
+Hultman G, Nordin M, Saraste H, Ohlsen H. (1993). “Body composition, endurance, strength, cross-sectional area, and density of MM erector spinae in men with and without low back pain.” J Spinal Disord. 6: 114-23.
+Kankaanpaa, B.M., et al. (1998). “Age, sex, and body mass index as determinants of back and hip extensor fatigue in the isometric Sørensen back endurance test.” Arch Phys Med Rehabil. 79: 1069-1075.
+Keller, A., Hellesnes, J., &amp; Brox, J. I. (2001). “Reliability of the isokinetic trunk extensor test, Biering-Sørensen test, and Åstrand bicycle test: Assessment of intraclass correlation coefficient and critical difference in patients with chronic low back pain and healthy individuals.” Spine. 26(7): 771-777.
+Latimer, Jane, et al. (1999). “The reliability and validity of the Biering–Sorensen test in asymptomatic subjects and subjects reporting current or previous nonspecific low back pain.” Spine 24.20: 2085-2090.
+Luoto, S., et al. (1995) “Static back endurance and the risk of low-back pain.” Clinical biomechanics. 10.6: 323-324.
+Mannion, A.F., Connolly, B., Wood, K., Dolan, P. (1997) “The use of surface EMG power spectral analysis in the evaluation of back muscle function.” Journal of Rehabilitation Research and Development. 34(4):427-439.
+Mannion AF, Dolan P. (1994). “Electromyographic median frequency changes during isometric contraction of the back extensors to fatigue.” Spine. 19: 1223-9.
+Mannion, A.F., Taimela, S., Muntener, M., Dvorak, J. (2001). “Active therapy for chronic low back pain part 1. Effects on back muscle activation, fatigability, and strength.” Spine. 26(8): 897-908.
+McGill, S.M, Childs, A., Liebenson, C. (1999). “Endurance Times for Low Back Stabilization Exercises: Clinical Targets for Testing and Training From a Normal Database.” Arch Phys Med Rehabil. 80: 941-944.
+Moffroid, M.T. (1997). “Endurance of trunk muscles in persons with chronic low back pain: Assessment, performance, training.” Journal of Rehabilitation Research and Development. 34: 440-447.
+Moffroid, M.T., Haugh, L.D., Haig, A.J., Henry, S.M., Pope, M.H. (1993). “Endurance Training of Trunk Extensor Muscles.” Phys. Ther. 73: 3-10.
+Salminen, J.J., Erkintalo Tertti, M., Laine, M., Pentti, J. (1995). “Low Back Pain in the Young: A Prospective Three-Year Follow-up Study of Subjects With and Without Low Back Pain.” Spine. 20(19): 2101-2108.
+Simmonds MJ, Olson SL, Jones S, Hussein T, Lee CE, Novy D, et al. (1998). “Psychometric characteristics and clinical usefulness of physical performance tests in patients with low back pain.” Spine. 23:2412-21.
+Sjölie, Astrid N., and Anne E. Ljunggren (2001). “The significance of high lumbar mobility and low lumbar strength for current and future low back pain in adolescents.” Spine 26.23: 2629-2636.
+Takala, E. P., Vikari-Juntura, E. (1999). “Do functional tests predict low back pain.” Spine 25(16): 2126-2132.
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Biering-Sorensen F.(1984). “Physical measurements as risk indicators for low-back trouble over a one-year period.” Spine. 9: 106-19.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

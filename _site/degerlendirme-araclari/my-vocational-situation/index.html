@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Mesleki Durumum Ölçeği - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Mesleki Durumum Ölçeği</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">My Vocational Situation</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> MVS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">MVS, mesleki karar verme ile ilgili zorlukları değerlendirmek için tasarlanmıştır. Genellikle, net mesleki hedefleri olmayan ve kariyer kararları almak için ek bilgi ve rehberliğe ihtiyaç duyan kişileri belirlemek için kariyer planlamasında kullanılır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Karışık Popülasyonlar, Spesifik Olmayan Hasta Popülasyonu, Spinal Yaralanmalar</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Yanıtlayıcının çeşitli mesleki hedef ve amaçlara ulaşmasını kısıtlayan sınırlamalar olarak algıladığı engelleri, mesleki bilgiyi ve mesleki kimliği değerlendirir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Genel / Sağlıklı Yetişkin</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Mesleki Durumum Ölçeği (MVS), bireylerin mesleki karar verme süreçlerindeki zorlukları değerlendirmek amacıyla geliştirilmiştir. Ölçek, kişinin mesleki kimliği, mesleki bilgi ihtiyacı ve kariyer hedeflerine ulaşmada karşılaştığı engelleri belirlemeye odaklanır. MVS, özellikle kariyer planlaması yapan ve net mesleki hedefleri olmayan, bu nedenle ek bilgi ve rehberliğe ihtiyaç duyan bireylerin belirlenmesinde sıklıkla kullanılır. Ölçek, mesleki kimlik, mesleki bilgi ve algılanan engeller olmak üzere üç temel alanı değerlendirir.</p>
+
+<p>MVS, 18 doğru/yanlış maddeden (Mesleki Kimlik ölçeği) ve 8 evet/hayır maddeden (Mesleki Bilgi ve Engeller ölçekleri) oluşur.</p>
+
+<p>MVS, toplam 26 maddeden oluşur.
+Mesleki Kimlik ölçeğinde “yanlış” olarak işaretlenen yanıtların sayısı toplanarak toplam Mesleki Kimlik puanı elde edilir. Yüksek puanlar, daha güçlü bir mesleki kimliğe işaret eder.
+Mesleki Bilgi ve Engeller ölçeklerindeki toplam puanlar, verilen “hayır” yanıtlarının sayısı toplanarak hesaplanır.</p>
+
+<p>“Mesleki Kimlik ölçeğinde düşük puanlar, yanıtlayıcının kimliği hakkında kafa karışıklığına ve öz-tatmin eksikliğine işaret eder” (Tinsley, Bowman, &amp; York, 1989, s. 116).
+“[Mesleki bilgi ve engeller ölçeklerinde] düşük puanlar, kariyer seçiminde önemli engellere işaret eder” (Tinsley, Bowman, &amp; York, 1989, s. 116).</p>
+
+<p>MVS, bireylerin mesleki karar verme süreçlerindeki netlik, kesinlik, karar verme önündeki engeller ve bilgi eksiklikleri gibi alanlardaki düzeylerini ölçer. Ölçek sonuçları, bireylerin kariyer planlama süreçlerinde daha bilinçli kararlar almalarına yardımcı olmak için kullanılabilir. Ancak, MVS’nin bazı yetişkin kadınlar, özellikle 55 yaş ve üzeri kadınlar için yüz geçerliliği olmayabileceği de unutulmamalıdır (Olson, Johnston &amp; Kunce, 1985).</p>
+
+<p><strong>Güvenilirlik:</strong></p>
+
+<ul>
+  <li><strong>Test-Tekrar Test Güvenilirliği:</strong> Üniversite öğrencileri üzerinde yapılan bir çalışmada, Mesleki Kimlik ölçeği için yeterli (r = .64), Mesleki Bilgi için zayıf (r = .14) ve Engeller için zayıf (r = .36) güvenilirlik katsayıları elde edilmiştir (3-5 ay arayla). Farklı bir çalışmada ise Mesleki Kimlik ölçeği için erkeklerde (r = .84) ve kadınlarda (r = .93) mükemmel test-tekrar test güvenilirliği bulunmuştur (14 gün arayla).</li>
+  <li><strong>İç Tutarlılık:</strong> Lise öğrencileri, üniversite öğrencileri ve çalışanlar üzerinde yapılan çalışmalarda, Mesleki Kimlik ölçeği için mükemmel (KR-20 = .86-.89), Mesleki Bilgi için zayıf/yeterli (KR-20 = .39-.79) ve Engeller için zayıf (KR-20 = .23-.65) iç tutarlılık katsayıları elde edilmiştir.</li>
+</ul>
+
+<p><strong>Geçerlilik:</strong></p>
+
+<ul>
+  <li><strong>Kriter Geçerliliği:</strong> Çalışan yetişkinler üzerinde yapılan bir çalışmada, Mesleki Kimlik puanları ile iş tatmini arasında yeterli korelasyonlar (r = .45) bulunmuştur.</li>
+  <li><strong>Yapı Geçerliliği:</strong> Mesleki planları hakkında kararsız olan üniversite öğrencileri üzerinde yapılan bir çalışmada, kariyer rehberliği müdahalesinden elde edilen kariyer semineri puanları ile Mesleki Kimlik sonuçları arasında mükemmel korelasyonlar bulunmuştur (r = .11 - .82, Medyan r = .60).</li>
+</ul>
+
+<p>Carson, A.D. &amp; Mowsesian, R. (1993). Moderators of the prediction of job satisfaction from congruence: A test of Holland’s theory.
+Journal of Career Assessment, 2,
+130-144.
+Conneran, M., &amp; Hartman, B.W. (1993). The concurrent validity of the self directed search in identifying chronic career indecision among vocational education students.
+Journal of Career Development,
+19
+(3), 197-208.
+Crisp, R. (1992). Vocational decision making by sixty spinal cord injury patients.
+Paraplegia,
+30
+(6), 420-424.
+Dipeolu, A.O, Hargrave, S., Sniatecki, J.L., &amp; Donaldson, J. (2012). Improving Prediction of Significant Career‐Related Constructs for High School Students With Learning Disabilities.
+The Career Development Quarterly
+,
+60
+(3), 207-220.
+Fretz, B.R., &amp; Leong, F.T. (1982). Career development status as a predictor of career intervention outcomes.
+Journal of Counseling Psychology,
+29
+(4), 388.
+Healy, Charles C, Tullier, Michelle, &amp; Mourton, Don M. (1990). My Vocational Situation: Its relation to concurrent career and future academic benchmarks.
+Measurement and evaluation in counseling and development, 23
+(3), 100-107.
+Holland, J.L., Daiger, D.C., &amp; Power, P.G. (1980).
+My Vocational Situation.
+Palo Alto, CA: Consulting Psychologists Press.
+Holland, J.L., Gottfredson, D.C., &amp; Power, P.G. (1980). Some diagnostic scales for research in decision making and personality: Identity, information, and barriers.
+Journal of Personality and Social Psychology, 39,
+1191-1200.
+Holland, J.L., Johnston, J.A., &amp; Asama, F. (1993). The Vocational Identity Scale: A diagnostic and treatment tool.
+Journal of Career Assessment, 1
+(1), 1-12.
+Johnson, J. A., Smither, R., &amp; Holland, J. L. (1981). Evaluating vocational interventions: A tale of two career development seminars.
+Journal of Counseling Psychology, 28
+(2), 180-183. doi:
+http://dx.doi.org/10.1037/h0077971
+Leong, F.T., &amp; Morris, J. (1989). Assessing the construct validity of Holland, Daiger, and Power’s measure of Vocational Identity.
+Measurement and Evaluation in Counseling and Development, 22
+(3), 117-125.
+Lucas, E.B. Gysbers, N.C., Buescher, K.L., &amp; Heppner, P.P. (1988). My Vocational Situation: Normative, psychometric, and comparative data.
+Measurement and Evaluation in Counseling and Development, 21,
+162-170.
+Mauer, Ellen B, &amp; Gysbers, Norman C. (1990). Identifying career concerns of entering university freshmen using My Vocational Situation.
+The Career Development Quarterly, 39
+(2), 155-165.
+Merz, M.A., &amp; Szymanski, E.M. (1997). Effects of a Vocational Rehabilitation-Based Career Workshop on Commitment to Career Choice.
+Rehabilitation Counseling Bulletin, 41
+(2), 88-104.
+Mosley-Howard, S., &amp; Andersen, P. (1993). Using my vocational situation with workers facing a plant closing.
+Journal of Career Development, 19
+(4), 289-300.
+Nicholas, L., &amp; Pretorius, T.B. (1994). Assessing the vocational ability of Black South African university students: Psychometric and normative data on the Vocational Identity scale of the My Vocational Situation.
+Measurement and Evaluation in Counseling and Development, 27
+(2), 85-92.
+Olson, S. K., Johnston, J. A., &amp; Kunce, J. (1985). Validity of my vocational situation for homemakers and displaced homemakers.
+Measurement and Evaluation in Counseling and Development, 18
+(1), 17-25. Retrieved from http://search.proquest.com/docview/617049078?accountid=14552
+Rayman, J.R., &amp; Bernard, C.B. (1987). Strong and weak vocational identities: A post mortem of a career course. (Research Report No. 14) University Park, PA: Pennsylvania State University, Career Development and Placement Services.
+Savickas, M.L. (1985). Identity in vocational development.
+Journal of Vocational Behavior, 27
+(3), 329-337.
+Tinsley, H. E., Bowman, S. L., &amp; York, D. C. (1989). Career Decision Scale, My Vocational Situation, Vocational Rating Scale, and Decisional Rating Scale: Do they measure the same constructs?
+Journal of Counseling Psychology
+,
+36
+, 115–120. doi: 10.1037/0022-0167.36.1.115.
+Toporek, R.L., &amp; Pope-Davis, D.B. (2001). Comparison of vocational identity factor structures among African American and White American college students.
+Journal of Career Assessment, 9
+(2), 135-151.
+Yanchak, K.V., Lease, S.H., &amp; Strauser, D.R. (2005). Relation of disability type and career thoughts to vocational identity.
+Rehabilitation Counseling Bulletin, 48
+(3), 130-138.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Holland, J.L., Daiger, D.C., & Power, P.G. (1980). My Vocational Situation. Palo Alto, CA: Consulting Psychologists Press.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

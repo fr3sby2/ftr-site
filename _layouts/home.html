@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<!-- Hero Alanı -->
+<section class="home-hero text-center">
+  <div class="container">
+    <h1 class="mb-3">{{ site.title }}</h1>
+    <p class="lead mb-4">{{ site.description }}</p>
+    <div class="search-container mx-auto">
+       {% include search-bar.html placeholder="[Gelişme aşamasında] Ölçek, hastalık veya anahtar kelime ara..." %}
+    </div>
+  </div>
+</section>
+
+<!-- Ana İçerik Alanı (index.md'den gelen) -->
+<section class="home-content my-5">
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+             {{ content }}
+        </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}
+<!-- Filtreleme Alanı (Geliştirme Aşamasında) -->
+<section class="home-filters my-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Araçları Filtrele</h2>
+    <div class="filters-wrapper p-4 border rounded bg-light">
+        {% include filters-ui.html %}
+    </div>
+  </div>
+</section>
+{% endcomment %}
+
+<!-- Öne Çıkanlar Bölümü -->
+<section class="home-featured bg-light py-5">
+  <div class="container">
+    <div class="row text-center mb-4">
+        <div class="col">
+            <h2>Öne Çıkanlar</h2>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Öne Çıkan Değerlendirme Araçları Sütunu -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3 class="mb-3 h4 text-center">Değerlendirme Araçları</h3>
+            {% assign assessment_collection = site.assessments | default: site.assessments_generated %}
+            {% assign featured_assessments = assessment_collection | where_exp: "item", "item.featured == true" | limit: 3 %}
+            {% if featured_assessments.size > 0 %}
+              <div class="list-group">
+                {% for assessment in featured_assessments %}
+                  <a href="{{ assessment.url | relative_url }}" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">{{ assessment.title }}</h5>
+                      {% if assessment.abbreviation %}<small class="text-muted">{{ assessment.abbreviation }}</small>{% endif %}
+                    </div>
+                    {% if assessment.purpose %}<p class="mb-1 small">{{ assessment.purpose | truncatewords: 15 }}</p>{% endif %}
+                  </a>
+                {% endfor %}
+              </div>
+              <div class="text-center mt-3">
+                 <a href="{{ '/tum-araclar/' | relative_url }}" class="btn btn-sm btn-outline-primary">Tüm Araçları Gör →</a>
+              </div>
+            {% else %}
+              <p class="text-muted text-center">Öne çıkan değerlendirme aracı bulunamadı.</p>
+              <div class="text-center mt-3">
+                <a href="{{ '/tum-araclar/' | relative_url }}" class="btn btn-sm btn-outline-primary">Tüm Araçları Gör →</a>
+              </div>
+            {% endif %}
+        </div>
+
+        <!-- Sık Karşılaşılan Hastalıklar Sütunu -->
+        <div class="col-lg-6">
+            <h3 class="mb-3 h4 text-center">Hastalıklar ve Durumlar</h3>
+            {% assign featured_diseases = site.diseases | limit: 3 %}
+            {% if featured_diseases.size > 0 %}
+              <div class="list-group">
+                 {% for disease in featured_diseases %}
+                  <a href="{{ disease.url | relative_url }}" class="list-group-item list-group-item-action">
+                     <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1 h6">{{ disease.title }}</h5>
+                       {% if disease.common_name %}<small class="text-muted">{{ disease.common_name }}</small>{% endif %}
+                    </div>
+                     {% if disease.summary %}<p class="mb-1 small">{{ disease.summary | truncatewords: 15 }}</p>{% endif %}
+                   </a>
+                 {% endfor %}
+              </div>
+              <div class="text-center mt-3">
+                 <a href="{{ '/hastaliklar-genel/' | relative_url }}" class="btn btn-sm btn-outline-primary">Tüm Hastalıkları Gör →</a>
+              </div>
+            {% else %}
+              <p class="text-muted text-center">Hastalık bilgisi bulunamadı.</p>
+              <div class="text-center mt-3">
+                <a href="{{ '/hastaliklar-genel/' | relative_url }}" class="btn btn-sm btn-outline-primary">Tüm Hastalıkları Gör →</a>
+              </div>
+            {% endif %}
+        </div>
+    </div>
+  </div>
+</section>

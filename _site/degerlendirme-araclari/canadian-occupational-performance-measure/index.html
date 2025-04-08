@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Kanada Aktivite Performans Ölçütü - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Kanada Aktivite Performans Ölçütü</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Canadian Occupational Performance Measure</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> COPM</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">COPM, bireyin öz bakım, üretkenlik ve boş zaman alanlarındaki algılanan aktivite performansını değerlendirir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Pediatrik Bozukluklar, Yaşlı Yetişkinler ve Geriatrik Bakım, Karma Popülasyonlar, Kronik Ağrı, Serebral Palsi, Beyin Hasarı, Artrit</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Değerlendirme, genellikle bir Ergoterapist tarafından yürütülen, yarı yapılandırılmış bir görüşme içinde yer alan 5 adımlı bir süreç içerir. Görüşme, müşterinin yapmak istediği, ihtiyaç duyduğu veya yapması beklenen her performans alanındaki aktiviteleri belirlemeye odaklanır.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Pediatri (Genel)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Serebral Palsi (SP)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Beyin Hasarı (TBI, ABI)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Artrit (Genel)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Kanada Aktivite Performans Ölçütü (COPM), bireylerin günlük yaşam aktivitelerindeki performanslarını ve bu performanstan duydukları memnuniyeti değerlendiren, hasta merkezli bir ölçektir. Öz bakım, üretkenlik ve boş zaman aktiviteleri gibi çeşitli alanlarda bireyin algıladığı performansı değerlendirmek için kullanılır. Genellikle bir ergoterapist tarafından uygulanan yarı yapılandırılmış bir görüşme içerir. Bu görüşme, bireyin yapmak istediği, ihtiyaç duyduğu veya yapması beklenen aktiviteleri belirlemeye odaklanır.</p>
+
+<p>COPM uygulaması 5 adımdan oluşur:</p>
+<ol>
+  <li><strong>Problem Tanımlama:</strong> Birey, öz bakım, üretkenlik ve boş zaman alanlarında karşılaştığı sorunları tanımlar.</li>
+  <li><strong>Önem Derecelendirmesi:</strong> Birey, tanımlanan sorunların her birinin önemini 1-10 arasında bir ölçekte derecelendirir.</li>
+  <li><strong>Aktivite Seçimi:</strong> En önemli 5 sorun/aktivite seçilir.</li>
+  <li><strong>Performans ve Memnuniyet Derecelendirmesi:</strong> Seçilen her aktivite için, birey mevcut performansını ve bu performanstan duyduğu memnuniyeti 1-10 arasında bir ölçekte derecelendirir.</li>
+  <li><strong>Yeniden Değerlendirme:</strong> Tedavi veya müdahale sonrasında, bireyin performansı ve memnuniyeti tekrar değerlendirilir.</li>
+</ol>
+
+<p>Birey, tanımladığı aktiviteler için hem performans hem de memnuniyet düzeylerini 1 ila 10 arasında derecelendirir. Toplam puan, seçilen aktivitelerin her birindeki performans ve memnuniyet puanlarının ortalaması alınarak hesaplanır.</p>
+
+<p>COPM, bireyin aktivite performansındaki değişimleri ve bu değişimlerden duyduğu memnuniyeti ölçmek için kullanılır. 2 veya daha fazla puanlık bir değişim klinik olarak anlamlı kabul edilir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong> COPM’nin test-tekrar test güvenilirliği, farklı popülasyonlarda ve koşullarda değerlendirilmiştir ve genellikle yeterli ila mükemmel düzeyde bulunmuştur.</li>
+  <li><strong>Geçerlilik:</strong> COPM’nin yapı geçerliliği, diğer benzer ölçütlerle karşılaştırılarak değerlendirilmiştir. Sonuçlar, COPM’nin aktivite performansı ve memnuniyetini ölçmede geçerli bir araç olduğunu göstermektedir.</li>
+  <li>
+    <p><strong>Duyarlılık:</strong> Araştırmalar, COPM puanlarındaki değişikliklerin klinik olarak anlamlı olduğunu ve müdahalelerin etkinliğini değerlendirmede kullanılabileceğini göstermektedir.</p>
+  </li>
+  <li>Bodiam, C. (1999). “The use of the Canadian Occupational Performance Measure for the assessment of outcome on a neurorehabilitation unit.” The British Journal of Occupational Therapy 62(3): 123-126.</li>
+  <li>Bowie, C., Shackleton, T., et al. (1999). “Exploring the responsiveness of the COPM in an outpatient rehabilitation program.” Unpublished manuscript.</li>
+  <li>Carpenter, L., Baker, G. A., et al. (2001). “The use of the Canadian occupational performance measure as an outcome of a pain management program.” Can J Occup Ther 68(1): 16-22.</li>
+  <li>Cheng, Y. H., Rodger, S., et al. (2002). “Experiences with the COPM and client-centred practice in adult neurorehabilitation in Taiwan.” Occup Ther Int 9(3): 167-184.</li>
+  <li>Cup, E. H., Scholte op Reimer, W. J., et al. (2003). “Reliability and validity of the Canadian Occupational Performance Measure in stroke patients.” Clin Rehabil 17(4): 402-409.</li>
+  <li>Cusick, A., Lannin, N. A., et al. (2007). “Adapting the Canadian Occupational Performance Measure for use in a paediatric clinical trial.” Disabil Rehabil 29(10): 761-766.</li>
+  <li>Cusick, A., McIntyre, S., et al. (2006). “A comparison of goal attainment scaling and the Canadian Occupational Performance Measure for paediatric rehabilitation research.” Pediatr Rehabil 9(2): 149-157.</li>
+  <li>Dedding, C., Cardol, M., et al. (2004). “Validity of the Canadian Occupational Performance Measure: a client-centred outcome measurement.” Clin Rehabil 18(6): 660-667.</li>
+  <li>Galvin J, Randall M, Hewish S, Rice J, MacKay MT. (2010) Family-centred outcome measurement following paediatric stroke. Australian occupational therapy journal. 57(3):152-8.</li>
+  <li>Hill VA, Fisher T, Schmid AA, Crabtree J, Page SJ. (2014) Relationship between touch sensation of the affected hand and performance of valued activities in individuals with chronic stroke. Topics in stroke rehabilitation. 21(4):339-46.</li>
+  <li>Eyssen, I. C., Beelen, A., et al. (2005). “The reproducibility of the Canadian Occupational Performance Measure.” Clin Rehabil 19(8): 888-894.</li>
+  <li>Jenkinson, N., Ownsworth, T., et al. (2007). “Utility of the Canadian Occupational Performance Measure in community-based brain injury rehabilitation.” Brain Inj 21(12): 1283-1294.</li>
+  <li>Kjeken, I., Dagfinrud, H., et al. (2005). “Activity limitations and participation restrictions in women with hand osteoarthritis: patients’ descriptions and associations between dimensions of functioning.” Ann Rheum Dis 64(11): 1633-1638.</li>
+  <li>Kjeken, I., Dagfinrud, H., et al. (2005). “Reliability of the Canadian Occupational Performance Measure in patients with ankylosing spondylitis.” J Rheumatol 32(8): 1503-1509.</li>
+  <li>Law, M., Baptiste, S., et al. (2004, 2005). “COPM Questions and Answers.” from http://www.caot.ca/copm/questions.html.</li>
+  <li>MacDermid, J. C., Grewal, R., et al. (2009). “Using an evidence-based approach to measure outcomes in clinical practice.” Hand Clin 25(1): 97-111, vii.</li>
+  <li>Macedo, A. M., Oakley, S. P., et al. (2009). “Functional and work outcomes improve in patients with rheumatoid arthritis who receive targeted, comprehensive occupational therapy.” Arthritis Rheum 61(11): 1522-1530.</li>
+  <li>Martini R, Rios J, Polatajko H, Wolf T, McEwen S. (2015) The performance quality rating scale (PQRS): reliability, convergent validity, and internal responsiveness for two scoring systems. Disability and rehabilitation. 37(3):231-8.</li>
+  <li>McColl, M. A., Paterson, M., et al. (2000). “Validity and community utility of the Canadian Occupational Performance Measure.” Can J Occup Ther 67(1): 22-30.</li>
+  <li>Nieuwenhuizen, M.G., Groot, S.D., Janssen, T.W., Maas, L.C., &amp; Beckerman, H. (2014). Canadian Occupational Performance Measure performance scale: validity and responsiveness in chronic pain. Journal of Rehabilitation Research and Development, 51(5), 727-46.</li>
+  <li>Phipps, S. and Richardson, P. (2007). “Occupational therapy outcomes for clients with traumatic brain injury and stroke using the Canadian Occupational Performance Measure.” The American journal of occupational therapy 61(3): 328-334.</li>
+  <li>Ripat, J., Etcheverry, E., et al. (2001). “A comparison of the Canadian Occupational Performance Measure and the Health Assessment Questionnaire.” Can J Occup Ther 68(4): 247-253.</li>
+  <li>Sewell, L. and Singh, S. (2001). “The Canadian Occupational Performance Measure: is it a Reliable Measure in Clients with Chronic Obstructive Pulmonary Disease?” The British Journal of Occupational Therapy 64(6): 305-310.</li>
+  <li>Toomey, M., Nicholson, D., et al. (1995). “The clinical utility of the Canadian Occupational Performance Measure.” Can J Occup Ther 62(5): 242-249.</li>
+  <li>Trombly, C. A., Radomski, M. V., et al. (1998). “Achievement of self-identified goals by adults with traumatic brain injury: Phase I.” The American Journal of Occupational Therapy 52(10): 810-818.</li>
+  <li>Trombly, C. A., Radomski, M. V., et al. (2002). “Occupational therapy and achievement of self-identified goals by adults with acquired brain injury: phase II.” Am J Occup Ther 56(5): 489-498.</li>
+  <li>Tuntland, H., Aaslund, M. K., Langeland, E., Espehaug, B., &amp; Kjeken, I. (2016). Psychometric properties of the Canadian Occupational Performance Measure in home-dwelling older adults. Journal of Multidisciplinary Healthcare, 9, 411–423. doi:10.2147/JMDH.S113727</li>
+  <li>Van de Ven-Stevens, L., Graff M.J.L., Peters M.A.M, Van der Linde, H., Geurts, A.C.H. (2016). Construct validity of the Canadian Occupational Performance Measure in participants with tendon injury and dupuytren disease, Physical Therapy, 95(5), 750–757. https://doi.org/10.2522/ptj.20130590</li>
+  <li>Verkerk, G. J., Wolf, M. J. M., Louwers, A. M., Meester-Delver, A., &amp; Nollet, F. (2006). The reproducibility and validity of the Canadian Occupational Performance Measure in parents of children with disabilities. Clinical Rehabilitation, 20(11), 980-988.</li>
+  <li>Wressle, E., Eeg-Olofsson, A. M., et al. (2002). “Improved client participation in the rehabilitation process using a client-centred goal formulation structure.” Journal of Rehabilitation Medicine 34(1): 5-11.
+```</li>
+</ul>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Bodiam, C. (1999). "The use of the Canadian Occupational Performance Measure for the assessment of outcome on a neurorehabilitation unit." The British Journal of Occupational Therapy 62(3): 123-126.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

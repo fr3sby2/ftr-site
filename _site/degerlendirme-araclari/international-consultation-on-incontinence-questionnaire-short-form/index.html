@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Uluslararası İnkontinans Danışma Modülü Kısa Formu (İdrar İnkontinansı) - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Uluslararası İnkontinans Danışma Modülü Kısa Formu (İdrar İnkontinansı)</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">International Consultation on Incontinence Modular Questionnaire – Short Form for Urinary Incontinence</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> ICIQ-SF</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">ICIQ-SF, üriner inkontinansı (UI) olan kişilerde üriner kaybın şiddetini ve yaşam kalitesini subjektif olarak ölçen bir araçtır.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Spesifik Olmayan Hasta Popülasyonu, Karışık Popülasyonlar</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Toplam skor, 3., 4. ve 5. soruların skorlarının toplamı alınarak elde edilir. Puanlama aralığı 0-21'dir. Yüksek skor, inkontinansın daha fazla olumsuz etkisini gösterir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">Genel / Sağlıklı Yetişkin</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Anket / Öz Bildirim / Bilgi Verici</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>ICIQ-SF, inkontinans için kullanılan, hastanın kendi bildirdiği bir anket ve tarama aracıdır. Anket, son 4 hafta içindeki semptomların derecelendirilmesini isteyen 4 ana madde (toplam 6 madde içinden) içerir. Toplam puanı elde etmek için 3, 4 ve 5. maddelerin puanları toplanır (1. ve 2. maddeler demografiktir). Son madde, puanlanmayan bir öz tanı maddesidir. Anket, idrar kaçırma sıklığı ve miktarı, idrar kaçırmanın yaşam kalitesi üzerindeki etkisi ve son dört hafta içinde idrar kaçırmanın algılanan nedeni ile ilgili soruları içerir.</p>
+
+<p>ICIQ-SF, bireyin kendi kendine uygulayabileceği bir anket formundan oluşur. Katılımcılardan, son dört hafta içindeki idrar kaçırma semptomlarını ve bunların yaşam kalitesi üzerindeki etkilerini belirtmeleri istenir. 1. ve 2. sorular demografik bilgiler içerir (doğum tarihi ve cinsiyet). 3., 4. ve 5. sorular puanlanır ve toplam puanı oluşturur. 6. soru (kişinin kendi algıladığı neden) puanlanmaz.</p>
+
+<p>ICIQ-UI SF’nin toplam puanı 0 ile 21 arasında değişir. Daha yüksek bir skor, inkontinansın yaşam üzerindeki olumsuz etkisinin daha fazla olduğunu gösterir. 3., 4. ve 5. soruların puanları toplanarak toplam skor elde edilir. 6. soru (öz-algılanan neden) puanlanmaz.</p>
+
+<p>ICIQ-UI SF’de daha yüksek bir skor, inkontinansın yaşam üzerindeki etkisinin daha fazla olduğunu gösterir.</p>
+
+<p>Kadınlarda idrar inkontinansı için kesme skorları:</p>
+
+<ul>
+  <li>Hafif: 1 - 5</li>
+  <li>Orta: 6 - 12</li>
+  <li>Şiddetli: 13 - 18</li>
+  <li>Çok şiddetli: 19 - 21</li>
+</ul>
+
+<p><strong>Güvenilirlik:</strong> İngilizce, Çince ve Malay versiyonları için yeterli iç tutarlılık bulunmuştur. Test-tekrar test güvenilirliği İngilizce, Çince ve Malay versiyonları için mükemmel olarak belirtilmiştir.</p>
+
+<p><strong>Geçerlilik:</strong> Hasta Küresel İyileşme İzlenimi ile ICIQ-SF arasında mükemmel korelasyon bulunmuştur. Ürodinamik çalışma ile ICIQ-SF arasında mükemmel korelasyon bulunmuştur.</p>
+
+<p><strong>Duyarlılık:</strong> Her bir madde skoru ve toplam skor için geniş etki büyüklükleri (&gt;.8) mevcuttur.</p>
+
+<p>Abrams, P., Andersson, K. E., Brubaker, L., Cardozo, A, Cottenden, L.,and the members of the committee. (2007). “3rd International Consultation on Incontinence, Recommendations of the International Scientific Committee: Evaluation and treatment of urinary incontinence, pelvic organ prolapse and faecal incontinence.” Health Publications, 21, 1589-1630.</p>
+
+<p>Al-Shaikh, G., Al-Badr, A., Al Maarik, A., Cotterill, N., &amp; Al-Mandeel, H. M. (2013). “Reliability of Arabic ICIQ-UI short form in Saudi Arabia”. Urology Annals, 5(1), 34-38.</p>
+
+<p>Avery, K., Donovan, J., Peters, T. J., Shaw, C., Gotoh, M., &amp; Abrams, P. (2004). “ICIQ: A brief and robust measure for evaluating the symptoms and impact of urinary incontinence”. Neurourology and Urodynamics, 23(4), 322-330.</p>
+
+<p>Chang, S. R., Chen, K. H., Chang, T.C., &amp; Lin, H.H. (2011). “A Taiwanese version of the International Consultation on Incontinence Questionnaire - Urinary Incontinence Short Form for pregnant women: Instrument validation.” Journal of Clinical Nursing, 20, 714-722.</p>
+
+<p>Gotoh, M., Homma, Y., Funahashi, Y., Matsukawa, Y., &amp; Kato, M. (2009). “Psychometric validation of the Japanese version of the International Consultation on Incontinence Questionnaire-Short Form.” International Journal of Urology, 16, 303-306.</p>
+
+<p>Hajebrahimi, S., Corcos, J., &amp; Lemieux, M. C. (2004). “International consultation on incontinence questionnaire short form: a Comparison of physician versus patient completion and immediate and delayed self-administration.” Urology, 63(6), 1076-1078.</p>
+
+<p>Hajebrahimi, S., Nourizadeh, D., Hamedani, R., &amp; Pezeshki, M. Z. (2012). “Validity and reliability of the International Consultation on Incontinence Questionnaire-Urinary Incontinence Short Form and its correlation with urodynamic findings.” Urology Journal, 9(4), 685-690.</p>
+
+<p>Huang, L., Zhang, S. W., Wu, S. L., Ma, L., &amp; Deng, X. H. (2008). “The Chinese version of ICIQ: A useful tool in clinical practice and research on urinary incontinence.” Neurourology and Urodynamics, 27(6), 522-524.</p>
+
+<p>Karantanis, E., Fybes, M., Moore, K. H., &amp; Stanton, S. L. (2004). “Comparison of the ICIQ-SF and 24-hour pad test with other measures for evaluating the severity of urodynamic stress incontinence.”
+International Urogynecology Journal of Pelvic Floor Dysfunction, 15(2), 111-116.</p>
+
+<p>Karmakar, D., Mostafa, A., &amp; Abdel-Fattah, M. (2017).” A new validated score for detecting patient-reported success on postoperative ICIQ-SF: A novel two-stage analysis from two large RCT cohorts.” International Urogynecology Journal, 28(1), 95–100.</p>
+
+<p>Klovning, A., Avery, K., Sandvik, H., &amp; Hunskaar, S. (2009). “Comparison of two questionnaires for assessing the severity of urinary incontinence: The ICIQ-UI SF versus the incontinence severity index.”  Neurourology Urodynamics, 28(5), 411-415.</p>
+
+<p>Lim, R., Liong, M. L., Lau, Y. K., &amp; Yuen, K. H. (2017). “Validity, reliability, and responsiveness of the ICIQ‐UI SF and ICIQ‐LUTSqol in the Malaysian population.” Neurourology and Urodynamics, 36(2), 438-442.</p>
+
+<p>Nyström, E., Sjöström, M., Stenlund, H., &amp; Samuelsson, E. (2015). “ICIQ symptom and quality of life instruments measure clinically relevant improvements in women with stress urinary incontinence.” Neurourology and Urodynamics, 34(8), 747-751.</p>
+
+<p>Tubaro, A., Zattoni, F., Prezioso, D., Scarpa, R. M., Pesce, F., Rizzi, C. A., Santini, A. M., Simoni, L., Artibani, W., &amp; The Flow Study Group (2006). “Italian validation of the International Consultation on Incontinence Questionnaires.” BJU International, 97, 101-108.</p>
+
+<p>Twiss, C. O., Fischer, M. C., &amp; Nitti, V. W. (2007). “Comparison between reduction in 24-hour pad weight, International Consultation on Incontinence-Short Form (ICIQ-SF) score, International Prostate Symptom Score (IPSS), and Post-Operative Patient Global Impression of Improvement (PGI-I) score in patient evaluation after male perineal sling.” Neurourology Urodynamics, 26(1), 8-13.
+```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="instrument details" target="_blank" rel="noopener noreferrer">instrument details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Avery, K., Donovan, J., Peters, T. J., Shaw, C., Gotoh, M., & Abrams, P. (2004). “ICIQ: A brief and robust measure for evaluating the symptoms and impact of urinary incontinence”. Neurourology and Urodynamics, 23(4), 322-330.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

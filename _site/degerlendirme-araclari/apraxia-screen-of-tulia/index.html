@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Tulia Apraksi Taraması - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Tulia Apraksi Taraması</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Apraxia Screen of Tulia</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> AST</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Apraksinin (öğrenilmiş istemli hareketleri yapma bozukluğu) varlığını ve ciddiyetini değerlendirmek için kullanılan 12 maddelik bir yatak başı tarama testidir. Üst Ekstremite Apraksi Testi'nin (TULIA) kısaltılmış versiyonudur.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> İnme, Parkinson Hastalığı, Multiple Sclerosis (MS).</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 12 jest içerir (1 anlamsız taklit, 3 iletişimsel/geçişsiz, 8 araçla ilgili/geçişli). Her madde başarılı (1 puan) veya başarısız (0 puan) olarak puanlanır. Toplam skor 0 ile 12 arasında değişir. Yüksek skor daha iyi praksis yeteneğini gösterir. Kesme noktaları: 10-12=Normal, 6-9=Hafif apraksi, ≤5=Şiddetli apraksi.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Üst Ekstremite Fonksiyonu</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Parkinson Hastalığı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-arac-tipi">Performans Bazlı Test / Görev</span>
+              
+            
+              
+              
+                <span class="tag tag-arac-tipi">Gözlemsel Değerlendirme / Sınıflama</span>
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Tulia Apraksi Taraması (AST), üst ekstremite apraksisini (jestleri ve amaçlı hareketleri planlama ve uygulama yeteneğindeki bozukluk) hızlı bir şekilde değerlendirmek için tasarlanmış, 12 maddelik bir yatak başı tarama testidir. Daha kapsamlı olan Üst Ekstremite Apraksi Testi’nin (TULIA) kısaltılmış ve basitleştirilmiş bir versiyonudur.</p>
+
+<p>AST, farklı jest türlerini içerir:</p>
+<ul>
+  <li><strong>Anlamsız Taklit:</strong> Değerlendiricinin gösterdiği anlamsız bir el hareketini taklit etme (1 madde).</li>
+  <li><strong>İletişimsel/Geçişsiz Jestler:</strong> Belirli bir anlam taşıyan (örn. selam verme, sessiz ol işareti) jestleri taklit etme veya komut üzerine yapma (3 madde).</li>
+  <li><strong>Araçla İlgili/Geçişli Jestler:</strong> Bir nesne kullanıyormuş gibi (pantomim) veya gerçek nesnelerle jest yapma (örn. çekiç kullanma, makasla kesme) (8 madde).</li>
+</ul>
+
+<p>Hastanın her bir jesti doğru bir şekilde yapıp yapamadığı değerlendirilir ve basitçe Başarılı (1 puan) veya Başarısız (0 puan) olarak skorlanır. Toplam skor, apraksinin varlığı ve ciddiyeti hakkında bir gösterge sunar.</p>
+
+<ul>
+  <li>AST maddelerini içeren yönerge/skorlama formu.</li>
+  <li>Oturmak için sandalye ve masa.</li>
+</ul>
+
+<ol>
+  <li>Hasta, değerlendiricinin karşısında, önkolları masanın üzerinde olacak şekilde oturtulur.</li>
+  <li>Hemiparezi varsa, etkilenmeyen taraf kullanılır. Yoksa her iki taraf da test edilebilir (ancak genellikle tek taraf değerlendirilir).</li>
+  <li>12 jest sırayla hastaya sunulur (taklit veya komut üzerine).</li>
+  <li>Hastanın her bir jesti doğru yapıp yapamadığı gözlemlenir.</li>
+  <li>Performans Başarılı (1) veya Başarısız (0) olarak puanlanır.</li>
+</ol>
+
+<ul>
+  <li>Her jest: Başarılı = 1 puan, Başarısız = 0 puan.</li>
+  <li>Toplam Skor: 12 jestin puanları toplanır (Minimum 0, Maksimum 12).</li>
+  <li><strong>Kesme Noktaları (Vanbellingen et al, 2011):</strong>
+    <ul>
+      <li><strong>10-12:</strong> Apraksi yok (Normal praksis).</li>
+      <li><strong>6-9:</strong> Anormal praksis veya Hafif apraksi.</li>
+      <li><strong>≤ 5:</strong> Şiddetli apraksi.</li>
+    </ul>
+  </li>
+  <li><em>Alternatif:</em> Şiddetli anlama güçlüğü varsa, sadece taklit maddeleri üzerinden (&lt;5 puan) değerlendirme yapılabilir.</li>
+</ul>
+
+<p>AST skoru, üst ekstremite apraksisinin varlığını ve ciddiyetini hızlı bir şekilde taramak için kullanılır. Düşük skorlar apraksi olasılığını artırır. Kesme noktaları, hastayı normal, hafif apraksik veya şiddetli apraksik olarak sınıflandırmaya yardımcı olabilir.</p>
+
+<p><strong>Sınırlılıklar:</strong></p>
+<ul>
+  <li>Basitleştirilmiş puanlama (başarılı/başarısız), TULIA’daki gibi hareketin kalitesindeki (temporal-spatial hatalar) ince farklılıkları yakalayamaz. Bu durum, özellikle Parkinson gibi motor semptomların apraksiden ayırt edilmesinin zor olduğu durumlarda bir kısıtlama olabilir.</li>
+  <li>Şiddetli afazisi (özellikle anlama güçlüğü) olan hastalarda, pantomim maddelerinin yorumlanması zor olabilir.</li>
+  <li>Negatif prediktif değeri (%92), hafif apraksi formlarını kaçırabileceğini düşündürmektedir.</li>
+</ul>
+
+<p>AST, hızlı bir tarama aracı olarak geliştirilmiş olup, sınırlı ancak umut verici psikometrik özellikler göstermiştir.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong>
+    <ul>
+      <li><strong>Test-Tekrar Test:</strong> İnme popülasyonunda, TULIA’daki ilgili 12 maddeyle karşılaştırıldığında <strong>Mükemmel</strong> bulunmuştur (ICC = 0.95).</li>
+    </ul>
+  </li>
+  <li><strong>İç Tutarlılık:</strong> İnme popülasyonunda <strong>Mükemmel</strong> (Cronbach’s alpha = 0.92).</li>
+  <li><strong>Geçerlilik:</strong>
+    <ul>
+      <li><strong>Yapı Geçerliliği:</strong>
+        <ul>
+          <li>Orijinal TULIA ölçeği ile güçlü bir ilişkisi vardır (aynı maddeler üzerinden karşılaştırıldığında).</li>
+          <li>İnme popülasyonunda Token Testi (dil anlama) ile <strong>Yeterli</strong> korelasyon (r=0.81). Bell Testi (ihmal) ile anlamlı korelasyon bulunamamıştır.</li>
+          <li>Parkinson hastalığında Hoehn &amp; Yahr evresi ile <strong>Yeterli</strong> negatif korelasyon (r=-0.32). MDS-UPDRS motor skoru (Part III) ile anlamlı korelasyon bulunamamıştır.</li>
+          <li>MS hastalarında EDSS ve Ataksi skorları ile <strong>Mükemmel</strong> negatif korelasyon (r=-0.63 ve -0.60).</li>
+        </ul>
+      </li>
+      <li><strong>İçerik Geçerliliği:</strong> Maddeler, daha kapsamlı TULIA testinden uzman görüşü ve madde analizi ile seçilmiştir.</li>
+    </ul>
+  </li>
+  <li><strong>Minimal Saptanabilir Değişim (MDC):</strong> İnme popülasyonu için 1.79 puan olarak hesaplanmıştır.</li>
+</ul>
+
+<p>Kamm, C., Heldner, M., Vanbellingen, T., Mattle, H., Müri, R., &amp; Bohlhalter, S. (2012). Limb apraxia in multiple sclerosis: prevalence and impact on manual dexterity and activities of daily living. Archives Of Physical Medicine And Rehabilitation, 93(6), 1081-1085.
+Ozkan, S., Adapinar, D., Elmaci, N., &amp; Arslantas, D. (2013). Apraxia for differentiating Alzheimer’s disease from subcortical vascular dementia and mild cognitive impairment. Neuropsychiatric Disease And Treatment, 9947-951.
+Vanbellingen, T., Kersten, B., Van de Winckel, A., Bellion, M., Baronti, F., Müri, R., &amp; Bohlhalter, S. (2011). A new bedside test of gestures in stroke: the apraxia screen of TULIA (AST). Journal Of Neurology, Neurosurgery, And Psychiatry, 82(4), 389-392.
+Vanbellingen, T., Lungu, C., Lopez, G., Baronti, F., Müri, R., Hallett, M., &amp; Bohlhalter, S. (2012). Short and valid assessment of apraxia in Parkinson’s disease. Parkinsonism &amp; Related Disorders, 18 (4), 348-350.</p>
+
+<hr />
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Vanbellingen, T., Kersten, B., Van de Winckel, A., Bellion, M., Baronti, F., Müri, R., & Bohlhalter, S. (2011). A new bedside test of gestures in stroke: the apraxia screen of TULIA (AST). Journal Of Neurology, Neurosurgery, And Psychiatry, 82(4), 389-392.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

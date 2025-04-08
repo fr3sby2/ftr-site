@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>London Handikap Skalası - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">London Handikap Skalası</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">London Handicap Scale</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> LHS</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">Kronik, çoklu veya ilerleyici hastalığı olan hastalarda sağlık durumunu ölçer ve uygulanan tedavi müdahalelerinin değerlendirilmesini sağlar.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Alzheimer Hastalığı ve Progresif Demans, Eklem Ağrısı ve Kırıklar, Multipl Skleroz, Spesifik Olmayan Hasta Popülasyonu, Yaşlı Yetişkinler ve Geriatri Bakımı, Pediatrik Bozukluklar, İnme</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> Ölçek, 6 farklı boyutta handikapların bir profilini oluşturur: 1) Hareketlilik, 2) Fiziksel bağımsızlık, 3) Meslek, 4) Sosyal entegrasyon, 5) Oryantasyon, 6) Ekonomik öz-yeterlilik. Her boyut, artan dezavantaj sırasına göre düzenlenmiş altı seviyeye sahiptir. Eşit madde ağırlıkları, ampirik olarak türetilmiş ağırlıklarla kabaca aynı skoru verir (Jenkinson ve ark., 2000; Harwood ve Ebrahim, 2000). 6 boyut, genel bir handikap şiddeti skoru oluşturur.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Günlük Yaşam Aktiviteleri (GYA)</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Fonksiyonel Mobilite</span>
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-alan">Yaşam Kalitesi</span>
+              
+            
+              
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Geriatri / Yaşlı Bakımı</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Multiple Skleroz (MS)</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">İnme</span>
+              
+            
+              
+              
+                <span class="tag tag-populasyon">Pediatri (Genel)</span>
+              
+            
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>London Handikap Skalası (LHS), kronik, çoklu veya ilerleyici hastalığı olan hastalarda sağlık durumunu değerlendirmek ve uygulanan tedavi müdahalelerinin etkinliğini ölçmek için kullanılan bir araçtır. Ölçek, bireylerin handikaplarını 6 farklı boyutta değerlendirir: hareketlilik, fiziksel bağımsızlık, meslek, sosyal entegrasyon, oryantasyon ve ekonomik öz-yeterlilik. Her boyut, artan dezavantaj derecesine göre sıralanmış 6 seviyeye sahiptir ve genel bir handikap şiddeti skoru elde edilir.</p>
+
+<p>Her boyut için bireyin durumuna en uygun seviye belirlenir. Ölçeğin uygulanması genellikle 5-10 dakika sürer ve özel bir eğitim gerektirmez. Puanlama, geleneksel yöntemlerle yapılabileceği gibi, özel bir ekipman gerektirmeyen, basitleştirilmiş bir yöntemle de yapılabilir.</p>
+
+<p>Her boyut için belirlenen seviyeler, belirli puanlarla ilişkilendirilir. 6 boyutun toplam puanı, bireyin genel handikap şiddetini gösterir. Eşit madde ağırlıkları kullanılarak elde edilen skorlar, ampirik olarak türetilmiş ağırlıklarla elde edilen skorlara yakındır.</p>
+
+<p>LHS skoru, bireyin yaşamındaki handikapın şiddetini gösterir. Ölçek, gruplar arası karşılaştırmalar için daha uygundur. Klinik değerlendirmede değişiklikleri değerlendirirken dikkatli olunmalıdır.</p>
+
+<ul>
+  <li><strong>Güvenilirlik:</strong> Akut inme hastalarında mükemmel iç tutarlılık (Cronbach alfa = 0.83, 0.80) ve kronik inme hastalarında mükemmel test-tekrar test güvenilirliği (r = 0.91) gösterilmiştir.</li>
+  <li><strong>Geçerlilik:</strong> Barthel İndeksi (r = 0.56) ve Nottingham Genişletilmiş Günlük Yaşam Aktiviteleri toplam skoru (r = 0.69) ile yeterli ila mükemmel korelasyonlar bulunmuştur. WHO Disability Assessment Scale II - WHODAS-II (r=0.92) ve FIM motor skoru (r=0.79) ile de mükemmel korelasyon göstermiştir.</li>
+  <li><strong>Duyarlılık:</strong> Multipl skleroz ve kalça/diz protezi sonrası rehabilitasyon için yeterli duyarlılık gösterilmiştir.</li>
+</ul>
+
+<p>Ackerley, S. J., Gordon, H. J., et al. (2009). “Assessment of quality of life and participation within an outpatient rehabilitation setting.” Disabil Rehabil 31(11): 906-913.</p>
+
+<p>Cardol, M., Haan, R. J., Jong, B. A., Bos, G. A., &amp; Groot, I. J. (2001, March 23). Psychometric properties of the impact on Participation and Autonomy Questionnaire.
+Archives of Physical Medicine and Rehabilitation,
+82
+(2), 210-216. doi:10.1053/apmr.2001.18218</p>
+
+<p>Chau, J. P., Thompson, D. R., Twinn, S., Chang, A. M., &amp; Woo, J. (2009, September 07). Determinants of participation restriction among community dwelling stroke survivors: A path analysis.
+BMC Neurology BMC Neurol,
+9
+(1). doi:10.1186/1471-2377-9-49</p>
+
+<p>Coelho, M., Marti, M. J., Sampaio, C., Ferreira, J. J., Valldeoriola, F., Rosa, M. M. and Tolosa, E. (2015), Dementia and severity of parkinsonism determines the handicap of patients in late-stage Parkinson’s disease: the Barcelona−Lisbon cohort. Eur J Neurol, 22: 305–312. doi:10.1111/ene.12567</p>
+
+<p>Dubuc, N., Haley, S. M., Pengsheng, N., Kooyoomjian, J. T., &amp; Jette, A. M. (2004). Function and disability in late life: comparison of the Late-Life Function and Disability Instrument to the Short-Form-36 and the London Handicap Scale.
+Disability &amp; Rehabilitation
+,
+26
+(6), 362-370.</p>
+
+<p>Freeman, J. A., Langdon, D. W., et al. (1997). “The impact of inpatient rehabilitation on progressive multiple sclerosis.” Ann Neurol 42(2): 236-244.</p>
+
+<p>Gall, Seana L., Helen M. Dewey, Jonathan W. Sturm, Richard A. L. Macdonell, and Amanda G. Thrift. 2009. Handicap 5 years after stroke in the northeast melbourne stroke incidence study.
+Cerebrovascular Diseases
+27, (2) (02): 123-30.</p>
+
+<p>Goonetilleke, A. (1995). “Validity of the London handicap scale.” J Neurol Neurosurg Psychiatry 58(1): 125-126.</p>
+
+<p>Harwood, R. and Ebrahim, S. (1995). “Manual of the London handicap scale.”</p>
+
+<p>Harwood, R. H. and Ebrahim, S. (2000). “Measuring the outcomes of day hospital attendance: a comparison of the Barthel Index and London Handicap Scale.” Clin Rehabil 14(5): 527-531.</p>
+
+<p>Harwood, R. H., Gompertz, P., et al. (1994). “Handicap one year after a stroke: validity of a new scale.” J Neurol Neurosurg Psychiatry 57(7): 825-829.</p>
+
+<p>Hershkovitz, A., Beloosesky, Y., et al. (2004). “Is a day hospital rehabilitation programme associated with reduction of handicap in stroke patients?” Clin Rehabil 18(3): 261-266.</p>
+
+<p>Jenkinson, C., Mant, J., et al. (2000). “The London handicap scale: a re-evaluation of its validity using standard scoring and simple summation.” J Neurol Neurosurg Psychiatry 68(3): 365-367.</p>
+
+<p>Kutlay, Sehim, Ayse Küçükdeveci A., Burcu Yanik, Atilla Elhan, Derya Öztuna, and Alan Tennant. 2011. The interval scaling properties of the london handicap scale: An example from the adaptation of the scale for use in turkey.
+Clinical rehabilitation
+25, (3) (03): 248-55.</p>
+
+<p>Lunenburg, A. V., Pal, S. M., Dommelen, P. V., Karin M Van Der Pal – De Bruin, Gravenhorst, J. B., &amp; Verrips, G. H. (2013, March 26). Changes in quality of life into adulthood after very preterm birth and/or very low birth weight in the Netherlands.
+Health and Quality of Life Outcomes Health Qual Life Outcomes,
+11
+(1), 51.
+https://doi.org/10.1186/1477-7525-11-51</p>
+
+<p>Shah, A., Hoxey, K., &amp; Mayadunne, V. (2000, September 29). Some predictors of mortality in acutely medically ill elderly inpatients.
+International Journal of Geriatric Psychiatry,
+15
+(6), 493-499. doi:10.1002/1099-1166(200006)15:63.0.co;2-e</p>
+
+<p>Sturm, J. W., Dewey, H. M., et al. (2002). “Handicap after stroke: how does it relate to disability, perception of recovery, and stroke subtype?: the north North East Melbourne Stroke Incidence Study (NEMESIS).” Stroke 33(3): 762-768.</p>
+
+<p>Van Dommelen P., Sylvia Van Der Pal M., Bennebroek Gravenhorst J, Walther FJ, Wit JM, and Van Der Pal De Bruin, Karin , M. (2014). The effect of early catch-up growth on health and well-being in young adults.
+Annals of Nutrition &amp; Metabolism
+65, (2-3) (11): 220-6.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Jenkinson, C., Mant, J., et al. (2000). "The London handicap scale: a re-evaluation of its validity using standard scoring and simple summation." J Neurol Neurosurg Psychiatry 68(3): 365-367.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sayfa Başlığı: Sayfanın kendi başlığı varsa onu, yoksa site başlığını kullanır -->
+  <title>Aralıklı ve Sürekli Osteoartrit Ağrısı (ICOAP) - FTR Değerlendirme Araçları ve Bilgi Portalı</title>
+
+
+
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Kendi CSS Dosyamız (Bootstrap'tan SONRA gelmeli ki üzerine yazabilelim) -->
+  <link rel="stylesheet" href="/ftr-web-olcekler/assets/css/main.css">
+
+  <!-- İleride özel fontlar veya ikon kütüphaneleri eklenebilir -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Favicon (İsteğe Bağlı) -->
+  <!-- <link rel="icon" href="/ftr-web-olcekler/assets/images/favicon.png" type="image/png"> -->
+
+</head>
+
+<body>
+
+  <!-- Header (Üst Kısım) -->
+  <!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Bootstrap Navbar -->
+    <div class="container"> <!-- İçeriği sarmalamak için Bootstrap container -->
+
+      <!-- Site Logosu ve Başlığı -->
+      <a class="navbar-brand" href="/ftr-web-olcekler/">
+        <!-- <img src="/ftr-web-olcekler/assets/images/logo.png" alt="FTR Değerlendirme Araçları ve Bilgi Portalı Logosu" width="30" height="30" class="d-inline-block align-top"> -->
+        FTR Değerlendirme Araçları ve Bilgi Portalı
+      </a>
+
+      <!-- Mobil için Hamburger Menü Butonu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigasyon Linkleri (Geniş ekranda görünür, mobilde hamburger menüde) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/">Ana Sayfa</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/tum-araclar/">Değerlendirme Araçları</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hastaliklar-genel/">Hastalıklar</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/hakkinda/">Hakkında</a>
+            </li>
+          
+            <li class="nav-item">
+              <!-- Aktif sayfayı vurgulamak için basit bir kontrol (isteğe bağlı) -->
+              
+              
+              <a class="nav-link " href="/ftr-web-olcekler/iletisim/">İletişim</a>
+            </li>
+          
+          <!-- İsteğe bağlı: GitHub linki (site.github_username kullanarak - Bu _config.yml'de tanımlı) -->
+          
+          <li class="nav-item">
+             <a class="nav-link" href="https://github.com/fr3sby2/ftr-web-olcekler" target="_blank" rel="noopener noreferrer" title="GitHub'da Görüntüle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+           </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="page-content" aria-label="Content">
+    <article class="assessment" itemscope itemtype="http://schema.org/Dataset">
+
+  <header class="assessment-header">
+    <h1 class="assessment-title" itemprop="name">Aralıklı ve Sürekli Osteoartrit Ağrısı (ICOAP)</h1>
+    
+      <p class="assessment-original-title"><em>Orijinal İsim: <span itemprop="alternateName">Intermittent and Constant Osteoarthritis Pain (ICOAP)</span></em></p>
+    
+    
+      <p class="assessment-abbr"><strong>Kısaltma:</strong> ICOAP</p>
+    
+  </header>
+
+  <div class="assessment-meta">
+    
+      <p><strong>Amaç:</strong> <span itemprop="description">ICOAP, kalça veya diz osteoartriti olan bireylerde, hem sürekli hem de aralıklı ağrı deneyimlerini dikkate alarak ağrıyı değerlendiren 11 maddelik bir ölçektir.</span></p>
+    
+    
+      <p><strong>Hedef Popülasyon:</strong> Osteoartrit</p>
+    
+    
+      <p><strong>Puanlama Özeti:</strong> 11 madde 0-4 arasında puanlanır (0: ağrı yok, 4: aşırı ağrı). Sürekli ağrı alt ölçeği 0-20, aralıklı ağrı alt ölçeği 0-24 ve toplam ağrı skoru 0-44 aralığındadır. Maksimum skor 100'dür. 1-5. maddeler sürekli ağrıyı, 6-11. maddeler aralıklı ağrıyı değerlendirir.</p>
+    
+
+    <!-- Filtre Etiketlerini Gösterme (Opsiyonel) -->
+    
+      <div class="filter-tags-display">
+        <strong>Etiketler:</strong>
+        
+          
+          
+            
+              
+              
+                <span class="tag tag-alan">Ağrı</span>
+              
+            
+              
+              
+                <span class="tag tag-alan">Yaşam Kalitesi</span>
+              
+            
+          
+        
+          
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+          
+          
+            
+              
+              
+            
+          
+        
+      </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="assessment-content" itemprop="distribution">
+    <p>Aralıklı ve Sürekli Osteoartrit Ağrısı (ICOAP), kalça veya diz osteoartriti olan bireylerde ağrıyı değerlendirmek için kullanılan 11 maddelik bir ölçektir. Hem sürekli hem de aralıklı ağrı deneyimlerini dikkate alır. ICOAP’ın diz ve kalça eklemi için ayrı versiyonları bulunmaktadır. Ağrı yoğunluğu, sıklığı, ruh hali, uyku ve yaşam kalitesi üzerindeki etkisini değerlendirir. Osteoartritli kişiler tarafından önemli olarak tanımlanan iki farklı ağrı türünü (sürekli ve aralıklı ağrı) değerlendirir.</p>
+
+<ul>
+  <li>Kalem/kurşun kalem</li>
+  <li>Telefon</li>
+  <li>11 maddelik anket</li>
+</ul>
+
+<p>ICOAP’ın uygulanması yaklaşık 10 dakika sürer. Herhangi bir özel eğitim gerektirmez. Katılımcılardan, son zamanlardaki kalça veya diz ağrılarını 0 ile 4 arasında bir ölçekte (0: ağrı yok, 4: aşırı ağrı) derecelendirmeleri istenir.</p>
+
+<p>ICOAP, 11 maddeden oluşur ve her madde 0 ile 4 arasında puanlanır. Toplam üç skor elde edilir:</p>
+
+<ol>
+  <li><strong>Sürekli Ağrı Alt Ölçeği:</strong> 1-5. maddelerin toplamı (0-20 aralığında)</li>
+  <li><strong>Aralıklı Ağrı Alt Ölçeği:</strong> 6-11. maddelerin toplamı (0-24 aralığında)</li>
+  <li><strong>Toplam Ağrı Skoru:</strong> Tüm maddelerin toplamı (0-44 aralığında)</li>
+</ol>
+
+<p>En yüksek toplam puan 100’dür.</p>
+
+<p>ICOAP diz osteoartriti olan kişilerde ağrı yoğunluğunu, sıklığını ve yaşam kalitesini değerlendirmek için tasarlanmıştır. Fiziksel fonksiyon üzerindeki ağrı etkisinden bağımsız olarak değerlendirme yapar. Sürekli ve aralıklı ağrı skorları ayrı ayrı değerlendirilebilir.</p>
+
+<ul>
+  <li><strong>Test-Tekrar Test Güvenilirliği:</strong> Kalça osteoartriti olan hastalarda mükemmel (ICC = 0.86), diz osteoartriti olan hastalarda yeterli (ICC = 0.63) bulunmuştur. Farklı çalışmalarda mükemmel test-tekrar test güvenilirliği (ICC=0.85, ICC &gt; 0.75) rapor edilmiştir.</li>
+  <li><strong>İç Tutarlılık:</strong> Kalça ve diz osteoartriti olan hastalarda mükemmel iç tutarlılık (Cronbach alfa = 0.93) bulunmuştur. ICOAP Sürekli ağrı ve Aralıklı ağrı için mükemmel iç tutarlılık (Cronbach alfa &gt; 0.9) ve ICOAP Toplam ağrı için mükemmel iç tutarlılık (Cronbach alfa = 0.878) bulunmuştur.</li>
+  <li><strong>Yapı Geçerliliği:</strong> WOMAC ağrı ölçeği (r = 0.81) ve KOOS semptom ölçeği (r = 0.60) ile mükemmel korelasyon göstermiştir.</li>
+  <li><strong>İçerik Geçerliliği:</strong> ICOAP’ı geliştirmek için kullanılan odak grupları aracılığıyla içerik ve görünüş geçerliliği belirlenmiştir. ICOAP’ın standart SF-36 Sağlık Anketi ile karşılaştırılmasıyla içerik geçerliliği desteklenmiştir.</li>
+  <li><strong>Taban/Tavan Etkileri:</strong> Diz osteoartriti olan hastalarda, Sürekli ağrı alt ölçeği için yeterli taban etkileri (&lt;%20) ve Aralıklı ağrı alt ölçeği için yeterli taban etkileri (&lt;%20) bulunmuştur. Sürekli ağrı alt ölçeği için yeterli tavan etkileri (&lt;%20) ve Aralıklı ağrı alt ölçeği için yeterli tavan etkileri (&lt;%20) bulunmuştur.</li>
+  <li><strong>Duyarlılık:</strong> Fizik tedaviden sonraki 4 hafta içinde orta derecede duyarlı bulunmuştur.</li>
+</ul>
+
+<p>Bombardier, C., Melfi, C., Paul, J., Green, R., Hawker, G., Wright, J., &amp; Coyote, P. (1995). Comparison of a generic and a disease-specific measure of pain and physical function after knee replacement surgery. Med Care, 33(4), 131-144.
+Gonçalves, R., Meireles, A., Gil, J., Cavalheiro, L., Rosado, J., &amp; Cabri, J. (2012). Responsiveness of intermittent and constant osteoarthritis pain (ICOAP) after physical therapy for knee osteoarthritis. Osteoarthritis and Cartilage, 20(10), 1116-1119.
+Hawker, G., Davis, A., French, M., Cibere, J., Jordan, J., March, L., . . . Dieppe, P. (2008). Development and preliminary psychometric testing of a new OA pain measure – an OARSI/OMERACT initiative. Osteoarthritis and Cartilage, 16(4), 409-414.
+Hawker GA, Mian S, Kendzerska T, French M. (2011). Measures of adult pain: Visual Analog Scale for Pain (VAS Pain), Numeric Rating Scale for Pain (NRS Pain), McGill Pain Questionnaire (MPQ), Short-Form McGill Pain Questionnaire (SF-MPQ), Chronic Pain Grade Scale (CPGS), Short Form-36 Bodily Pain Scale (SF-36). Arthritis Care Res Arthritis Care &amp; Research, 63(S11).
+Manolarakis GE, Kontodimopoulos N, Sifaki-Pistolla D, Niakas D. (2016). Establishing the Psychometric Properties of the ICOAP Questionnaire through Intra-Articular Treatment of Osteoarthritic Pain: Implementation for the Greek Version. Arthritis 2016;1–11.
+Maillefert, J., Kloppenburg, M., Fernandes, L., Punzi, L., Günther, K., Mola, E. M., . . . Hawker, G. (2009). Multi-language translation and cross-cultural adaptation of the OARSI/OMERACT measure of intermittent and constant osteoarthritis pain (ICOAP). Osteoarthritis and Cartilage, 17(10), 1293-1296.
+Moreton, B., Wheeler, M., Walsh, D., &amp; Lincoln, N. (2012). Rasch analysis of the intermittent and constant osteoarthritis pain (ICOAP) scale. Osteoarthritis and Cartilage, 20(10), 1109-1115.
+Singh, J. A., Luo, R., Landon, G. C., &amp; Suarez-Almazor, M. (2014). Reliability and Clinically Important Improvement Thresholds for Osteoarthritis Pain and Function Scales: A Multicenter Study. The Journal of Rheumatology, 41(3), 509-515.</p>
+
+<p>```</p>
+ <!-- Aracın Markdown içeriği (Açıklama, Talimatlar, Yorumlama vb.) -->
+  </div>
+
+  
+  <hr>
+  <footer class="assessment-footer">
+      <h3>Kaynaklar ve Atıf</h3>
+      
+        <p><strong>SRALab Sayfası:</strong> <a href="Instrument Details" target="_blank" rel="noopener noreferrer">Instrument Details</a></p>
+      
+       
+        <p><strong>Orijinal Referans:</strong> Hawker, G., Davis, A., French, M., Cibere, J., Jordan, J., March, L., . . . Dieppe, P. (2008). Development and preliminary psychometric testing of a new OA pain measure – an OARSI/OMERACT initiative. Osteoarthritis and Cartilage, 16(4), 409-414.</p>
+      
+  </footer>
+  
+
+  <nav class="post-nav">
+     <a href="/tum-araclar/">← Tüm Değerlendirme Araçları Listesi</a>
+   </nav>
+
+</article>
+  </main>
+
+  <!-- Footer (Alt Kısım) -->
+  <!-- _includes/footer.html -->
+<footer class="site-footer mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <p class="text-muted">
+      <!-- Yeni Düzeltilmiş Satır -->
+© 2025 FTR Değerlendirme Araçları ve Bilgi Portalı. Tüm hakları saklıdır (veya uygun lisans belirtilir).
+    </p>
+    <p class="text-muted small">
+      Bu site eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez.
+      İçerikler yoğun bir şekilde yapay zeka tarafından çevirilmiş ve düzenlenmiştir.
+    </p>
+    <!-- İsteğe bağlı: Sosyal Medya veya diğer linkler -->
+    <!-- <div class="social-links"> ... </div> -->
+    <p class="text-muted small">
+      Jekyll ile oluşturuldu.
+    </p>
+    <!-- "Managed by" kısmını _config.yml'deki github_username'i kullanarak ekleyelim -->
+    
+     <p class="text-muted small">Bu sayfa <a href="https://github.com/fr3sby2" target="_blank" rel="noopener noreferrer">fr3sby2</a> tarafından yönetilmektedir.</p>
+    
+  </div>
+</footer>
+
+  <!-- JavaScript Dosyaları -->
+
+  <!-- Bootstrap JS Bundle (Popper içerir) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Lunr.js ve Türkçe Dil Desteği (Arama için) -->
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
+  <script src="https://unpkg.com/lunr-languages/lunr.tr.js"></script>
+
+  <!-- Kendi Özel JS Dosyalarımız -->
+  <script src="/ftr-web-olcekler/assets/js/main.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/ui.js"></script>
+  <script src="/ftr-web-olcekler/assets/js/search.js"></script> <!-- Arama kodumuz -->
+  <script src="/ftr-web-olcekler/assets/js/filters.js"></script> <!-- Filtreleme kodumuz -->
+
+</body>
+
+</html>
