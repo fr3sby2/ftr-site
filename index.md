@@ -22,6 +22,5 @@ Amacımız, klinik pratikte ve eğitimde ihtiyaç duyulan **değerlendirme yönt
 
 #### Lütfen Dikkat:
 
-Bu site **eğitim ve bilgilendirme amaçlıdır.** Sağlanan bilgiler profesyonel tıbbi tavsiyenin yerini tutmaz. Tanı ve tedavi kararları için mutlaka yetkin sağlık profesyonellerine danışılmalıdır. Değerlendirme araçlarının kullanımı orijinal kaynaklardan ve ilgili eğitimlerden öğrenilmelidir. SRALab içerikleri izin alınarak kullanılmıştır.
-
+Bu site **eğitim ve bilgilendirme amaçlıdır.** Sağlanan bilgiler profesyonel tıbbi tavsiyenin yerini tutmaz. Tanı ve tedavi kararları için mutlaka yetkin sağlık profesyonellerine danışılmalıdır. Değerlendirme araçlarının kullanımı orijinal kaynaklardan ve ilgili eğitimlerden öğrenilmelidir. Bu içerik çoğunlukla yapay zeka kullanılarak Türkçeleştirilmiştir.
 *Site aktif geliştirme aşamasındadır.*
